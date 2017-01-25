@@ -17,6 +17,12 @@ The system will allow members to calculate calories burned during various types 
 
 ### Project Technologies and Techniques
 * Security/Authentication
+  * Admin role: create/read/update/delete (crud) of all data
+  * User role: submit trail reports
+  * All: anyone can view trail information (no login)
+  
+
+* Security/Authentication
   * Admin role: create/read/update/delete members’ personal data as well as services/charges, provided to the members
   * Member role: reserve a court or a lesson
   * All: anyone can view general Club information (no login)
