@@ -8,7 +8,11 @@ guarantee data not being overwritten or corrupted. Also, front desk staff is ove
 lesson, or other service. 
 
 Develop website for the ‘Tennis Universe’ Tennis and Fitness club. The site will contain comprehensive information about the club services. There will 
-be an option to log in to the system for authorized persons and add/delete/update/view club members’ information.The system will allow Club members to log onto the site and book a court, or a lesson.The system will calculate monthly charges for each member. The system will generate a monthly Newsletter to all members that subscribed to receive it, and send it via email. 
+be an option to log in to the system for authorized persons and add/delete/update/view club members’ information.
+
+The system will allow Club members to log onto the site and book a court, or a lesson.The system will calculate monthly charges for each member. 
+
+The system will generate a monthly Newsletter to all members that subscribed to receive it, and send it via email. 
 
 ### Design
 * [Screen Design](DesignDocuments/Home.png)
