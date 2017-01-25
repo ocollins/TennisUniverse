@@ -1,7 +1,6 @@
 
 
-# Olena
-Collins Individual Project
+# Olena Collins Individual Project
 
 ### Problem
 Statement
