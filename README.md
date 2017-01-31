@@ -44,8 +44,7 @@ The system will allow members to calculate calories burned during various types 
 
 * [Screen Design](DesignDocuments/Home.png)
  
-### [Project
-Plan](ProjectPlan.md)
+### [Project Plan](ProjectPlan.md)
 
 ### [Time Log](TimeLog.md)
 
