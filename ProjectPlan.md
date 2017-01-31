@@ -1,5 +1,4 @@
-# Project Plan for Tennis Universe web site
-##By Olena Collins
+# Project Plan
 
 ### Week 1
 - [X] Create project repository on GitHub
@@ -10,8 +9,8 @@
 - [X] Time log entries
 - [X] Begin project plan
 - [ ] Complete screen design 
-- [ ] Create project structure in IntelliJ
-- [ ] Add project to repository
+- [X] Create project structure in IntelliJ
+- [X] Add project to repository
 - [X] Time log entries
 
 ### Week 3
@@ -32,7 +31,7 @@ more detail.
 - [ ] Create class diagram
 - [ ] Create database and all tables/columns locally
 - [ ] Add Hibernate config
-- [ ] Create DAO for user crud
+- [ ] Create DAO for Member crud
 - [ ] Add unit tests for DAO
 - [ ] Add user login  
 - [ ] Add user registration
@@ -42,26 +41,20 @@ more detail.
 
 ### Week 5
 
-- [ ] Create DAO for ??
-- [ ] Create display ?? report functionality
-- [ ] Create display ?? functionality
-- [ ] Add tests for new functionality ???
+- [ ] Create display Member info functionality
+- [ ] Add tests for Member info functionality
 - [ ] Time log entries
 
 ### Week 6
-- [ ] Integration with ??? api
-- [ ] Create Calorie calculator functionality ???
-- [ ] Set up Continuous Integration on openshift ???
+- [ ] Integration with ??? api - Calorie calculator functionality
+- [ ] Set up Security and Authentication processing for the LogIn page
+- [ ] Set up Continuous Integration on openshift 
 - [ ] Time log entries
 
 ### Week 7
-- [ ] Add search functionality
-- [ ] Determine how to add paging of search results
-- [ ] Integration with weather service and/or snow depth data
 - [ ] Time log entries
 
 ### Week 8
-- [ ] Implement paging of search results???
 - [ ] Code review
 - [ ] Time log entries
 
@@ -93,12 +86,6 @@ more detail.
 
 ### Week 16
 - [ ] Time log entries
-
-
-
-
-
-
 
 
 
