@@ -21,7 +21,7 @@
 | 1/26/17| Readings for week 3| 2.5 | |
 | 1/26/17| Presentation 2| 1.5 | |
 |Week 3 | | | | |
-| 1/28/17| Activities for week 2| 2 | |
+| 1/28/17| Activities for week 3| 2 | |
 | 1/29/17| Project Plan, Screen Designs| 4 | |
 | 1/30/17| Readings for week 3| 2.5 | |
 | 1/31/17| Presentation 2 materials| 2.5 | |
