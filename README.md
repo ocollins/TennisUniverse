@@ -43,7 +43,7 @@ The system will allow members to calculate calories burned during various types 
 
 ### Design
 
-### [Screen Design](TennisUniverse/DesignDocuments/Home Page Design.JPG)
+   [Screen Design](TennisUniverse/DesignDocuments/Home Page Design.JPG)
  
 ### [Project Plan](ProjectPlan.md)
 
