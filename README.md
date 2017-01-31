@@ -29,7 +29,7 @@ The system will allow members to calculate calories burned during various types 
   * Calorie Calculator (TBD)
 
 ### Logging 
- * Configurable logging using Log4J; 
+  * Configurable logging using Log4J; 
 
 ### Site and database hosted on AWS
 
