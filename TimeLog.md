@@ -25,4 +25,9 @@
 | 1/29/17| Project Plan, Screen Designs| 4 | |
 | 1/30/17| Readings for week 3| 2.5 | |
 | 1/31/17| Presentation 2 materials| 2.5 | |
+| 2/01/17| Hibernate tutorial, Exercise 3| 2 | |
+| 2/02/17| Hibernate tutorial, Exercise 3| 2.5 | |
+| 2/03/17| Hibernate tutorial, Exercise 3| 2.5 | |
+| 2/04/17| Implement Hibernate/DAO in Ind project| 2.5 | |
+| 2/05/17| Readings/Activities for Week 4| 2.5 | |
 |Week 4 | | | | |
