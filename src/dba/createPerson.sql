@@ -1,0 +1,19 @@
+create table PERSON (
+  PERSON_ID       int(11) NOT NULL auto_increment PRIMARY KEY ,
+  SSN_NR          INT(09),
+  FIRST_NAME      varchar(35) NOT NULL,
+  LAST_NAME       varchar(35) NOT NULL ,
+  BIRTH_DT        DATE,
+  PERSON_TYPE     INT(02) NOT NULL ,
+  EMAIL_ADDR      varchar(45),
+  ADDRESS_LINE1   varchar(45),
+  ADDRESS_LINE2   varchar(45),
+  CITY            varchar(45),
+  STATE           varchar(02),
+  ZIP             varchar(05),
+  USTA_RATING     VARCHAR(3),
+  LAST_UPDATED    TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+
+) ENGINE=InnoDB;
+
+INSERT INTO PERSON VALUES (101, 999999999, "JOE", "COYNE", "1969-03-04", 02, "JCOYNE@GMAIL.COM", "1 MAIN ST","" , "MADISON", "WI", "53555", "3.5", CURRENT_TIMESTAMP);
