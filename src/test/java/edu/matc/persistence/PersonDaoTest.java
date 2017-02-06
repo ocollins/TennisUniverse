@@ -1,16 +1,15 @@
 package edu.matc.persistence;
 
+import edu.matc.util.LocalDateAttributeConverter;
 import edu.matc.entity.Person;
-//import edu.matc.util.LocalDateAttributeConverter;
 import org.junit.Before;
 import org.junit.Test;
+import org.apache.log4j.*;
 import java.time.LocalDate;
 
 import java.util.List;
 
 import static org.junit.Assert.*;
-import org.apache.log4j.*;
-
 
 /**
  * Created on 02/04/17.
@@ -19,11 +18,12 @@ import org.apache.log4j.*;
 public class PersonDaoTest {
 
     PersonDao dao;
-    //LocalDateAttributeConverter dateConverter;
+    LocalDateAttributeConverter dateConverter;
     private final Logger logger = Logger.getLogger(this.getClass());
 
     @Before
     public void setup() {
+
         dao = new PersonDao();
     }
 
@@ -36,42 +36,44 @@ public class PersonDaoTest {
 
     @Test
     public void getPerson() throws Exception {
-        Person aPerson = dao.getPerson(1);
-        logger.info("Person with index 1 " + aPerson.getFirstName());
+        Person aPerson = dao.getPerson(101);
+
+        logger.info("Person with index 101 " + aPerson.getFirstName());
         assertEquals("First name is not Joe ", "Joe", aPerson.getFirstName());
     }
 
     @Test
     public void testGetPersonByLastName() throws Exception {
-        List<Person> persons = dao.getPersonByLastName("Curry");
+        List<Person> persons = dao.getPersonByLastName("COYNE");
         //Just testing stuff
-        logger.info("Number of Curry persons " + persons.size());
+        logger.info("Number of Coyne persons " + persons.size());
         for (Person aPerson : persons) {
             logger.info("First name " + aPerson.getFirstName());
 
         }
-        assertEquals("First name is not Barney ", "Barney", persons.get(0).getFirstName());
+        assertEquals("First name is not JOE ", "JOE", persons.get(0).getFirstName());
     }
 
-//    @Test
-//    public void testAddPerson() throws Exception {
-//        dateConverter = new LocalDateAttributeConverter();
-//        LocalDate dob = LocalDate.parse("1989-12-12");
-//        dateConverter.convertToDatabaseColumn(dob);
-//
-//        Person newPerson = new Person("Maria", "Sharapova", dob);
-//        int id = dao.addPerson(newPerson);
-//        logger.info("New person ID " + id);
-//
-//        //Check if a new person with new id exists
-//        assertNotNull("Person was not inserted ", dao.getPerson(id) );
-//    }
+    @Test
+    public void testAddPerson() throws Exception {
+        dateConverter = new LocalDateAttributeConverter();
+        LocalDate dob = LocalDate.parse("1989-12-12");
+        dateConverter.convertToDatabaseColumn(dob);
+
+        Person newPerson = new Person(888888888, "Maria", "Sharapova", dob, 02, "mshar@gmail.com",
+                "3 Main st", "", "Sun Prairie", "WI", "53590", "4.0");
+        int id = dao.addPerson(newPerson);
+        logger.info("New person ID " + id);
+
+        //Check if a new person with new id exists
+        assertNotNull("Person was not inserted ", dao.getPerson(id) );
+    }
 
     @Test
     public void deletePerson() throws Exception {
-        dao.deletePerson(7);
+        dao.deletePerson(102);
 
-        assertNull("Person 7 is still there ", dao.getPerson(7));
+        assertNull("Person 102 is still there ", dao.getPerson(102));
 
     }
 

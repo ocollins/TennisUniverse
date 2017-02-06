@@ -5,11 +5,12 @@ package edu.matc.entity;
  * @author O Collins
  */
 
-//import edu.matc.util.LocalDateAttributeConverter;
+import edu.matc.util.LocalDateAttributeConverter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 import java.security.Timestamp;
+import java.sql.Date;
 import java.time.LocalDate;
 import java.time.Period;
 
@@ -39,11 +40,11 @@ public class Person {
     private String lastName;
 
     @Column(name = "BIRTH_DT")
-    //@Convert(converter = LocalDateAttributeConverter.class)
+    @Convert(converter = LocalDateAttributeConverter.class)
     private LocalDate birthDt;
 
     @Column(name = "PERSON_TYPE")
-    private String personType;
+    private int personType;
 
     @Column(name = "EMAIL_ADDR")
     private String emailAddr;
@@ -66,8 +67,8 @@ public class Person {
     @Column(name = "USTA_RATING")
     private String ustaRating;
 
-    @Column(name = "LAST_UPDATED")
-    private Timestamp lastUpdated;
+//    @Column(name = "LAST_UPDATED")
+//    private Timestamp lastUpdated;
 
     /**
      * Instantiates a new Person.
@@ -90,11 +91,11 @@ public class Person {
      * @param state        the state
      * @param zip          the zip
      * @param ustaRating   the usta rating
-     * @param lastUpdated  the last updated
+     //* @param lastUpdated  the last updated
      */
-    public Person(int ssnNr, String firstName, String lastName, LocalDate birthDt, String personType,
+    public Person(int ssnNr, String firstName, String lastName, LocalDate birthDt, int personType,
                   String emailAddr, String addressLine1, String addressLine2, String city,
-                  String state, String zip, String ustaRating, Timestamp lastUpdated) {
+                  String state, String zip, String ustaRating) {
         this.ssnNr = ssnNr;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -107,7 +108,7 @@ public class Person {
         this.state = state;
         this.zip = zip;
         this.ustaRating = ustaRating;
-        this.lastUpdated = lastUpdated;
+        //this.lastUpdated = lastUpdated;
     }
 
     /**
@@ -205,7 +206,7 @@ public class Person {
      *
      * @return the person type
      */
-    public String getPersonType() {
+    public int getPersonType() {
         return personType;
     }
 
@@ -214,7 +215,7 @@ public class Person {
      *
      * @param personType the person type
      */
-    public void setPersonType(String personType) {
+    public void setPersonType(int personType) {
         this.personType = personType;
     }
 
@@ -349,18 +350,18 @@ public class Person {
      *
      * @return the last updated
      */
-    public Timestamp getLastUpdated() {
-        return lastUpdated;
-    }
-
-    /**
-     * Sets last updated.
-     *
-     * @param lastUpdated the last updated
-     */
-    public void setLastUpdated(Timestamp lastUpdated) {
-        this.lastUpdated = lastUpdated;
-    }
+//    public Timestamp getLastUpdated() {
+//        return lastUpdated;
+//    }
+//
+//    /**
+//     * Sets last updated.
+//     *
+//     * @param lastUpdated the last updated
+//     */
+//    public void setLastUpdated(Timestamp lastUpdated) {
+//        this.lastUpdated = lastUpdated;
+//    }
 
     @Override
     public String toString() {
@@ -378,7 +379,7 @@ public class Person {
                 ", state='" + state + '\'' +
                 ", zip='" + zip + '\'' +
                 ", ustaRating='" + ustaRating + '\'' +
-                ", lastUpdated=" + lastUpdated +
+                //", lastUpdated=" + lastUpdated +
                 '}';
     }
 }

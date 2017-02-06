@@ -143,7 +143,7 @@ public class PersonDao {
             //Update person's info to the input data
             personToUpdate.setLastName(person.getLastName());
             personToUpdate.setFirstName(person.getFirstName());
-            personToUpdate.setBirthDt((person.getBirthDt()));
+            //personToUpdate.setBirthDt((person.getBirthDt()));
             session.update(personToUpdate);
             transaction.commit();
 
