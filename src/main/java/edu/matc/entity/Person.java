@@ -9,10 +9,12 @@ import edu.matc.util.LocalDateAttributeConverter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.security.Timestamp;
+import java.sql.Timestamp;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.Calendar;
+
 
 import static java.time.LocalDate.now;
 
@@ -67,8 +69,8 @@ public class Person {
     @Column(name = "USTA_RATING")
     private String ustaRating;
 
-//    @Column(name = "LAST_UPDATED")
-//    private Timestamp lastUpdated;
+    @Column(name = "LAST_UPDATED")
+    private Timestamp lastUpdated;
 
     /**
      * Instantiates a new Person.
@@ -108,7 +110,46 @@ public class Person {
         this.state = state;
         this.zip = zip;
         this.ustaRating = ustaRating;
+        setLastUpdated();
+        this.lastUpdated = getLastUpdated();
         //this.lastUpdated = lastUpdated;
+    }
+
+    /**
+     * Instantiates a new Person.
+     *
+     * @param personId     the person id
+     * @param ssnNr        the ssn nr
+     * @param firstName    the first name
+     * @param lastName     the last name
+     * @param birthDt      the birth dt
+     * @param personType   the person type
+     * @param emailAddr    the email addr
+     * @param addressLine1 the address line 1
+     * @param addressLine2 the address line 2
+     * @param city         the city
+     * @param state        the state
+     * @param zip          the zip
+     * @param ustaRating   the usta rating
+     */
+    public Person(int personId, int ssnNr, String firstName, String lastName, LocalDate birthDt, int personType,
+                  String emailAddr, String addressLine1, String addressLine2, String city,
+                  String state, String zip, String ustaRating) {
+        this.personId = personId;
+        this.ssnNr = ssnNr;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthDt = birthDt;
+        this.personType = personType;
+        this.emailAddr = emailAddr;
+        this.addressLine1 = addressLine1;
+        this.addressLine2 = addressLine2;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
+        this.ustaRating = ustaRating;
+        setLastUpdated();
+        this.lastUpdated = getLastUpdated();
     }
 
     /**
@@ -350,18 +391,21 @@ public class Person {
      *
      * @return the last updated
      */
-//    public Timestamp getLastUpdated() {
-//        return lastUpdated;
-//    }
-//
-//    /**
-//     * Sets last updated.
-//     *
-//     * @param lastUpdated the last updated
-//     */
-//    public void setLastUpdated(Timestamp lastUpdated) {
-//        this.lastUpdated = lastUpdated;
-//    }
+    public Timestamp getLastUpdated() {
+        return lastUpdated;
+    }
+
+    /**
+     * Sets last updated.
+     *
+    // * @param lastUpdated the last updated
+     */
+    public void setLastUpdated() {
+        Calendar calendar = Calendar.getInstance();
+        java.util.Date now = calendar.getTime();
+        java.sql.Timestamp currentTimestamp = new java.sql.Timestamp(now.getTime());
+        this.lastUpdated = currentTimestamp;
+    }
 
     @Override
     public String toString() {
@@ -379,7 +423,7 @@ public class Person {
                 ", state='" + state + '\'' +
                 ", zip='" + zip + '\'' +
                 ", ustaRating='" + ustaRating + '\'' +
-                //", lastUpdated=" + lastUpdated +
+                ", lastUpdated=" + lastUpdated +
                 '}';
     }
 }
