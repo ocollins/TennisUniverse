@@ -398,7 +398,6 @@ public class Person {
     /**
      * Sets last updated.
      *
-    // * @param lastUpdated the last updated
      */
     public void setLastUpdated() {
         Calendar calendar = Calendar.getInstance();

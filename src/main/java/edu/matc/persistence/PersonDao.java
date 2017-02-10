@@ -6,6 +6,7 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Criteria;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -152,6 +153,29 @@ public class PersonDao {
         } finally {
             session.close();
         }
+    }
+
+    /**
+     * Gets max person id .
+     *
+     * @return the max person id
+     */
+    public int getMaxPersonId() {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Transaction transaction = null;
+        Integer maxPersonId = 0;
+        try {
+            transaction = session.beginTransaction();
+            Criteria criteria = session.createCriteria(Person.class);
+            criteria.setProjection(Projections.max("personId"));
+            maxPersonId = (Integer)criteria.uniqueResult();
+            transaction.commit();
+        } catch (HibernateException he){
+            logger.info("Hibernate Exception " + he);
+        } finally {
+            session.close();
+        }
+        return maxPersonId;
     }
 
 

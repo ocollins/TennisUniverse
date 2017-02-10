@@ -60,24 +60,29 @@ public class PersonDaoTest {
         LocalDate dob = LocalDate.parse("1989-12-12");
         dateConverter.convertToDatabaseColumn(dob);
 
-        Person newPerson = new Person(888888888, "Maria", "Sharapova", dob, 02, "mshar@gmail.com",
-                "3 Main st", "", "Sun Prairie", "WI", "53590", "4.0");
+        Person newPerson = new Person(888888888, "MARIA", "SHARAPOVA", dob, 02, "MSHARAP@GMAIL.COM",
+                "3 MAIN ST.", "", "SUN PRAIRIE", "WI", "53590", "4.0");
         int id = dao.addPerson(newPerson);
         logger.info("New person ID " + id);
+        logger.info("Max person ID now " + dao.getMaxPersonId());
 
         //Check if a new person with new id exists
-        assertNotNull("Person was not inserted ", dao.getPerson(id) );
-        //add assert get first name
-        //add assert get last name
+        assertNotNull("Person was not inserted ", dao.getPerson(id));
+        assertEquals("Inserted person's last name is not SHARAPOVA ", "SHARAPOVA", dao.getPerson(id).getLastName());
+        assertEquals("Inserted person's last name is not MARIA ", "MARIA", dao.getPerson(id).getFirstName());
+
     }
 
-//    @Test
-//    public void deletePerson() throws Exception {
-//        dao.deletePerson(107);
-//
-//        assertNull("Person 102 is still there ", dao.getPerson(102));
-//
-//    }
+    @Test
+    public void deletePerson() throws Exception {
+        //Delete the last person in the table
+        int personToDelete = dao.getMaxPersonId();
+        logger.info("Deleting person " + personToDelete);
+        dao.deletePerson(personToDelete);
+
+        assertNull("Person " + personToDelete + " is still there ", dao.getPerson(personToDelete));
+
+    }
 
 //    @Test
 //    public void testUpdatePerson() throws Exception {
