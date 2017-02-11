@@ -35,9 +35,9 @@
 |2/06/2017|AWS setup|1|||
 |2/06/2017|Project Hibernate logic|1|||
 |2/07/2017|Finish set up AWS||||
-|2/08/2017|||||
-|2/09/2017|||||
-|2/10/2017|||||
+|2/08/2017|Finish AWS setup|1|||
+|2/09/2017|Database design|1|||
+|2/10/2017|Create DB locally, add Hibernate for the Ind project|2|||
 |2/11/2017|||||
 |2/12/2017|||||
 |2/13/2017|||||
