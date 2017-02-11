@@ -42,6 +42,13 @@
        <version>5.1.39</version>
     </dependency>
 
+    <!--JSTL dependency-->
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+
   </dependencies>
   <build>
     <finalName>tennisuniverse</finalName>

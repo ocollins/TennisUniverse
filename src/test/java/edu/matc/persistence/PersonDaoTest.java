@@ -84,27 +84,29 @@ public class PersonDaoTest {
 
     }
 
-//    @Test
-//    public void testUpdatePerson() throws Exception {
-//        dateConverter = new LocalDateAttributeConverter();
-//        LocalDate dob = LocalDate.parse("1969-08-30");
-//        dateConverter.convertToDatabaseColumn(dob);
-//
-//        //Create person information to update in the DB
-//        //Person personToUpdate = new Person();
-//        Person personToUpdate = new Person(104, 888888888, "Maria", "Smith", dob, 02, "mshar@gmail.com",
-//                "3 Main st", "", "Sun Prairie", "WI", "53590", "4.0");
-////        personToUpdate.setPersonid(6);
-////        personToUpdate.setFirstName("Dawn");
-////        personToUpdate.setLastName("Smith");
-////        personToUpdate.setDateOfBirth(dob);
-//
-//        //Update person
-//        dao.updatePerson(personToUpdate);
-//
-//        //Test the update
-//        assertEquals("Last Name was not Smith", "Smith", dao.getPerson(104).getLastName());
-//
-//    }
+    @Test
+    public void testUpdatePerson() throws Exception {
+        dateConverter = new LocalDateAttributeConverter();
+        LocalDate dob = LocalDate.parse("1969-08-30");
+        dateConverter.convertToDatabaseColumn(dob);
+        int personId = dao.getMaxPersonId();
+        logger.info("UPdate person ID " + personId);
+
+        //Create person information to update in the DB
+        //Person personToUpdate = new Person();
+        Person personToUpdate = new Person(personId, 888888888, "Maria", "Smith", dob, 02, "mshar@gmail.com",
+                "3 Main st", "", "Sun Prairie", "WI", "53590", "4.0");
+//        personToUpdate.setPersonid(6);
+        personToUpdate.setFirstName("Dawn");
+//        personToUpdate.setLastName("Smith");
+//        personToUpdate.setDateOfBirth(dob);
+
+        //Update person
+        dao.updatePerson(personToUpdate);
+
+        //Test the update
+        assertEquals("Last Name was not Smith", "Smith", dao.getPerson(personId).getLastName());
+
+    }
 
 }

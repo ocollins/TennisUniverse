@@ -140,12 +140,9 @@ public class PersonDao {
             Transaction transaction = session.beginTransaction();
 
             //Get data from the table for the person by ID
-            Person personToUpdate = (Person)session.get(Person.class, person.getPersonId());
-            //Update person's info to the input data
-//            personToUpdate.setLastName(person.getLastName());
-//            personToUpdate.setFirstName(person.getFirstName());
-            //personToUpdate.setBirthDt((person.getBirthDt()));
-            session.update(personToUpdate);
+            logger.info("Inside dao " + person.getPersonId());
+
+            session.saveOrUpdate(person);
             transaction.commit();
 
         } catch (HibernateException he) {

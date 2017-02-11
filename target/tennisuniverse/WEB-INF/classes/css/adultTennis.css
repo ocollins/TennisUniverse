@@ -1,0 +1,101 @@
+body {
+    padding: 10px 10px;
+    margin: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+    border: 2px solid black;
+    background-color: rgb(232, 208, 148);
+}
+
+#headerimage {
+    /*border: 10px solid yellow;*/
+    margin: 1px 20px 20px;
+}
+
+#menu {
+    height: 40px;
+    margin-top: 5px;
+    margin-left: 40px;
+    width: 100%;
+}
+
+#menu ul {
+    margin: 0;
+    padding: 0;
+
+}
+
+#menu li {
+    list-style: none;
+    float: left;
+    border-radius: 10px;
+    margin:0 0 0.25em 0;
+}
+
+#menu ul li a:hover {
+    background-color: rgb(112, 144, 126);
+}
+
+#menu a {
+    display: block;
+    width: 9em;
+    float: left;
+    height: 20px;
+    padding: 10px 30px 10px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(71, 110, 44);
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    border: solid 4px rgba(232, 208, 148, 0.5);
+    margin-left: 4px;
+
+}
+
+#container2 {
+    float: left;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    width: 50%;
+}
+
+h2 {
+    background-color: rgb(112, 144, 126);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 4px rgba(232, 208, 148, 0.5);
+    margin-left: 40px;
+}
+
+p {
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+#intro li{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#peopleimage {
+    border-radius: 10px;
+    box-shadow: 10px -10px 5px grey;
+    width: 60%;
+}
+
+#lessons {
+    clear: left;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    clear: left;
+}
