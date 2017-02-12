@@ -89,23 +89,21 @@ public class PersonDaoTest {
         dateConverter = new LocalDateAttributeConverter();
         LocalDate dob = LocalDate.parse("1969-08-30");
         dateConverter.convertToDatabaseColumn(dob);
+        //Find the latest inserted person
         int personId = dao.getMaxPersonId();
         logger.info("UPdate person ID " + personId);
 
         //Create person information to update in the DB
-        //Person personToUpdate = new Person();
         Person personToUpdate = new Person(personId, 888888888, "Maria", "Smith", dob, 02, "mshar@gmail.com",
                 "3 Main st", "", "Sun Prairie", "WI", "53590", "4.0");
-//        personToUpdate.setPersonid(6);
-        personToUpdate.setFirstName("Dawn");
-//        personToUpdate.setLastName("Smith");
-//        personToUpdate.setDateOfBirth(dob);
+        //personToUpdate.setFirstName("Dawn");
 
         //Update person
         dao.updatePerson(personToUpdate);
 
         //Test the update
         assertEquals("Last Name was not Smith", "Smith", dao.getPerson(personId).getLastName());
+        assertEquals("dob is not 1969-08-30", dob, dao.getPerson(personId).getBirthDt());
 
     }
 
