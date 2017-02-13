@@ -38,9 +38,9 @@
 |2/08/2017|Finish AWS setup|1|||
 |2/09/2017|Database design|1|||
 |2/10/2017|Create DB locally, add Hibernate for the Ind project|2|||
-|2/11/2017|||||
-|2/12/2017|||||
-|2/13/2017|||||
+|2/11/2017|Project work|2|||
+|2/12/2017|Reading for week 5, add more tables to the DB|5|||
+|2/13/2017|Add more Hibernate and DAO to the project||||
 |Week 5|||||
 |2/15/2017|||||
 |2/16/2017|||||
