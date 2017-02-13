@@ -22,6 +22,10 @@
 
         <!-- List the annotated entity class/es -->
         <mapping class="edu.matc.entity.Person"/>
+        <mapping class="edu.matc.entity.Service"/>
+        <!--<mapping class="edu.matc.entity.PersonAccount"/>
+        <mapping class="edu.matc.entity.Account"/>
+        <mapping class="edu.matc.entity.PersonService"/>-->
 
     </session-factory>
 

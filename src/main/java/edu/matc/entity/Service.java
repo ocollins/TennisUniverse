@@ -5,13 +5,9 @@ package edu.matc.entity;
  * @author O Collins
  */
 
-import edu.matc.util.LocalDateAttributeConverter;
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
-import java.sql.Timestamp;
-import java.time.LocalDate;
-import java.util.Calendar;
 
 /**
  * A class to represent a person.
@@ -37,7 +33,7 @@ public class Service {
     private double serviceCharge;
 
     /**
-     * Instantiates a new Person.
+     * Instantiates a new Service.
      */
     public Service() {
     }
@@ -55,9 +51,20 @@ public class Service {
         this.serviceCode = serviceCode;
         this.serviceDesc = serviceDesc;
         this.serviceCharge = serviceCharge;
-
     }
 
+    /**
+     * Instantiates a new Service.
+     *
+     * @param serviceCode   the service code
+     * @param serviceDesc   the service desc
+     * @param serviceCharge the service charge
+     */
+    public Service(String serviceCode, String serviceDesc, double serviceCharge) {
+        this.serviceCode = serviceCode;
+        this.serviceDesc = serviceDesc;
+        this.serviceCharge = serviceCharge;
+    }
     /**
      * Gets service id.
      *
