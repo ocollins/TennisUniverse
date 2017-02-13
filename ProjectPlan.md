@@ -8,42 +8,39 @@
 - [X] List technologies and how they will be used
 - [X] Time log entries
 - [X] Begin project plan
-- [ ] Complete screen design 
+- [X] Complete screen design 
 - [X] Create project structure in IntelliJ
 - [X] Add project to repository
 - [X] Time log entries
 
 ### Week 3
-- [ ] Determine possible Web Services or APIs to use
-- [ ] Document system flow 
-- [ ] Complete database design
-- [ ] Begin creating JSPs
-- [ ] Add in bootstrap
-- [ ] Time log entries
-- [ ] Set up logging
-- [ ] Set up unit testing
-- [ ] Determine independent research topic
-- [ ] Update project plan. Based on the design should be able to lay out 
-more detail.
+- [X] Determine possible Web Services or APIs to use
+- [X] Document system flow 
+- [X] Complete database design
+- [X] Begin creating JSPs
+- [X] Time log entries
+- [X] Set up logging
+- [X] Set up unit testing
+- [X] Determine independent research topic
+- [X] Update project plan. Based on the design should be able to lay out more detail.
 
 ### Week 4
-- [ ] Complete remaining JSPs
-- [ ] Create class diagram
-- [ ] Create database and all tables/columns locally
-- [ ] Add Hibernate config
-- [ ] Create DAO for Member crud
-- [ ] Add unit tests for DAO
+- [ ] Create DB diagram
+- [X] Create database and all tables/columns locally
+- [X] Add Hibernate config
+- [X] Create DAO for Member crud
+- [X] Add unit tests for DAO
 - [ ] Add user login  
 - [ ] Add user registration
-- [ ] Add Maven for building
+- [X] Add Maven for building
 - [ ] Add entities for remaining tables
-- [ ] Time log entries
+- [X] Time log entries
 
-### Week 5
-
+### Week 5- 
+- [ ] Complete remaining JSPs
 - [ ] Create display Member info functionality
-- [ ] Add tests for Member info functionality
-- [ ] Time log entries
+- [X] Add tests for Member info functionality
+- [X] Time log entries
 
 ### Week 6
 - [ ] Integration with ??? api - Calorie calculator functionality
