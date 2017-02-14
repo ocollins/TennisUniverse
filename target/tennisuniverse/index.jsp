@@ -16,8 +16,9 @@ Author: Olena Collins
 </head>
 
 <title>Home</title>
-<link href="file:///home/student/EnterpriseRepos/TennisUniverse/src/main/resources/css/club.css" rel="stylesheet" type="text/css"/>
+<!--<link href="file:///home/student/EnterpriseRepos/TennisUniverse/src/main/resources/css/club.css" rel="stylesheet" type="text/css"/>-->
 <!--<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/club.css" rel="stylesheet" type="text/css"/>-->
+<link href="css/club.css" rel="stylesheet" type="text/css">
 
 <body>
 <!--include head element, which is stored in jsp directory-->
