@@ -42,15 +42,20 @@
 |2/12/2017|Reading for week 5, add more tables to the DB|5|||
 |2/13/2017|Add more Hibernate and DAO to the project||||
 |Week 5|||||
-|2/15/2017|||||
-|2/16/2017|||||
-|2/17/2017|||||
-|2/18/2017|||||
-|2/19/2017|||||
-|2/20/2017|||||
+|2/15/2017|Create User and Roles tables|1|||
+|2/16/2017|Add more setup for Login page|2|||
+|2/17/2017|Work on the project|3|||
+|2/18/2017|Readings for week 6||||
+|2/19/2017|Work on Ind project||||
+|2/20/2017|Activities for week 5||||
 |Week 6|||||
 |2/21/2017|||||
 |2/22/2017|||||
-||||||
+|2/23/2017|||||
+|2/24/2017|||||
+|2/25/2017|||||
+|2/26/2017|||||
+|2/27/2017|||||
 ||||||
 |Week 7|||||
+||||||
