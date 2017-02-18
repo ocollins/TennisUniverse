@@ -2223,3 +2223,462 @@
 2017-02-12 21:39:03,866 INFO  - Person with index 101 JOE
 2017-02-12 21:39:03,874 INFO  - Number of Coyne persons 1
 2017-02-12 21:39:03,874 INFO  - First name JOE
+2017-02-14 17:11:42,982 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-02-14 17:11:43,005 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-02-14 17:11:43,017 INFO  - HHH000206: hibernate.properties not found
+2017-02-14 17:11:43,026 INFO  - HHH000021: Bytecode provider name : javassist
+2017-02-14 17:11:43,078 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-02-14 17:11:43,078 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-02-14 17:11:43,373 INFO  - HHH000041: Configured SessionFactory: null
+2017-02-14 17:11:43,556 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-02-14 17:11:43,578 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-02-14 17:11:43,578 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-02-14 17:11:43,579 INFO  - HHH000006: Autocommit mode: false
+2017-02-14 17:11:43,580 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-02-14 17:11:44,289 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-14 17:11:44,627 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-02-14 17:11:44,634 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-02-14 17:11:45,472 INFO  - Update service ID 60
+2017-02-14 17:11:45,630 INFO  - New service ID 62
+2017-02-14 17:11:45,637 INFO  - Max service ID now 62
+2017-02-14 17:11:45,798 INFO  - Code for private lesson 20
+2017-02-14 17:11:45,825 INFO  - Total services 13
+2017-02-14 17:11:45,825 INFO  - Service name PRIVATE LESSON
+2017-02-14 17:11:45,825 INFO  - Service name SEMI-PRIVATE LESSON
+2017-02-14 17:11:45,825 INFO  - Service name CLINIC
+2017-02-14 17:11:45,825 INFO  - Service name RACQUET RE-STRINGING
+2017-02-14 17:11:45,825 INFO  - Service name JUNIOR LESSON
+2017-02-14 17:11:45,825 INFO  - Service name JUNIOR LESSON
+2017-02-14 17:11:45,825 INFO  - Service name JUNIOR LESSON
+2017-02-14 17:11:45,825 INFO  - Service name JUNIOR LESSON
+2017-02-14 17:11:45,825 INFO  - Service name JUNIOR LESSON
+2017-02-14 17:11:45,826 INFO  - Service name JUNIOR LESSON
+2017-02-14 17:11:45,826 INFO  - Service name JUNIOR LESSON
+2017-02-14 17:11:45,826 INFO  - Service name JUNIOR LESSON
+2017-02-14 17:11:45,826 INFO  - Service name JUNIOR LESSON
+2017-02-14 17:11:45,925 INFO  - Deleting service ID 62
+2017-02-14 17:11:46,030 INFO  - Deleting person 104
+2017-02-14 17:11:46,321 INFO  - UPdate person ID 103
+2017-02-14 17:11:46,331 INFO  - Inside dao 103
+2017-02-14 17:11:46,401 INFO  - Total persons 3
+2017-02-14 17:11:46,436 INFO  - New person ID 104
+2017-02-14 17:11:46,439 INFO  - Max person ID now 104
+2017-02-14 17:11:46,465 INFO  - Person with index 101 JOE
+2017-02-14 17:11:46,472 INFO  - Number of Coyne persons 1
+2017-02-14 17:11:46,472 INFO  - First name JOE
+2017-02-14 18:54:55,280 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-02-14 18:54:55,296 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-02-14 18:54:55,300 INFO  - HHH000206: hibernate.properties not found
+2017-02-14 18:54:55,305 INFO  - HHH000021: Bytecode provider name : javassist
+2017-02-14 18:54:55,343 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-02-14 18:54:55,343 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-02-14 18:54:55,550 INFO  - HHH000041: Configured SessionFactory: null
+2017-02-14 18:54:55,723 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-02-14 18:54:55,744 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-02-14 18:54:55,750 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-02-14 18:54:55,750 INFO  - HHH000006: Autocommit mode: false
+2017-02-14 18:54:55,752 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-02-14 18:54:56,281 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-14 18:54:56,583 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-02-14 18:54:56,591 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-02-14 18:54:57,256 INFO  - Update service ID 63
+2017-02-14 18:54:57,415 INFO  - New service ID 65
+2017-02-14 18:54:57,427 INFO  - Max service ID now 65
+2017-02-14 18:54:57,530 INFO  - Code for private lesson 20
+2017-02-14 18:54:57,576 INFO  - Total services 15
+2017-02-14 18:54:57,579 INFO  - Service name PRIVATE LESSON
+2017-02-14 18:54:57,580 INFO  - Service name SEMI-PRIVATE LESSON
+2017-02-14 18:54:57,581 INFO  - Service name CLINIC
+2017-02-14 18:54:57,581 INFO  - Service name RACQUET RE-STRINGING
+2017-02-14 18:54:57,581 INFO  - Service name JUNIOR LESSON
+2017-02-14 18:54:57,581 INFO  - Service name JUNIOR LESSON
+2017-02-14 18:54:57,582 INFO  - Service name JUNIOR LESSON
+2017-02-14 18:54:57,582 INFO  - Service name JUNIOR LESSON
+2017-02-14 18:54:57,582 INFO  - Service name JUNIOR LESSON
+2017-02-14 18:54:57,582 INFO  - Service name JUNIOR LESSON
+2017-02-14 18:54:57,583 INFO  - Service name JUNIOR LESSON
+2017-02-14 18:54:57,584 INFO  - Service name JUNIOR LESSON
+2017-02-14 18:54:57,585 INFO  - Service name JUNIOR LESSON
+2017-02-14 18:54:57,585 INFO  - Service name JUNIOR LESSON
+2017-02-14 18:54:57,586 INFO  - Service name JUNIOR LESSON
+2017-02-14 18:54:57,605 INFO  - Deleting service ID 65
+2017-02-14 18:54:57,716 INFO  - Deleting person 104
+2017-02-14 18:54:57,933 INFO  - UPdate person ID 103
+2017-02-14 18:54:57,934 INFO  - Inside dao 103
+2017-02-14 18:54:58,005 INFO  - Total persons 3
+2017-02-14 18:54:58,023 INFO  - New person ID 104
+2017-02-14 18:54:58,026 INFO  - Max person ID now 104
+2017-02-14 18:54:58,073 INFO  - Person with index 101 JOE
+2017-02-14 18:54:58,104 INFO  - Number of Coyne persons 1
+2017-02-14 18:54:58,106 INFO  - First name JOE
+2017-02-16 21:43:34,766 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-02-16 21:43:34,794 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-02-16 21:43:34,795 INFO  - HHH000206: hibernate.properties not found
+2017-02-16 21:43:34,799 INFO  - HHH000021: Bytecode provider name : javassist
+2017-02-16 21:43:34,913 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-02-16 21:43:34,914 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-02-16 21:43:35,298 INFO  - HHH000041: Configured SessionFactory: null
+2017-02-16 21:43:35,839 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-02-16 21:43:35,984 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-02-16 21:43:35,989 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-02-16 21:43:35,990 INFO  - HHH000006: Autocommit mode: false
+2017-02-16 21:43:35,995 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-02-16 21:43:38,414 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-16 21:43:39,037 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-02-16 21:43:39,059 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-02-16 21:43:43,466 INFO  - Update service ID 66
+2017-02-16 21:43:43,823 INFO  - New service ID 68
+2017-02-16 21:43:43,888 INFO  - Max service ID now 68
+2017-02-16 21:43:43,965 INFO  - Code for private lesson 20
+2017-02-16 21:43:45,142 INFO  - Total services 17
+2017-02-16 21:43:45,198 INFO  - Service name PRIVATE LESSON
+2017-02-16 21:43:45,199 INFO  - Service name SEMI-PRIVATE LESSON
+2017-02-16 21:43:45,199 INFO  - Service name CLINIC
+2017-02-16 21:43:45,200 INFO  - Service name RACQUET RE-STRINGING
+2017-02-16 21:43:45,200 INFO  - Service name JUNIOR LESSON
+2017-02-16 21:43:45,200 INFO  - Service name JUNIOR LESSON
+2017-02-16 21:43:45,200 INFO  - Service name JUNIOR LESSON
+2017-02-16 21:43:45,201 INFO  - Service name JUNIOR LESSON
+2017-02-16 21:43:45,201 INFO  - Service name JUNIOR LESSON
+2017-02-16 21:43:45,201 INFO  - Service name JUNIOR LESSON
+2017-02-16 21:43:45,201 INFO  - Service name JUNIOR LESSON
+2017-02-16 21:43:45,202 INFO  - Service name JUNIOR LESSON
+2017-02-16 21:43:45,202 INFO  - Service name JUNIOR LESSON
+2017-02-16 21:43:45,243 INFO  - Service name JUNIOR LESSON
+2017-02-16 21:43:45,243 INFO  - Service name JUNIOR LESSON
+2017-02-16 21:43:45,243 INFO  - Service name JUNIOR LESSON
+2017-02-16 21:43:45,243 INFO  - Service name JUNIOR LESSON
+2017-02-16 21:43:51,365 INFO  - Deleting service ID 68
+2017-02-16 21:43:52,136 INFO  - Deleting person 104
+2017-02-16 21:43:53,613 INFO  - UPdate person ID 103
+2017-02-16 21:43:53,613 INFO  - Inside dao 103
+2017-02-16 21:43:53,733 INFO  - Total persons 3
+2017-02-16 21:43:53,818 INFO  - New person ID 104
+2017-02-16 21:43:53,831 INFO  - Max person ID now 104
+2017-02-16 21:43:54,004 INFO  - Person with index 101 JOE
+2017-02-16 21:43:54,061 INFO  - Number of Coyne persons 1
+2017-02-16 21:43:54,062 INFO  - First name JOE
+2017-02-17 19:32:53,486 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-02-17 19:32:53,499 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-02-17 19:32:53,509 INFO  - HHH000206: hibernate.properties not found
+2017-02-17 19:32:53,512 INFO  - HHH000021: Bytecode provider name : javassist
+2017-02-17 19:32:53,552 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-02-17 19:32:53,553 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-02-17 19:32:53,773 INFO  - HHH000041: Configured SessionFactory: null
+2017-02-17 19:32:54,078 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-02-17 19:32:54,104 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-02-17 19:32:54,105 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-02-17 19:32:54,105 INFO  - HHH000006: Autocommit mode: false
+2017-02-17 19:32:54,107 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-02-17 19:32:54,991 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-17 19:32:55,331 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-02-17 19:32:55,335 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-02-17 19:32:56,122 INFO  - Update service ID 69
+2017-02-17 19:32:56,552 INFO  - New service ID 71
+2017-02-17 19:32:56,568 INFO  - Max service ID now 71
+2017-02-17 19:32:56,629 INFO  - Code for private lesson 20
+2017-02-17 19:32:56,662 INFO  - Total services 19
+2017-02-17 19:32:56,664 INFO  - Service name PRIVATE LESSON
+2017-02-17 19:32:56,664 INFO  - Service name SEMI-PRIVATE LESSON
+2017-02-17 19:32:56,665 INFO  - Service name CLINIC
+2017-02-17 19:32:56,666 INFO  - Service name RACQUET RE-STRINGING
+2017-02-17 19:32:56,666 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,670 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,671 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,676 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,676 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,676 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,676 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,676 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,677 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,677 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,677 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,678 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,678 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,679 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,679 INFO  - Service name JUNIOR LESSON
+2017-02-17 19:32:56,742 INFO  - Deleting service ID 71
+2017-02-17 19:32:56,937 INFO  - Deleting person 104
+2017-02-17 19:32:57,196 INFO  - UPdate person ID 103
+2017-02-17 19:32:57,197 INFO  - Inside dao 103
+2017-02-17 19:32:57,291 INFO  - Total persons 3
+2017-02-17 19:32:57,317 INFO  - New person ID 104
+2017-02-17 19:32:57,324 INFO  - Max person ID now 104
+2017-02-17 19:32:57,377 INFO  - Person with index 101 JOE
+2017-02-17 19:32:57,385 INFO  - Number of Coyne persons 1
+2017-02-17 19:32:57,385 INFO  - First name JOE
+2017-02-17 20:12:06,745 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-02-17 20:12:06,756 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-02-17 20:12:06,763 INFO  - HHH000206: hibernate.properties not found
+2017-02-17 20:12:06,771 INFO  - HHH000021: Bytecode provider name : javassist
+2017-02-17 20:12:06,805 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-02-17 20:12:06,805 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-02-17 20:12:06,975 INFO  - HHH000041: Configured SessionFactory: null
+2017-02-17 20:12:07,238 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-02-17 20:12:07,257 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-02-17 20:12:07,258 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-02-17 20:12:07,258 INFO  - HHH000006: Autocommit mode: false
+2017-02-17 20:12:07,262 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-02-17 20:12:08,026 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-17 20:12:08,305 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-02-17 20:12:08,309 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-02-17 20:12:08,910 INFO  - Update service ID 72
+2017-02-17 20:12:09,145 INFO  - New service ID 74
+2017-02-17 20:12:09,190 INFO  - Max service ID now 74
+2017-02-17 20:12:09,255 INFO  - Code for private lesson 20
+2017-02-17 20:12:09,290 INFO  - Total services 21
+2017-02-17 20:12:09,290 INFO  - Service name PRIVATE LESSON
+2017-02-17 20:12:09,290 INFO  - Service name SEMI-PRIVATE LESSON
+2017-02-17 20:12:09,291 INFO  - Service name CLINIC
+2017-02-17 20:12:09,291 INFO  - Service name RACQUET RE-STRINGING
+2017-02-17 20:12:09,295 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,296 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,296 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,297 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,297 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,297 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,298 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,298 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,298 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,298 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,299 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,299 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,300 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,301 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,301 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,302 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,302 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:12:09,359 INFO  - Deleting service ID 74
+2017-02-17 20:12:09,477 INFO  - Deleting person 104
+2017-02-17 20:12:09,763 INFO  - UPdate person ID 103
+2017-02-17 20:12:09,763 INFO  - Inside dao 103
+2017-02-17 20:12:16,651 INFO  - Total persons 3
+2017-02-17 20:12:17,920 INFO  - New person ID 104
+2017-02-17 20:12:17,941 INFO  - Max person ID now 104
+2017-02-17 20:12:17,976 INFO  - Person with index 101 JOE
+2017-02-17 20:12:17,986 INFO  - Number of Coyne persons 1
+2017-02-17 20:12:17,986 INFO  - First name JOE
+2017-02-17 20:14:48,358 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-02-17 20:14:48,368 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-02-17 20:14:48,372 INFO  - HHH000206: hibernate.properties not found
+2017-02-17 20:14:48,376 INFO  - HHH000021: Bytecode provider name : javassist
+2017-02-17 20:14:48,397 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-02-17 20:14:48,398 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-02-17 20:14:48,516 INFO  - HHH000041: Configured SessionFactory: null
+2017-02-17 20:14:48,753 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-02-17 20:14:48,762 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-02-17 20:14:48,765 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-02-17 20:14:48,766 INFO  - HHH000006: Autocommit mode: false
+2017-02-17 20:14:48,769 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-02-17 20:14:49,279 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-17 20:14:49,583 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-02-17 20:14:49,594 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-02-17 20:14:50,277 INFO  - Update service ID 75
+2017-02-17 20:14:50,565 INFO  - New service ID 77
+2017-02-17 20:14:50,609 INFO  - Max service ID now 77
+2017-02-17 20:14:50,676 INFO  - Code for private lesson 20
+2017-02-17 20:14:50,710 INFO  - Total services 23
+2017-02-17 20:14:50,710 INFO  - Service name PRIVATE LESSON
+2017-02-17 20:14:50,714 INFO  - Service name SEMI-PRIVATE LESSON
+2017-02-17 20:14:50,716 INFO  - Service name CLINIC
+2017-02-17 20:14:50,718 INFO  - Service name RACQUET RE-STRINGING
+2017-02-17 20:14:50,721 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,721 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,721 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,721 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,721 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,721 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,721 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,722 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,722 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,722 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,722 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,722 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,722 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,725 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,725 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,726 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,727 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,728 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,728 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:14:50,767 INFO  - Deleting service ID 77
+2017-02-17 20:14:50,896 INFO  - Deleting person 104
+2017-02-17 20:14:51,121 INFO  - UPdate person ID 103
+2017-02-17 20:14:51,122 INFO  - Inside dao 103
+2017-02-17 20:14:51,198 INFO  - Total persons 3
+2017-02-17 20:14:51,223 INFO  - New person ID 104
+2017-02-17 20:14:51,227 INFO  - Max person ID now 104
+2017-02-17 20:14:51,252 INFO  - Person with index 101 JOE
+2017-02-17 20:14:51,259 INFO  - Number of Coyne persons 1
+2017-02-17 20:14:51,261 INFO  - First name JOE
+2017-02-17 20:25:00,204 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-02-17 20:25:00,215 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-02-17 20:25:00,219 INFO  - HHH000206: hibernate.properties not found
+2017-02-17 20:25:00,225 INFO  - HHH000021: Bytecode provider name : javassist
+2017-02-17 20:25:00,246 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-02-17 20:25:00,247 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-02-17 20:25:00,350 INFO  - HHH000041: Configured SessionFactory: null
+2017-02-17 20:25:00,565 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-02-17 20:25:00,582 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-02-17 20:25:00,585 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-02-17 20:25:00,585 INFO  - HHH000006: Autocommit mode: false
+2017-02-17 20:25:00,589 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-02-17 20:25:01,111 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-17 20:25:01,436 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-02-17 20:25:01,445 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-02-17 20:25:02,137 INFO  - Update service ID 78
+2017-02-17 20:25:02,290 INFO  - New service ID 80
+2017-02-17 20:25:02,325 INFO  - Max service ID now 80
+2017-02-17 20:25:02,467 INFO  - Code for private lesson 20
+2017-02-17 20:25:02,533 INFO  - Total services 25
+2017-02-17 20:25:02,540 INFO  - Service name PRIVATE LESSON
+2017-02-17 20:25:02,541 INFO  - Service name SEMI-PRIVATE LESSON
+2017-02-17 20:25:02,541 INFO  - Service name CLINIC
+2017-02-17 20:25:02,541 INFO  - Service name RACQUET RE-STRINGING
+2017-02-17 20:25:02,546 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,546 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,556 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,557 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,557 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,562 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,563 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,565 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,566 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,566 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,567 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,567 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,567 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,568 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,568 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,572 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,578 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,579 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,582 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,583 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,585 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:25:02,663 INFO  - Deleting service ID 80
+2017-02-17 20:25:02,795 INFO  - Deleting person 104
+2017-02-17 20:25:03,153 INFO  - UPdate person ID 103
+2017-02-17 20:25:03,154 INFO  - Inside dao 103
+2017-02-17 20:25:03,288 INFO  - Total persons 3
+2017-02-17 20:25:03,363 INFO  - New person ID 104
+2017-02-17 20:25:03,436 INFO  - Max person ID now 104
+2017-02-17 20:25:03,511 INFO  - Person with index 101 JOE
+2017-02-17 20:27:55,701 INFO  - Number of Coyne persons 1
+2017-02-17 20:27:55,702 INFO  - First name JOE
+2017-02-17 20:33:31,332 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-02-17 20:33:31,362 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-02-17 20:33:31,364 INFO  - HHH000206: hibernate.properties not found
+2017-02-17 20:33:31,373 INFO  - HHH000021: Bytecode provider name : javassist
+2017-02-17 20:33:31,407 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-02-17 20:33:31,408 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-02-17 20:33:31,618 INFO  - HHH000041: Configured SessionFactory: null
+2017-02-17 20:33:31,871 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-02-17 20:33:31,888 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-02-17 20:33:31,892 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-02-17 20:33:31,894 INFO  - HHH000006: Autocommit mode: false
+2017-02-17 20:33:31,898 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-02-17 20:33:32,680 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-17 20:33:32,969 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-02-17 20:33:32,978 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-02-17 20:33:33,684 INFO  - Update service ID 81
+2017-02-17 20:33:33,837 INFO  - New service ID 83
+2017-02-17 20:33:33,910 INFO  - Max service ID now 83
+2017-02-17 20:33:34,013 INFO  - Code for private lesson 20
+2017-02-17 20:33:34,058 INFO  - Total services 27
+2017-02-17 20:33:34,065 INFO  - Service name PRIVATE LESSON
+2017-02-17 20:33:34,065 INFO  - Service name SEMI-PRIVATE LESSON
+2017-02-17 20:33:34,066 INFO  - Service name CLINIC
+2017-02-17 20:33:34,073 INFO  - Service name RACQUET RE-STRINGING
+2017-02-17 20:33:34,073 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,073 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,074 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,080 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,080 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,080 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,080 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,081 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,082 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,085 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,088 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,089 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,096 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,096 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,096 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,096 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,102 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,102 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,102 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,102 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,103 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,103 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,104 INFO  - Service name JUNIOR LESSON
+2017-02-17 20:33:34,164 INFO  - Deleting service ID 83
+2017-02-17 20:33:34,257 INFO  - Deleting person 104
+2017-02-17 20:33:34,520 INFO  - UPdate person ID 103
+2017-02-17 20:33:34,521 INFO  - Inside dao 103
+2017-02-17 20:33:34,632 INFO  - Total persons 3
+2017-02-17 20:33:34,663 INFO  - New person ID 104
+2017-02-17 20:33:34,666 INFO  - Max person ID now 104
+2017-02-17 20:33:34,699 INFO  - Person with index 101 JOE
+2017-02-17 20:33:34,705 INFO  - Number of Coyne persons 1
+2017-02-17 20:33:34,705 INFO  - First name JOE
+2017-02-17 21:08:41,224 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-02-17 21:08:41,247 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-02-17 21:08:41,248 INFO  - HHH000206: hibernate.properties not found
+2017-02-17 21:08:41,254 INFO  - HHH000021: Bytecode provider name : javassist
+2017-02-17 21:08:41,288 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-02-17 21:08:41,288 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-02-17 21:08:41,388 INFO  - HHH000041: Configured SessionFactory: null
+2017-02-17 21:08:41,594 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-02-17 21:08:41,613 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-02-17 21:08:41,614 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-02-17 21:08:41,614 INFO  - HHH000006: Autocommit mode: false
+2017-02-17 21:08:41,616 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-02-17 21:08:42,274 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-17 21:08:42,548 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-02-17 21:08:42,556 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-02-17 21:08:43,238 INFO  - Update service ID 84
+2017-02-17 21:08:43,372 INFO  - New service ID 86
+2017-02-17 21:08:43,381 INFO  - Max service ID now 86
+2017-02-17 21:08:43,482 INFO  - Code for private lesson 20
+2017-02-17 21:08:43,592 INFO  - Total services 29
+2017-02-17 21:08:43,601 INFO  - Service name PRIVATE LESSON
+2017-02-17 21:08:43,601 INFO  - Service name SEMI-PRIVATE LESSON
+2017-02-17 21:08:43,602 INFO  - Service name CLINIC
+2017-02-17 21:08:43,602 INFO  - Service name RACQUET RE-STRINGING
+2017-02-17 21:08:43,602 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,602 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,602 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,606 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,606 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,606 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,606 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,606 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,606 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,607 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,613 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,613 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,613 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,613 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,613 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,615 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,615 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,616 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,616 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,616 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,616 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,616 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,619 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,633 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,634 INFO  - Service name JUNIOR LESSON
+2017-02-17 21:08:43,748 INFO  - Deleting service ID 86
+2017-02-17 21:08:43,840 INFO  - Deleting person 104
+2017-02-17 21:08:44,046 INFO  - UPdate person ID 103
+2017-02-17 21:08:44,048 INFO  - Inside dao 103
+2017-02-17 21:08:44,115 INFO  - Total persons 3
+2017-02-17 21:08:44,170 INFO  - New person ID 104
+2017-02-17 21:08:44,183 INFO  - Max person ID now 104
+2017-02-17 21:08:44,262 INFO  - Person with index 101 JOE
+2017-02-17 21:08:44,274 INFO  - Number of Coyne persons 1
+2017-02-17 21:08:44,274 INFO  - First name JOE

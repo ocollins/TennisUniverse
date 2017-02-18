@@ -32,7 +32,7 @@ public class LogInDispServlet extends HttpServlet {
         HttpSession session = request.getSession(true);
         session.invalidate();
 
-        String url = "/LogIn.jsp";
+        String url = "/login.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 
