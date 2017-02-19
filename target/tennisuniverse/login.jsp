@@ -9,15 +9,26 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title></title>
-    <%--<link href="css/employeeStyle.css" rel="stylesheet" type="text/css"/>--%>
+    <link href="css/login.css" rel="stylesheet" type="text/css"/>
 </head>
-<p>This is a Log In page</p>
+<h4>Please enter your user name and password</h4>
 <FORM ACTION="j_security_check" METHOD="POST">
     <TABLE>
-        <TR><TD>User name: <INPUT TYPE="TEXT" NAME="j_username">
-        <TR><TD>Password: <INPUT TYPE="PASSWORD" NAME="j_password">
-        <TR><TH><INPUT TYPE="SUBMIT" VALUE="Log In">
+        <TR><td class="label">User Name:</td><TD class="data"><INPUT TYPE="TEXT" NAME="j_username"></TD></TR>
+        <TR><td class="label">Password:</td><TD class="data"><INPUT TYPE="PASSWORD" NAME="j_password"></TD></TR>
+        <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Log In"></td></TR>
     </TABLE>
 </FORM>
+
+<h4>Or</h4>
+<h4>Register new user (!!Under construction!!)</h4>
+<form action="" method="post">
+    <TABLE>
+        <p>Enter your member ID</p>
+        <TR><td class="label">Member ID:</td><TD class="data"><INPUT TYPE="TEXT" NAME="account_id"></TD></TR>
+        <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Check Member ID"></td></TR>
+    </TABLE>
+
+</form>
 </body>
 </html>

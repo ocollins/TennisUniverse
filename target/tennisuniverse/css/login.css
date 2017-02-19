@@ -1,0 +1,52 @@
+body {
+    padding: 10px 20px;
+    margin: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+    background-color: rgb(232, 208, 148);
+}
+
+form {
+    width: 70%;
+    margin: auto;
+}
+
+table {
+    width: 40%;
+    border: solid 4px grey;
+    border-radius: 10px;
+    box-shadow: 10px -10px 5px grey;
+    margin: auto;
+    padding: 30px;
+}
+
+tr{
+    margin: auto;
+
+}
+
+td{
+    vertical-align: top;
+}
+
+td.label {
+    width: 40%;
+}
+
+td.data {
+    width: 60%;
+}
+
+h4 {
+    width: 40%;
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+}
+
+p{
+    text-align: center;
+}
+
+.submit_button {
+    padding-top: 10px;
+}

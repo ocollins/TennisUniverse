@@ -13,6 +13,7 @@
     <web-resource-collection>
       <web-resource-name>adminoptions</web-resource-name>
       <url-pattern>/adminoptions.jsp</url-pattern>
+      <!--<url-pattern>adminDispServlet</url-pattern>-->
     </web-resource-collection>
     <auth-constraint>
       <role-name>administrator</role-name>
