@@ -25,12 +25,12 @@
 - [X] Update project plan. Based on the design should be able to lay out more detail.
 
 ### Week 4
-- [ ] Create DB diagram
+- [X] Create DB diagram
 - [X] Create database and all tables/columns locally
 - [X] Add Hibernate config
 - [X] Create DAO for Member crud
 - [X] Add unit tests for DAO
-- [ ] Add user login  
+- [X] Add user login  
 - [ ] Add user registration
 - [X] Add Maven for building
 - [ ] Add entities for remaining tables
@@ -43,8 +43,7 @@
 - [X] Time log entries
 
 ### Week 6
-- [ ] Integration with ??? api - Calorie calculator functionality
-- [ ] Set up Security and Authentication processing for the LogIn page
+- [X] Set up Security and Authentication processing for the LogIn page
 - [ ] Set up Continuous Integration on openshift 
 - [ ] Time log entries
 
@@ -52,6 +51,7 @@
 - [ ] Time log entries
 
 ### Week 8
+- [ ] Integration with ??? api - Calorie calculator functionality
 - [ ] Code review
 - [ ] Time log entries
 
