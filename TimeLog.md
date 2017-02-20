@@ -45,9 +45,9 @@
 |2/15/2017|Create User and Roles tables|1|||
 |2/16/2017|Add more setup for Login page|2|||
 |2/17/2017|Work on the project|3|||
-|2/18/2017|Readings for week 6||||
-|2/19/2017|Work on Ind project||||
-|2/20/2017|Activities for week 5||||
+|2/18/2017|Readings for week 6, Independent research AngularJS training|6|||
+|2/19/2017|Work on Ind project, week 6 reading, activities|3|||
+|2/20/2017|Activities for week 5, reading|3|||
 |Week 6|||||
 |2/21/2017|||||
 |2/22/2017|||||
