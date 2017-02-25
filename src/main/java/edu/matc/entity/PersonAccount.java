@@ -27,10 +27,10 @@ public class PersonAccount {
 
     @Column(name = "NOTES")
     private String notes;
-
-   @ManyToOne
-   @JoinColumn(name = "PERSON_ID")
-   private Person person;
+//
+//   @ManyToOne
+//   @JoinColumn(name = "PERSON_ID")
+//   private Person person;
 
     /**
      * Instantiates a new Person account entity.

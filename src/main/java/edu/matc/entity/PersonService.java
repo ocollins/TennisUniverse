@@ -23,10 +23,10 @@ public class PersonService {
 
     @Column(name = "NOTES")
     private String notes;
-
-    @ManyToOne
-    @JoinColumn(name="PERSON_ID")
-    private Person persons;
+//
+//    @ManyToOne
+//    @JoinColumn(name="PERSON_ID")
+//    private Person persons;
 
     public PersonService () {
 

@@ -77,7 +77,7 @@ public class PersonDaoTest {
     public void deletePerson() throws Exception {
         //Delete the last person in the table
         int personToDelete = dao.getMaxPersonId();
-        logger.info("Deleting person " + personToDelete);
+        logger.info("%%%%%%%%%%%%%Deleting person %%%% " + personToDelete);
         dao.deletePerson(personToDelete);
 
         assertNull("Person " + personToDelete + " is still there ", dao.getPerson(personToDelete));

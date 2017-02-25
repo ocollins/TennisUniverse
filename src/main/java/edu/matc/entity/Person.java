@@ -75,11 +75,11 @@ public class Person {
 
 
 
-    @OneToMany(cascade = CascadeType.ALL)
-    private Set<PersonService> personServiceSet;
-
-    @OneToMany(cascade = CascadeType.ALL)
-    private Set<PersonAccount> personAccountSet;
+//    @OneToMany(cascade = CascadeType.ALL)
+//    private Set<PersonService> personServiceSet;
+//
+//    @OneToMany(cascade = CascadeType.ALL)
+//    private Set<PersonAccount> personAccountSet;
 
 
     /**
@@ -420,33 +420,33 @@ public class Person {
      * Gets person service set.
      * @return the person service set
      */
-    public Set<PersonService> getPersonServiceSet() {
-        return personServiceSet;
-    }
-
-    /**
-     * Sets person service set.
-     * @param personServiceSet the person service set
-     */
-    public void setPersonServiceSet(Set<PersonService> personServiceSet) {
-        this.personServiceSet = personServiceSet;
-    }
-
-    /**
-     * Gets person account set.
-     * @return the person account set
-     */
-    public Set<PersonAccount> getPersonAccountSet() {
-        return personAccountSet;
-    }
-
-    /**
-     * Sets person account set.
-     * @param personAccountSet the person account set
-     */
-    public void setPersonAccountSet(Set<PersonAccount> personAccountSet) {
-        this.personAccountSet = personAccountSet;
-    }
+//    public Set<PersonService> getPersonServiceSet() {
+//        return personServiceSet;
+//    }
+//
+//    /**
+//     * Sets person service set.
+//     * @param personServiceSet the person service set
+//     */
+//    public void setPersonServiceSet(Set<PersonService> personServiceSet) {
+//        this.personServiceSet = personServiceSet;
+//    }
+//
+//    /**
+//     * Gets person account set.
+//     * @return the person account set
+//     */
+//    public Set<PersonAccount> getPersonAccountSet() {
+//        return personAccountSet;
+//    }
+//
+//    /**
+//     * Sets person account set.
+//     * @param personAccountSet the person account set
+//     */
+//    public void setPersonAccountSet(Set<PersonAccount> personAccountSet) {
+//        this.personAccountSet = personAccountSet;
+//    }
 
     @Override
     public String toString() {
