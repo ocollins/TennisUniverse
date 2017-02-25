@@ -1,0 +1,12 @@
+<Context docBase="tennisuniverse" path="/tennisuniverse" reloadable="true">
+
+<Realm className="org.apache.catalina.realm.JDBCRealm"
+       driverName="com.mysql.jdbc.Driver"
+       connectionURL="jdbc:mysql://localhost:3306/TENNIS_UNIVERSE?user=tomcat&amp;password=tomcat"
+       userTable="USER" userNameCol="USER_NAME" userCredCol="USER_PASS"
+       userRoleTable="USER_ROLE" roleNameCol="ROLE_NAME">
+    <CredentialHandler
+            className="org.apache.catalina.realm.MessageDigestCredentialHandler"
+            algorithm="sha-256" />
+</Realm>
+</Context>

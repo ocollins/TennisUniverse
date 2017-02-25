@@ -14,6 +14,7 @@ import java.sql.Date;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.Calendar;
+import java.util.Set;
 
 
 import static java.time.LocalDate.now;
@@ -71,6 +72,15 @@ public class Person {
 
     @Column(name = "LAST_UPDATED")
     private Timestamp lastUpdated;
+
+
+
+    @OneToMany(cascade = CascadeType.ALL)
+    private Set<PersonService> personServiceSet;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    private Set<PersonAccount> personAccountSet;
+
 
     /**
      * Instantiates a new Person.
@@ -404,6 +414,38 @@ public class Person {
         java.util.Date now = calendar.getTime();
         java.sql.Timestamp currentTimestamp = new java.sql.Timestamp(now.getTime());
         this.lastUpdated = currentTimestamp;
+    }
+
+    /**
+     * Gets person service set.
+     * @return the person service set
+     */
+    public Set<PersonService> getPersonServiceSet() {
+        return personServiceSet;
+    }
+
+    /**
+     * Sets person service set.
+     * @param personServiceSet the person service set
+     */
+    public void setPersonServiceSet(Set<PersonService> personServiceSet) {
+        this.personServiceSet = personServiceSet;
+    }
+
+    /**
+     * Gets person account set.
+     * @return the person account set
+     */
+    public Set<PersonAccount> getPersonAccountSet() {
+        return personAccountSet;
+    }
+
+    /**
+     * Sets person account set.
+     * @param personAccountSet the person account set
+     */
+    public void setPersonAccountSet(Set<PersonAccount> personAccountSet) {
+        this.personAccountSet = personAccountSet;
     }
 
     @Override

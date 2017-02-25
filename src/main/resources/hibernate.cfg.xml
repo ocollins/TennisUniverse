@@ -21,11 +21,13 @@
         <property name="show_sql">true</property>
 
         <!-- List the annotated entity class/es -->
-        <mapping class="edu.matc.entity.Person"/>
-        <mapping class="edu.matc.entity.Service"/>
-        <!--<mapping class="edu.matc.entity.PersonAccount"/>
         <mapping class="edu.matc.entity.Account"/>
-        <mapping class="edu.matc.entity.PersonService"/>-->
+        <mapping class="edu.matc.entity.AdminAction"/>
+        <mapping class="edu.matc.entity.Person"/>
+        <mapping class="edu.matc.entity.PersonAccount"/>
+        <mapping class="edu.matc.entity.PersonService"/>
+        <mapping class="edu.matc.entity.Service"/>
+
 
     </session-factory>
 

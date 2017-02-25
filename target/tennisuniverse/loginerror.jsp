@@ -10,7 +10,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Error</title>
     <%--<link href="css/employeeStyle.css" rel="stylesheet" type="text/css"/>--%>
-</head>>
+</head>
 <h2>You are not authorized to access this page</h2>
 <p class="home"><a href="homeDispServlet">HOME</a></p>
 </body>
