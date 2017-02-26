@@ -11,9 +11,10 @@
   <!-- Protect everything within the "investing" directory. -->
   <security-constraint>
     <web-resource-collection>
-      <web-resource-name>adminoptions</web-resource-name>
-      <url-pattern>/adminoptions.jsp</url-pattern>
-      <!--<url-pattern>adminDispServlet</url-pattern>-->
+      <!--<web-resource-name>adminoptions</web-resource-name>
+      <url-pattern>/adminoptions.jsp</url-pattern>-->
+      <web-resource-name>test</web-resource-name>
+      <url-pattern>/test.jsp</url-pattern>
     </web-resource-collection>
     <auth-constraint>
       <role-name>administrator</role-name>
