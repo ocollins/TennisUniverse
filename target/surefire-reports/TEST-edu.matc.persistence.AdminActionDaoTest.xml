@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="edu.matc.persistence.AdminActionDaoTest" time="0.006" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="edu.matc.persistence.AdminActionDaoTest" time="0.037" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2016.3.4"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,10 +63,10 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="edu.matc.persistence.AdminActionDaoTest" name="getAllAdminActions" time="0.005"/>
-  <testcase classname="edu.matc.persistence.AdminActionDaoTest" name="getAdminAction" time="0.001"/>
-  <testcase classname="edu.matc.persistence.AdminActionDaoTest" name="deleteAdminAction" time="0"/>
-  <testcase classname="edu.matc.persistence.AdminActionDaoTest" name="addAdminAction" time="0"/>
-  <testcase classname="edu.matc.persistence.AdminActionDaoTest" name="getMaxAdminActionId" time="0"/>
+  <testcase classname="edu.matc.persistence.AdminActionDaoTest" name="getAllAdminActions" time="0.024"/>
+  <testcase classname="edu.matc.persistence.AdminActionDaoTest" name="getAdminAction" time="0"/>
+  <testcase classname="edu.matc.persistence.AdminActionDaoTest" name="deleteAdminAction" time="0.005"/>
+  <testcase classname="edu.matc.persistence.AdminActionDaoTest" name="addAdminAction" time="0.007"/>
+  <testcase classname="edu.matc.persistence.AdminActionDaoTest" name="getMaxAdminActionId" time="0.001"/>
   <testcase classname="edu.matc.persistence.AdminActionDaoTest" name="updateAdminAction" time="0"/>
 </testsuite>

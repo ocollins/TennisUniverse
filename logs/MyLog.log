@@ -5152,3 +5152,125 @@
 2017-02-25 21:43:45,622 INFO  - Person with index 101 JOE
 2017-02-25 21:43:45,633 INFO  - Number of Coyne persons 1
 2017-02-25 21:43:45,634 INFO  - First name JOE
+2017-02-26 12:34:12,653 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-02-26 12:34:12,663 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-02-26 12:34:12,666 INFO  - HHH000206: hibernate.properties not found
+2017-02-26 12:34:12,697 INFO  - HHH000021: Bytecode provider name : javassist
+2017-02-26 12:34:12,744 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-02-26 12:34:12,744 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-02-26 12:34:13,029 INFO  - HHH000041: Configured SessionFactory: null
+2017-02-26 12:34:13,372 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-02-26 12:34:13,385 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-02-26 12:34:13,388 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-02-26 12:34:13,389 INFO  - HHH000006: Autocommit mode: false
+2017-02-26 12:34:13,391 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-02-26 12:34:14,595 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-26 12:34:14,940 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-02-26 12:34:14,949 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-02-26 12:34:17,326 INFO  - Update service ID 86
+2017-02-26 12:34:18,333 INFO  - New service ID 88
+2017-02-26 12:34:18,767 INFO  - Max service ID now 88
+2017-02-26 12:34:18,817 INFO  - Code for private lesson 20
+2017-02-26 12:34:18,844 INFO  - Total services 30
+2017-02-26 12:34:18,844 INFO  - Service name PRIVATE LESSON
+2017-02-26 12:34:18,844 INFO  - Service name SEMI-PRIVATE LESSON
+2017-02-26 12:34:18,845 INFO  - Service name CLINIC
+2017-02-26 12:34:18,845 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,845 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,845 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,846 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,846 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,846 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,847 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,847 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,847 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,847 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,847 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,847 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,847 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,848 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,848 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,848 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,849 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,850 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,850 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,850 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,850 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,850 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,850 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,851 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,851 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,853 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,853 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:34:18,863 INFO  - Deleting service ID 88
+2017-02-26 12:34:19,091 INFO  - %%%%%%%%%%%%%Deleting person %%%% 104
+2017-02-26 12:34:19,406 INFO  - UPdate person ID 103
+2017-02-26 12:34:19,407 INFO  - Inside dao 103
+2017-02-26 12:34:19,590 INFO  - Total persons 3
+2017-02-26 12:34:19,633 INFO  - New person ID 104
+2017-02-26 12:34:19,643 INFO  - Max person ID now 104
+2017-02-26 12:34:19,665 INFO  - Person with index 101 JOE
+2017-02-26 12:34:19,693 INFO  - Number of Coyne persons 1
+2017-02-26 12:34:19,699 INFO  - First name JOE
+2017-02-26 12:35:27,610 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-02-26 12:35:27,619 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-02-26 12:35:27,625 INFO  - HHH000206: hibernate.properties not found
+2017-02-26 12:35:27,632 INFO  - HHH000021: Bytecode provider name : javassist
+2017-02-26 12:35:27,649 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-02-26 12:35:27,649 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-02-26 12:35:27,745 INFO  - HHH000041: Configured SessionFactory: null
+2017-02-26 12:35:27,937 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-02-26 12:35:27,943 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-02-26 12:35:27,944 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-02-26 12:35:27,944 INFO  - HHH000006: Autocommit mode: false
+2017-02-26 12:35:27,950 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-02-26 12:35:28,499 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-02-26 12:35:28,800 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-02-26 12:35:28,804 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-02-26 12:35:29,494 INFO  - Update service ID 89
+2017-02-26 12:35:29,626 INFO  - New service ID 91
+2017-02-26 12:35:29,635 INFO  - Max service ID now 91
+2017-02-26 12:35:29,754 INFO  - Code for private lesson 20
+2017-02-26 12:35:29,808 INFO  - Total services 32
+2017-02-26 12:35:29,808 INFO  - Service name PRIVATE LESSON
+2017-02-26 12:35:29,809 INFO  - Service name SEMI-PRIVATE LESSON
+2017-02-26 12:35:29,809 INFO  - Service name CLINIC
+2017-02-26 12:35:29,810 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,810 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,810 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,811 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,811 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,812 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,812 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,812 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,813 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,813 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,813 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,813 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,815 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,817 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,817 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,817 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,817 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,817 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,818 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,818 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,818 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,819 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,819 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,820 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,821 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,822 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,822 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,822 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,822 INFO  - Service name JUNIOR LESSON
+2017-02-26 12:35:29,858 INFO  - Deleting service ID 91
+2017-02-26 12:35:30,052 INFO  - %%%%%%%%%%%%%Deleting person %%%% 104
+2017-02-26 12:35:30,131 INFO  - UPdate person ID 103
+2017-02-26 12:35:30,131 INFO  - Inside dao 103
+2017-02-26 12:35:30,172 INFO  - Total persons 3
+2017-02-26 12:35:30,212 INFO  - New person ID 104
+2017-02-26 12:35:30,228 INFO  - Max person ID now 104
+2017-02-26 12:35:30,322 INFO  - Person with index 101 JOE
+2017-02-26 12:35:30,329 INFO  - Number of Coyne persons 1
+2017-02-26 12:35:30,330 INFO  - First name JOE
