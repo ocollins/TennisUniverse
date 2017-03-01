@@ -29,6 +29,8 @@ Author: Olena Collins
 
     <h2>Year-Round Tennis for the Whole Family</h2>
 
+    <h2><a href="adminoptions.jsp">TESTING ADMIN OPTIONS</a></h2>
+
     <ul id="intro">
         <li>We offer an array of leagues and lessons for all levels of adult players,<br />
             as well as social mixed doubles events and tournament opportunities.

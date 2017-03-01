@@ -7,7 +7,7 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="adminactions">
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="">
 
 <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
@@ -19,8 +19,9 @@
     <title>Admin</title>
 </head>
 
-<body ng-controller="AdminLoadController" as loadcontroller>
-<!--AngularJS-->
+
+<body>
+
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" type=""></script>
 <script type="text/javascript" src="js/adminaction.js"></script>
 <div id="container">
@@ -29,7 +30,13 @@
 
 <c:import url="menu.jsp"/>
 <h2>This is admin page. It is under construction!</h2>
-    <p>{{loadcontroller.product.action_desc}}</p>
+    <jsp:include page="/adminDispServlet"/>
+    <h2>Please select option from the list below</h2>
+    <c:forEach var="option" items="${adminActionsList}">
+        <p>${option.actionDesc}</p>
+
+    </c:forEach>
+    <c:out value="${message }"></c:out>
     <p></p>
 
 <%--<aside>

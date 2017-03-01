@@ -49,7 +49,8 @@ public class AdminDispServlet extends HttpServlet {
         AdminActionDao dao = new AdminActionDao();
 
         //Get a list of admin actions and store it in the session
-        session.setAttribute("adminActionsList", dao.getAllAdminActions());
+        request.setAttribute("adminActionsList", dao.getAllAdminActions());
+        request.setAttribute("message", "Testing message");
 
 //        String url = "/adminoptions.jsp";
 //        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

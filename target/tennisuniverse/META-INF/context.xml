@@ -1,4 +1,4 @@
-<Context docBase="tennisuniverse" path="/tennisuniverse" reloadable="true">
+<Context docBase="tennisuniverse" path="/tennisuniverse" reloadable="true" antiResourceLocking="true">
     <Realm className="org.apache.catalina.realm.JDBCRealm"
            driverName="com.mysql.jdbc.Driver"
            connectionURL="jdbc:mysql://localhost:3306/TENNIS_UNIVERSE?user=tomcat&amp;password=tomcat"
