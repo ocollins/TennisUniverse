@@ -37,22 +37,25 @@
 - [X] Time log entries
 
 ### Week 5- 
-- [ ] Complete remaining JSPs
-- [ ] Create display Member info functionality
+- [X] Add more JSPs
+- [X] Create display Admin Options functionality
 - [X] Add tests for Member info functionality
 - [X] Time log entries
 
 ### Week 6
 - [X] Set up Security and Authentication processing for the LogIn page
 - [ ] Set up Continuous Integration on openshift 
-- [ ] Time log entries
+- [X] Time log entries
 
 ### Week 7
-- [ ] Time log entries
-
+- [X] Time log entries
+- [ ] Deploy Admin Options on AWS
+- [ ] Add JSPs for Admin Options pages
+- [ ] Fix authentication
 ### Week 8
 - [ ] Integration with ??? api - Calorie calculator functionality
 - [ ] Code review
+- [ ] Add remaining Entities and DAOs
 - [ ] Time log entries
 
 ### Week 9
