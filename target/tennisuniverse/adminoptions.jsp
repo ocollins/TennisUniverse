@@ -7,6 +7,7 @@
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
+
 <html xmlns="http://www.w3.org/1999/xhtml" ng-app="">
 
 <head>
@@ -15,7 +16,7 @@
     <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type=""></script>--%>
-    <link href="css/adultTennis.css" rel="stylesheet" type="text/css"/>
+    <link href="css/adminoptions.css" rel="stylesheet" type="text/css"/>
     <title>Admin</title>
 </head>
 
@@ -23,21 +24,25 @@
 <body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" type=""></script>
+
 <script type="text/javascript" src="js/adminaction.js"></script>
 <div id="container">
 <!--include head element, which is stored in jsp directory-->
 <c:import url="head.jsp"/>
 
 <c:import url="menu.jsp"/>
+
 <h2>This is admin page. It is under construction!</h2>
     <jsp:include page="/adminDispServlet"/>
-    <h2>Please select option from the list below</h2>
-    <c:forEach var="option" items="${adminActionsList}">
-        <p>${option.actionDesc}</p>
+    <div id="selectoptions">
+        <p>Please select option from the list below</p>
 
-    </c:forEach>
-    <c:out value="${message }"></c:out>
-    <p></p>
+        <select>
+            <c:forEach var="option" items="${adminActionsList}">
+                <option value="1">${option.actionDesc}</option>
+            </c:forEach>
+        </select>
+    </div>
 
 <%--<aside>
     <p><img src="images/people.jpg" alt="Tennis People" id="peopleimage"></img></p>
