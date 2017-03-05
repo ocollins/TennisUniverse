@@ -9,6 +9,7 @@ edu/matc/persistence/PersonDao.class
 edu/matc/entity/Account.class
 edu/matc/persistence/SessionFactoryProvider.class
 edu/matc/entity/PersonService.class
+edu/matc/controller/FitnessDispServlet.class
 edu/matc/controller/AdminDispServlet.class
 edu/matc/persistence/ServiceDao.class
 edu/matc/persistence/AdminActionDao.class

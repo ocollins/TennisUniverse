@@ -32,10 +32,9 @@
 
 <c:import url="menu.jsp"/>
 
-<h2>This is admin page. It is under construction!</h2>
     <jsp:include page="/adminDispServlet"/>
     <div id="selectoptions">
-        <p>Please select option from the list below</p>
+        <p id="instruction">Please select option from the list below</p>
 
         <select>
             <c:forEach var="option" items="${adminActionsList}">
@@ -44,19 +43,6 @@
         </select>
     </div>
 
-<%--<aside>
-    <p><img src="images/people.jpg" alt="Tennis People" id="peopleimage"></img></p>
-</aside>
-
-<div id="lessons">
-    <h2>Adult Programs</h2>
-    <ul id="intro">
-        <li><strong>Beginner Clinic</strong>
-            This clinic is for the beginner or experienced beginner <br />
-            who is looking for instruction in all facets of the game in a relaxed atmosphere.
-        </li>
-    </ul>
-</div>--%>
 
 <c:import url="footer.jsp"/>
 </div>

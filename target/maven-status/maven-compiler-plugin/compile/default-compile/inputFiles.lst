@@ -8,6 +8,7 @@
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/entity/PersonAccount.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/entity/PersonService.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/LogInDispServlet.java
+/home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/FitnessDispServlet.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/entity/AdminAction.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/HomeDispServlet.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/persistence/PersonDao.java
