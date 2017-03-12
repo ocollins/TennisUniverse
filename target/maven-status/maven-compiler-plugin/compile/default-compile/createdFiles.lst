@@ -4,6 +4,7 @@ edu/matc/controller/displayAdminActions.class
 edu/matc/entity/PersonAccount.class
 edu/matc/entity/Service.class
 edu/matc/entity/AdminAction.class
+edu/matc/controller/VerifyPersonServlet.class
 edu/matc/controller/AdultTennisDispServlet.class
 edu/matc/persistence/PersonDao.class
 edu/matc/entity/Account.class

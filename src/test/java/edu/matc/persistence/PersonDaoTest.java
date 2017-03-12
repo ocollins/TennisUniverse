@@ -23,8 +23,8 @@ public class PersonDaoTest {
 
     @Before
     public void setup() {
-
         dao = new PersonDao();
+
     }
 
     @Test
@@ -68,8 +68,8 @@ public class PersonDaoTest {
 
         //Check if a new person with new id exists
         assertNotNull("Person was not inserted ", dao.getPerson(id));
-        assertEquals("Inserted person's last name is not SHARAPOVA ", "SHARAPOVA", dao.getPerson(id).getLastName());
-        assertEquals("Inserted person's last name is not MARIA ", "MARIA", dao.getPerson(id).getFirstName());
+        assertEquals("Inserted person's last name is not SHARAPOVA ", newPerson.getLastName(), dao.getPerson(id).getLastName());
+        assertEquals("Inserted person's last name is not MARIA ", newPerson.getFirstName(), dao.getPerson(id).getFirstName());
 
     }
 

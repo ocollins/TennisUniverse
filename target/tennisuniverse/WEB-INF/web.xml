@@ -20,7 +20,6 @@
       <role-name>administrator</role-name>
     </auth-constraint>
   </security-constraint>
-
   <!--<security-role>
     <role-name>registered-user</role-name>
   </security-role>-->
