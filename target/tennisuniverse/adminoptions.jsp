@@ -33,15 +33,20 @@
 <c:import url="menu.jsp"/>
 
     <jsp:include page="/adminDispServlet"/>
+
+<form action="/adminActionDirectoryServlet" method="get">
     <div id="selectoptions">
         <p id="instruction">Please select option from the list below</p>
 
         <select>
             <c:forEach var="option" items="${adminActionsList}">
-                <option value="1">${option.actionDesc}</option>
+                <option value="${option.adminActionId}">${option.actionDesc}</option>
             </c:forEach>
         </select>
+
+        <input type="submit" value="OK">
     </div>
+</form>
 
 
 <c:import url="footer.jsp"/>

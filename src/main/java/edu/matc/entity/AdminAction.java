@@ -20,6 +20,9 @@ public class AdminAction {
     @Column(name = "ACTION_DESC")
     private String actionDesc;
 
+    @Column(name = "ACTION_SERVLET_NAME")
+    private String actionServletName;
+
     /**
      * Instantiates a new Admin action.
      */
@@ -29,12 +32,12 @@ public class AdminAction {
     /**
      * Instantiates a new Admin action.
      *
-     * @param adminActionId the admin action id
-     * @param actionDesc    the action desc
+     * @param actionDesc        the action desc
+     * @param actionServletName the action servlet name
      */
-    public AdminAction (int adminActionId, String actionDesc) {
-        this.adminActionId = adminActionId;
+    public AdminAction(String actionDesc, String actionServletName) {
         this.actionDesc = actionDesc;
+        this.actionServletName = actionServletName;
     }
 
     /**
@@ -73,5 +76,21 @@ public class AdminAction {
         this.actionDesc = actionDesc;
     }
 
+    /**
+     * Gets action servlet name.
+     *
+     * @return the action servlet name
+     */
+    public String getActionServletName() {
+        return actionServletName;
+    }
 
+    /**
+     * Sets action servlet name.
+     *
+     * @param actionServletName the action servlet name
+     */
+    public void setActionServletName(String actionServletName) {
+        this.actionServletName = actionServletName;
+    }
 }

@@ -67,8 +67,8 @@ public class Person {
     @Column(name = "ZIP")
     private String zip;
 
-    @Column(name = "USTA_RATING")
-    private String ustaRating;
+    @Column(name = "PHONE")
+    private String phone;
 
     @Column(name = "LAST_UPDATED")
     private Timestamp lastUpdated;
@@ -102,12 +102,12 @@ public class Person {
      * @param city         the city
      * @param state        the state
      * @param zip          the zip
-     * @param ustaRating   the usta rating
+     * @param phone        the member phone number
      //* @param lastUpdated  the last updated
      */
     public Person(int ssnNr, String firstName, String lastName, LocalDate birthDt, int personType,
                   String emailAddr, String addressLine1, String addressLine2, String city,
-                  String state, String zip, String ustaRating) {
+                  String state, String zip, String phone) {
         this.ssnNr = ssnNr;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -119,7 +119,7 @@ public class Person {
         this.city = city;
         this.state = state;
         this.zip = zip;
-        this.ustaRating = ustaRating;
+        this.phone = phone;
         setLastUpdated();
         this.lastUpdated = getLastUpdated();
         //this.lastUpdated = lastUpdated;
@@ -140,11 +140,11 @@ public class Person {
      * @param city         the city
      * @param state        the state
      * @param zip          the zip
-     * @param ustaRating   the usta rating
+     * @param phone   the usta rating
      */
     public Person(int personId, int ssnNr, String firstName, String lastName, LocalDate birthDt, int personType,
                   String emailAddr, String addressLine1, String addressLine2, String city,
-                  String state, String zip, String ustaRating) {
+                  String state, String zip, String phone) {
         this.personId = personId;
         this.ssnNr = ssnNr;
         this.firstName = firstName;
@@ -157,7 +157,7 @@ public class Person {
         this.city = city;
         this.state = state;
         this.zip = zip;
-        this.ustaRating = ustaRating;
+        this.phone = phone;
         setLastUpdated();
         this.lastUpdated = getLastUpdated();
     }
@@ -383,17 +383,17 @@ public class Person {
      *
      * @return the usta rating
      */
-    public String getUstaRating() {
-        return ustaRating;
+    public String getphone() {
+        return phone;
     }
 
     /**
      * Sets usta rating.
      *
-     * @param ustaRating the usta rating
+     * @param phone the usta rating
      */
-    public void setUstaRating(String ustaRating) {
-        this.ustaRating = ustaRating;
+    public void setphone(String phone) {
+        this.phone = phone;
     }
 
     /**
@@ -463,7 +463,7 @@ public class Person {
                 ", city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", zip='" + zip + '\'' +
-                ", ustaRating='" + ustaRating + '\'' +
+                ", phone='" + phone + '\'' +
                 ", lastUpdated=" + lastUpdated +
                 '}';
     }

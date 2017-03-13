@@ -23,13 +23,15 @@ Author: Olena Collins
 <body>
 <!--include head element, which is stored in jsp directory-->
 <c:import url="head.jsp"/>
+<c:import url="menu.jsp"/>
 
 <div id="container2">
-    <c:import url="menu.jsp"/>
+
 
     <h2>Year-Round Tennis for the Whole Family</h2>
 
     <h2><a href="adminoptions.jsp">TESTING ADMIN OPTIONS</a></h2>
+    <h2><a href="adminActionDirectoryServlet">TESTING ADD MEMBER</a></h2>
 
     <ul id="intro">
         <li>We offer an array of leagues and lessons for all levels of adult players,<br />

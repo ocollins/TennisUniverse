@@ -61,7 +61,7 @@ public class PersonDaoTest {
         dateConverter.convertToDatabaseColumn(dob);
 
         Person newPerson = new Person(888888888, "MARIA", "SHARAPOVA", dob, 02, "MSHARAP@GMAIL.COM",
-                "3 MAIN ST.", "", "SUN PRAIRIE", "WI", "53590", "4.0");
+                "3 MAIN ST.", "", "SUN PRAIRIE", "WI", "53590", "6089998811");
         int id = dao.addPerson(newPerson);
         logger.info("New person ID " + id);
         logger.info("Max person ID now " + dao.getMaxPersonId());
@@ -95,7 +95,7 @@ public class PersonDaoTest {
 
         //Create person information to update in the DB
         Person personToUpdate = new Person(personId, 888888888, "Maria", "Smith", dob, 02, "mshar@gmail.com",
-                "3 Main st", "", "Sun Prairie", "WI", "53590", "4.0");
+                "3 Main st", "", "Sun Prairie", "WI", "53590", "11122223344");
         //personToUpdate.setFirstName("Dawn");
 
         //Update person

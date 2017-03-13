@@ -48,66 +48,66 @@
       <Position>2</Position>
       <DataType>varchar(30)|0</DataType>
     </column>
-    <key id="23" parent="10" name="PRIMARY">
+    <column id="23" parent="10" name="ACTION_SERVLET_NAME">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <key id="24" parent="10" name="PRIMARY">
       <ColNames>ADMIN_ACTION_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="24" parent="11" name="PERSON_ID">
+    <column id="25" parent="11" name="PERSON_ID">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="25" parent="11" name="SSN_NR">
+    <column id="26" parent="11" name="SSN_NR">
       <Position>2</Position>
       <DataType>int(9)|0</DataType>
     </column>
-    <column id="26" parent="11" name="FIRST_NAME">
+    <column id="27" parent="11" name="FIRST_NAME">
       <Position>3</Position>
       <DataType>varchar(35)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="27" parent="11" name="LAST_NAME">
+    <column id="28" parent="11" name="LAST_NAME">
       <Position>4</Position>
       <DataType>varchar(35)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="28" parent="11" name="BIRTH_DT">
+    <column id="29" parent="11" name="BIRTH_DT">
       <Position>5</Position>
       <DataType>date|0</DataType>
     </column>
-    <column id="29" parent="11" name="PERSON_TYPE">
+    <column id="30" parent="11" name="PERSON_TYPE">
       <Position>6</Position>
       <DataType>int(2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="30" parent="11" name="EMAIL_ADDR">
+    <column id="31" parent="11" name="EMAIL_ADDR">
       <Position>7</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="31" parent="11" name="ADDRESS_LINE1">
+    <column id="32" parent="11" name="ADDRESS_LINE1">
       <Position>8</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="32" parent="11" name="ADDRESS_LINE2">
+    <column id="33" parent="11" name="ADDRESS_LINE2">
       <Position>9</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="33" parent="11" name="CITY">
+    <column id="34" parent="11" name="CITY">
       <Position>10</Position>
       <DataType>varchar(45)|0</DataType>
     </column>
-    <column id="34" parent="11" name="STATE">
+    <column id="35" parent="11" name="STATE">
       <Position>11</Position>
       <DataType>varchar(2)|0</DataType>
     </column>
-    <column id="35" parent="11" name="ZIP">
+    <column id="36" parent="11" name="ZIP">
       <Position>12</Position>
       <DataType>varchar(5)|0</DataType>
-    </column>
-    <column id="36" parent="11" name="USTA_RATING">
-      <Position>13</Position>
-      <DataType>varchar(3)|0</DataType>
     </column>
     <column id="37" parent="11" name="LAST_UPDATED">
       <Position>14</Position>
@@ -115,171 +115,175 @@
       <NotNull>1</NotNull>
       <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
     </column>
-    <key id="38" parent="11" name="PRIMARY">
+    <column id="38" parent="11" name="PHONE">
+      <Position>13</Position>
+      <DataType>varchar(10)|0</DataType>
+    </column>
+    <key id="39" parent="11" name="PRIMARY">
       <ColNames>PERSON_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="39" parent="12" name="ACCOUNT_ID">
+    <column id="40" parent="12" name="ACCOUNT_ID">
       <Position>1</Position>
       <DataType>int(5)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="40" parent="12" name="PERSON_ID">
+    <column id="41" parent="12" name="PERSON_ID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="41" parent="12" name="ACCOUNT_TYPE">
+    <column id="42" parent="12" name="ACCOUNT_TYPE">
       <Position>3</Position>
       <DataType>int(3)|0</DataType>
     </column>
-    <column id="42" parent="12" name="EFF_DATE">
+    <column id="43" parent="12" name="EFF_DATE">
       <Position>4</Position>
       <DataType>date|0</DataType>
     </column>
-    <column id="43" parent="12" name="EXP_DATE">
+    <column id="44" parent="12" name="EXP_DATE">
       <Position>5</Position>
       <DataType>date|0</DataType>
     </column>
-    <column id="44" parent="12" name="NOTES">
+    <column id="45" parent="12" name="NOTES">
       <Position>6</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <index id="45" parent="12" name="ACCOUNT_TYPE">
+    <index id="46" parent="12" name="ACCOUNT_TYPE">
       <ColNames>ACCOUNT_TYPE</ColNames>
     </index>
-    <index id="46" parent="12" name="PERSON_ID">
+    <index id="47" parent="12" name="PERSON_ID">
       <ColNames>PERSON_ID</ColNames>
     </index>
-    <key id="47" parent="12" name="PRIMARY">
+    <key id="48" parent="12" name="PRIMARY">
       <ColNames>ACCOUNT_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="48" parent="12" name="PERSON_ACCOUNT_ibfk_1">
+    <foreign-key id="49" parent="12" name="PERSON_ACCOUNT_ibfk_1">
       <ColNames>PERSON_ID</ColNames>
       <RefSchemaName>TENNIS_UNIVERSE</RefSchemaName>
       <RefTableName>PERSON</RefTableName>
       <RefColNames>PERSON_ID</RefColNames>
       <OnDelete>delete</OnDelete>
     </foreign-key>
-    <foreign-key id="49" parent="12" name="PERSON_ACCOUNT_ibfk_2">
+    <foreign-key id="50" parent="12" name="PERSON_ACCOUNT_ibfk_2">
       <ColNames>ACCOUNT_TYPE</ColNames>
       <RefSchemaName>TENNIS_UNIVERSE</RefSchemaName>
       <RefTableName>ACCOUNT</RefTableName>
       <RefColNames>ACCOUNT_TYPE</RefColNames>
       <OnDelete>delete</OnDelete>
     </foreign-key>
-    <column id="50" parent="13" name="PERSON_SERVICE_ID">
+    <column id="51" parent="13" name="PERSON_SERVICE_ID">
       <Position>1</Position>
       <DataType>int(5)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="51" parent="13" name="PERSON_ID">
+    <column id="52" parent="13" name="PERSON_ID">
       <Position>2</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="52" parent="13" name="SERVICE_ID">
+    <column id="53" parent="13" name="SERVICE_ID">
       <Position>3</Position>
       <DataType>int(3)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="53" parent="13" name="SERVICE_DATE">
+    <column id="54" parent="13" name="SERVICE_DATE">
       <Position>4</Position>
       <DataType>date|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="54" parent="13" name="NOTES">
+    <column id="55" parent="13" name="NOTES">
       <Position>5</Position>
       <DataType>varchar(100)|0</DataType>
     </column>
-    <index id="55" parent="13" name="PERSON_ID">
+    <index id="56" parent="13" name="PERSON_ID">
       <ColNames>PERSON_ID</ColNames>
     </index>
-    <index id="56" parent="13" name="SERVICE_ID">
+    <index id="57" parent="13" name="SERVICE_ID">
       <ColNames>SERVICE_ID</ColNames>
     </index>
-    <key id="57" parent="13" name="PRIMARY">
+    <key id="58" parent="13" name="PRIMARY">
       <ColNames>PERSON_SERVICE_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <foreign-key id="58" parent="13" name="PERSON_SERVICE_ibfk_1">
+    <foreign-key id="59" parent="13" name="PERSON_SERVICE_ibfk_1">
       <ColNames>PERSON_ID</ColNames>
       <RefSchemaName>TENNIS_UNIVERSE</RefSchemaName>
       <RefTableName>PERSON</RefTableName>
       <RefColNames>PERSON_ID</RefColNames>
       <OnDelete>delete</OnDelete>
     </foreign-key>
-    <foreign-key id="59" parent="13" name="PERSON_SERVICE_ibfk_2">
+    <foreign-key id="60" parent="13" name="PERSON_SERVICE_ibfk_2">
       <ColNames>SERVICE_ID</ColNames>
       <RefSchemaName>TENNIS_UNIVERSE</RefSchemaName>
       <RefTableName>SERVICE</RefTableName>
       <RefColNames>SERVICE_ID</RefColNames>
       <OnDelete>delete</OnDelete>
     </foreign-key>
-    <column id="60" parent="14" name="SERVICE_ID">
+    <column id="61" parent="14" name="SERVICE_ID">
       <Position>1</Position>
       <DataType>int(3)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="61" parent="14" name="SERVICE_CODE">
+    <column id="62" parent="14" name="SERVICE_CODE">
       <Position>2</Position>
       <DataType>varchar(2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="62" parent="14" name="SERVICE_DESC">
+    <column id="63" parent="14" name="SERVICE_DESC">
       <Position>3</Position>
       <DataType>varchar(35)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="63" parent="14" name="SERVICE_CHARGE">
+    <column id="64" parent="14" name="SERVICE_CHARGE">
       <Position>4</Position>
       <DataType>decimal(9,2)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="64" parent="14" name="PRIMARY">
+    <key id="65" parent="14" name="PRIMARY">
       <ColNames>SERVICE_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="65" parent="15" name="USER_ID">
+    <column id="66" parent="15" name="USER_ID">
       <Position>1</Position>
       <DataType>int(3)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="66" parent="15" name="USER_NAME">
+    <column id="67" parent="15" name="USER_NAME">
       <Position>2</Position>
       <DataType>varchar(15)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="67" parent="15" name="USER_PASS">
+    <column id="68" parent="15" name="USER_PASS">
       <Position>3</Position>
       <DataType>varchar(15)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="68" parent="15" name="PRIMARY">
+    <key id="69" parent="15" name="PRIMARY">
       <ColNames>USER_ID</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="69" parent="16" name="USER_ROLES_ID">
+    <column id="70" parent="16" name="USER_ROLES_ID">
       <Position>1</Position>
       <DataType>int(3)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="70" parent="16" name="USER_NAME">
+    <column id="71" parent="16" name="USER_NAME">
       <Position>2</Position>
       <DataType>varchar(15)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="71" parent="16" name="ROLE_NAME">
+    <column id="72" parent="16" name="ROLE_NAME">
       <Position>3</Position>
       <DataType>varchar(15)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="72" parent="16" name="PRIMARY">
+    <key id="73" parent="16" name="PRIMARY">
       <ColNames>USER_ROLES_ID</ColNames>
       <Primary>1</Primary>
     </key>

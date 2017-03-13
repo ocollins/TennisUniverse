@@ -52,10 +52,10 @@ public class VerifyPersonServlet extends HttpServlet {
 
         //Remove the old session
         HttpSession session = request.getSession(true);
-        session.invalidate();
+        //session.invalidate();
 
         //Create a new session
-        session = request.getSession(true);
+       // session = request.getSession(true);
 
         //Create Person DAO instance
         PersonDao dao = new PersonDao();

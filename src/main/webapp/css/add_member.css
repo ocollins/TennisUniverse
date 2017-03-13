@@ -1,0 +1,19 @@
+@import url('base.css');
+
+
+#instruction {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#selectoptions {
+    text-align: center;
+
+}
+
+#buildingimage {
+    border-radius: 10px;
+    box-shadow: 10px -10px 5px grey;
+    width: 90%;
+}
+

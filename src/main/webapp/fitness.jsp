@@ -58,8 +58,6 @@
     </div>
 
 
-
-
         <form action="" id="calories_form" method="post">
             <div id="user_info_div">
                 <input type="text" name="" id="weight_text" value="Enter your weight" required>

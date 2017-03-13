@@ -6,21 +6,37 @@ body {
     background-color: rgb(232, 208, 148);
 }
 
+#header {
+    width: 80%;
+    margin: auto;
+}
+
 #headerimage {
     /*border: 10px solid yellow;*/
-    margin: 1px 20px 10px;
+    margin: 1px 30px 10px 10px;
+    float: left;
+    /*padding-left: 50px;*/
+}
+
+#phone{
+    font-size: 25px;
+    float: left;
+    padding-top: 25px;
+    font-weight: bold;
+    color: darkslategrey;
 }
 
 #menu {
     height: 40px;
-    margin-top: 5px;
-    margin-left: 40px;
-    width: 100%;
+    margin: auto;
+    width: 80%;
+    clear: left;
 }
 
 #menu ul {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    width:95% ;
+    /*padding: 0;*/
 
 }
 
@@ -29,9 +45,18 @@ body {
     float: left;
     border-radius: 10px;
     margin:0 0 0.25em 0;
+    background-color: rgb(71, 110, 44);
+    border: solid 4px rgba(232, 208, 148, 0.5);
+    text-align: center;
+    width: 18%;
+    margin: 2px;
 }
 
-#menu ul li a:hover {
+li {
+    text-align: center;
+}
+
+#menu ul li:hover {
     background-color: rgb(112, 144, 126);
 }
 
@@ -39,22 +64,29 @@ body {
     display: block;
     float: left;
     height: 20px;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 50px 10px 30px;
     font-size: 20px;
     font-weight: bold;
     text-decoration: none;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(71, 110, 44);
     color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    border: solid 4px rgba(232, 208, 148, 0.5);
     margin-left: 4px;
+    width: 60%;
+}
+
+footer {
+    text-align: center;
+    margin-top: 230px;
+    clear: left;
+
 }
 
 #container2 {
     float: left;
     width: 50%;
+    clear: left;
 }
 
 aside {
@@ -88,8 +120,3 @@ p {
     width: 90%;
 }
 
-footer {
-    text-align: center;
-    margin-top: 30px;
-    clear: left;
-}
