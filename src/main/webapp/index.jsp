@@ -25,48 +25,50 @@ Author: Olena Collins
 <c:import url="head.jsp"/>
 <c:import url="menu.jsp"/>
 
-<div id="container2">
+<p><a href="adminoptions.jsp">TESTING ADMIN OPTIONS</a></p>
+<p><a href="adminActionDirectoryServlet">TESTING ADD MEMBER</a></p>
 
+<div id="container">
+    <div id="left_box">
+        <h2>Year-Round Tennis for the Whole Family</h2>
 
-    <h2>Year-Round Tennis for the Whole Family</h2>
+        <ul id="intro">
+            <li>We offer an array of leagues and lessons for all levels of adult players,<br />
+                as well as social mixed doubles events and tournament opportunities.
+            </li>
+            <li>Extensive junior program designed to <br />
+                develop a love for the game, from tots to competitive high school athletes. <br />
+                Kids can participate in group and private lessons, leagues, and tournaments. <br />
+                They truly become part of the Tennis Universe family.
+            </li>
+            <li>8 Indoor Hard Courts & 4 Outdoor Courts.
+            </li>
+            <li>Members enjoy our state of the art workout areas, pool, racquetball courts and locker rooms.
+            </li>
+            <li>Free Childcare.
+            </li>
+         </ul>
+    </div>
 
-    <h2><a href="adminoptions.jsp">TESTING ADMIN OPTIONS</a></h2>
-    <h2><a href="adminActionDirectoryServlet">TESTING ADD MEMBER</a></h2>
-
-    <ul id="intro">
-        <li>We offer an array of leagues and lessons for all levels of adult players,<br />
-            as well as social mixed doubles events and tournament opportunities.
-        </li>
-        <li>Extensive junior program designed to <br />
-            develop a love for the game, from tots to competitive high school athletes. <br />
-            Kids can participate in group and private lessons, leagues, and tournaments. <br />
-            They truly become part of the Tennis Universe family.
-        </li>
-        <li>8 Indoor Hard Courts & 4 Outdoor Courts.
-        </li>
-        <li>Members enjoy our state of the art workout areas, pool, racquetball courts and locker rooms.
-        </li>
-        <li>Free Childcare.
-        </li>
-    </ul>
+    <div id="right_box">
+        <p><img src="images/building.jpg" alt="Building" id="buildingimage"></img></p>
+        <h2>Court Time</h2>
+        <p>
+            Monday to Friday 7am - 9:45pm <br/>
+            Saturday & Sunday 9am - 6pm <br/>
+        </p>
+        <h2>Tennis Shop</h2>
+        <p>
+            <em>Tennis Universe</em> offers the most recent <br/>
+            frames and accessories from the <br/>
+            top brands. We have highly trained <br/>
+            stringing experts who can service <br/>
+            any racquet needs.
+        </p>
+    </div>
 </div>
 
-<aside>
-    <p><img src="images/building.jpg" alt="Building" id="buildingimage"></img></p>
-    <h2>Court Time</h2>
-    <p>
-        Monday to Friday 7am - 9:45pm <br/>
-        Saturday & Sunday 9am - 6pm <br/>
-    </p>
-    <h2>Tennis Shop</h2>
-    <p>
-        <em>Tennis Universe</em> offers the most recent <br/>
-        frames and accessories from the <br/>
-        top brands. We have highly trained <br/>
-        stringing experts who can service <br/>
-        any racquet needs.
-    </p>
-</aside>
+
 
 
 <c:import url="footer.jsp"/>

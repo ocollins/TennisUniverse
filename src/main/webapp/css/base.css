@@ -13,8 +13,9 @@ body {
 
 #headerimage {
     /*border: 10px solid yellow;*/
-    margin: 1px 30px 10px 10px;
+    margin: 1px 0px 10px 10px;
     float: left;
+
     /*padding-left: 50px;*/
 }
 

@@ -7,40 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36d9aa19-5294-401c-9575-a120181925f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/dba/dll.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/AdminActionDirectoryServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/add_member.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/add_member.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/AdminAction.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/entity/AdminAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/edu/matc/entity/Person.class" afterPath="$PROJECT_DIR$/target/classes/edu/matc/entity/Person.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/META-INF/contextcopy.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tennisuniverse.war" afterPath="$PROJECT_DIR$/target/tennisuniverse.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tennisuniverse/WEB-INF/classes/edu/matc/entity/AdminAction.class" afterPath="$PROJECT_DIR$/target/tennisuniverse/WEB-INF/classes/edu/matc/entity/AdminAction.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tennisuniverse/WEB-INF/classes/edu/matc/entity/Person.class" afterPath="$PROJECT_DIR$/target/tennisuniverse/WEB-INF/classes/edu/matc/entity/Person.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/AdminActionDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/AdminActionDaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/PersonDaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/edu/matc/persistence/PersonDaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/bfd78dad-4e1e-4395-a998-5d0d4f32eae7.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/bfd78dad-4e1e-4395-a998-5d0d4f32eae7.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/MyLog.log" afterPath="$PROJECT_DIR$/logs/MyLog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dba/createPerson.sql" afterPath="$PROJECT_DIR$/src/dba/createPerson.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dba/createaAdminAction.sql" afterPath="$PROJECT_DIR$/src/dba/createaAdminAction.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/VerifyPersonServlet.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/VerifyPersonServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/AdminAction.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/AdminAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Person.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/adminoptions.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/adminoptions.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/adminoptions.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/adminoptions.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/adultTennis.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/adultTennis.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TennisUniverse.iml" afterPath="$PROJECT_DIR$/TennisUniverse.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/add_member.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/add_member.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/add_member.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/add_member.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/base.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/base.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/club.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/club.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/fitness.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/fitness.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/fitness.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/fitness.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/AdminActionDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/AdminActionDaoTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/PersonDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/edu/matc/persistence/PersonDaoTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tennisuniverse/adminoptions.jsp" afterPath="$PROJECT_DIR$/target/tennisuniverse/adminoptions.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tennisuniverse/css/adultTennis.css" afterPath="$PROJECT_DIR$/target/tennisuniverse/css/adultTennis.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tennisuniverse/css/club.css" afterPath="$PROJECT_DIR$/target/tennisuniverse/css/club.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/tennisuniverse/index.jsp" afterPath="$PROJECT_DIR$/target/tennisuniverse/index.jsp" />
     </list>
@@ -147,11 +123,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="add_member.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="add_member.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/add_member.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
+            <state relative-caret-position="94">
+              <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -160,8 +136,8 @@
       <file leaf-file-name="add_member.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/add_member.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+            <state relative-caret-position="95">
+              <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -170,8 +146,8 @@
       <file leaf-file-name="base.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="12" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="1" />
+            <state relative-caret-position="-708">
+              <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -190,18 +166,28 @@
       <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="912">
+              <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="club.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="club.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/club.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+            <state relative-caret-position="116">
+              <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/tomee/conf/server.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2736">
+              <caret line="144" column="47" lean-forward="false" selection-start-line="144" selection-start-column="47" selection-end-line="144" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -297,8 +283,6 @@
         <option value="$PROJECT_DIR$/src/dba/insertPerson.sql" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/test.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
-        <option value="$USER_HOME$/tomee/conf/server.xml" />
         <option value="$PROJECT_DIR$/logs/MyLog.log" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/login.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
@@ -314,14 +298,16 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/Person.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/PersonDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/AdminActionDirectoryServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/add_member.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/add_member.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/adultTennis.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/adminoptions.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/fitness.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/css/base.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
+        <option value="$USER_HOME$/tomee/conf/server.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/base.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/club.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/add_member.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/add_member.css" />
       </list>
     </option>
   </component>
@@ -403,7 +389,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -594,7 +579,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="META-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -745,10 +730,6 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dba" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -766,8 +747,9 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1463,6 +1445,9 @@
       <workItem from="1489333244658" duration="769000" />
       <workItem from="1489334413547" duration="511000" />
       <workItem from="1489349861476" duration="16030000" />
+      <workItem from="1489450318537" duration="5525000" />
+      <workItem from="1489456036981" duration="2198000" />
+      <workItem from="1489458542868" duration="826000" />
     </task>
     <servers />
   </component>
@@ -1499,7 +1484,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="261631000" />
+    <option name="totallyTimeSpent" value="270180000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1516,21 +1501,20 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5451613" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23333333" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272101" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3761468" sideWeight="0.5018787" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11887727" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42150536" sideWeight="0.49812132" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3172043" sideWeight="0.49812132" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24096386" sideWeight="0.25308642" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16451614" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2135388" sideWeight="0.7713755" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329891" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2135388" sideWeight="0.22862454" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22069345" sideWeight="0.72365594" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.03577325" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22069345" sideWeight="0.2763441" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22179417" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24956971" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1549,6 +1533,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16451614" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295964" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -1735,19 +1720,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" />
     <entry file="file://$PROJECT_DIR$/src/main/webapp/test.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/tomee/conf/server.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="142" column="14" lean-forward="true" selection-start-line="142" selection-start-column="14" selection-end-line="142" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -1778,7 +1755,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1803,7 +1779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="32" column="1" lean-forward="false" selection-start-line="32" selection-start-column="1" selection-end-line="32" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1811,7 +1786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1832,7 +1806,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1853,7 +1826,6 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1869,9 +1841,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="377">
           <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1879,7 +1848,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="13" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1887,12 +1855,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#1862#1863#0" expanded="true" />
-            <element signature="e#1902#1903#0" expanded="true" />
-            <element signature="e#2080#2081#0" expanded="true" />
-            <element signature="e#2138#2139#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1908,7 +1870,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="15" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="14" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1916,7 +1877,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="23" lean-forward="true" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1924,7 +1884,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="22" column="30" lean-forward="false" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1932,7 +1891,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1940,7 +1898,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="63" lean-forward="true" selection-start-line="5" selection-start-column="63" selection-end-line="5" selection-end-column="63" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1948,62 +1905,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="446" column="76" lean-forward="true" selection-start-line="446" selection-start-column="76" selection-end-line="446" selection-end-column="76" />
-          <folding>
-            <element signature="e#4654#4655#0" expanded="false" />
-            <element signature="e#4685#4686#0" expanded="false" />
-            <element signature="e#4813#4814#0" expanded="false" />
-            <element signature="e#4853#4854#0" expanded="false" />
-            <element signature="e#4951#4952#0" expanded="false" />
-            <element signature="e#4979#4980#0" expanded="false" />
-            <element signature="e#5092#5093#0" expanded="false" />
-            <element signature="e#5126#5127#0" expanded="false" />
-            <element signature="e#5239#5240#0" expanded="false" />
-            <element signature="e#5271#5272#0" expanded="false" />
-            <element signature="e#5407#5408#0" expanded="false" />
-            <element signature="e#5449#5450#0" expanded="false" />
-            <element signature="e#5559#5560#0" expanded="false" />
-            <element signature="e#5590#5591#0" expanded="false" />
-            <element signature="e#5721#5722#0" expanded="false" />
-            <element signature="e#5761#5762#0" expanded="false" />
-            <element signature="e#5871#5872#0" expanded="false" />
-            <element signature="e#5901#5902#0" expanded="false" />
-            <element signature="e#6030#6031#0" expanded="false" />
-            <element signature="e#6068#6069#0" expanded="false" />
-            <element signature="e#6181#6182#0" expanded="false" />
-            <element signature="e#6214#6215#0" expanded="false" />
-            <element signature="e#6352#6353#0" expanded="false" />
-            <element signature="e#6396#6397#0" expanded="false" />
-            <element signature="e#6509#6510#0" expanded="false" />
-            <element signature="e#6541#6542#0" expanded="false" />
-            <element signature="e#6677#6678#0" expanded="false" />
-            <element signature="e#6719#6720#0" expanded="false" />
-            <element signature="e#6843#6844#0" expanded="false" />
-            <element signature="e#6878#6879#0" expanded="false" />
-            <element signature="e#7031#7032#0" expanded="false" />
-            <element signature="e#7079#7080#0" expanded="false" />
-            <element signature="e#7203#7204#0" expanded="false" />
-            <element signature="e#7238#7239#0" expanded="false" />
-            <element signature="e#7391#7392#0" expanded="false" />
-            <element signature="e#7439#7440#0" expanded="false" />
-            <element signature="e#7535#7536#0" expanded="false" />
-            <element signature="e#7562#7563#0" expanded="false" />
-            <element signature="e#7671#7672#0" expanded="false" />
-            <element signature="e#7703#7704#0" expanded="false" />
-            <element signature="e#7802#7803#0" expanded="false" />
-            <element signature="e#7830#7831#0" expanded="false" />
-            <element signature="e#7944#7945#0" expanded="false" />
-            <element signature="e#7978#7979#0" expanded="false" />
-            <element signature="e#8071#8072#0" expanded="false" />
-            <element signature="e#8097#8098#0" expanded="false" />
-            <element signature="e#8201#8202#0" expanded="false" />
-            <element signature="e#8231#8232#0" expanded="false" />
-            <element signature="e#8342#8343#0" expanded="false" />
-            <element signature="e#8370#8371#0" expanded="false" />
-            <element signature="e#8496#8497#0" expanded="false" />
-            <element signature="e#8530#8531#0" expanded="false" />
-            <element signature="e#8652#8653#0" expanded="false" />
-            <element signature="e#8686#8687#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2011,7 +1912,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-666">
           <caret line="19" column="3" lean-forward="true" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2019,7 +1919,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="573">
           <caret line="100" column="23" lean-forward="true" selection-start-line="100" selection-start-column="23" selection-end-line="100" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2039,14 +1938,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AdminActionDirectoryServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/adminoptions.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -2055,19 +1946,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/add_member.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="27" column="26" lean-forward="false" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/adultTennis.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
           <caret line="38" column="10" lean-forward="true" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2075,15 +1957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/add_member.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="14" lean-forward="false" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2091,30 +1964,69 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="665">
           <caret line="35" column="3" lean-forward="true" selection-start-line="35" selection-start-column="3" selection-end-line="35" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/META-INF/contextcopy.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/tomee/conf/server.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2736">
+          <caret line="144" column="47" lean-forward="false" selection-start-line="144" selection-start-column="47" selection-end-line="144" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+        <state relative-caret-position="912">
+          <caret line="48" column="17" lean-forward="false" selection-start-line="48" selection-start-column="17" selection-end-line="48" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/base.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="83" selection-end-column="1" />
+        <state relative-caret-position="-708">
+          <caret line="10" column="17" lean-forward="false" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/club.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        <state relative-caret-position="116">
+          <caret line="21" column="1" lean-forward="false" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AdminActionDirectoryServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/add_member.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/add_member.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>

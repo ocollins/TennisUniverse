@@ -1,5 +1,8 @@
 @import url('base.css');
 
+#add_table, #title_header {
+margin: auto;
+}
 
 #instruction {
     font-size: 30px;

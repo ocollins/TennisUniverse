@@ -35,7 +35,6 @@
                 <table class="add_table" id="add_table">
                     <tr><td>First Name</td>
                         <td><input type="text" name="fname" id="fName" value="" required></td>
-                        <label for="fName">First Name</label>
                     </tr>
                     <tr><td>Last Name</td>
                         <td><input type="text" name="lname" id="lName" value="" required></td>
