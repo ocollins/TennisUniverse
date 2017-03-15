@@ -1,7 +1,11 @@
 @import url('base.css');
 
-#add_table, #title_header {
+#add_table {
 margin: auto;
+}
+
+#title_header {
+    text-align: center;
 }
 
 #instruction {

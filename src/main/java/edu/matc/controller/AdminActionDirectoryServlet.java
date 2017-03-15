@@ -35,8 +35,9 @@ public class AdminActionDirectoryServlet extends HttpServlet {
         //Remove the old session
         //HttpSession session = request.getSession(true);
         //session.invalidate();
+        String url = request.getParameter("adm_option");
 
-        String url = "/add_member.jsp";
+        //String url = "/add_member.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 

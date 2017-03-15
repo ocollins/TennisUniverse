@@ -34,13 +34,13 @@
 
     <jsp:include page="/adminDispServlet"/>
 
-<form action="/adminActionDirectoryServlet" method="get">
+<form action="adminActionDirectoryServlet" method="get">
     <div id="selectoptions">
         <p id="instruction">Please select option from the list below</p>
 
-        <select>
-            <c:forEach var="option" items="${adminActionsList}">
-                <option value="${option.adminActionId}">${option.actionDesc}</option>
+        <select name="adm_option" >
+            <c:forEach var="adm_option" items="${adminActionsList}">
+                <option value="${adm_option.adminActionId}">${adm_option.actionDesc}</option>
             </c:forEach>
         </select>
 
