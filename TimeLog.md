@@ -62,15 +62,38 @@
 |3/3/2017|Ind project work|2||
 |3/4/2017|Added Fitness JSP|3||
 |Week 8||||
-|3/8/2017||||
-|3/9/2017||||
-|3/10/2017||||
-|3/11/2017||||
-|3/12/2017||||
-|3/13/2017||||
-|Week 9||||
-|3/15/2017||||
+|3/8/2017|Team project work|2||
+|3/9/2017|Ind project work|1||
+|3/10/2017|Ind project work|1||
+|3/11/2017|Ind project work|1||
+|3/12/2017|Create jsp for team project|2||
+|3/13/2017|Create entity/DAO for team project|2||
+|Spring break||||
+|3/14/2017|Try to fix authorization for ind project|3||
+|3/15/2017|Work on admin options jsp for ind project|3||
 |3/16/2017||||
 |3/17/2017||||
 |3/18/2017||||
 |3/19/2017||||
+|Week 9||||
+|3/21/2017|Ind project work| ||
+|3/22/2017|Ind project work| ||
+|3/23/2017|Ind project work| ||
+|3/24/2017|Ind project work| ||
+|3/25/2017|Ind project work| ||
+|3/26/2017|Ind project work| ||
+|3/27/2017|Ind project work| ||
+|Week 10||||
+|3/29/2017||||
+|3/30/2017||||
+|3/31/2017||||
+|4/01/2017||||
+|4/02/2017||||
+|4/03/2017||||
+|Week 11||||
+|4/05/2017||||
+|4/06/2017||||
+|4/07/2017||||
+|4/08/2017||||
+|4/09/2017||||
+|4/10/2017||||

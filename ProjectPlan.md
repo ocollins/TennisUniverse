@@ -36,7 +36,7 @@
 - [ ] Add entities for remaining tables
 - [X] Time log entries
 
-### Week 5- 
+### Week 5 
 - [X] Add more JSPs
 - [X] Create display Admin Options functionality
 - [X] Add tests for Member info functionality
@@ -44,7 +44,7 @@
 
 ### Week 6
 - [X] Set up Security and Authentication processing for the LogIn page
-- [ ] Set up Continuous Integration on openshift 
+- [X] Add more jsps
 - [X] Time log entries
 
 ### Week 7
@@ -59,8 +59,9 @@
 - [ ] Time log entries
 
 ### Week 9
-- [ ] Create databse on openshift
-- [ ] Set up authentication and db access in app on openshift
+- [ ] Create databse on AWS
+- [ ] Add more jsps
+- [ ] Add controllers for admin options jsps
 - [ ] Add password reset/reminder function
 - [ ] Time log entries
 
