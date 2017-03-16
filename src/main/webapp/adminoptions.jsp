@@ -12,10 +12,6 @@
 
 <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <%--Adding libraries for Bootstrap--%>
-    <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type=""></script>--%>
     <link href="css/adminoptions.css" rel="stylesheet" type="text/css"/>
     <title>Admin</title>
 </head>
@@ -31,16 +27,18 @@
 <c:import url="head.jsp"/>
 
 <c:import url="menu.jsp"/>
-
     <jsp:include page="/adminDispServlet"/>
 
-<form action="adminActionDirectoryServlet" method="get">
+<form action="adminActionDirectoryServlet" method="get" id="display_form">
     <div id="selectoptions">
         <p id="instruction">Please select option from the list below</p>
 
-        <select name="adm_option" >
+        <select name="adm_option" form="display_form">
             <c:forEach var="adm_option" items="${adminActionsList}">
-                <option value="${adm_option.adminActionId}">${adm_option.actionDesc}</option>
+
+                <c:set var="link" value="${adm_option.actionServletName}"></c:set>
+                <p>${link}</p>
+                <option value="${adm_option.actionServletName}">${adm_option.actionDesc}</option>
             </c:forEach>
         </select>
 

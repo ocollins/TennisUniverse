@@ -1,5 +1,7 @@
 package edu.matc.controller;
 
+import org.apache.log4j.Logger;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -18,6 +20,7 @@ import java.io.IOException;
         urlPatterns = { "/adminActionDirectoryServlet" }
 )
 public class AdminActionDirectoryServlet extends HttpServlet {
+    private final Logger logger = Logger.getLogger(this.getClass());
     /**
      * Handles HTTP GET requests.
      *
@@ -30,12 +33,11 @@ public class AdminActionDirectoryServlet extends HttpServlet {
             throws ServletException, IOException {
         //response.setContentType("text/html");
 
-
-
         //Remove the old session
         //HttpSession session = request.getSession(true);
         //session.invalidate();
         String url = request.getParameter("adm_option");
+        logger.info("OVC displaying url " + url);
 
         //String url = "/add_member.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
