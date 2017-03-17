@@ -27,7 +27,6 @@
 <c:import url="head.jsp"/>
 
 <c:import url="menu.jsp"/>
-    <jsp:include page="/adminDispServlet"/>
 
 <form action="adminActionDirectoryServlet" method="get" id="display_form">
     <div id="selectoptions">
@@ -35,9 +34,6 @@
 
         <select name="adm_option" form="display_form">
             <c:forEach var="adm_option" items="${adminActionsList}">
-
-                <c:set var="link" value="${adm_option.actionServletName}"></c:set>
-                <p>${link}</p>
                 <option value="${adm_option.actionServletName}">${adm_option.actionDesc}</option>
             </c:forEach>
         </select>

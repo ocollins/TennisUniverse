@@ -1,5 +1,6 @@
 package edu.matc.controller;
 
+import edu.matc.persistence.ServiceDao;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -21,6 +22,12 @@ import java.io.IOException;
 )
 public class AdminActionDirectoryServlet extends HttpServlet {
     private final Logger logger = Logger.getLogger(this.getClass());
+
+    public void init() {
+        ServiceDao dao = new ServiceDao();
+        request.setAttribute("serviceList", dao.getAllServices());
+
+    }
     /**
      * Handles HTTP GET requests.
      *

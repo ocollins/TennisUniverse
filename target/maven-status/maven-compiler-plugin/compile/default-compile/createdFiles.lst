@@ -1,7 +1,6 @@
 edu/matc/util/LocalDateAttributeConverter.class
 edu/matc/controller/LogInDispServlet.class
 edu/matc/controller/AdminActionDirectoryServlet.class
-edu/matc/controller/displayAdminActions.class
 edu/matc/entity/PersonAccount.class
 edu/matc/entity/Service.class
 edu/matc/entity/AdminAction.class
@@ -16,4 +15,5 @@ edu/matc/controller/AdminDispServlet.class
 edu/matc/persistence/ServiceDao.class
 edu/matc/persistence/AdminActionDao.class
 edu/matc/controller/HomeDispServlet.class
+edu/matc/controller/AddMemberServActionServlet.class
 edu/matc/entity/Person.class

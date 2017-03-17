@@ -2,6 +2,7 @@
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/persistence/SessionFactoryProvider.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/AdminDispServlet.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/entity/Person.java
+/home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/AddMemberServActionServlet.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/util/LocalDateAttributeConverter.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/entity/Service.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/VerifyPersonServlet.java
@@ -16,4 +17,3 @@
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/persistence/PersonDao.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/persistence/AdminActionDao.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/persistence/ServiceDao.java
-/home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/displayAdminActions.java

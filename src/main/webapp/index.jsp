@@ -25,7 +25,8 @@ Author: Olena Collins
 <c:import url="head.jsp"/>
 <c:import url="menu.jsp"/>
 
-<p><a href="adminoptions.jsp">TESTING ADMIN OPTIONS</a></p>
+<%--<p><a href="adminoptions.jsp">TESTING ADMIN OPTIONS</a></p>--%>
+<p><a href="adminDispServlet">TESTING ADMIN OPTIONS</a></p>
 <p><a href="adminActionDirectoryServlet">TESTING ADD MEMBER</a></p>
 
 <div id="container">
