@@ -71,20 +71,20 @@
 |Spring break||||
 |3/14/2017|Try to fix authorization for ind project|3||
 |3/15/2017|Work on admin options jsp for ind project|3||
-|3/16/2017||||
-|3/17/2017||||
-|3/18/2017||||
-|3/19/2017||||
+|3/16/2017|Team project|2||
+|3/17/2017|Team project2|||
+|3/18/2017|Video for week 9|3||
+|3/19/2017|Reading for Week 9, team project work|2||
 |Week 9||||
-|3/21/2017|Ind project work| ||
-|3/22/2017|Ind project work| ||
-|3/23/2017|Ind project work| ||
-|3/24/2017|Ind project work| ||
-|3/25/2017|Ind project work| ||
-|3/26/2017|Ind project work| ||
-|3/27/2017|Ind project work| ||
+|3/21/2017|Team project JSON conversion| 1||
+|3/22/2017|Team project|1 ||
+|3/23/2017|Team project work|2 ||
+|3/24/2017|Exercise for week 9|2 ||
+|3/25/2017|Videos for week 10|2 ||
+|3/26/2017|Videos for week 10|2 ||
+|3/27/2017|Trying to make JavaScript work in Intellij|1 ||
 |Week 10||||
-|3/29/2017||||
+|3/29/2017|TEam project |||
 |3/30/2017||||
 |3/31/2017||||
 |4/01/2017||||
