@@ -73,7 +73,7 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
         //and store in context container
         session.setAttribute("MoreCaloriesResult",  getCalculation2(responseFromREST, calculations));
 
-        String responceUrl = "/index.jsp";
+        String responceUrl = "/fitness.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responceUrl);
         dispatcher.forward(request, response);
 

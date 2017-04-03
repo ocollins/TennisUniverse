@@ -12,6 +12,7 @@
 
 <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/update_member.css" rel="stylesheet" type="text/css"/>
     <title>Update Member</title>
 </head>
