@@ -601,3 +601,35 @@
 2017-04-03 07:19:41,354 30722 [http-nio-8083-exec-5] INFO  edu.matc.controller.CalculateDurationActionServlet  - $$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Duration action servlet
 2017-04-03 07:19:41,356 30724 [http-nio-8083-exec-5] INFO  edu.matc.controller.CalculateDurationActionServlet  - http://localhost:8080/CaloriesCalculator/duration/json/6/80/300/kg
 2017-04-03 07:19:50,858 40226 [http-nio-8083-exec-6] INFO  edu.matc.controller.CleanupServlet  - $$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Cleanup servlet
+2017-04-03 11:35:09,495 0    [http-nio-8083-exec-3] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-03 11:35:09,829 334  [http-nio-8083-exec-3] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-03 11:35:09,837 342  [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-03 11:35:09,841 346  [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-03 11:35:09,871 376  [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-03 11:35:09,871 376  [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-03 11:35:09,916 421  [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-03 11:35:09,992 497  [http-nio-8083-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-03 11:35:09,996 501  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-03 11:35:09,996 501  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-03 11:35:09,996 501  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-03 11:35:09,997 502  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-03 11:35:10,308 813  [http-nio-8083-exec-3] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-03 11:35:10,655 1160 [http-nio-8083-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-03 11:35:10,672 1177 [http-nio-8083-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-03 11:35:55,743 46248 [http-nio-8083-exec-9] INFO  edu.matc.controller.AdminActionDirectoryServlet  - OVC displaying url /print_statement.jsp
+2017-04-03 11:56:02,521 0    [http-nio-8083-exec-2] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-03 11:56:02,528 7    [http-nio-8083-exec-2] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-03 11:56:02,530 9    [http-nio-8083-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-03 11:56:02,531 10   [http-nio-8083-exec-2] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-03 11:56:02,552 31   [http-nio-8083-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-03 11:56:02,552 31   [http-nio-8083-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-03 11:56:02,593 72   [http-nio-8083-exec-2] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-03 11:56:02,667 146  [http-nio-8083-exec-2] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-03 11:56:02,670 149  [http-nio-8083-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-03 11:56:02,671 150  [http-nio-8083-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-03 11:56:02,671 150  [http-nio-8083-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-03 11:56:02,672 151  [http-nio-8083-exec-2] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-03 11:56:02,908 387  [http-nio-8083-exec-2] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-03 11:56:03,062 541  [http-nio-8083-exec-2] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-03 11:56:03,073 552  [http-nio-8083-exec-2] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-03 11:56:10,255 7734 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminActionDirectoryServlet  - OVC displaying url /add_member.jsp

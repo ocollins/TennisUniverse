@@ -68,7 +68,7 @@
                     <tr><td>Phone Number (no dashes - 9999999999)</td>
                         <td><input type="text" name="phone" id="phone" value="" required></td>
                     </tr>
-                    <tr class="submitButton"><td ><input type="submit" value="Submit"></td></tr>
+                    <tr class="submitButton" colspan="2"><td ><input type="submit" value="Submit"></td></tr>
                 </table>
             </c:if>
         </form>

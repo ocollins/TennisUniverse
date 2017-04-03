@@ -2,6 +2,7 @@ edu/matc/util/LocalDateAttributeConverter.class
 edu/matc/controller/LogInDispServlet.class
 edu/matc/CaloriesCalculator/Calculations.class
 edu/matc/controller/AdminActionDirectoryServlet.class
+edu/matc/controller/PrintStatementDispServlet.class
 edu/matc/CaloriesCalculator/Activities.class
 edu/matc/CaloriesCalculator/Calculation0.class
 edu/matc/CaloriesCalculator/Calculation2.class
