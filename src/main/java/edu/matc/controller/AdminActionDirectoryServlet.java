@@ -25,7 +25,7 @@ public class AdminActionDirectoryServlet extends HttpServlet {
 
     public void init() {
         ServiceDao dao = new ServiceDao();
-        request.setAttribute("serviceList", dao.getAllServices());
+        //request.setAttribute("serviceList", dao.getAllServices());
 
     }
     /**

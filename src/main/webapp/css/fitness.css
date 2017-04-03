@@ -1,105 +1,146 @@
 @import url('base.css');
 
-#main_container_div {
-    padding-bottom: 30px;
-    width: 60%;
-    margin: auto;
+#title_header {
+    text-align: center;
+    margin-top: 1.4rem;
+    font-size: 3.75rem;
+}
+
+.titlebox{
+    float:left;
+    padding:0 0.31rem;
+    margin:-1.8rem 0 0 1.8rem;
+    background-color: rgb(232, 208, 148);
+    font-size: 1.25rem;
+    font-weight: bold;
 }
 
 .content_div{
     border:2px solid grey;
-    border-radius: 10px;
-    padding:10px;
+    border-radius: 0.625rem;
+    padding:15px;
     float: left;
     width: 30%;
-    margin-left: 5px;
+    margin-left: 0.312rem;
+    font-size: 1.25rem;
+    height: 12.5rem;
+}
+
+.content_div2{
+    border:2px solid grey;
+    border-radius: 0.63rem;
+    padding:1rem;
+    float: left;
+    width: 30%;
+    margin-left: 0.31rem;
+    font-size: 1.25rem;
+    height: 6.25rem;
+}
+#main_container_div {
+    padding-bottom: 2rem;
+    width: 60%;
+    margin: auto;
 }
 
 #instructions_div {
     margin: auto;
 
 }
-.titlebox{
-    float:left;
-    padding:0 5px;
-    margin:-20px 0 0 30px;
-    background-color: rgb(232, 208, 148);
-    font-size: 20px;
-    font-weight: bold;
-}
 
-/*.info_p {
-    float:left;
-    padding:0 5px;
-    margin:-20px 0 0 30px;
-    background:#fff;
-}*/
-
-#user_info_div {
+#user_info_div, #user_info_div2 {
     text-align: center;
     width: 60%;
     margin: auto;
+    clear: left;
+    padding-top: 2rem;
 }
 
-#weight_text, #activity_select, #duration_text {
+#calories_form {
+    clear: left;
+}
+
+#weight_text, #activity_select, #duration_select, #calories_text
+{
     float: left;
-    width: 30%;
-    margin: 10px;
-    border-radius: 7px;
-    padding: 5px;
+    width: 90%;
+    margin: 0.8rem;
+    border-radius: 0.43rem;
+    padding: 0.31rem;
+
 }
 
 #radio_div {
     clear: left;
     margin: auto;
-    padding-top: 30px;
+    padding-top: 1.8rem;
 }
 
 #genderf_radio, #genderm_radio {
     clear: left;
 }
 
-#title_header {
-    clear: left;
-    text-align: center;
-    margin-top: 70px;
-    font-size: 60px;
+#activity_select, #duration_select, #calories_text {
+    margin-top: 2.5rem;
+
 }
 
 #submit_button {
     clear: left;
-    margin-top: 30px;
+    margin-top: 1rem;
     border-radius: 5px;
     background-color: lightgrey;
-    padding: 7px;
+    padding: 0.43rem;
+    font-weight: bold;
 }
 
-#result_p {
-    text-align: center;
-    padding: 10px;
-    float: left;
-    border: solid 1px grey;
-    border-radius: 10px;
-    margin-left: 30px;
-    background-color: whitesmoke;
-}
-
-#result_div {
+#result_div, #result_div2 {
     clear: left;
     margin: auto;
     width: 60%;
-    padding-top: 50px;
+    padding-top: 3.125rem;
 }
 
-#tennis_fit1_image, #tennis_fit2_image {
+.result_p_mess {
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.result_p {
+    text-align: center;
+    padding: 0.625rem;
+    border: solid 1px grey;
+    border-radius: 0.625rem;
+    background-color: whitesmoke;
+    width: 30%;
+    margin: auto;
+    font-weight: bold;
+}
+
+#calories_span {
+    margin-left: 0.825rem;
+}
+
+.reset_button_p {
+    margin-top: 2.5rem;
+    text-align: center;
+}
+
+.reset_button {
+    background-color: grey;
+    border-radius: 5px;
+    background-color: lightgrey;
+    padding: 0.44rem;
+    font-weight: bold;
+}
+
+#footer_div {
+    width: 60%;
+    margin: auto;
+}
+#tennis_fit1_image, #tennis_fit2_image, #dummy {
     width: 30%;
     float: left;
-    padding:40px;
+    padding:0.8rem;
 }
 
-footer {
-    text-align: center;
-    margin-top: 230px;
-    clear: left;
-
-}

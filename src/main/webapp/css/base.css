@@ -9,12 +9,15 @@ body {
 #header {
     width: 80%;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #headerimage {
     /*border: 10px solid yellow;*/
-    margin: 1px 0px 10px 10px;
-    float: left;
+    margin: 0.1rem 3rem 0.4rem 2rem;
+    /*float: left;*/
 
     /*padding-left: 50px;*/
 }
@@ -31,7 +34,7 @@ body {
     height: 40px;
     margin: auto;
     width: 80%;
-    clear: left;
+    /*clear: left;*/
 }
 
 #menu ul {
