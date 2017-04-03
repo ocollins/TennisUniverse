@@ -30,7 +30,7 @@
 
     <div id="main_container_div">
         <h2 id="title_header">Add Member Information</h2>
-        <form action="/addMemberActionServlet" name="" id="add_member_form" method="POST">
+        <form action="addMemberActionServlet" name="" id="add_member_form" method="POST">
 
             <c:if test="${empty feedbackMessage}">
                 <table class="add_table" id="add_table">
@@ -50,7 +50,7 @@
                         <td><input type="text" name="address_line1" id="address_line1" value="" required></td>
                     </tr>
                     <tr><td>Street address 2</td>
-                        <td><input type="text" name="address_line2" id="address_line2" value="" required></td>
+                        <td><input type="text" name="address_line2" id="address_line2" value=""></td>
                     </tr>
                     <tr><td>City</td>
                         <td><input type="text" name="city" id="city" value="" required></td>
@@ -72,6 +72,9 @@
                 </table>
             </c:if>
         </form>
+        <c:if test="${not empty feedbackMessage}">
+            <p>${feedbackMessage}</p>
+        </c:if>
     </div>
 <c:import url="footer.jsp"/>
 </div>
