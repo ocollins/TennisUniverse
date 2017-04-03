@@ -4,6 +4,7 @@ import edu.matc.entity.Person;
 import edu.matc.persistence.PersonDao;
 import edu.matc.util.LocalDateAttributeConverter;
 import org.apache.log4j.Logger;
+import org.hibernate.HibernateException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -55,6 +56,7 @@ public class AddMemberActionServlet extends HttpServlet {
 
     public int storeMemberInfo(HttpServletRequest request) {
         dao = new PersonDao();
+        int newPersonId = 0;
 
         LocalDateAttributeConverter dateConverter = new LocalDateAttributeConverter();
         LocalDate dob = LocalDate.parse(request.getParameter("birth_date"));
@@ -66,8 +68,12 @@ public class AddMemberActionServlet extends HttpServlet {
                 request.getParameter("city"), request.getParameter("state"),
                 request.getParameter("zip"), request.getParameter("phone"));
 
-        int newPersonId = dao.addPerson(newPerson);
-        logger.info("In Add member servlet added a new person " + newPersonId);
+        try {
+            newPersonId = dao.addPerson(newPerson);
+            logger.info("In Add member servlet added a new person " + newPersonId);
+        } catch (HibernateException he) {
+            logger.info("Hibernate Exception " + he);
+        }
         return newPersonId;
 
 
