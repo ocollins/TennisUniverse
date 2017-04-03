@@ -53,7 +53,7 @@ public class CleanupServlet extends HttpServlet {
         //Store duration string in context container
         //context.setAttribute("DurationResult",  durationString);
 
-        String responceurl = "/index.jsp";
+        String responceurl = "/fitness.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responceurl);
         dispatcher.forward(request, response);
 
