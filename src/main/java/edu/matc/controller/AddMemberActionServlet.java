@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.time.LocalDate;
 
 /**
- * Admin action selection servlet
+ * Add member info servlet
  * @author Olena Collins
  */
 @WebServlet(

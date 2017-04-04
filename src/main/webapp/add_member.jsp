@@ -29,8 +29,9 @@
 <c:import url="menu.jsp"/>
 
     <div id="main_container_div">
-        <h2 id="title_header">Add Member Information</h2>
+
         <form action="addMemberActionServlet" name="" id="add_member_form" method="POST">
+            <h2 id="title_header">Add Member Information</h2>
 
             <c:if test="${empty feedbackMessage}">
                 <table class="add_table" id="add_table">
@@ -66,14 +67,15 @@
                         <td><input type="text" name="email" id="email" value="" required></td>
                     </tr>
                     <tr><td>Phone Number (no dashes - 9999999999)</td>
-                        <td><input type="text" name="phone" id="phone" value="" required></td>
+                        <td><input type="text" name="phone" id="phone_input" value="" required></td>
                     </tr>
-                    <tr class="submitButton" colspan="2"><td ><input type="submit" value="Submit"></td></tr>
+                    <tr class="submit_button"><td colspan="2" id="submit_button"><input type="submit" value="Submit"></td>
+                    </tr>
                 </table>
             </c:if>
         </form>
         <c:if test="${not empty feedbackMessage}">
-            <p>${feedbackMessage}</p>
+            <p id="feedback_p">Member was added successfully</p>
         </c:if>
     </div>
 <c:import url="footer.jsp"/>

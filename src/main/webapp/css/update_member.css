@@ -8,19 +8,19 @@ margin: auto;
     text-align: center;
 }
 
-#instruction {
-    font-size: 30px;
+#feedback_p {
+    text-align: center;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
-#selectoptions {
+.submit_button {
     text-align: center;
 
 }
 
-#buildingimage {
-    border-radius: 10px;
-    box-shadow: 10px -10px 5px grey;
-    width: 90%;
+#submit_button {
+    margin-top: 2rem;
 }
+
 

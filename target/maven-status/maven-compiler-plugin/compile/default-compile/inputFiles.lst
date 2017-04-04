@@ -14,6 +14,7 @@
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/HomeDispServlet.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/persistence/PersonDao.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/CleanupServlet.java
+/home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/UpdateMemberActionServlet.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/AdultTennisDispServlet.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/AdminDispServlet.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/CaloriesCalculator/Calculation1.java

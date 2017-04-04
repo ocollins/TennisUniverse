@@ -30,8 +30,9 @@
 
     <div id="main_container_div">
         <h2 id="title_header">Update Member Information</h2>
-        <form action="/updateMemberActionServlet" name="" id="update_member_form" method="POST">
+        <c:import url="member_search.jsp"/>
 
+        <form action="updateMemberActionServlet" name="" id="update_member_form" method="GET">
             <c:if test="${empty feedbackMessage}">
                 <table class="add_table" id="add_table">
                     <tr><td>First Name</td>
@@ -44,13 +45,13 @@
                         <td><input type="text" name="ssn" id="ssn" value="" required></td>
                     </tr>
                     <tr><td>Birth Date</td>
-                        <td><input type="text" name="birth_date" id="birth_date" value="" required></td>
+                        <td><input type="date" name="birth_date" id="birth_date" value="" required></td>
                     </tr>
                     <tr><td>Street address 1</td>
                         <td><input type="text" name="address_line1" id="address_line1" value="" required></td>
                     </tr>
                     <tr><td>Street address 2</td>
-                        <td><input type="text" name="address_line2" id="address_line2" value="" required></td>
+                        <td><input type="text" name="address_line2" id="address_line2" value=""></td>
                     </tr>
                     <tr><td>City</td>
                         <td><input type="text" name="city" id="city" value="" required></td>
@@ -66,12 +67,16 @@
                         <td><input type="text" name="email" id="email" value="" required></td>
                     </tr>
                     <tr><td>Phone Number (no dashes - 9999999999)</td>
-                        <td><input type="text" name="phone" id="phone" value="" required></td>
+                        <td><input type="text" name="phone" id="phone_input" value="" required></td>
                     </tr>
-                    <tr class="submitButton"><td ><input type="submit" value="Submit"></td></tr>
+                    <tr class="submit_button"><td colspan="2" id="submit_button"><input type="submit" value="Submit"></td>
+                    </tr>
                 </table>
             </c:if>
         </form>
+        <c:if test="${not empty feedbackMessage}">
+            <p id="feedback_p">Member was added successfully</p>
+        </c:if>
     </div>
 <c:import url="footer.jsp"/>
 </div>

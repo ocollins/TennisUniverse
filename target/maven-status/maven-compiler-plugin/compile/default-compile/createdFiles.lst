@@ -13,6 +13,7 @@ edu/matc/entity/PersonService.class
 edu/matc/controller/FitnessDispServlet.class
 edu/matc/controller/CalculateDurationActionServlet.class
 edu/matc/persistence/AdminActionDao.class
+edu/matc/controller/UpdateMemberActionServlet.class
 edu/matc/controller/HomeDispServlet.class
 edu/matc/entity/PersonAccount.class
 edu/matc/entity/Service.class
