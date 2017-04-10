@@ -5,7 +5,7 @@
     <p class="info_p">
         <select id="activity_select" name="activity_select">
             <c:forEach var="activity" items="${activities}">
-                <option value="${activity.id}">${activity.name}</option>
+                <option value="${activity.activityID}">${activity.activityTitle}</option>
             </c:forEach>
         </select>
     </p>

@@ -4,6 +4,10 @@
 margin: auto;
 }
 
+.mem_info_td {
+
+}
+
 #title_header {
     text-align: center;
 }
@@ -21,6 +25,12 @@ margin: auto;
 
 #submit_button {
     margin-top: 2rem;
+}
+
+#search_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

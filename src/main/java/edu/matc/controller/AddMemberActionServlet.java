@@ -18,6 +18,7 @@ import java.time.LocalDate;
 
 /**
  * Add member info servlet
+ *
  * @author Olena Collins
  */
 @WebServlet(
@@ -26,7 +27,13 @@ import java.time.LocalDate;
 )
 public class AddMemberActionServlet extends HttpServlet {
     private final Logger logger = Logger.getLogger(this.getClass());
+    /**
+     * The Dao.
+     */
     PersonDao dao;
+    /**
+     * The New person.
+     */
     Person newPerson;
     /**
      * Handles HTTP GET requests.
@@ -54,6 +61,12 @@ public class AddMemberActionServlet extends HttpServlet {
 
     }
 
+    /**
+     * Store member info int.
+     *
+     * @param request the request
+     * @return the int
+     */
     public int storeMemberInfo(HttpServletRequest request) {
         dao = new PersonDao();
         int newPersonId = 0;

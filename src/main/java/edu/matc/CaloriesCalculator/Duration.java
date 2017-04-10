@@ -6,7 +6,8 @@ import javax.annotation.Generated;
 @Generated("com.robohorse.robopojogenerator")
 public class Duration{
 
-    @JsonProperty("Duration ")
+
+    @JsonProperty("Duration:")
     private double duration;
 
     public void setDuration(double duration){
@@ -21,7 +22,7 @@ public class Duration{
     public String toString(){
         return
                 "Response{" +
-                        "duration  = '" + duration + '\'' +
+                        "duration: = '" + duration + '\'' +
                         "}";
     }
 }

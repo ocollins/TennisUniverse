@@ -15,7 +15,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/update_member.css" rel="stylesheet" type="text/css"/>
     <title>Update Member</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+    <%--<script>--%>
+        <%--$(document).ready(function(){--%>
+            <%--$("#update_member_form").hide();--%>
+
+            <%--});--%>
+        <%--});--%>
+    <%--</script>--%>
 </head>
+
 
 
 <body>
@@ -28,18 +38,21 @@
 
 <c:import url="menu.jsp"/>
 
+
+
     <div id="main_container_div">
         <h2 id="title_header">Update Member Information</h2>
         <c:import url="member_search.jsp"/>
+        <p>${aPerson.lastName}</p>
 
-        <form action="updateMemberActionServlet" name="" id="update_member_form" method="GET">
-            <c:if test="${empty feedbackMessage}">
+        <form action="updateMemberActionServlet" name="" id="update_member_form" method="POST">
+            <c:if test="${not empty aPerson.lastName}">
                 <table class="add_table" id="add_table">
                     <tr><td>First Name</td>
-                        <td><input type="text" name="fname" id="fName" value="" required></td>
+                        <td><input type="text" name="fname" id="fName" value="${aPerson.firstName}" required></td>
                     </tr>
                     <tr><td>Last Name</td>
-                        <td><input type="text" name="lname" id="lName" value="" required></td>
+                        <td><input type="text" name="lname" id="lName" value="${aPerson.lastName}" required></td>
                     </tr>
                     <tr><td>Social Security Number</td>
                         <td><input type="text" name="ssn" id="ssn" value="" required></td>
@@ -75,9 +88,14 @@
             </c:if>
         </form>
         <c:if test="${not empty feedbackMessage}">
-            <p id="feedback_p">Member was added successfully</p>
+            <p id="feedback_p">Member was updated successfully</p>
         </c:if>
     </div>
+    <script type="">
+        $(document).ready(function() {
+            $('#add_table').DataTable();
+        } );
+    </script>
 <c:import url="footer.jsp"/>
 </div>
 </body>

@@ -4,7 +4,7 @@ import com.fasterxml.jackson.core.JsonGenerationException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.matc.CaloriesCalculator.Activities;
-import edu.matc.CaloriesCalculator.Activity;
+import edu.matc.CaloriesCalculator.ActivitiesItem;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -49,7 +49,8 @@ public class FitnessDispServlet extends HttpServlet {
 
         //Call the service to get a list of all activities to populate the dropbox
         Client client = ClientBuilder.newClient();
-        String url = "http://localhost:8080/CaloriesCalculator/activities";
+        //String url = "http://localhost:8080/CaloriesCalculator/activities";
+        String url = "http://52.14.26.13:8080/CaloriesCalculator/activities";
         WebTarget target = client.target(url + "/list");
 
         //Get responce
@@ -59,10 +60,10 @@ public class FitnessDispServlet extends HttpServlet {
         //Map to the Activities POJO
         ObjectMapper objectMapper = new ObjectMapper();
         Activities activities = null;
-        Activity activity = null;
+        ActivitiesItem activity = null;
         try {
             activities = objectMapper.readValue(restResponse, Activities.class);
-            List<Activity> activityList = activities.getActivities();
+            List<ActivitiesItem> activityList = activities.getActivities();
             //request.setAttribute("activities", activityList);
             session.setAttribute("activities", activityList);
 
