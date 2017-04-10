@@ -1033,3 +1033,22 @@
 2017-04-09 22:05:46,138 699  [http-nio-8083-exec-2] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
 2017-04-09 22:05:51,406 5967 [http-nio-8083-exec-3] INFO  edu.matc.controller.AdminActionDirectoryServlet  - OVC displaying url /update_member.jsp
 2017-04-09 22:05:57,401 11962 [http-nio-8083-exec-5] INFO  edu.matc.controller.MemberSearchActionServlet  - In search member servlet person 104lulu
+2017-04-10 12:09:30,614 0    [http-nio-8083-exec-1] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-10 12:09:30,652 38   [http-nio-8083-exec-1] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-10 12:09:30,657 43   [http-nio-8083-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-10 12:09:30,660 46   [http-nio-8083-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-10 12:09:30,682 68   [http-nio-8083-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-10 12:09:30,684 70   [http-nio-8083-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-10 12:09:30,742 128  [http-nio-8083-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-10 12:09:30,841 227  [http-nio-8083-exec-1] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-10 12:09:30,847 233  [http-nio-8083-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-10 12:09:30,847 233  [http-nio-8083-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-10 12:09:30,848 234  [http-nio-8083-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-10 12:09:30,849 235  [http-nio-8083-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-10 12:09:31,330 716  [http-nio-8083-exec-1] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-10 12:09:31,599 985  [http-nio-8083-exec-1] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-10 12:09:31,613 999  [http-nio-8083-exec-1] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-10 12:09:36,940 6326 [http-nio-8083-exec-2] INFO  edu.matc.controller.AdminActionDirectoryServlet  - OVC displaying url /update_member.jsp
+2017-04-10 12:09:43,142 12528 [http-nio-8083-exec-5] INFO  edu.matc.controller.MemberSearchActionServlet  - In search member servlet person 103MARIA
+2017-04-10 12:10:07,022 36408 [http-nio-8083-exec-7] INFO  edu.matc.controller.MemberSearchActionServlet  - In search member servlet person 103MARIA
+2017-04-10 12:10:36,842 66228 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminActionDirectoryServlet  - OVC displaying url /update_member.jsp

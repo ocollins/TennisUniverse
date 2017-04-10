@@ -5,6 +5,8 @@
             <tr><td>Search Member by ID</td>
                 <td><input type="text" name="searchID" value = ""></td>
             </tr>
+            <tr><td colspan="2" class="instruction_td"><strong>Look up member ID</strong></td>
+            </tr>
             <tr><td>Search by Last Name</td>
                 <td><input type="text" name="searchLastName" value = ""></td>
             </tr>
