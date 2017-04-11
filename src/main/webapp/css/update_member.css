@@ -25,12 +25,18 @@ margin: auto;
 
 #submit_button {
     margin-top: 2rem;
+    text-align: center;
 }
 
 #search_container {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.instruction_td {
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 

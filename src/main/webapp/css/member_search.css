@@ -8,3 +8,14 @@
     padding: 1.5rem;
     text-align: center;
 }
+
+#members_list_div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+th, td {
+    text-align: left;
+    padding: .4rem;
+}
