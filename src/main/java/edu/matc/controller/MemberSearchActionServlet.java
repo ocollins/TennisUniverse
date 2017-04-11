@@ -44,24 +44,25 @@ public class MemberSearchActionServlet extends HttpServlet {
 
         dao = new PersonDao();
 
-        //Create a session
+        //Create a session container
         session = request.getSession(true);
-        //ArrayList<Person> memberList = new ArrayList<>();
 
         //Retreive search parameters
-        String lastName = request.getParameter("searchLastName");
-        int personId = Integer.parseInt(request.getParameter("searchID"));
+        String lastName = null;
+        int personId = 0;
 
-        //If searching by ID
-        if (personId != 0) {
+        if (request.getParameter("searchID")!= null && !request.getParameter("searchID").isEmpty() ) {
+            //Get member's info for the ID
+            personId = Integer.parseInt(request.getParameter("searchID"));
             aPerson = getMemberInfo(request, personId);
+            //Store it in the session
+            session.setAttribute("aPerson", getMemberInfo(request, personId));
         //Otherwise, try searching by last name
-        } else if (!lastName.isEmpty()){
-            logger.info("");
+        } else if (!request.getParameter("searchLastName").isEmpty()){
+            //Store list of members with the last name in session container
+            lastName = request.getParameter("searchLastName");
+            session.setAttribute("memberList", getMemberList(lastName));
         }
-
-        //Store person in the session container
-        session.setAttribute("aPerson", getMemberInfo(request, personId));
 
         String url = "/update_member.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
@@ -71,7 +72,8 @@ public class MemberSearchActionServlet extends HttpServlet {
     /**
      * Gets member info by ID.
      *
-     * @param request the request
+     * @param request  the request
+     * @param personId the person id
      * @return the member info
      */
     public Person getMemberInfo(HttpServletRequest request, int personId) {
@@ -86,10 +88,16 @@ public class MemberSearchActionServlet extends HttpServlet {
         return aPerson;
     }
 
+    /**
+     * Gets member list.
+     *
+     * @param lastName the last name
+     * @return the member list
+     */
     public ArrayList<Person> getMemberList(String lastName) {
         ArrayList<Person> memberList = new ArrayList<>();
         try {
-             memberList = (ArrayList<Person>) dao.getPersonByLastName(lastName);
+            memberList = (ArrayList<Person>) dao.getPersonByLastName(lastName);
             logger.info("In search member servlet person " + memberList.get(0).getFirstName());
         } catch (HibernateException he) {
             logger.info("Hibernate Exception " + he);
