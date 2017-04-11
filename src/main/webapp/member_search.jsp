@@ -1,3 +1,4 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 <div id="search_container">
     <form action="memberSearchActionServlet" name="" id="mem_search_form" method="GET">
@@ -14,3 +15,29 @@
         </table>
     </form>
 </div>
+
+
+<c:if test="${foundMembers}">
+    <table class="display_table" >
+        <tr>
+            <th>Member ID</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Birth Date</th>
+            <th>Street address 1</th>
+            <th>Street address 2</th>
+            <th>City</th>
+        </tr>
+        <c:forEach var="member" items="${memberList}">>
+            <tr>
+                <td>${member.personId}</td>
+                <td>${member.firstName}</td>
+                <td>${member.lastName}</td>
+                <td>${member.birthDt}</td>
+                <td>${member.addressLine1}</td>
+                <td>${member.addressLine2}</td>
+                <td>${member.city}</td>
+            </tr>
+        </c:forEach>
+    </table>
+</c:if>

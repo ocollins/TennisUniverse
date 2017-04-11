@@ -17,16 +17,7 @@
     <title>Update Member</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
-    <%--<script>--%>
-        <%--$(document).ready(function(){--%>
-            <%--$("#update_member_form").hide();--%>
-
-            <%--});--%>
-        <%--});--%>
-    <%--</script>--%>
 </head>
-
-
 
 <body>
 
@@ -37,8 +28,6 @@
 <c:import url="head.jsp"/>
 
 <c:import url="menu.jsp"/>
-
-
 
     <div id="main_container_div">
         <h2 id="title_header">Update Member Information</h2>

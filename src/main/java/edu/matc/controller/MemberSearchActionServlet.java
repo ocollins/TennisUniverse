@@ -62,6 +62,7 @@ public class MemberSearchActionServlet extends HttpServlet {
             //Store list of members with the last name in session container
             lastName = request.getParameter("searchLastName");
             session.setAttribute("memberList", getMemberList(lastName));
+            session.setAttribute("foundMembers", true);
         }
 
         String url = "/update_member.jsp";
