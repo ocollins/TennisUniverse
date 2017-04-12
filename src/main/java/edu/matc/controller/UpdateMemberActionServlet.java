@@ -28,13 +28,7 @@ import java.time.LocalDate;
 public class UpdateMemberActionServlet extends HttpServlet {
     private final Logger logger = Logger.getLogger(this.getClass());
     HttpSession session;
-    /**
-     * The Dao.
-     */
     PersonDao dao;
-    /**
-     * The New person.
-     */
     Person updatePerson;
     /**
      * Handles HTTP GET requests.
@@ -49,10 +43,20 @@ public class UpdateMemberActionServlet extends HttpServlet {
 
         //Get session container
         session = request.getSession(true);
+        String message = null;
 
         //Remove old message
         session.removeAttribute("resultMessage");
-        session.setAttribute("resultMessage", storeMemberInfo(request));
+
+        //Try to update member information and send result on the screen
+        boolean updateSuccess = updateMemberInfo(request);
+        if (updateSuccess) {
+            message = "Member information was updated successfully";
+        } else {
+            message = "There was an error updating member information. Please contact Help Desk";
+        }
+        session.setAttribute("resultMessage", message);
+        session.removeAttribute("aPerson");
 
         String url = "/update_member.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
@@ -61,18 +65,18 @@ public class UpdateMemberActionServlet extends HttpServlet {
     }
 
     /**
-     * Store member info int.
+     * Store updated member info.
      * @param request the request
-     * @return the int
+     * @return the boolean
      */
-    public boolean storeMemberInfo(HttpServletRequest request) {
+    public boolean updateMemberInfo(HttpServletRequest request) {
         dao = new PersonDao();
-        boolean successUpdate = false;
+        boolean updateSuccess = false;
 
         LocalDateAttributeConverter dateConverter = new LocalDateAttributeConverter();
         LocalDate dob = LocalDate.parse(request.getParameter("birth_date"));
         dateConverter.convertToDatabaseColumn(dob);
-        int personId = Integer.parseInt((String)session.getAttribute("searchID"));
+        int personId = Integer.parseInt(request.getParameter("searchID"));
 
         updatePerson = new Person(personId, Integer.parseInt(request.getParameter("ssn")), request.getParameter("fname"),
                 request.getParameter("lname"), dob, 1, request.getParameter("email"),
@@ -82,12 +86,13 @@ public class UpdateMemberActionServlet extends HttpServlet {
 
         try {
             dao.updatePerson(updatePerson);
-            logger.info("In Add member servlet added a new person " + successUpdate);
+            updateSuccess = true;
+            logger.info("##############In update member servlet ###############" + updateSuccess);
             logger.info("updated first name " + request.getParameter("fname"));
         } catch (HibernateException he) {
             logger.info("Hibernate Exception " + he);
         }
-        return successUpdate;
+        return updateSuccess;
 
 
     }

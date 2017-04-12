@@ -44,8 +44,14 @@ public class MemberSearchActionServlet extends HttpServlet {
 
         dao = new PersonDao();
 
-        //Create a session container
+        //Get a session container
         session = request.getSession(true);
+
+        //Remove attributes from the prior session
+        session.removeAttribute("aPerson");
+        session.removeAttribute("searchID");
+        session.removeAttribute("memberList");
+        session.removeAttribute("foundMembers");
 
         //Retreive search parameters
         String lastName = null;
@@ -56,7 +62,8 @@ public class MemberSearchActionServlet extends HttpServlet {
             personId = Integer.parseInt(request.getParameter("searchID"));
             aPerson = getMemberInfo(request, personId);
             //Store it in the session
-            session.setAttribute("aPerson", getMemberInfo(request, personId));
+            session.setAttribute("aPerson", aPerson);
+            session.setAttribute("searchID", personId);
         //Otherwise, try searching by last name
         } else if (!request.getParameter("searchLastName").isEmpty()){
             //Store list of members with the last name in session container

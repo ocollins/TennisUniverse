@@ -26,6 +26,8 @@ margin: auto;
 #submit_button {
     margin-top: 2rem;
     text-align: center;
+    font-weight: bold;
+    font-size: 1.3rem;
 }
 
 #search_container {

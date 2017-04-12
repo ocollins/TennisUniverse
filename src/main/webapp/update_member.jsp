@@ -39,6 +39,9 @@
                     <tr><td colspan="2" class="instruction_td"><strong>Please update member information below and Submit your changes</strong>
                         </td>
                     </tr>
+                    <tr><td>Member ID</td>
+                        <td><input type="text" name="searchID" id="searchID" value="${aPerson.personId}" readonly="readonly"></td>
+                    </tr>
                     <tr><td>First Name</td>
                         <td><input type="text" name="fname" id="fName" value="${aPerson.firstName}" required></td>
                     </tr>
@@ -77,8 +80,8 @@
                 </table>
             </c:if>
         </form>
-        <c:if test="${not empty feedbackMessage}">
-            <p id="feedback_p">Member was updated successfully</p>
+        <c:if test="${not empty resultMessage}">
+            <p id="feedback_p">${resultMessage}</p>
         </c:if>
     </div>
 <c:import url="footer.jsp"/>
