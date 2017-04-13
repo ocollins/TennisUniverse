@@ -20,8 +20,11 @@ public class AdminAction {
     @Column(name = "ACTION_DESC")
     private String actionDesc;
 
-    @Column(name = "ACTION_SERVLET_NAME")
-    private String actionServletName;
+    @Column(name = "ACTION_JSP_NAME")
+    private String actionJSPName;
+
+    @Column(name = "SEARCH_MEMBER_SW")
+    private String searchMemberSw;
 
     /**
      * Instantiates a new Admin action.
@@ -31,18 +34,16 @@ public class AdminAction {
 
     /**
      * Instantiates a new Admin action.
-     *
      * @param actionDesc        the action desc
      * @param actionServletName the action servlet name
      */
     public AdminAction(String actionDesc, String actionServletName) {
         this.actionDesc = actionDesc;
-        this.actionServletName = actionServletName;
+        this.actionJSPName = actionServletName;
     }
 
     /**
      * Gets admin action id.
-     *
      * @return the admin action id
      */
     public int getAdminActionId() {
@@ -51,7 +52,6 @@ public class AdminAction {
 
     /**
      * Sets admin action id.
-     *
      * @param adminActionId the admin action id
      */
     public void setAdminActionId(int adminActionId) {
@@ -60,7 +60,6 @@ public class AdminAction {
 
     /**
      * Gets action desc.
-     *
      * @return the action desc
      */
     public String getActionDesc() {
@@ -69,7 +68,6 @@ public class AdminAction {
 
     /**
      * Sets action desc.
-     *
      * @param actionDesc the action desc
      */
     public void setActionDesc(String actionDesc) {
@@ -78,19 +76,33 @@ public class AdminAction {
 
     /**
      * Gets action servlet name.
-     *
      * @return the action servlet name
      */
-    public String getActionServletName() {
-        return actionServletName;
+    public String getActionJSPName() {
+        return actionJSPName;
     }
 
     /**
-     * Sets action servlet name.
-     *
-     * @param actionServletName the action servlet name
+     * Sets action jsp name.
+     * @param actionJSPName the action jsp name
      */
-    public void setActionServletName(String actionServletName) {
-        this.actionServletName = actionServletName;
+    public void setActionJSPName(String actionJSPName) {
+        this.actionJSPName = actionJSPName;
+    }
+
+    /**
+     * Gets search member sw.
+     * @return the search member sw
+     */
+    public String getSearchMemberSw() {
+        return searchMemberSw;
+    }
+
+    /**
+     * Sets search member sw.
+     * @param searchMemberSw the search member sw
+     */
+    public void setSearchMemberSw(String searchMemberSw) {
+        this.searchMemberSw = searchMemberSw;
     }
 }

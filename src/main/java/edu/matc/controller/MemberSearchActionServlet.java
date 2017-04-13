@@ -53,7 +53,9 @@ public class MemberSearchActionServlet extends HttpServlet {
         session.removeAttribute("memberList");
         session.removeAttribute("foundMembers");
 
-        //Retreive search parameters
+        String url = null;
+
+        //Retrieve search parameters
         String lastName = null;
         int personId = 0;
 
@@ -72,7 +74,14 @@ public class MemberSearchActionServlet extends HttpServlet {
             session.setAttribute("foundMembers", true);
         }
 
-        String url = "/update_member.jsp";
+        //If searching by member ID redirect to another admin page
+        //otherwise, bring back results to the memeber search page
+        if (personId != 0) {
+            url = (String)session.getAttribute("adminPageUrl");
+        } else {
+            url = "/member_search.jsp";
+        }
+
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }

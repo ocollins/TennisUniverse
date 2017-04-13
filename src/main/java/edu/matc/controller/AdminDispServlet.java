@@ -5,6 +5,7 @@ package edu.matc.controller;
  * @author O Collins
  */
 
+import edu.matc.entity.AdminAction;
 import edu.matc.persistence.AdminActionDao;
 
 import javax.servlet.RequestDispatcher;
@@ -48,8 +49,12 @@ public class AdminDispServlet extends HttpServlet {
         //Create AdminActions instance
         AdminActionDao dao = new AdminActionDao();
 
+        List<AdminAction> actions = dao.getAllAdminActions();
+
+
         //Get a list of admin actions and store it in the session
-        request.setAttribute("adminActionsList", dao.getAllAdminActions());
+        //request.setAttribute("adminActionsList", actions);
+        session.setAttribute("adminActionsList", actions);
 
         String url = "/adminoptions.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

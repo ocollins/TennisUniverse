@@ -28,7 +28,7 @@ public class AdminActionDaoTest {
     public void getAllAdminActions() throws Exception {
         List<AdminAction> adminActions = dao.getAllAdminActions();
         for (AdminAction adminAction : adminActions) {
-            logger.info("Action desc: " + adminAction.getActionDesc() + " " + adminAction.getActionServletName());
+            logger.info("Action desc: " + adminAction.getActionDesc() + " " + adminAction.getActionJSPName());
         }
 
         assertTrue("No Admin Actions returned ", adminActions.size() > 0);

@@ -31,7 +31,6 @@
 
     <div id="main_container_div">
         <h1 id="title_header">Update Member Information</h1>
-        <c:import url="member_search.jsp"/>
 
         <form action="updateMemberActionServlet" name="" id="update_member_form" method="POST">
             <c:if test="${not empty aPerson.lastName}">

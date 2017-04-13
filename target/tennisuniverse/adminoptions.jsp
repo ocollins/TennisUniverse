@@ -35,7 +35,7 @@
 
         <select name="adm_option" form="display_form">
             <c:forEach var="adm_option" items="${adminActionsList}">
-                <option value="${adm_option.actionServletName}">${adm_option.actionDesc}</option>
+                <option value="${adm_option.actionJSPName}">${adm_option.actionDesc}</option>
             </c:forEach>
         </select>
 

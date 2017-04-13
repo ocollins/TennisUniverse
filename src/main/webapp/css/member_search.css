@@ -1,3 +1,5 @@
+@import url('base.css');
+
 #search_container {
     display: flex;
     align-items: center;
@@ -18,4 +20,9 @@
 th, td {
     text-align: left;
     padding: .4rem;
+}
+
+.submit_button {
+    text-align: center;
+
 }

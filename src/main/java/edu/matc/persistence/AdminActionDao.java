@@ -66,7 +66,7 @@ public class AdminActionDao {
      * @return the adminAction by desc
      */
 
-    public AdminAction getAdminActionByDesc(String adminActionDesc) {
+    public AdminAction getAdminActionByJSPName(String adminActionDesc) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Criteria criteria = null;
 
