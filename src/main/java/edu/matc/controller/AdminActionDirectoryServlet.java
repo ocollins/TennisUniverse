@@ -52,11 +52,11 @@ public class AdminActionDirectoryServlet extends HttpServlet {
         //Get a list of admin actions and find the action that was selected
         List<AdminAction> actionList = (ArrayList<AdminAction>)session.getAttribute("adminActionsList");
 
-
         //Find if the display member search switch is 'Y' for that action
         for (AdminAction action : actionList) {
-            if (action.getActionJSPName() == adminPageUrl){
-                if (action.getSearchMemberSw().equals('Y')) {
+            logger.info(action.getActionJSPName() + " " + action.getSearchMemberSw());
+            if (action.getActionJSPName().equals(adminPageUrl)){
+                if (action.getSearchMemberSw().equals("Y")) {
                     needMemberSearch = true;
                 }
             }
@@ -64,10 +64,10 @@ public class AdminActionDirectoryServlet extends HttpServlet {
 
         //Call member search form if needed, otherwise forward to the page, requested by the user
         if(needMemberSearch) {
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(adminPageUrl);
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(memberSearchPageUrl);
             dispatcher.forward(request, response);
         } else {
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(memberSearchPageUrl);
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(adminPageUrl);
             dispatcher.forward(request, response);
         }
 

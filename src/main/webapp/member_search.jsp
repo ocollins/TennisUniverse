@@ -1,5 +1,22 @@
+<%--
+  This is a page to search for member information
+  Author: Olena Collins
+--%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="css/member_search.css" rel="stylesheet" type="text/css"/>
+    <title>Search for a Member</title>
+</head>
+
+
+<body>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<link href="css/member_search.css" rel="stylesheet" type="text/css"/>
 
 <div id="search_container">
     <form action="memberSearchActionServlet" name="" id="mem_search_form" method="GET">
@@ -44,3 +61,5 @@
     </table>
     </div>
 </c:if>
+</body>
+</html>

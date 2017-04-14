@@ -30,10 +30,11 @@
 <c:import url="menu.jsp"/>
 
     <div id="main_container_div">
-        <h1 id="title_header">Update Member Information</h1>
+
 
         <form action="updateMemberActionServlet" name="" id="update_member_form" method="POST">
             <c:if test="${not empty aPerson.lastName}">
+                <h1 id="title_header">Update Member Information</h1>
                 <table class="add_table" id="add_table">
                     <tr><td colspan="2" class="instruction_td"><strong>Please update member information below and Submit your changes</strong>
                         </td>
