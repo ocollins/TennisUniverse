@@ -31,9 +31,9 @@
     <div id="main_container_div">
 
         <form action="addMemberActionServlet" name="" id="add_member_form" method="POST">
-            <h2 id="title_header">Add Member Information</h2>
 
             <c:if test="${empty feedbackMessage}">
+                <h2 id="title_header">Add Member Information</h2>
                 <table class="add_table" id="add_table">
                     <tr><td>First Name</td>
                         <td><input type="text" name="fname" id="fName" value="" required></td>
