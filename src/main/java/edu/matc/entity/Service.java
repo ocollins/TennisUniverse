@@ -6,8 +6,10 @@ package edu.matc.entity;
  */
 
 import org.hibernate.annotations.GenericGenerator;
+import org.hibernate.annotations.Parameter;
 
 import javax.persistence.*;
+import java.util.*;
 
 /**
  * A class to represent a person.
@@ -31,6 +33,9 @@ public class Service {
 
     @Column(name = "SERVICE_CHARGE")
     private double serviceCharge;
+
+    //private Set<PersonService> personServices = new HashSet<PersonService>();
+
 
     /**
      * Instantiates a new Service.
@@ -136,6 +141,18 @@ public class Service {
     public void setServiceCharge(double serviceCharge) {
         this.serviceCharge = serviceCharge;
     }
+
+//    @Access(AccessType.PROPERTY)
+//    //@OneToMany(fetch = FetchType.LAZY, mappedBy = "service")
+//    @OneToMany
+//    public Set<PersonSer> getPersons() {
+//        return this.persons;
+//    }
+//
+//    public void setPersons(Set<Person> persons) {
+//
+//        this.persons = persons;
+//    }
 
     @Override
     public String toString() {

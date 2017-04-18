@@ -2,6 +2,8 @@ package edu.matc.entity;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.util.HashSet;
+import java.util.Set;
 
 import org.hibernate.annotations.GenericGenerator;
 
@@ -18,20 +20,23 @@ public class PersonService {
     @GenericGenerator(name="increment", strategy = "increment")
     private int personServiceId;
 
+    @Column(name = "PERSON_ID")
+    private int personId;
+
+//    @Column(name = "SERVICE_ID")
+//    private int serviceId;
+
     @Column(name = "SERVICE_DATE")
     private Date serviceDate;
 
     @Column(name = "NOTES")
     private String notes;
-//
-//    @ManyToOne
-//    @JoinColumn(name="PERSON_ID")
-//    private Person persons;
+
+    @Column
+    private Service service;
 
     public PersonService () {
-
     }
-
 
     public int getPersonServiceId() {
         return personServiceId;
@@ -40,6 +45,22 @@ public class PersonService {
     public void setPersonServiceId(int personServiceId) {
         this.personServiceId = personServiceId;
     }
+
+    public int getPersonId() {
+        return personId;
+    }
+
+    public void setPersonId(int personId) {
+        this.personId = personId;
+    }
+
+//    public int getServiceId() {
+//        return serviceId;
+//    }
+//
+//    public void setServiceId(int serviceId) {
+//        this.serviceId = serviceId;
+//    }
 
     public Date getServiceDate() {
         return serviceDate;
@@ -55,6 +76,17 @@ public class PersonService {
 
     public void setNotes(String notes) {
         this.notes = notes;
+    }
+
+    @Access(AccessType.PROPERTY)
+    @ManyToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "SERVICE_ID", nullable = false, updatable = false)
+    public Service getService() {
+        return this.service;
+    }
+
+    public void setService(Service service) {
+        this.service = service;
     }
 
 

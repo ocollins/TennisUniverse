@@ -7,6 +7,7 @@ import org.hibernate.Criteria;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 
@@ -50,12 +51,13 @@ public class PersonServiceDao {
      */
     public List<PersonService> getPersonService(int id, Date startDate, Date endDate) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        List <PersonService> personServiceList = null;
+        List personServiceList = null;
 
         Criteria criteria = session.createCriteria(PersonService.class);
-        criteria.add(Restrictions.eq("personServiceId", id));
+        criteria.add(Restrictions.eq("personId", id));
         criteria.add(Restrictions.ge("serviceDate", startDate));
         criteria.add(Restrictions.le("serviceDate", endDate));
+        criteria.addOrder(Order.asc("serviceDate"));
 
         try {
             personServiceList = criteria.list();

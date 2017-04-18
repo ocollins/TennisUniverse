@@ -14,6 +14,7 @@ import java.sql.Date;
 import java.time.LocalDate;
 import java.time.Period;
 import java.util.Calendar;
+import java.util.HashSet;
 import java.util.Set;
 
 
@@ -73,9 +74,9 @@ public class Person {
     @Column(name = "LAST_UPDATED")
     private Timestamp lastUpdated;
 
-
-
-//    @OneToMany(cascade = CascadeType.ALL)
+//    @Column
+//    @ElementCollection(targetClass = Service.class)
+    private Set<Service> services = new HashSet<Service>(0);
 //    private Set<PersonService> personServiceSet;
 //
 //    @OneToMany(cascade = CascadeType.ALL)
@@ -416,37 +417,19 @@ public class Person {
         this.lastUpdated = currentTimestamp;
     }
 
-    /**
-     * Gets person service set.
-     * @return the person service set
-     */
-//    public Set<PersonService> getPersonServiceSet() {
-//        return personServiceSet;
-//    }
-//
-//    /**
-//     * Sets person service set.
-//     * @param personServiceSet the person service set
-//     */
-//    public void setPersonServiceSet(Set<PersonService> personServiceSet) {
-//        this.personServiceSet = personServiceSet;
-//    }
-//
-//    /**
-//     * Gets person account set.
-//     * @return the person account set
-//     */
-//    public Set<PersonAccount> getPersonAccountSet() {
-//        return personAccountSet;
-//    }
-//
-//    /**
-//     * Sets person account set.
-//     * @param personAccountSet the person account set
-//     */
-//    public void setPersonAccountSet(Set<PersonAccount> personAccountSet) {
-//        this.personAccountSet = personAccountSet;
-//    }
+    @Access(AccessType.PROPERTY)
+    @ManyToMany(fetch = FetchType.LAZY, cascade = CascadeType.ALL, targetEntity = Service.class)
+    @JoinTable(name = "PERSON_SERVICE",
+            joinColumns = {@JoinColumn(name = "PERSON_ID", nullable = false, updatable = false)},
+            inverseJoinColumns = {@JoinColumn(name = "SERVICE_ID", nullable = false, updatable = false) })
+    public Set<Service> getServices() {
+        return this.services;
+    }
+
+    public void setServices(Set<Service> services) {
+        this.services = services;
+    }
+
 
     @Override
     public String toString() {

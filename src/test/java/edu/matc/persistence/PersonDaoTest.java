@@ -1,5 +1,6 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.Service;
 import edu.matc.util.LocalDateAttributeConverter;
 import edu.matc.entity.Person;
 import org.junit.Before;
@@ -8,6 +9,7 @@ import org.apache.log4j.*;
 import java.time.LocalDate;
 
 import java.util.List;
+import java.util.*;
 
 import static org.junit.Assert.*;
 
@@ -20,10 +22,14 @@ public class PersonDaoTest {
     PersonDao dao;
     LocalDateAttributeConverter dateConverter;
     private final Logger logger = Logger.getLogger(this.getClass());
+    Person aPerson;
+    int testId;
 
     @Before
     public void setup() {
         dao = new PersonDao();
+        testId = 101;
+        aPerson = dao.getPerson(testId);
 
     }
 
@@ -36,9 +42,24 @@ public class PersonDaoTest {
 
     @Test
     public void getPerson() throws Exception {
-        Person aPerson = dao.getPerson(101);
+        Person aPerson = dao.getPerson(testId);
 
         logger.info("Person with index 101 " + aPerson.getFirstName());
+        assertEquals("First name is not Joe ", "JOE", aPerson.getFirstName());
+    }
+
+    @Test
+    public void getPersonWithServices() throws Exception {
+        aPerson = dao.getPerson(testId);
+
+        logger.info("Person with index 101 " + aPerson.getFirstName());
+
+        //Get all services for the person
+        Set<Service> services = aPerson.getServices();
+        for (Service service : services) {
+            logger.info(service.getServiceDesc() + " " + service.getServiceCharge());
+        }
+
         assertEquals("First name is not Joe ", "JOE", aPerson.getFirstName());
     }
 
