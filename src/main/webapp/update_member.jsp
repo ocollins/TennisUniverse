@@ -20,6 +20,11 @@
 </head>
 
 <body>
+<script>
+    function displayAlert() {
+        alert("Are you sure you want to update this member?");
+    }
+</script>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" type=""></script>
 
@@ -35,6 +40,7 @@
                 <h1 class="title_header">Update Member Information</h1>
                 <h2 class="title_header">Please update member information below and Submit your changes</h2>
                 <c:import url="display_member_info.jsp"/>
+                <div class="submit_button_div" ><input type="submit" class="submit_button" value="Submit" onclick="displayAlert()"></div>
             </c:if>
         </form>
         <c:if test="${not empty resultMessage}">

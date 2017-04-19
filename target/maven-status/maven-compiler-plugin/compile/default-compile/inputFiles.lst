@@ -1,8 +1,10 @@
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/persistence/SessionFactoryProvider.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/PrintStatementDispServlet.java
+/home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/memberstatement/CalculateMonthlyStatement.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/DeleteMemberActionServlet.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/CaloriesCalculator/Duration.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/entity/Person.java
+/home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/persistence/PersonServiceDao.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/CaloriesCalculator/Calculations.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/CaloriesCalculator/Calculation0.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/util/LocalDateAttributeConverter.java

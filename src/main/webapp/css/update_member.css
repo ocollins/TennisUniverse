@@ -17,14 +17,13 @@ margin: auto;
     font-weight: bold;
 }
 
-.submit_button {
+.submit_button_div {
     text-align: center;
 
 }
 
-#submit_button {
+.submit_button {
     margin-top: 2rem;
-    text-align: center;
     font-weight: bold;
     font-size: 1.3rem;
 }

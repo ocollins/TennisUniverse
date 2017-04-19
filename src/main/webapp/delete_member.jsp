@@ -38,7 +38,7 @@
                 <h1 class="title_header">Delete Member Information</h1>
                 <h2 class="title_header">Please verify this is the member you want to delete and click Submit</h2>
                 <c:import url="display_member_info.jsp"/>
-                <input type="submit" value="Submit" class="submit_button" onclick="displayAlert()">
+                <div class="submit_button_div" ><input type="submit" value="Submit" class= "submit_button" onclick="displayAlert()"></div>
             </c:if>
         </form>
         <c:if test="${not empty resultMessage}">
