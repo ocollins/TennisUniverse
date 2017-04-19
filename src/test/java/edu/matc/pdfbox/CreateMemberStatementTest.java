@@ -10,7 +10,7 @@ import static org.junit.Assert.*;
 public class CreateMemberStatementTest {
     @Test
     public void createPDFTest() throws Exception {
-        CreateMemberStatement createMemberStatement = new CreateMemberStatement();
+        CreateMemberStatement2 createMemberStatement = new CreateMemberStatement2();
         createMemberStatement.CreatePDF();
 
     }

@@ -1,6 +1,8 @@
 package edu.matc.memberstatement;
 
+import edu.matc.entity.Person;
 import edu.matc.entity.PersonService;
+import edu.matc.persistence.PersonDao;
 import edu.matc.persistence.PersonServiceDao;
 import org.apache.log4j.Logger;
 
@@ -13,7 +15,9 @@ import java.util.List;
  */
 public class CalculateMonthlyStatement {
     private Logger logger = Logger.getLogger(this.getClass());
-    PersonServiceDao dao;
+    PersonServiceDao personServiceDao;
+    PersonDao personDao;
+    Person member;
 
     /**
      * List all services for a member for the specified period.
@@ -24,10 +28,10 @@ public class CalculateMonthlyStatement {
      * @return the list
      */
     public List<PersonService> listServices(int id, Date startDate, Date endDate) {
-        dao = new PersonServiceDao();
-        //Get a list of services per member per period from dao
+        personServiceDao = new PersonServiceDao();
+        //Get a list of services per member per period from personServiceDAO
         List<PersonService> personServicesList =
-                dao.getPersonService(id, startDate, endDate);
+                personServiceDao.getPersonService(id, startDate, endDate);
 
         for(PersonService personService : personServicesList) {
             logger.info(personService.getService().getServiceDesc() + " " + personService.getServiceDate());
@@ -53,6 +57,13 @@ public class CalculateMonthlyStatement {
 
         logger.info("Total due " + totalDue);
         return totalDue;
+    }
+    
+    public Person printMemberInfo(int memberId) {
+        personDao = new PersonDao();
+        member = personDao.getPerson(memberId);
+        return member;
+        
     }
 
 }
