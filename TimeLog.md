@@ -84,16 +84,16 @@
 |3/26/2017|Videos for week 10|2 ||
 |3/27/2017|Trying to make JavaScript work in Intellij|1 ||
 |Week 10||||
-|3/29/2017|TEam project |||
-|3/30/2017||||
-|3/31/2017||||
-|4/01/2017||||
-|4/02/2017||||
-|4/03/2017||||
+|3/29/2017|Team project |||
 |Week 11||||
-|4/05/2017||||
-|4/06/2017||||
-|4/07/2017||||
-|4/08/2017||||
-|4/09/2017||||
-|4/10/2017||||
+|4/05/2017|Add logic to consume Calories calculator API|2||
+|4/06/2017|Cleanup Fitness page|2||
+|Week 12|||||
+|4/12/2017|Add more Admin JSPs|2||
+|4/13/2017|Add update member JSP and servlet|3||
+|4/14/2017|Add delete member JSP and servlet|3||
+|4/15/2017|Add memeber search JSP and servlet|2||
+|Week 13|||||
+|4/17/2017|Add Hibernate/business logic to create member statement|3|||
+|4/19/2017|Create member statement in PDF format||||
+|4/20/2017|Add logic to email member statement to the member||||

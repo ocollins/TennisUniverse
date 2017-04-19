@@ -50,35 +50,41 @@
 ### Week 7
 - [X] Time log entries
 - [ ] Deploy Admin Options on AWS
-- [ ] Add JSPs for Admin Options pages
+- [X] Add JSPs for Admin Options pages
 - [ ] Fix authentication
 ### Week 8
-- [ ] Integration with ??? api - Calorie calculator functionality
-- [ ] Code review
-- [ ] Add remaining Entities and DAOs
-- [ ] Time log entries
+- [X] Code review
+- [X] Add remaining Entities and DAOs
+- [X] Time log entries
 
 ### Week 9
-- [ ] Create databse on AWS
-- [ ] Add more jsps
-- [ ] Add controllers for admin options jsps
-- [ ] Add password reset/reminder function
-- [ ] Time log entries
+- [X] Add more jsps
+- [X] Add controllers for admin options jsps
+- [X] Time log entries
 
 ### Week 10
-- [ ] Time log entries
+- [X] Time log entries
+- [X] Add logic to consume Calories Calculator API
+- [X] Add more JSPs
 
 ### Week 11
-- [ ] Time log entries
+- [X] Time log entries
 
 ### Week 12
-- [ ] Time log entries
+- [X] Time log entries
+- [X] Add business logic/Hibernate setup to produce members monthly statement
+- [X] Add more JSPs
 
 ### Week 13
-- [ ] Time log entries
+- [X] Time log entries
+- [ ] Utilize commercial PDF creator library to produce a member statement in PDF format
+- [ ] Add send email functionality to email member statement
+- [ ] Add encript SSN logic
+- [ ] Create databse on AWS
 
 ### Week 14
 - [ ] Time log entries
+- [ ] Clean up/allign all parts of all JSPs
 - [ ] Create final presentation
 
 ### Week 15
