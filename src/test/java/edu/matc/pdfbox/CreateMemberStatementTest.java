@@ -6,6 +6,8 @@ import org.junit.Before;
 import org.junit.Test;
 import org.apache.log4j.Logger;
 
+import java.sql.Date;
+
 import static org.junit.Assert.*;
 
 /**
@@ -16,16 +18,23 @@ public class CreateMemberStatementTest {
 
     Person member;
     CalculateMonthlyStatement calculateMonthlyStatement;
+    int memberId = 101;
+    Date startDate = Date.valueOf("2017-04-01");
+    Date endDate = Date.valueOf("2017-04-30");
 
     @Before
     public void init() {
+
         calculateMonthlyStatement = new CalculateMonthlyStatement();
+        memberId = 101;
+        startDate = Date.valueOf("2017-04-01");
+        endDate = Date.valueOf("2017-04-30");
     }
 
     @Test
     public void createPDFTest() throws Exception {
         CreateMemberStatement2 createMemberStatement = new CreateMemberStatement2();
-        createMemberStatement.createPDF();
+        createMemberStatement.createPDF(memberId, startDate, endDate);
 
     }
 
