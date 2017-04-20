@@ -58,12 +58,6 @@ public class CalculateMonthlyStatement {
         logger.info("Total due " + totalDue);
         return totalDue;
     }
-    
-    public Person printMemberInfo(int memberId) {
-        personDao = new PersonDao();
-        member = personDao.getPerson(memberId);
-        return member;
-        
-    }
+
 
 }
