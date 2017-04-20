@@ -36,7 +36,10 @@ public class CreateMemberStatement2 {
 		personDao = new PersonDao();
 		personServiceDao = new PersonServiceDao();
 
-		float startYPosition = 660f;
+		float startYPosition = 670f;
+		float startXPosition = 25;
+
+
 		PDDocument document = new PDDocument();
 		PDPage page = new PDPage();
 		document.addPage(page);
@@ -48,9 +51,7 @@ public class CreateMemberStatement2 {
 		createHeader(contentStream);
 
 		//Add a line after the header
-		contentStream.setNonStrokingColor(Color.LIGHT_GRAY);
-		contentStream.addRect(45, 680, 524, 1.5f);
-		contentStream.closeAndStroke();
+		drawRect(contentStream, 45, 680, 524, 1.5f);
 
 		contentStream.setNonStrokingColor(Color.black);
 		//Begin the Content stream
@@ -61,9 +62,11 @@ public class CreateMemberStatement2 {
 
 		//Setting the position for the line
 		contentStream.newLineAtOffset(45, startYPosition);
-		contentStream.showText("Please call Tennis Universe with questions at (608) 574 3397");
+		contentStream.showText("With billing questions please call Tennis Universe at (608) 574 3397");
 		contentStream.newLine();
 
+		//Reset X-starting position
+		//contentStream.newLineAtOffset(startXPosition, startYPosition);
 
 		//!!!!!!! input data
 //		int memberId = 101;
@@ -100,13 +103,16 @@ public class CreateMemberStatement2 {
 		contentStream.setFont(PDType1Font.HELVETICA, 12);
 		calculateMonthlyStatement = new CalculateMonthlyStatement();
 		contentStream.showText(String.valueOf(calculateMonthlyStatement.calculateTotalDue(memberId, startDate, endDate)));
+		contentStream.newLine();
 
 		//Ending the content stream
 		contentStream.endText();
 
-		contentStream.setStrokingColor(Color.GRAY);
-		contentStream.addRect(20, 80, 570, 700);
-		contentStream.closeAndStroke();
+		//Add a line after the member info
+		drawRect(contentStream, 45, 580, 524, 1.5f);
+
+		//Draw page border
+		drawRect(contentStream, 20, 80, 570, 700);
 
 //		//Setting the non stroking color
 //		contentStream.setNonStrokingColor(Color.LIGHT_GRAY);
@@ -135,7 +141,7 @@ public class CreateMemberStatement2 {
 	public void createHeader(PDPageContentStream contentStream) throws IOException{
 		//Create statement header
 		contentStream.beginText();
-		contentStream.newLineAtOffset(45, 700);
+		contentStream.newLineAtOffset(45, 720);
 		//Setting the font to the Content stream
 		contentStream.setFont(PDType1Font.HELVETICA_BOLD, 18);
 		contentStream.showText("Member Monthly Statement");
@@ -166,5 +172,13 @@ public class CreateMemberStatement2 {
 			logger.info(ex);
 		}
 	}
+
+	public void drawRect (PDPageContentStream contentStream, float x, float y, float w, float h) throws IOException{
+		contentStream.setStrokingColor(Color.GRAY);
+		contentStream.addRect(x, y, w, h);
+		contentStream.closeAndStroke();
+
+	}
+
 
 }
