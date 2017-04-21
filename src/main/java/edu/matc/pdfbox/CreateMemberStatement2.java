@@ -38,13 +38,18 @@ public class CreateMemberStatement2 {
 	private Logger logger = Logger.getLogger(this.getClass());
 
 
+	/**
+	 * Create body of the PDF document.
+	 *
+	 * @param memberId  the member id
+	 * @param startDate the start date
+	 * @param endDate   the end date
+	 * @throws IOException the io exception
+	 */
 	public void createPDF (int memberId, Date startDate, Date endDate) throws IOException {
 		personDao = new PersonDao();
 		personServiceDao = new PersonServiceDao();
-
-		float startYPosition = 670f;
-		float startXPosition = 25;
-
+		calculateMonthlyStatement = new CalculateMonthlyStatement();
 
 		PDDocument document = new PDDocument();
 		PDPage page = new PDPage();
@@ -60,56 +65,25 @@ public class CreateMemberStatement2 {
 		//Add a line after the header
 		drawRect(contentStream, 45, 680, 524, 1.5f);
 
-		contentStream.setNonStrokingColor(Color.black);
-		//Begin the Content stream
-		contentStream.beginText();
-
-		//Setting the font to the Content stream
-		contentStream.setFont(PDType1Font.HELVETICA, 8);
-
-		//Setting the position for the line
-		contentStream.newLineAtOffset(45, startYPosition);
-		contentStream.showText("With billing questions please call Tennis Universe at (608) 574 3397");
-		contentStream.newLine();
+		String billingNote = "With billing questions please call Tennis Universe at (608) 574 3397";
+		printNote(contentStream, 670, billingNote);
 
 		DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 		String printDate = dateTimeFormatter.format(LocalDate.now());
 
-		contentStream.setFont(PDType1Font.HELVETICA_BOLD, 14);
-		//Adding text in the form of string
-		contentStream.showText("Member Name: ");
-		contentStream.setFont(PDType1Font.HELVETICA, 12);
+		//Print member information at the top of page
 		String firstName = personDao.getPerson(memberId).getFirstName();
 		String lastName = personDao.getPerson(memberId).getLastName();
-		contentStream.newLineAtOffset(150, 0);
-		contentStream.showText(firstName + " "+ lastName );
+		createMemInfoDetailLine(contentStream, 650, "Member Name", firstName + " " + lastName);
 
-		contentStream.newLine();
-		contentStream.newLineAtOffset(0, 0);
-		contentStream.setFont(PDType1Font.HELVETICA_BOLD, 14);
-		contentStream.showText("Customer Account: ");
-		contentStream.setFont(PDType1Font.HELVETICA, 12);
-		contentStream.newLineAtOffset(50, 0);
-		contentStream.showText(String.valueOf(personDao.getPerson(memberId).getPersonId()));
+		String accountId = String.valueOf(personDao.getPerson(memberId).getPersonId());
+		createMemInfoDetailLine(contentStream, 630, "Customer Account:", accountId);
 
-		contentStream.newLine();
-		contentStream.setFont(PDType1Font.HELVETICA_BOLD, 14);
-		contentStream.showText("Billing Period: ");
-		contentStream.setFont(PDType1Font.HELVETICA, 12);
-		contentStream.newLineAtOffset(50, 0);
-		contentStream.showText(startDate + " to " + endDate);
+		String period = startDate + " to " + endDate;
+		createMemInfoDetailLine(contentStream, 610, "Billing Period:", period);
 
-		contentStream.newLine();
-		contentStream.setFont(PDType1Font.HELVETICA_BOLD, 14);
-		contentStream.showText("Total Amount Due: ");
-		contentStream.setFont(PDType1Font.HELVETICA, 12);
-		calculateMonthlyStatement = new CalculateMonthlyStatement();
-		contentStream.newLineAtOffset(150, 0);
-		contentStream.showText(String.valueOf(calculateMonthlyStatement.calculateTotalDue(memberId, startDate, endDate)));
-		contentStream.newLine();
-
-		//Ending the content stream
-		contentStream.endText();
+		String totalDue = "$ " + String.valueOf(calculateMonthlyStatement.calculateTotalDue(memberId, startDate, endDate));
+		createMemInfoDetailLine(contentStream, 590, "Total Amount Due:", totalDue);
 
 		//Add a line after the member info
 		drawRect(contentStream, 45, 580, 524, 1.5f);
@@ -118,7 +92,7 @@ public class CreateMemberStatement2 {
 		drawRect(contentStream, 20, 80, 570, 700);
 
 		//Draw grey box for the header
-		drawBox(contentStream, 45, 530, 500, 25);
+		drawBox(contentStream, 45, 530, 524, 25);
 
 		//Print services and charges header
 		drawHeaderRow(contentStream, 540, "Service", "Date", "Charge");
@@ -130,9 +104,26 @@ public class CreateMemberStatement2 {
 		for (PersonService service : Services) {
 			drawServicesRows(contentStream, startY + offset, service.getService().getServiceDesc(),
 					String.valueOf(service.getServiceDate()),
-					String.valueOf("$" + service.getService().getServiceCharge()));
+					String.valueOf("$ " + service.getService().getServiceCharge()));
 			offset = offset + 20;
 		}
+
+		//Add a line before total due
+		//drawRect(contentStream, 400, 395, 165, 1);
+
+		//Draw grey box over the total due
+		drawBox(contentStream, 400, 375, 165, 20);
+
+		//Print total due
+		drawServicesRows(contentStream, 380, "Total Due", "", totalDue);
+
+		//Print line before the pay online statement
+		drawRect(contentStream, 45, 280, 524, 1.5f);
+
+
+
+		billingNote = "Please pay your bill on line at https://tennisuniverse.com";
+		printNote(contentStream, 270, billingNote);
 
 		//Closing the content stream
 		contentStream.close();
@@ -150,9 +141,12 @@ public class CreateMemberStatement2 {
 	 * @throws IOException the io exception
 	 */
 	public void createHeader(PDPageContentStream contentStream) throws IOException{
+		//Draw grey box for the header
+		drawBox(contentStream, 45, 710, 280, 35);
 		//Create statement header
 		contentStream.beginText();
-		contentStream.newLineAtOffset(45, 720);
+		contentStream.setNonStrokingColor(Color.black);
+		contentStream.newLineAtOffset(47, 720);
 		//Setting the font to the Content stream
 		contentStream.setFont(PDType1Font.HELVETICA_BOLD, 18);
 		contentStream.showText("Member Monthly Statement");
@@ -183,8 +177,58 @@ public class CreateMemberStatement2 {
 		}
 	}
 
+	/**
+	 * Print note.
+	 *
+	 * @param contentStream the content stream
+	 * @param y             the y
+	 * @param note          the note
+	 * @throws IOException the io exception
+	 */
+	public void printNote(PDPageContentStream contentStream, float y, String note)
+			throws IOException{
+		contentStream.setNonStrokingColor(Color.black);
+		//Begin the Content stream
+		contentStream.beginText();
+
+		//Setting the font to the Content stream
+		contentStream.setFont(PDType1Font.HELVETICA, 8);
+
+		//Setting the position for the line
+		contentStream.newLineAtOffset(45, y);
+		contentStream.showText(note);
+		contentStream.newLine();
+		//Ending the content stream
+		contentStream.endText();
+
+	}
+
+	/**
+	 * Create mem info detail line.
+	 *
+	 * @param contentStream the content stream
+	 * @param y             the y
+	 * @param label         the label
+	 * @param info          the info
+	 * @throws IOException the io exception
+	 */
 	public void createMemInfoDetailLine(PDPageContentStream contentStream, float y, String label, String info)
 			throws IOException{
+		//Begin the Content stream
+		contentStream.beginText();
+		contentStream.setNonStrokingColor(Color.black);
+		contentStream.newLineAtOffset(45, y);
+		contentStream.setFont(PDType1Font.HELVETICA_BOLD, 14);
+		//Adding text in the form of string
+		contentStream.showText(label);
+		contentStream.newLineAtOffset(150, 0);
+		contentStream.setFont(PDType1Font.HELVETICA, 12);
+
+		//contentStream.newLineAtOffset(150, 0);
+		contentStream.showText(info);
+
+		contentStream.newLine();
+		contentStream.endText();
 
 	}
 

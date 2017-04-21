@@ -135,8 +135,8 @@
       <file leaf-file-name="CreateMemberStatement2.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/pdfbox/CreateMemberStatement2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="63" column="34" lean-forward="true" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+            <state relative-caret-position="159">
+              <caret line="111" column="52" lean-forward="true" selection-start-line="111" selection-start-column="52" selection-end-line="111" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,6 +183,7 @@
       <find>updatePerson</find>
       <find>dao</find>
       <find>contentStream.endText();</find>
+      <find>endText</find>
     </findStrings>
     <replaceStrings>
       <replace>person</replace>
@@ -1394,44 +1395,44 @@
       <workItem from="1492619809384" duration="3042000" />
       <workItem from="1492637672384" duration="18147000" />
       <workItem from="1492705874487" duration="1535000" />
-      <workItem from="1492722984842" duration="10958000" />
+      <workItem from="1492722984842" duration="15167000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 20h 26m 14s.xml">
+    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 21h 46m 05s.xml">
       <configuration name="CreateMemberStatementTest.createPDFTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 20h 27m 06s.xml">
+    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 21h 55m 01s.xml">
       <configuration name="CreateMemberStatementTest.createPDFTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 20h 29m 30s.xml">
+    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 21h 59m 09s.xml">
       <configuration name="CreateMemberStatementTest.createPDFTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 20h 30m 21s.xml">
+    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 22h 00m 37s.xml">
       <configuration name="CreateMemberStatementTest.createPDFTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 20h 30m 46s.xml">
+    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 22h 01m 12s.xml">
       <configuration name="CreateMemberStatementTest.createPDFTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 20h 31m 10s.xml">
+    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 22h 02m 42s.xml">
       <configuration name="CreateMemberStatementTest.createPDFTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 20h 32m 28s.xml">
+    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 22h 05m 37s.xml">
       <configuration name="CreateMemberStatementTest.createPDFTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 20h 35m 29s.xml">
+    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 22h 07m 02s.xml">
       <configuration name="CreateMemberStatementTest.createPDFTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 20h 36m 27s.xml">
+    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 22h 07m 40s.xml">
       <configuration name="CreateMemberStatementTest.createPDFTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 20h 37m 41s.xml">
+    <history-entry file="CreateMemberStatementTest_createPDFTest - 2017.04.20 at 22h 08m 25s.xml">
       <configuration name="CreateMemberStatementTest.createPDFTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="431519000" />
+    <option name="totallyTimeSpent" value="435728000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1452,10 +1453,10 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272101" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3761468" sideWeight="0.5018787" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.052573327" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.052573327" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.49666667" sideWeight="0.49812132" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.49666667" sideWeight="0.49812132" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32777777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25401217" sideWeight="0.25444445" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1532,7 +1533,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="20" />
+      <option name="time" value="21" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1934,8 +1935,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/pdfbox/CreateMemberStatement2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="63" column="34" lean-forward="true" selection-start-line="63" selection-start-column="34" selection-end-line="63" selection-end-column="34" />
+        <state relative-caret-position="159">
+          <caret line="111" column="52" lean-forward="true" selection-start-line="111" selection-start-column="52" selection-end-line="111" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
