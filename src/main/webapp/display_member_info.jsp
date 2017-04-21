@@ -35,6 +35,5 @@
     <tr><td>Phone Number (no dashes - 9999999999)</td>
         <td><input type="text" name="phone" id="phone_input" value="${aPerson.phone}" required></td>
     </tr>
-    <%--<tr class="submit_button"><td colspan="2" id="submit_button"><input type="submit" value="Submit" onclick="displayAlert()></td>--%>
     </tr>
 </table>

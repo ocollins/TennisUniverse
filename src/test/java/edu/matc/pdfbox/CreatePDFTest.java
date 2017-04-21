@@ -1,5 +1,6 @@
 package edu.matc.pdfbox;
 
+import edu.matc.entity.Person;
 import edu.matc.entity.PersonService;
 import edu.matc.entity.Service;
 import edu.matc.memberstatement.CalculateMonthlyStatement;
@@ -18,16 +19,18 @@ import static org.junit.Assert.assertTrue;
  *
  */
 public class CreatePDFTest {
-    private final Logger logger = Logger.getLogger(this.getClass());
+    private Logger logger = Logger.getLogger(this.getClass());
 
-    @Before
-    public void setup() {
-    }
-
+    int memberId = 101;
+    Date startDate = Date.valueOf("2017-04-01");
+    Date endDate = Date.valueOf("2017-04-30");
 
     @Test
-    public void calculateTotalDueTest () {
+    public void createPDFTest() throws Exception {
+        CreateMemberStatement createMemberStatement = new CreateMemberStatement();
+        createMemberStatement.createPDF(memberId, startDate, endDate);
 
     }
+
 
 }

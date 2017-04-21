@@ -14,13 +14,12 @@
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/update_member.css" rel="stylesheet" type="text/css"/>
-    <title>Delete Member</title>
+    <title>Print member statement</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 
 </head>
 
 <body>
-
 
 <div id="container">
 <!--include head element, which is stored in jsp directory-->
@@ -29,15 +28,33 @@
 <c:import url="menu.jsp"/>
 
     <div id="main_container_div">
-        <form action="deleteMemberActionServlet" name="" id="delete_member_form" method="POST">
-            <c:if test="${not empty aPerson.lastName}">
-                <h1 class="title_header">Delete Member Information</h1>
-                <h2 class="title_header">Please verify this is the member you want to delete and click Submit</h2>
-                <c:import url="display_member_info.jsp"/>
+        <form action="printStatementActionServlet" name="" id="produce_statement_form" method="GET">
+            <c:if test="${empty feedbackMessage}">
+                <h1 class="title_header">Print Member Statement</h1>
+                <h2 class="title_header">Please enter billing period start and end dates and click Produce</h2>
+                <table class="add_table" id="add_table">
+                    <tr><td>Member ID</td>
+                        <td><input type="text" name="memberID" value="${aPerson.personId}" readonly="readonly"></td>
+                    </tr>
+                    <tr><td>First Name</td>
+                        <td><input type="text" name="fname" value="${aPerson.firstName}" required></td>
+                    </tr>
+                    <tr><td>Last Name</td>
+                        <td><input type="text" name="lname" value="${aPerson.lastName}" required></td>
+                    </tr>
+                    <tr><td>Start Date (YYYY-MM-DD)</td>
+                        <td><input type="text" name="startDate" value="" required></td>
+                    </tr>
+                    <tr><td>End Date (YYYY-MM-DD)</td>
+                        <td><input type="text" name="endDate" value="" required></td>
+                    </tr>
+                    <tr><td><div class="submit_button_div" ><input type="submit" class="submit_button" value="Produce Statement"></div></td>
+                    </tr>
+                </table>
             </c:if>
         </form>
-        <c:if test="${not empty resultMessage}">
-            <p id="feedback_p">${resultMessage}</p>
+        <c:if test="${not empty feedbackMessage}">
+            <p id="feedback_p">${feedbackMessage}</p>
         </c:if>
     </div>
 <c:import url="footer.jsp"/>

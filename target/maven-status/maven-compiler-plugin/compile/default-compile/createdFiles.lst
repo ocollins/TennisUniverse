@@ -2,7 +2,6 @@ edu/matc/util/LocalDateAttributeConverter.class
 edu/matc/controller/LogInDispServlet.class
 edu/matc/CaloriesCalculator/Calculations.class
 edu/matc/controller/AdminActionDirectoryServlet.class
-edu/matc/controller/PrintStatementDispServlet.class
 edu/matc/CaloriesCalculator/Activities.class
 edu/matc/memberstatement/CalculateMonthlyStatement.class
 edu/matc/CaloriesCalculator/Calculation0.class
@@ -11,6 +10,8 @@ edu/matc/controller/AddMemberActionServlet.class
 edu/matc/CaloriesCalculator/Calculation2.class
 edu/matc/controller/CalculateCaloriesActionServlet.class
 edu/matc/controller/AdultTennisDispServlet.class
+edu/matc/pdfbox/CreateMemberStatement.class
+edu/matc/controller/PrintStatementActionServlet.class
 edu/matc/controller/DeleteMemberActionServlet.class
 edu/matc/entity/PersonService.class
 edu/matc/controller/FitnessDispServlet.class

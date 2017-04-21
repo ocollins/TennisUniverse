@@ -31,11 +31,5 @@ public class CreateMemberStatementTest {
         endDate = Date.valueOf("2017-04-30");
     }
 
-    @Test
-    public void createPDFTest() throws Exception {
-        CreateMemberStatement2 createMemberStatement = new CreateMemberStatement2();
-        createMemberStatement.createPDF(memberId, startDate, endDate);
-
-    }
 
 }
