@@ -138,7 +138,11 @@ public class CreateMemberStatement {
 		fileName = fileName + firstName + lastName + printDate + ".pdf";
 		//Saving the document
 		//document.save(new File("pdf/MemberStatement.pdf"));
-		document.save(fileName);
+		try {
+			document.save(fileName);
+		} catch (IOException ex) {
+			logger.info("Error writing Member statement file" + ex);
+		}
 
 		//Closing the document
 		document.close();

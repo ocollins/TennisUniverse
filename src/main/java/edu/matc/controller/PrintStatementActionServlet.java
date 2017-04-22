@@ -20,7 +20,7 @@ import java.sql.Date;
 import java.text.SimpleDateFormat;
 
 /**
- * The .
+ * Print member statement action servlet.
  */
 @WebServlet(
         name = "printStatementActionServlet",
@@ -51,7 +51,7 @@ public class PrintStatementActionServlet extends HttpServlet {
         try {
             CreateMemberStatement createMemberStatement = new CreateMemberStatement();
             createMemberStatement.createPDF(memberId, startDate, endDate);
-            feedbackMessage = "Statement was produced successfully. Click the link below to view.";
+            feedbackMessage = "Statement was produced successfully.";
         } catch (Exception ex) {
             feedbackMessage = "Processing Error was encountered. Please contact Help Desk";
         }
