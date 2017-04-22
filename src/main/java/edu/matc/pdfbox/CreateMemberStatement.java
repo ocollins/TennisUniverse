@@ -134,8 +134,11 @@ public class CreateMemberStatement {
 
 		//Closing the content stream
 		contentStream.close();
+		String fileName = "/home/student/EnterpriseRepos/TennisUniverse/pdf/MemberStatement";
+		fileName = fileName + firstName + lastName + printDate + ".pdf";
 		//Saving the document
-		document.save(new File("pdf/MemberStatement.pdf"));
+		//document.save(new File("pdf/MemberStatement.pdf"));
+		document.save(fileName);
 
 		//Closing the document
 		document.close();

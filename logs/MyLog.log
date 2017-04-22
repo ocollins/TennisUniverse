@@ -6216,3 +6216,87 @@
 2017-04-21 12:32:12,456 INFO  - PRIVATE LESSON 2017-04-17
 2017-04-21 12:32:12,456 INFO  - JUNIOR LESSON 2017-04-17
 2017-04-21 12:32:24,663 532573 [Finalizer] WARN  org.apache.pdfbox.cos.COSDocument  - Warning: You did not close a PDF Document
+2017-04-21 21:45:54,472 INFO  - Getting into createPDF module
+2017-04-21 21:45:56,043 WARN  - New fonts found, font cache will be re-built
+2017-04-21 21:45:56,045 WARN  - Building on-disk font cache, this may take a while
+2017-04-21 21:46:22,764 WARN  - Finished building on-disk font cache, found 292 fonts
+2017-04-21 21:46:22,947 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-21 21:46:22,950 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-21 21:46:22,951 INFO  - HHH000206: hibernate.properties not found
+2017-04-21 21:46:22,954 INFO  - HHH000021: Bytecode provider name : javassist
+2017-04-21 21:46:22,978 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-21 21:46:22,978 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-21 21:46:23,120 INFO  - HHH000041: Configured SessionFactory: null
+2017-04-21 21:46:23,215 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-21 21:46:23,266 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-21 21:46:23,272 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-21 21:46:23,272 INFO  - HHH000006: Autocommit mode: false
+2017-04-21 21:46:23,273 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-21 21:46:23,657 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-21 21:46:23,926 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-21 21:46:23,931 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-21 21:46:26,687 INFO  - Total due 0.0
+2017-04-21 21:55:45,156 INFO  - Getting into createPDF module
+2017-04-21 21:55:46,484 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-21 21:55:46,496 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-21 21:55:46,498 INFO  - HHH000206: hibernate.properties not found
+2017-04-21 21:55:46,500 INFO  - HHH000021: Bytecode provider name : javassist
+2017-04-21 21:55:46,539 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-21 21:55:46,539 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-21 21:55:46,611 INFO  - HHH000041: Configured SessionFactory: null
+2017-04-21 21:55:46,666 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-21 21:55:46,670 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-21 21:55:46,670 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-21 21:55:46,671 INFO  - HHH000006: Autocommit mode: false
+2017-04-21 21:55:46,671 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-21 21:55:46,919 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-21 21:55:47,091 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-21 21:55:47,094 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-21 21:55:47,519 INFO  - PRIVATE LESSON 2017-04-02
+2017-04-21 21:55:47,519 INFO  - SEMI-PRIVATE LESSON 2017-04-12
+2017-04-21 21:55:47,520 INFO  - CLINIC 2017-04-16
+2017-04-21 21:55:47,520 INFO  - PRIVATE LESSON 2017-04-17
+2017-04-21 21:55:47,520 INFO  - JUNIOR LESSON 2017-04-17
+2017-04-21 21:55:47,520 INFO  - Accumulating total charge 60.0
+2017-04-21 21:55:47,520 INFO  - Accumulating total charge 90.0
+2017-04-21 21:55:47,520 INFO  - Accumulating total charge 105.0
+2017-04-21 21:55:47,520 INFO  - Accumulating total charge 165.0
+2017-04-21 21:55:47,520 INFO  - Accumulating total charge 215.0
+2017-04-21 21:55:47,520 INFO  - Total due 215.0
+2017-04-21 21:55:47,524 INFO  - PRIVATE LESSON 2017-04-02
+2017-04-21 21:55:47,524 INFO  - SEMI-PRIVATE LESSON 2017-04-12
+2017-04-21 21:55:47,524 INFO  - CLINIC 2017-04-16
+2017-04-21 21:55:47,524 INFO  - PRIVATE LESSON 2017-04-17
+2017-04-21 21:55:47,524 INFO  - JUNIOR LESSON 2017-04-17
+2017-04-21 22:02:32,305 INFO  - Getting into createPDF module
+2017-04-21 22:02:33,969 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-21 22:02:33,973 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-21 22:02:33,974 INFO  - HHH000206: hibernate.properties not found
+2017-04-21 22:02:33,976 INFO  - HHH000021: Bytecode provider name : javassist
+2017-04-21 22:02:33,989 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-21 22:02:33,989 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-21 22:02:34,091 INFO  - HHH000041: Configured SessionFactory: null
+2017-04-21 22:02:34,196 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-21 22:02:34,204 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-21 22:02:34,204 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-21 22:02:34,204 INFO  - HHH000006: Autocommit mode: false
+2017-04-21 22:02:34,205 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-21 22:02:34,556 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-21 22:02:34,887 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-21 22:02:34,890 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-21 22:02:36,304 INFO  - PRIVATE LESSON 2017-04-02
+2017-04-21 22:02:36,304 INFO  - SEMI-PRIVATE LESSON 2017-04-12
+2017-04-21 22:02:36,304 INFO  - CLINIC 2017-04-16
+2017-04-21 22:02:36,304 INFO  - PRIVATE LESSON 2017-04-17
+2017-04-21 22:02:36,304 INFO  - JUNIOR LESSON 2017-04-17
+2017-04-21 22:02:36,304 INFO  - Accumulating total charge 60.0
+2017-04-21 22:02:36,304 INFO  - Accumulating total charge 90.0
+2017-04-21 22:02:36,304 INFO  - Accumulating total charge 105.0
+2017-04-21 22:02:36,304 INFO  - Accumulating total charge 165.0
+2017-04-21 22:02:36,305 INFO  - Accumulating total charge 215.0
+2017-04-21 22:02:36,305 INFO  - Total due 215.0
+2017-04-21 22:02:36,309 INFO  - PRIVATE LESSON 2017-04-02
+2017-04-21 22:02:36,309 INFO  - SEMI-PRIVATE LESSON 2017-04-12
+2017-04-21 22:02:36,309 INFO  - CLINIC 2017-04-16
+2017-04-21 22:02:36,309 INFO  - PRIVATE LESSON 2017-04-17
+2017-04-21 22:02:36,309 INFO  - JUNIOR LESSON 2017-04-17
