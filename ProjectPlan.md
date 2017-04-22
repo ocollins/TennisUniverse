@@ -77,9 +77,11 @@
 
 ### Week 13
 - [X] Time log entries
-- [ ] Utilize commercial PDF creator library to produce a member statement in PDF format
+- [X] Utilize commercial PDF creator library to produce a member statement in PDF format
 - [ ] Add send email functionality to email member statement
 - [ ] Add encript SSN logic
+- [ ] Create good DB
+- [ ] Cleanup and align JSPs
 - [ ] Create databse on AWS
 
 ### Week 14
