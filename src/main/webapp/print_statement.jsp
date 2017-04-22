@@ -54,16 +54,7 @@
             </c:if>
         </form>
         <c:if test="${not empty feedbackMessage}">
-            <div class="email_div">
             <p id="feedback_p">${feedbackMessage}</p>
-                <form>
-                    <h2>Click Email Statement to email it to the member.</h2>
-                    <input type="file" name="filename" id="filename"
-                           value = "" class="selectfile" title=" " required/>
-                    <div class="submit_button_div" ><input type="submit" class="submit_button" value="Email Statement"></div>
-                </form>
-
-            </div>
         </c:if>
     </div>
 <c:import url="footer.jsp"/>

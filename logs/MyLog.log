@@ -6359,3 +6359,92 @@
 2017-04-21 22:12:51,169 32513 [http-nio-8083-exec-4] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - CLINIC 2017-04-16
 2017-04-21 22:12:51,169 32513 [http-nio-8083-exec-4] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - PRIVATE LESSON 2017-04-17
 2017-04-21 22:12:51,169 32513 [http-nio-8083-exec-4] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - JUNIOR LESSON 2017-04-17
+2017-04-22 12:30:49,468 0    [http-nio-8083-exec-1] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-22 12:30:49,488 20   [http-nio-8083-exec-1] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-22 12:30:49,492 24   [http-nio-8083-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-22 12:30:49,494 26   [http-nio-8083-exec-1] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-22 12:30:49,531 63   [http-nio-8083-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-22 12:30:49,531 63   [http-nio-8083-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-22 12:30:49,596 128  [http-nio-8083-exec-1] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-22 12:30:49,787 319  [http-nio-8083-exec-1] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-22 12:30:49,805 337  [http-nio-8083-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-22 12:30:49,806 338  [http-nio-8083-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-22 12:30:49,806 338  [http-nio-8083-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-22 12:30:49,807 339  [http-nio-8083-exec-1] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-22 12:30:50,099 631  [http-nio-8083-exec-1] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-22 12:30:50,392 924  [http-nio-8083-exec-1] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-22 12:30:50,406 938  [http-nio-8083-exec-1] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-22 12:30:56,559 7091 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /add_member.jsp N
+2017-04-22 12:30:56,560 7092 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /update_member.jsp Y
+2017-04-22 12:30:56,560 7092 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /delete_member.jsp Y
+2017-04-22 12:30:56,560 7092 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /add_memeber_serv.jsp Y
+2017-04-22 12:30:56,560 7092 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /print_statement.jsp Y
+2017-04-22 12:30:56,560 7092 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /newsletter.jsp N
+2017-04-22 12:33:56,344 186876 [http-nio-8083-exec-8] INFO  edu.matc.controller.MemberSearchActionServlet  - In search member servlet person 101JOE
+2017-04-22 12:34:06,447 196979 [http-nio-8083-exec-10] INFO  edu.matc.pdfbox.CreateMemberStatement  - Getting into createPDF module
+2017-04-22 12:34:07,375 197907 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - PRIVATE LESSON 2017-04-02
+2017-04-22 12:34:07,376 197908 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - SEMI-PRIVATE LESSON 2017-04-12
+2017-04-22 12:34:07,376 197908 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - CLINIC 2017-04-16
+2017-04-22 12:34:07,376 197908 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - PRIVATE LESSON 2017-04-17
+2017-04-22 12:34:07,376 197908 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - JUNIOR LESSON 2017-04-17
+2017-04-22 12:34:07,376 197908 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - Accumulating total charge 60.0
+2017-04-22 12:34:07,376 197908 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - Accumulating total charge 90.0
+2017-04-22 12:34:07,376 197908 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - Accumulating total charge 105.0
+2017-04-22 12:34:07,376 197908 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - Accumulating total charge 165.0
+2017-04-22 12:34:07,376 197908 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - Accumulating total charge 215.0
+2017-04-22 12:34:07,376 197908 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - Total due 215.0
+2017-04-22 12:34:07,386 197918 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - PRIVATE LESSON 2017-04-02
+2017-04-22 12:34:07,386 197918 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - SEMI-PRIVATE LESSON 2017-04-12
+2017-04-22 12:34:07,386 197918 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - CLINIC 2017-04-16
+2017-04-22 12:34:07,386 197918 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - PRIVATE LESSON 2017-04-17
+2017-04-22 12:34:07,386 197918 [http-nio-8083-exec-10] INFO  edu.matc.memberstatement.CalculateMonthlyStatement  - JUNIOR LESSON 2017-04-17
+2017-04-22 12:45:46,357 0    [http-nio-8083-exec-3] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-22 12:45:46,367 10   [http-nio-8083-exec-3] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-22 12:45:46,369 12   [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-22 12:45:46,370 13   [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-22 12:45:46,400 43   [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-22 12:45:46,400 43   [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-22 12:45:46,452 95   [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-22 12:45:46,558 201  [http-nio-8083-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-22 12:45:46,562 205  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-22 12:45:46,562 205  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-22 12:45:46,562 205  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-22 12:45:46,564 207  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-22 12:45:47,031 674  [http-nio-8083-exec-3] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-22 12:45:47,299 942  [http-nio-8083-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-22 12:45:47,304 947  [http-nio-8083-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-22 12:45:52,145 5788 [http-nio-8083-exec-4] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /add_member.jsp N
+2017-04-22 12:45:52,146 5789 [http-nio-8083-exec-4] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /update_member.jsp Y
+2017-04-22 12:45:52,146 5789 [http-nio-8083-exec-4] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /delete_member.jsp Y
+2017-04-22 12:45:52,146 5789 [http-nio-8083-exec-4] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /add_memeber_serv.jsp Y
+2017-04-22 12:45:52,146 5789 [http-nio-8083-exec-4] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /print_statement.jsp Y
+2017-04-22 12:45:52,146 5789 [http-nio-8083-exec-4] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /newsletter.jsp N
+2017-04-22 12:45:56,188 9831 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /add_member.jsp N
+2017-04-22 12:45:56,189 9832 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /update_member.jsp Y
+2017-04-22 12:45:56,189 9832 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /delete_member.jsp Y
+2017-04-22 12:45:56,189 9832 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /add_memeber_serv.jsp Y
+2017-04-22 12:45:56,189 9832 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /print_statement.jsp Y
+2017-04-22 12:45:56,189 9832 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /newsletter.jsp N
+2017-04-22 12:49:40,291 233934 [http-nio-8083-exec-9] INFO  edu.matc.controller.MemberSearchActionServlet  - In search member servlet person SAMANTHA
+2017-04-22 13:23:00,452 0    [http-nio-8083-exec-3] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-22 13:23:00,460 8    [http-nio-8083-exec-3] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-22 13:23:00,462 10   [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-22 13:23:00,463 11   [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-22 13:23:00,490 38   [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-22 13:23:00,490 38   [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-22 13:23:00,538 86   [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-22 13:23:00,615 163  [http-nio-8083-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-22 13:23:00,620 168  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-22 13:23:00,621 169  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-22 13:23:00,621 169  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-22 13:23:00,625 173  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-22 13:23:00,922 470  [http-nio-8083-exec-3] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-22 13:23:01,178 726  [http-nio-8083-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-22 13:23:01,184 732  [http-nio-8083-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-22 13:23:07,026 6574 [http-nio-8083-exec-4] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /add_member.jsp N
+2017-04-22 13:23:07,027 6575 [http-nio-8083-exec-4] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /update_member.jsp Y
+2017-04-22 13:23:07,027 6575 [http-nio-8083-exec-4] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /delete_member.jsp Y
+2017-04-22 13:23:07,028 6576 [http-nio-8083-exec-4] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /add_memeber_serv.jsp Y
+2017-04-22 13:23:07,028 6576 [http-nio-8083-exec-4] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /print_statement.jsp Y
+2017-04-22 13:23:07,028 6576 [http-nio-8083-exec-4] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /newsletter.jsp N
+2017-04-22 13:23:16,250 15798 [http-nio-8083-exec-6] INFO  edu.matc.controller.MemberSearchActionServlet  - In search member servlet person SAMANTHA

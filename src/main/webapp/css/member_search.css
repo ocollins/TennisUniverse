@@ -5,6 +5,13 @@ body {
     background-color: rgb(232, 208, 148);
 }
 
+h2 {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 2.7rem;
+}
+
 #search_container {
     display: flex;
     align-items: center;
@@ -30,9 +37,15 @@ body {
     margin: 4rem;
 }
 
-th, td {
+.member_list_table  td, th {
     text-align: left;
     padding: .4rem;
+    border: .1rem solid black;
+    border-radius: .1rem;
+}
+
+.member_list_table {
+    border: .1rem solid black;
 }
 
 .submit_button {

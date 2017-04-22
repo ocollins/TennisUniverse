@@ -12,11 +12,24 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/member_search.css" rel="stylesheet" type="text/css"/>
     <title>Search for a Member</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <%--Script to submit search by member ID from the search by LastName result table--%>
+    <script>
+        $(document).ready(function(){
+            $(".member_id").click(function(){
+                $("#mem_search_form").style("background-color", "red");
+//                $("#mem_search_form").submit();
+//                $("#searchID").value = $(this).value;
+            });
+        });
+    </script>
 </head>
 
 
 <body>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<h2>Member Search</h2>
 
 <div id="search_container">
     <form action="memberSearchActionServlet" name="" id="mem_search_form" method="GET">
@@ -49,7 +62,7 @@
         </tr>
         <c:forEach var="member" items="${memberList}">
             <tr>
-                <td>${member.personId}</td>
+                <td class="member_id">${member.personId}</td>
                 <td>${member.firstName}</td>
                 <td>${member.lastName}</td>
                 <td>${member.birthDt}</td>

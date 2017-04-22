@@ -101,6 +101,9 @@ public class CreateMemberStatement {
 		//Draw grey box for the header
 		drawBox(contentStream, 45, 530, 524, 25);
 
+		//Draw a border around header
+		drawRect(contentStream, 42, 697, 350, 70);
+
 		//Print services and charges header
 		drawHeaderRow(contentStream, 540, "Service", "Date", "Charge");
 
@@ -126,8 +129,6 @@ public class CreateMemberStatement {
 
 		//Print line before the pay online statement
 		drawRect(contentStream, 45, 280, 524, 1.5f);
-
-
 
 		billingNote = "Please pay your bill on line at https://tennisuniverse.com";
 		printNote(contentStream, 270, billingNote);
