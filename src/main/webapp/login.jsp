@@ -27,38 +27,43 @@
 
 <body ng-app="">
 
-<h4>Please enter your user name and password</h4>
-<FORM ACTION="j_security_check" METHOD="POST">
-    <TABLE id="logintable">
-        <TR><td class="label">User Name:</td><TD class="data"><INPUT TYPE="TEXT" NAME="j_username"></TD></TR>
-        <TR><td class="label">Password:</td><TD class="data"><INPUT TYPE="PASSWORD" NAME="j_password"></TD></TR>
-        <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Log In"></td></TR>
-    </TABLE>
-</FORM>
-
-<h4>Or</h4>
-
-<h4>Register new user (!!Under construction!!)</h4>
-<form action="verifyPersonServlet" method="get">
-    <TABLE>
-        <p>Enter your member ID</p>
-        <TR><td class="label">Member ID:</td><TD class="data"><INPUT TYPE="TEXT" NAME="account_id"></TD></TR>
-        <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Check Member ID"></td></TR>
-    </TABLE>
-
-</form>
+<h1>Login or register new user</h1>
+<c:if test="${empty validPerson}">
+    <h4>Please enter your user name and password</h4>
+    <FORM ACTION="j_security_check" METHOD="POST">
+        <TABLE id="logintable">
+            <TR><td class="label">User Name:</td><TD class="data"><INPUT TYPE="TEXT" NAME="j_username"></TD></TR>
+            <TR><td class="label">Password:</td><TD class="data"><INPUT TYPE="PASSWORD" NAME="j_password"></TD></TR>
+            <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Log In"></td></TR>
+        </TABLE>
+    </FORM>
 
 
-<c:choose>
-    <c:when test="${validperson}">
-        <p>Person found!</p>
-    </c:when>
-    <c:otherwise>
-        <c:if test="$not empty validperson">
-           <p id="invalididmessage">Invalid member ID</p>
-        </c:if>
-    </c:otherwise>
-</c:choose>
+    <h4>Or</h4>
+
+    <h4>Register new user</h4>
+    <form action="verifyPersonServlet" method="get">
+        <TABLE>
+            <p>Enter your member ID</p>
+            <TR><td class="label">Member ID:</td><TD class="data"><INPUT TYPE="TEXT" NAME="account_id"></TD></TR>
+            <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Check Member ID"></td></TR>
+        </TABLE>
+    </form>
+</c:if>
+
+    <c:if test="${validPerson}">
+        <h4>Please enter your user name and password</h4>
+        <FORM ACTION="" METHOD="POST">
+            <TABLE id="register_table">
+                <TR><td class="label">User Name:</td><TD class="data"><INPUT TYPE="TEXT" NAME="user_name" required></TD></TR>
+                <TR><td class="label">Password:</td><TD class="data"><INPUT TYPE="PASSWORD" NAME="password" required></TD></TR>
+                <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Register"></td></TR>
+            </TABLE>
+        </FORM>
+    </c:if>
+    <c:if test="${not validPerson  && !empty validPerson}">
+        <p id="invalididmessage">Invalid member ID</p
+    </c:if>
 
 
 </body>

@@ -54,6 +54,7 @@ public class VerifyPersonServlet extends HttpServlet {
 
         //Remove the old session
         HttpSession session = request.getSession(true);
+        session.removeAttribute("validPerson");
         //session.invalidate();
 
         //Create a new session
@@ -61,22 +62,24 @@ public class VerifyPersonServlet extends HttpServlet {
 
         //Create Person DAO instance
         PersonDao dao = new PersonDao();
-        logger.info("looking for person " + dao.getPerson(personId).getFirstName());
+        logger.info("&&&&&&&&&&&&&&&looking for person " + dao.getPerson(personId).getFirstName());
 
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("loginJsp.name");
 
         session.removeAttribute("validPerson");
-
+        //If found person, registration form will be displayed
         if (dao.getPerson(personId) != null) {
             session.setAttribute("validPerson", true);
+            logger.info("&&&&&&&&&&&&&&& found person for the requested id");
 
             //String url = "/login.jsp";
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
             dispatcher.forward(request, response);
+            //If not a valid member ID, error message will be displayed
         } else {
-
+            session.setAttribute("validPerson", false);
             //String url = "/login.jsp";
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
             dispatcher.forward(request, response);

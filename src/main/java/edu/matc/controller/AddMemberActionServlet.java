@@ -54,7 +54,7 @@ public class AddMemberActionServlet extends HttpServlet {
 
         //logger.info("OVC displaying url " + url);
 
-
+        session.removeAttribute("feedbackMessage");
         session.setAttribute("feedbackMessage", storeMemberInfo(request));
 
         //String url = "/add_member.jsp";
