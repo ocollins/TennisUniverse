@@ -28,6 +28,8 @@
         <mapping class="edu.matc.entity.PersonAccount"/>
         <mapping class="edu.matc.entity.PersonService"/>
         <mapping class="edu.matc.entity.Service"/>
+        <mapping class="edu.matc.entity.User"/>
+        <!--<mapping class="edu.matc.entity.UserRole"/>-->
 
 
     </session-factory>

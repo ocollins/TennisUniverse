@@ -6994,3 +6994,66 @@
 2017-04-23 10:16:09,770 783  [http-nio-8083-exec-9] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2017-04-23 10:16:10,313 1326 [http-nio-8083-exec-9] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
 2017-04-23 10:16:10,318 1331 [http-nio-8083-exec-9] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-23 13:41:27,196 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-23 13:41:27,231 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-23 13:41:27,235 INFO  - HHH000206: hibernate.properties not found
+2017-04-23 13:41:27,241 INFO  - HHH000021: Bytecode provider name : javassist
+2017-04-23 13:41:27,299 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-23 13:41:27,299 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-23 13:41:27,460 INFO  - HHH000041: Configured SessionFactory: null
+2017-04-23 13:41:27,620 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-23 13:41:27,634 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-23 13:41:27,635 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-23 13:41:27,635 INFO  - HHH000006: Autocommit mode: false
+2017-04-23 13:41:27,636 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-23 13:41:28,058 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-23 13:41:28,408 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-23 13:41:28,421 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-23 13:41:28,865 INFO  - Hibernate Exception org.hibernate.MappingException: Unknown entity: edu.matc.entity.User
+2017-04-23 13:46:28,577 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-23 13:46:28,602 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-23 13:46:28,611 INFO  - HHH000206: hibernate.properties not found
+2017-04-23 13:46:28,614 INFO  - HHH000021: Bytecode provider name : javassist
+2017-04-23 13:46:28,689 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-23 13:46:28,689 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-23 13:46:28,860 INFO  - HHH000041: Configured SessionFactory: null
+2017-04-23 13:46:29,146 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-23 13:46:29,167 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-23 13:46:29,168 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-23 13:46:29,168 INFO  - HHH000006: Autocommit mode: false
+2017-04-23 13:46:29,173 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-23 13:46:29,748 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-23 13:46:30,481 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-23 13:46:30,498 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-23 13:47:03,844 INFO  - Hibernate Exception org.hibernate.MappingException: Unknown entity: edu.matc.entity.User
+2017-04-23 13:47:51,469 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-23 13:47:51,492 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-23 13:47:51,500 INFO  - HHH000206: hibernate.properties not found
+2017-04-23 13:47:51,504 INFO  - HHH000021: Bytecode provider name : javassist
+2017-04-23 13:47:51,583 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-23 13:47:51,583 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-23 13:47:51,753 INFO  - HHH000041: Configured SessionFactory: null
+2017-04-23 13:47:52,037 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-23 13:47:52,051 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-23 13:47:52,052 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-23 13:47:52,052 INFO  - HHH000006: Autocommit mode: false
+2017-04-23 13:47:52,056 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-23 13:47:52,596 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-23 13:47:53,510 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-23 13:47:53,533 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-23 13:49:32,305 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-23 13:49:32,384 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-23 13:49:32,385 INFO  - HHH000206: hibernate.properties not found
+2017-04-23 13:49:32,388 INFO  - HHH000021: Bytecode provider name : javassist
+2017-04-23 13:49:32,625 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-23 13:49:32,625 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-23 13:49:32,691 INFO  - HHH000041: Configured SessionFactory: null
+2017-04-23 13:49:32,820 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-23 13:49:32,825 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-23 13:49:32,825 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-23 13:49:32,825 INFO  - HHH000006: Autocommit mode: false
+2017-04-23 13:49:32,826 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-23 13:49:33,261 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-23 13:49:33,848 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-23 13:49:33,864 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-23 13:49:34,369 INFO  - Searching for user 01 adminadmin
