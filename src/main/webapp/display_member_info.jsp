@@ -14,6 +14,9 @@
     <tr><td>Birth Date</td>
         <td><input type="date" name="birth_date" id="birth_date" value="${aPerson.birthDt}" required></td>
     </tr>
+    <tr><td>Member or Admininstrator</td>
+        <td><input type="text" name="role_name" value="${aPerson.roleName}" required></td>
+    </tr>
     <tr><td>Street address 1</td>
         <td><input type="text" name="address_line1" id="address_line1" value="${aPerson.addressLine1}" required></td>
     </tr>

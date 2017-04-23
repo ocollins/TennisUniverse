@@ -47,6 +47,14 @@
                     <tr><td>Birth Date</td>
                         <td><input type="date" name="birth_date" id="birth_date" value="" required></td>
                     </tr>
+                    <tr><td>Member or Admininstrator</td>
+                        <td>
+                            <select name="role_name">
+                                <option value="member">Member</option>
+                                <option value="admin">Administrator</option>
+                            </select>
+                        </td>
+                    </tr>
                     <tr><td>Street address 1</td>
                         <td><input type="text" name="address_line1" id="address_line1" value="" required></td>
                     </tr>

@@ -81,7 +81,7 @@ public class AddMemberActionServlet extends HttpServlet {
         dateConverter.convertToDatabaseColumn(dob);
 
         newPerson = new Person(Integer.parseInt(request.getParameter("ssn")), request.getParameter("fname"),
-                request.getParameter("lname"), dob, 1, request.getParameter("email"),
+                request.getParameter("lname"), dob, request.getParameter("role_name"), request.getParameter("email"),
                 request.getParameter("address_line1"), request.getParameter("address_line2"),
                 request.getParameter("city"), request.getParameter("state"),
                 request.getParameter("zip"), request.getParameter("phone"));

@@ -81,7 +81,7 @@ public class PersonDaoTest {
         LocalDate dob = LocalDate.parse("1989-12-12");
         dateConverter.convertToDatabaseColumn(dob);
 
-        Person newPerson = new Person(888888888, "MARIA", "SHARAPOVA", dob, 02, "MSHARAP@GMAIL.COM",
+        Person newPerson = new Person(888888888, "MARIA", "SHARAPOVA", dob, "member", "MSHARAP@GMAIL.COM",
                 "3 MAIN ST.", "", "SUN PRAIRIE", "WI", "53590", "6089998811");
         int id = dao.addPerson(newPerson);
         logger.info("New person ID " + id);
@@ -115,7 +115,7 @@ public class PersonDaoTest {
         logger.info("UPdate person ID " + personId);
 
         //Create person information to update in the DB
-        Person personToUpdate = new Person(personId, 888888888, "Maria", "Smith", dob, 02, "mshar@gmail.com",
+        Person personToUpdate = new Person(personId, 888888888, "Maria", "Smith", dob, "member", "mshar@gmail.com",
                 "3 Main st", "", "Sun Prairie", "WI", "53590", "11122223344");
         //personToUpdate.setFirstName("Dawn");
 
