@@ -36,6 +36,7 @@ edu/matc/persistence/SessionFactoryProvider.class
 edu/matc/controller/CleanupServlet.class
 edu/matc/controller/AdminDispServlet.class
 edu/matc/persistence/ServiceDao.class
+edu/matc/controller/RegisterNewUserServlet.class
 edu/matc/controller/AddMemberServActionServlet.class
 edu/matc/controller/ApplicationStartup.class
 edu/matc/entity/Person.class
