@@ -47,8 +47,8 @@ public class Person {
     @Convert(converter = LocalDateAttributeConverter.class)
     private LocalDate birthDt;
 
-    @Column(name = "PERSON_TYPE")
-    private int personType;
+    @Column(name = "ROLE_NAME")
+    private String roleName;
 
     @Column(name = "EMAIL_ADDR")
     private String emailAddr;
@@ -96,7 +96,7 @@ public class Person {
      * @param firstName    the first name
      * @param lastName     the last name
      * @param birthDt      the birth dt
-     * @param personType   the person type
+     * @param roleName     the user role name
      * @param emailAddr    the email addr
      * @param addressLine1 the address line 1
      * @param addressLine2 the address line 2
@@ -106,14 +106,14 @@ public class Person {
      * @param phone        the member phone number
      //* @param lastUpdated  the last updated
      */
-    public Person(int ssnNr, String firstName, String lastName, LocalDate birthDt, int personType,
+    public Person(int ssnNr, String firstName, String lastName, LocalDate birthDt, String roleName,
                   String emailAddr, String addressLine1, String addressLine2, String city,
                   String state, String zip, String phone) {
         this.ssnNr = ssnNr;
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDt = birthDt;
-        this.personType = personType;
+        this.roleName = roleName;
         this.emailAddr = emailAddr;
         this.addressLine1 = addressLine1;
         this.addressLine2 = addressLine2;
@@ -134,16 +134,16 @@ public class Person {
      * @param firstName    the first name
      * @param lastName     the last name
      * @param birthDt      the birth dt
-     * @param personType   the person type
+     * @param roleName     the user role name
      * @param emailAddr    the email addr
      * @param addressLine1 the address line 1
      * @param addressLine2 the address line 2
      * @param city         the city
      * @param state        the state
      * @param zip          the zip
-     * @param phone   the usta rating
+     * @param phone        the usta rating
      */
-    public Person(int personId, int ssnNr, String firstName, String lastName, LocalDate birthDt, int personType,
+    public Person(int personId, int ssnNr, String firstName, String lastName, LocalDate birthDt, String roleName,
                   String emailAddr, String addressLine1, String addressLine2, String city,
                   String state, String zip, String phone) {
         this.personId = personId;
@@ -151,7 +151,7 @@ public class Person {
         this.firstName = firstName;
         this.lastName = lastName;
         this.birthDt = birthDt;
-        this.personType = personType;
+        this.roleName = roleName;
         this.emailAddr = emailAddr;
         this.addressLine1 = addressLine1;
         this.addressLine2 = addressLine2;
@@ -258,17 +258,17 @@ public class Person {
      *
      * @return the person type
      */
-    public int getPersonType() {
-        return personType;
+    public String getroleName() {
+        return roleName;
     }
 
     /**
      * Sets person type.
      *
-     * @param personType the person type
+     * @param roleName the user role name
      */
-    public void setPersonType(int personType) {
-        this.personType = personType;
+    public void setroleName(String roleName) {
+        this.roleName = roleName;
     }
 
     /**
@@ -439,7 +439,7 @@ public class Person {
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", birthDt=" + birthDt +
-                ", personType='" + personType + '\'' +
+                ", roleName='" + roleName + '\'' +
                 ", emailAddr='" + emailAddr + '\'' +
                 ", addressLine1='" + addressLine1 + '\'' +
                 ", addressLine2='" + addressLine2 + '\'' +

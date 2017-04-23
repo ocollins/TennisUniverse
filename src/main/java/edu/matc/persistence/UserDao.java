@@ -39,4 +39,27 @@ public class UserDao {
         return User;
     }
 
+    /**
+     * add a user
+     * @param user
+     * @return the id of the inserted record
+     */
+    public int addUser(User user) throws HibernateException{
+        int id = 0;
+        Session session = null;
+        try {
+            session = SessionFactoryProvider.getSessionFactory().openSession();
+            Transaction transaction = session.beginTransaction();
+            id = (int) session.save(user);
+            transaction.commit();
+        } catch (HibernateException ex) {
+            logger.info("Error adding a new user " + ex);
+        } finally {
+            session.close();
+        }
+
+        return id;
+    }
+
+
 }

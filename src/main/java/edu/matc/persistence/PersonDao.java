@@ -93,23 +93,20 @@ public class PersonDao {
      */
     public int addPerson(Person person) throws HibernateException{
         int id = 0;
-        Session session = SessionFactoryProvider.getSessionFactory().openSession();
-        Transaction transaction = session.beginTransaction();
-        id = (int)session.save(person);
-        transaction.commit();
+        Session session = null;
 
-        session.close();
+        try {
+            session = SessionFactoryProvider.getSessionFactory().openSession();
+            Transaction transaction = session.beginTransaction();
+            id = (int) session.save(person);
+            transaction.commit();
+        } catch (HibernateException ex) {
+            logger.info("Hibernate error adding a new person " + ex);
+        } finally {
 
-//        try {
-//            Transaction transaction = session.beginTransaction();
-//            id = (int)session.save(person);
-//            transaction.commit();
-//
-//        } catch (HibernateException he) {
-//            logger.info("Hibernate Exception " + he);
-//        } finally {
-//            session.close();
-//        }
+            session.close();
+        }
+
         return id;
     }
 
