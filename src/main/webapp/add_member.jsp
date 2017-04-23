@@ -44,7 +44,7 @@
                     <tr><td>Social Security Number</td>
                         <td><input type="text" name="ssn" id="ssn" value="" required></td>
                     </tr>
-                    <tr><td>Birth Date</td>
+                    <tr><td>Birth Date (YYYY-MM-DD)</td>
                         <td><input type="date" name="birth_date" id="birth_date" value="" required></td>
                     </tr>
                     <tr><td>Member or Admininstrator</td>

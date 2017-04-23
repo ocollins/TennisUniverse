@@ -258,7 +258,7 @@ public class Person {
      *
      * @return the person type
      */
-    public String getroleName() {
+    public String getRoleName() {
         return roleName;
     }
 
@@ -267,7 +267,7 @@ public class Person {
      *
      * @param roleName the user role name
      */
-    public void setroleName(String roleName) {
+    public void setRoleName(String roleName) {
         this.roleName = roleName;
     }
 
@@ -384,7 +384,7 @@ public class Person {
      *
      * @return the usta rating
      */
-    public String getphone() {
+    public String getPhone() {
         return phone;
     }
 

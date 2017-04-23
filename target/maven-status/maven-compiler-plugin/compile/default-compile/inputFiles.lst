@@ -13,6 +13,8 @@
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/entity/PersonService.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/FitnessDispServlet.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/ApplicationStartup.java
+/home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/entity/UserRole.java
+/home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/entity/User.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/entity/AdminAction.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/AddMemberActionServlet.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/HomeDispServlet.java
@@ -21,6 +23,7 @@
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/UpdateMemberActionServlet.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/AdultTennisDispServlet.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/AdminDispServlet.java
+/home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/persistence/UserDao.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/CaloriesCalculator/ActivitiesItem.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/CaloriesCalculator/Calculation1.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/AddMemberServActionServlet.java
@@ -32,6 +35,7 @@
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/CaloriesCalculator/Activities.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/CaloriesCalculator/Calculation2.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/CalculateDurationActionServlet.java
+/home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/persistence/UserRoleDao.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/controller/MemberSearchActionServlet.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/persistence/AdminActionDao.java
 /home/student/EnterpriseRepos/TennisUniverse/src/main/java/edu/matc/persistence/ServiceDao.java

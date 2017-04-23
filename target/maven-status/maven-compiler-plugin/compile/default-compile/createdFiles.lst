@@ -2,12 +2,14 @@ edu/matc/util/LocalDateAttributeConverter.class
 edu/matc/controller/LogInDispServlet.class
 edu/matc/CaloriesCalculator/Calculations.class
 edu/matc/controller/AdminActionDirectoryServlet.class
+edu/matc/persistence/UserRoleDao.class
 edu/matc/CaloriesCalculator/Activities.class
 edu/matc/memberstatement/CalculateMonthlyStatement.class
 edu/matc/CaloriesCalculator/Calculation0.class
 edu/matc/persistence/PersonServiceDao.class
 edu/matc/controller/AddMemberActionServlet.class
 edu/matc/CaloriesCalculator/Calculation2.class
+edu/matc/entity/User.class
 edu/matc/controller/CalculateCaloriesActionServlet.class
 edu/matc/controller/AdultTennisDispServlet.class
 edu/matc/pdfbox/CreateMemberStatement.class
@@ -15,6 +17,7 @@ edu/matc/controller/PrintStatementActionServlet.class
 edu/matc/controller/DeleteMemberActionServlet.class
 edu/matc/entity/PersonService.class
 edu/matc/controller/FitnessDispServlet.class
+edu/matc/entity/UserRole.class
 edu/matc/controller/CalculateDurationActionServlet.class
 edu/matc/persistence/AdminActionDao.class
 edu/matc/controller/UpdateMemberActionServlet.class
@@ -26,6 +29,7 @@ edu/matc/entity/AdminAction.class
 edu/matc/controller/VerifyPersonServlet.class
 edu/matc/CaloriesCalculator/Duration.class
 edu/matc/persistence/PersonDao.class
+edu/matc/persistence/UserDao.class
 edu/matc/entity/Account.class
 edu/matc/CaloriesCalculator/Calculation1.class
 edu/matc/persistence/SessionFactoryProvider.class

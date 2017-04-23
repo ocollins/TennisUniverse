@@ -37,6 +37,21 @@ public class UserRoleDao {
         return id;
     }
 
+    public UserRole getUserRole(int id) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        UserRole UserRole = null;
+
+        try {
+            UserRole = (UserRole) session.get(UserRole.class, id);
+        } catch (HibernateException he) {
+            logger.info("Hibernate Exception " + he);
+        } finally {
+            session.close();
+        }
+
+        return UserRole;
+    }
+
 
 
 }

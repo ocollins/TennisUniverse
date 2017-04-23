@@ -20,12 +20,6 @@ import java.io.InterruptedIOException;
 import java.util.Properties;
 import java.util.logging.Logger;
 
-/**
- * import javax.servlet.http.HttpServlet;
- * import javax.servlet.http.HttpServletRequest;
- * import javax.servlet.http.HttpServletResponse;
- * import javax.servlet.http.HttpSession;
- */
 
 /**
  * The type Log in display servlet.
