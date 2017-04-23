@@ -32,13 +32,6 @@ public class AddMemberServActionServlet extends HttpServlet {
      */
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        //response.setContentType("text/html");
-
-        //Remove the old session
-        //HttpSession session = request.getSession(true);
-        //session.invalidate();
-
-        //logger.info("OVC displaying url " + url);
 
         String url = "/add_member_serv.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

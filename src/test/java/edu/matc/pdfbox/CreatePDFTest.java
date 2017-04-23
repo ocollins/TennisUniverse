@@ -28,7 +28,7 @@ public class CreatePDFTest {
     @Test
     public void createPDFTest() throws Exception {
         CreateMemberStatement createMemberStatement = new CreateMemberStatement();
-        createMemberStatement.createPDF(memberId, startDate, endDate);
+        createMemberStatement.createPDF(memberId, startDate, endDate, "/home/student/EnterpriseRepos/TennisUniverse/pdf/MemberStatement");
 
     }
 

@@ -30,6 +30,8 @@ import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 import org.apache.pdfbox.rendering.PageDrawer;
 
+import javax.servlet.ServletContext;
+
 public class CreateMemberStatement {
 
 	CalculateMonthlyStatement calculateMonthlyStatement;
@@ -46,7 +48,7 @@ public class CreateMemberStatement {
 	 * @param endDate   the end date
 	 * @throws IOException the io exception
 	 */
-	public void createPDF (int memberId, Date startDate, Date endDate) throws IOException {
+	public void createPDF (int memberId, Date startDate, Date endDate, String fileName) throws IOException {
 		logger.info("Getting into createPDF module");
 		personDao = new PersonDao();
 		personServiceDao = new PersonServiceDao();
@@ -98,11 +100,8 @@ public class CreateMemberStatement {
 		//Draw page border
 		drawRect(contentStream, 20, 80, 570, 700);
 
-		//Draw grey box for the header
-		drawBox(contentStream, 45, 530, 524, 25);
-
-		//Draw a border around header
-		drawRect(contentStream, 42, 697, 350, 70);
+		//Draw grey box for the Services and charges header
+		drawBox(contentStream, 45, 530, 524, 27);
 
 		//Print services and charges header
 		drawHeaderRow(contentStream, 540, "Service", "Date", "Charge");
@@ -125,7 +124,7 @@ public class CreateMemberStatement {
 		drawBox(contentStream, 400, 375, 165, 20);
 
 		//Print total due
-		drawServicesRows(contentStream, 380, "Total Due", "", totalDue);
+		drawServicesRows(contentStream, 380, "Total Due:", "", totalDue);
 
 		//Print line before the pay online statement
 		drawRect(contentStream, 45, 280, 524, 1.5f);
@@ -135,10 +134,9 @@ public class CreateMemberStatement {
 
 		//Closing the content stream
 		contentStream.close();
-		String fileName = "/home/student/EnterpriseRepos/TennisUniverse/pdf/MemberStatement";
+
 		fileName = fileName + firstName + lastName + printDate + ".pdf";
 		//Saving the document
-		//document.save(new File("pdf/MemberStatement.pdf"));
 		try {
 			document.save(fileName);
 		} catch (IOException ex) {
@@ -157,7 +155,7 @@ public class CreateMemberStatement {
 	 */
 	public void createHeader(PDPageContentStream contentStream) throws IOException{
 		//Draw grey box for the header
-		drawBox(contentStream, 45, 710, 280, 35);
+		drawBox(contentStream, 45, 700, 284, 54);
 		//Create statement header
 		contentStream.beginText();
 		contentStream.setNonStrokingColor(Color.black);
@@ -167,6 +165,10 @@ public class CreateMemberStatement {
 		contentStream.showText("Member Monthly Statement");
 		//Ending the content stream
 		contentStream.endText();
+
+		//Draw a border around header
+		drawRect(contentStream, 42, 697, 290, 60);
+
 
 	}
 

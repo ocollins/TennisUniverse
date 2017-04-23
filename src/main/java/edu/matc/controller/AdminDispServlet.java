@@ -53,10 +53,13 @@ public class AdminDispServlet extends HttpServlet {
 
 
         //Get a list of admin actions and store it in the session
-        //request.setAttribute("adminActionsList", actions);
         session.setAttribute("adminActionsList", actions);
 
-        String url = "/adminoptions.jsp";
+        ServletContext context = getServletContext();
+        Properties properties = (Properties)context.getAttribute("applicationProperties");
+        String url = properties.getProperty("adminOptionsJsp.name");
+
+        //String url = "/adminoptions.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 

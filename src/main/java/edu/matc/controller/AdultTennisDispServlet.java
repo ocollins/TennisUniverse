@@ -31,7 +31,11 @@ public class AdultTennisDispServlet extends HttpServlet {
         HttpSession session = request.getSession(true);
         session.invalidate();
 
-        String url = "/adulttennis.jsp";
+        ServletContext context = getServletContext();
+        Properties properties = (Properties)context.getAttribute("applicationProperties");
+        String url = properties.getProperty("adultTennisJsp.name");
+
+        //String url = "/adulttennis.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 

@@ -37,18 +37,31 @@ h2 {
     margin: 4rem;
 }
 
-.member_list_table  td, th {
+td, th {
     text-align: left;
     padding: .4rem;
     border: .1rem solid black;
-    border-radius: .1rem;
+    border-radius: .3rem;
+}
+
+.td_hiddlen_border {
+    border: .2rem solid rgb(232, 208, 148);
 }
 
 .member_list_table {
     border: .1rem solid black;
 }
 
-.submit_button {
+#select_id_td {
     text-align: center;
 
+}
+
+.submit_button {
+    border: .2rem solid rgb(232, 208, 148);
+    text-align: center;
+}
+
+p {
+    text-align: center;
 }

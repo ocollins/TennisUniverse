@@ -4,6 +4,7 @@ import edu.matc.entity.AdminAction;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,6 +14,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Properties;
 
 /**
  * Admin action selection servlet
@@ -47,7 +49,9 @@ public class AdminActionDirectoryServlet extends HttpServlet {
 
         boolean needMemberSearch = false;
 
-        String memberSearchPageUrl = "/member_search.jsp";
+        ServletContext context = getServletContext();
+        Properties properties = (Properties)context.getAttribute("applicationProperties");
+        String memberSearchPageUrl = properties.getProperty("memberSearchJsp.name");
 
         //Get a list of admin actions and find the action that was selected
         List<AdminAction> actionList = (ArrayList<AdminAction>)session.getAttribute("adminActionsList");

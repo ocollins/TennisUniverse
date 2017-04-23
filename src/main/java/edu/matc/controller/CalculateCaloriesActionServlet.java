@@ -21,6 +21,7 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import java.io.IOException;
+import java.util.Properties;
 
 
 /**
@@ -57,9 +58,13 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
         //Call REST service to get calories burned result
         Client client = ClientBuilder.newClient();
         //String url = "http://localhost:8080/CaloriesCalculator/activities/json/";
-        String url = "http://52.14.26.13:8080/CaloriesCalculator/activities/json/";
+        //String url = "http://52.14.26.13:8080/CaloriesCalculator/activities/json/";
+
+        ServletContext context = getServletContext();
+        Properties properties = (Properties)context.getAttribute("applicationProperties");
+        String url = properties.getProperty("caloriesCalculatorActivities.path");
         url = url + activity + "/" + weight + "/" + duration +"/" + unit;
-        logger.info(url);
+
         WebTarget target = client.target(url);
         String responseFromREST = target.request().get(String.class);
 
@@ -73,8 +78,9 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
         //and store in context container
         session.setAttribute("MoreCaloriesResult",  getCalculation2(responseFromREST, calculations));
 
-        String responceUrl = "/fitness.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responceUrl);
+        //String responseUrl = "/fitness.jsp";
+        String responseUrl = properties.getProperty("fitnessJsp.name");
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
         dispatcher.forward(request, response);
 
     }
