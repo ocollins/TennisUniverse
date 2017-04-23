@@ -8,7 +8,6 @@
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
 
-  <!-- Protect everything within the "investing" directory. -->
   <security-constraint>
     <web-resource-collection>
       <!--<web-resource-name>adminoptions</web-resource-name>

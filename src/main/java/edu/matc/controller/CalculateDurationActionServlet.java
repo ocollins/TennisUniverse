@@ -22,6 +22,7 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import java.io.IOException;
+import java.util.Properties;
 
 
 /**
@@ -48,7 +49,6 @@ public class CalculateDurationActionServlet extends HttpServlet {
         //ServletContext context = getServletContext();
         HttpSession session = request.getSession(true);
 
-        logger.info("$$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Duration action servlet");
         //Get info from the user
         int weight = Integer.parseInt(request.getParameter("weight_text"));
         int calories = Integer.parseInt(request.getParameter("calories_text"));
@@ -58,7 +58,12 @@ public class CalculateDurationActionServlet extends HttpServlet {
         //Call REST service to get duration result
         Client client = ClientBuilder.newClient();
         //String url = "http://localhost:8080/CaloriesCalculator/duration/json/";
-        String url = "http://52.14.26.13:8080/CaloriesCalculator/duration/json/";
+
+        ServletContext context = getServletContext();
+        Properties properties = (Properties)context.getAttribute("applicationProperties");
+        String url = properties.getProperty("durationCalculator.path");
+
+        //String url = "http://52.14.26.13:8080/CaloriesCalculator/duration/json/";
         url = url + activity + "/" + weight + "/" + calories +"/" + unit;
         logger.info(url);
         WebTarget target = client.target(url);

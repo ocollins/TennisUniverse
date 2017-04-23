@@ -5,6 +5,7 @@ package edu.matc.controller;
  * @author O Collins
  */
 import java.io.*;
+import java.util.Properties;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -32,7 +33,10 @@ public class LogInDispServlet extends HttpServlet {
         HttpSession session = request.getSession(true);
         session.invalidate();
 
-        String url = "/login.jsp";
+        //String url = "/login.jsp";
+        ServletContext context = getServletContext();
+        Properties properties = (Properties)context.getAttribute("applicationProperties");
+        String url = properties.getProperty("loginJsp.name");
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 

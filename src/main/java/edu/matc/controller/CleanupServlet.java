@@ -18,6 +18,7 @@ import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
 import java.io.IOException;
+import java.util.Properties;
 
 
 /**
@@ -49,12 +50,13 @@ public class CleanupServlet extends HttpServlet {
         session.removeAttribute("Weight");
         session.removeAttribute("DurationResult");
 
-        logger.info("$$$$$$$$$$$$$$$$$$$$$$$$$ Getting into Cleanup servlet");
-        //Store duration string in context container
-        //context.setAttribute("DurationResult",  durationString);
 
-        String responceurl = "/fitness.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responceurl);
+        //String responceurl = "/fitness.jsp";
+        ServletContext context = getServletContext();
+        Properties properties = (Properties)context.getAttribute("applicationProperties");
+        String responseUrl = properties.getProperty("fitnessJsp.name");
+
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
         dispatcher.forward(request, response);
 
     }

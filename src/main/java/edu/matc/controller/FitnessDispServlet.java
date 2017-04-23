@@ -8,6 +8,7 @@ import edu.matc.CaloriesCalculator.ActivitiesItem;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -20,6 +21,7 @@ import javax.ws.rs.client.WebTarget;
 import javax.ws.rs.core.MediaType;
 import java.io.IOException;
 import java.util.List;
+import java.util.Properties;
 
 /**
  * Adult Tennis page Servlet Java113
@@ -75,8 +77,11 @@ public class FitnessDispServlet extends HttpServlet {
             logger.info(ioe);
         }
 
-        String jspUrl = "/fitness.jsp";
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(jspUrl);
+        //String jspUrl = "/fitness.jsp";
+        ServletContext context = getServletContext();
+        Properties properties = (Properties)context.getAttribute("applicationProperties");
+        String responseUrl = properties.getProperty("fitnessJsp.name");
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
         dispatcher.forward(request, response);
 
     }

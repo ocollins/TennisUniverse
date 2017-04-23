@@ -8,6 +8,7 @@ package edu.matc.controller;
 import edu.matc.persistence.PersonDao;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,6 +17,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.InterruptedIOException;
+import java.util.Properties;
 import java.util.logging.Logger;
 
 /**
@@ -45,7 +47,7 @@ public class VerifyPersonServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         int personId = 0;
-        if (request.getParameter("account_id") != null) {
+        if (request.getParameter("account_id")!= null && !request.getParameter("account_id").isEmpty()) {
             personId = Integer.parseInt(request.getParameter("account_id"));
             logger.info("person id from the form " + personId);
         }
@@ -59,17 +61,23 @@ public class VerifyPersonServlet extends HttpServlet {
 
         //Create Person DAO instance
         PersonDao dao = new PersonDao();
-        logger.info("looking for person " + dao.getPerson(101));
+        logger.info("looking for person " + dao.getPerson(personId).getFirstName());
+
+        ServletContext context = getServletContext();
+        Properties properties = (Properties)context.getAttribute("applicationProperties");
+        String url = properties.getProperty("loginJsp.name");
+
+        session.removeAttribute("validPerson");
 
         if (dao.getPerson(personId) != null) {
-            session.setAttribute("validperson", true);
+            session.setAttribute("validPerson", true);
 
-            String url = "/login.jsp";
+            //String url = "/login.jsp";
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
             dispatcher.forward(request, response);
         } else {
 
-            String url = "/login.jsp";
+            //String url = "/login.jsp";
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
             dispatcher.forward(request, response);
 

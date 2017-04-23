@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -15,6 +16,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.time.LocalDate;
+import java.util.Properties;
 
 /**
  * Add member info servlet
@@ -55,7 +57,10 @@ public class AddMemberActionServlet extends HttpServlet {
 
         session.setAttribute("feedbackMessage", storeMemberInfo(request));
 
-        String url = "/add_member.jsp";
+        //String url = "/add_member.jsp";
+        ServletContext context = getServletContext();
+        Properties properties = (Properties)context.getAttribute("applicationProperties");
+        String url = properties.getProperty("addMemberJsp.name");
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 

@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import org.hibernate.HibernateException;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -16,6 +17,7 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Properties;
 
 /**
  * Member search action selection servlet
@@ -75,11 +77,14 @@ public class MemberSearchActionServlet extends HttpServlet {
         }
 
         //If searching by member ID redirect to another admin page
-        //otherwise, bring back results to the memeber search page
+        //otherwise, bring back results to the member search page
         if (personId != 0) {
             url = (String)session.getAttribute("adminPageUrl");
         } else {
-            url = "/member_search.jsp";
+            //url = "/member_search.jsp";
+            ServletContext context = getServletContext();
+            Properties properties = (Properties)context.getAttribute("applicationProperties");
+            String memberSearchPageUrl = properties.getProperty("memberSearchJsp.name");
         }
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
