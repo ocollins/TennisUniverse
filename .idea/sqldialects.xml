@@ -2,6 +2,7 @@
 <project version="4">
   <component name="SqlDialectMappings">
     <file url="file://$PROJECT_DIR$/src/dba/createAccount.sql" dialect="MySQL" />
+    <file url="file://$PROJECT_DIR$/src/dba/createAll.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/dba/createPerson.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/dba/createPersonAccount.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/src/dba/createPersonService.sql" dialect="MySQL" />

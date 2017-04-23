@@ -27,8 +27,10 @@
 
 <body ng-app="">
 
-<h4>Please enter your user name and password</h4>
+
 <c:if test="${empty validPerson}">
+    <h1>Login or register new user</h1>
+    <h4>Please enter your user name and password</h4>
     <FORM ACTION="j_security_check" METHOD="POST">
         <TABLE id="logintable">
             <TR><td class="label">User Name:</td><TD class="data"><INPUT TYPE="TEXT" NAME="j_username"></TD></TR>
@@ -48,13 +50,22 @@
             <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Check Member ID"></td></TR>
         </TABLE>
     </form>
-</c:if>
+    </c:if>
 
     <c:if test="${validPerson}">
-        <p>Person found!</p>
+        <h1>Register New User</h1>
+        <h4>Please enter user name and password</h4>
+        <FORM ACTION="" METHOD="POST">
+            <TABLE id="register_table">
+                <TR><td class="label">User Name:</td><TD class="data"><INPUT TYPE="TEXT" NAME="user_name" required></TD></TR>
+                <TR><td class="label">Password:</td><TD class="data"><INPUT TYPE="PASSWORD" NAME="password" required></TD></TR>
+                <TR><td class="label">Confirm Password:</td><TD class="data"><INPUT TYPE="PASSWORD" NAME="password" required></TD></TR>
+                <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Register"></td></TR>
+            </TABLE>
+        </FORM>
     </c:if>
     <c:if test="${not validPerson  && !empty validPerson}">
-        <p id="invalididmessage">Invalid member ID</p
+        <p id="invalididmessage">Invalid member ID. Please contact Help Desk</p
     </c:if>
 
 
