@@ -59,7 +59,7 @@
                 <TR><td class="label">User Name:</td><TD class="data"><INPUT TYPE="TEXT" NAME="user_name"  required></TD></TR>
                 <TR><td class="label">Password:</td><TD class="data"><INPUT TYPE="PASSWORD" NAME="password" id="pass_input1" required></TD></TR>
                 <TR><td class="label">Confirm Password:</td><TD class="data"><INPUT TYPE="PASSWORD" NAME="password2" id="pass_input2" required></TD></TR>
-                <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Register"></td></TR>
+                <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" ID="reg_new_user_button" VALUE="Register"></td></TR>
             </TABLE>
         </FORM>
 
