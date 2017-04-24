@@ -22,7 +22,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" type=""></script>
 
-<script type="text/javascript" src="js/adminaction.js"></script>
+
 <div id="container">
 <!--include head element, which is stored in jsp directory-->
 <c:import url="head.jsp"/>
