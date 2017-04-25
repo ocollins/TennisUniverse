@@ -43,6 +43,7 @@ public class VerifyPersonServlet extends HttpServlet {
         int personId = 0;
         if (request.getParameter("account_id")!= null && !request.getParameter("account_id").isEmpty()) {
             personId = Integer.parseInt(request.getParameter("account_id"));
+
             logger.info("person id from the form " + personId);
         }
 
@@ -61,6 +62,7 @@ public class VerifyPersonServlet extends HttpServlet {
         //If found person, registration form will be displayed
         if (dao.getPerson(personId) != null) {
             session.setAttribute("validPerson", true);
+            session.setAttribute("newUserId", personId);
 
             //String url = "/login.jsp";
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
