@@ -54,20 +54,31 @@ public class MemberSearchActionServlet extends HttpServlet {
         session.removeAttribute("searchID");
         session.removeAttribute("memberList");
         session.removeAttribute("foundMembers");
+        //Remove old message
+        session.removeAttribute("resultMessage");
 
         String url = null;
+        String resultMessage = "Member not found";
 
         //Retrieve search parameters
         String lastName = null;
         int personId = 0;
+        ServletContext context = getServletContext();
+        Properties properties = (Properties)context.getAttribute("applicationProperties");
 
         if (request.getParameter("searchID")!= null && !request.getParameter("searchID").isEmpty() ) {
             //Get member's info for the ID
             personId = Integer.parseInt(request.getParameter("searchID"));
             aPerson = getMemberInfo(request, personId);
-            //Store it in the session
-            session.setAttribute("aPerson", aPerson);
-            session.setAttribute("searchID", personId);
+            if (aPerson != null) {
+                //Store it in the session
+                session.setAttribute("aPerson", aPerson);
+                session.setAttribute("searchID", personId);
+            } else {
+                session.setAttribute("foundMembers", false);
+                session.setAttribute("resultMessage", resultMessage);
+
+            }
         //Otherwise, try searching by last name
         } else if (!request.getParameter("searchLastName").isEmpty()){
             //Store list of members with the last name in session container
@@ -82,9 +93,7 @@ public class MemberSearchActionServlet extends HttpServlet {
             url = (String)session.getAttribute("adminPageUrl");
         } else {
             //url = "/member_search.jsp";
-            ServletContext context = getServletContext();
-            Properties properties = (Properties)context.getAttribute("applicationProperties");
-            String memberSearchPageUrl = properties.getProperty("memberSearchJsp.name");
+            url = properties.getProperty("memberSearchJsp.name");
         }
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
@@ -98,7 +107,7 @@ public class MemberSearchActionServlet extends HttpServlet {
      * @param personId the person id
      * @return the member info
      */
-    public Person getMemberInfo(HttpServletRequest request, int personId) {
+    public Person getMemberInfo(HttpServletRequest request, int personId){
         session.setAttribute("searchID", personId);
 
         try {

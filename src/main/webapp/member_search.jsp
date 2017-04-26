@@ -20,14 +20,6 @@
                 $(this).style("background-color", "red");
             });
         });
-//        $(document).ready(function(){
-//            $(".member_id").click(function(){
-//
-  //              $("#mem_search_form").style("background-color", "red");
-//                $("#mem_search_form").submit();
-////                $("#searchID").value = $(this).value;
-//            });
-//        });
     </script>
 </head>
 

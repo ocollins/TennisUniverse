@@ -18,12 +18,6 @@
     <script type="text/javascript" src="js/login_script.js"></script>
 </head>
 
-<%--<script>--%>
-    <%--function displayLogin() {--%>
-        <%--document.getElementById("logintable").style.display = "none";--%>
-    <%--}--%>
-
-<%--</script>--%>
 <body>
 
 <c:if test="${empty validPerson}">
@@ -48,33 +42,33 @@
             <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Check Member ID"></td></TR>
         </TABLE>
     </form>
-    </c:if>
+</c:if>
 
-    <c:if test="${validPerson}">
-        <h1>Register New User</h1>
-        <h4>Please enter user name and password</h4>
+<c:if test="${validPerson}">
+    <h1>Register New User</h1>
+    <h4>Please enter user name and password</h4>
 
-        <FORM ACTION="registerNewUserServlet" METHOD="POST" id="register_form">
-            <TABLE id="register_table">
-                <TR><td class="label">User Name:</td><TD class="data"><INPUT TYPE="TEXT" NAME="user_name"  required></TD></TR>
-                <TR><td class="label">Password:</td><TD class="data"><INPUT TYPE="PASSWORD" NAME="password" id="pass_input1" required></TD></TR>
-                <TR><td class="label">Confirm Password:</td><TD class="data"><INPUT TYPE="PASSWORD" NAME="password2" id="pass_input2" required></TD></TR>
-                <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" ID="reg_new_user_button" VALUE="Register"></td></TR>
-            </TABLE>
-        </FORM>
+    <FORM ACTION="registerNewUserServlet" METHOD="POST" id="register_form">
+        <TABLE id="register_table">
+            <TR><td class="label">User Name:</td><TD class="data"><INPUT TYPE="TEXT" NAME="user_name"  required></TD></TR>
+            <TR><td class="label">Password:</td><TD class="data"><INPUT TYPE="PASSWORD" NAME="password" id="pass_input1" required></TD></TR>
+            <TR><td class="label">Confirm Password:</td><TD class="data"><INPUT TYPE="PASSWORD" NAME="password2" id="pass_input2" required></TD></TR>
+            <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" ID="reg_new_user_button" VALUE="Register"></td></TR>
+        </TABLE>
+    </FORM>
 
-        <div id="pswd_info">
-            <h4>Password must meet the following requirements:</h4>
-            <ul>
-                <li id="capital" class="invalid">At least <strong>one capital letter</strong></li>
-                <li id="number" class="invalid">At least <strong>one number</strong></li>
-                <li id="length" class="invalid">Be at least <strong>6 characters</strong></li>
-            </ul>
-        </div>
-    </c:if>
+    <div id="pswd_info">
+        <h4>Password must meet the following requirements:</h4>
+        <ul>
+            <li id="capital" class="invalid">At least <strong>one capital letter</strong></li>
+            <li id="number" class="invalid">At least <strong>one number</strong></li>
+            <li id="length" class="invalid">Be at least <strong>6 characters</strong></li>
+        </ul>
+    </div>
+</c:if>
 
-    <c:if test="${not validPerson  && !empty validPerson}">
-        <p id="invalididmessage">Invalid member ID. Please contact Help Desk</p
-    </c:if>
+<c:if test="${not validPerson  && !empty validPerson}">
+    <p id="invalididmessage">Invalid member ID. Please contact Help Desk</p
+</c:if>
 </body>
 </html>
