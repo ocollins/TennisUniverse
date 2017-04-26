@@ -1,9 +1,0 @@
-edu/matc/memberstatement/CalculateMonthlyStatementTest.class
-edu/matc/persistence/ServiceDaoTest.class
-edu/matc/persistence/UserDaoTest.class
-edu/matc/persistence/AdminActionDaoTest.class
-edu/matc/persistence/PersonDaoTest.class
-edu/matc/persistence/PersonServiceDaoTest.class
-edu/matc/pdfbox/CreateMemberStatementTest.class
-edu/matc/pdfbox/CreatePDFTest.class
-edu/matc/persistence/UserRoleDaoTest.class

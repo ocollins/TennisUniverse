@@ -73,23 +73,30 @@ public class MemberSearchActionServlet extends HttpServlet {
         if (request.getParameter("searchID")!= null && !request.getParameter("searchID").isEmpty() ) {
             //Get member's info for the ID
             personId = Integer.parseInt(request.getParameter("searchID"));
-            aPerson = getMemberInfo(request, personId);
+            try {
+                aPerson = getMemberInfo(request, personId);
+            } catch (Exception ex){
+                //If person is not found, return to member search page with an error message
+                returnWithError(resultMessage, request, response, dispatcher, memberSearchUrl);
+            }
             if (aPerson != null) {
                 //Store it in the session
+                logger.info("found member");
                 session.setAttribute("aPerson", aPerson);
                 session.setAttribute("searchID", personId);
-            } else {
-                //If person is not found, return to member search page with an error message
-                session.setAttribute("foundMembers", false);
-                session.setAttribute("resultMessage", resultMessage);
-                dispatcher = getServletContext().getRequestDispatcher(memberSearchUrl);
-                dispatcher.forward(request, response);
-            }
+//            } else {
+        }
         //Otherwise, try searching by last name
         } else if (!request.getParameter("searchLastName").isEmpty()){
             //Store list of members with the last name in session container
             lastName = request.getParameter("searchLastName");
-            session.setAttribute("memberList", getMemberList(lastName));
+            try {
+                session.setAttribute("memberList", getMemberList(lastName));
+            } catch (Exception ex) {
+                //If person is not found, return to member search page with an error message
+                returnWithError(resultMessage, request, response, dispatcher, memberSearchUrl);
+            }
+
             session.setAttribute("foundMembers", true);
         }
 
@@ -110,8 +117,9 @@ public class MemberSearchActionServlet extends HttpServlet {
      * @param request  the request
      * @param personId the person id
      * @return the member info
+     * @throws HibernateException the hibernate exception
      */
-    public Person getMemberInfo(HttpServletRequest request, int personId){
+    public Person getMemberInfo(HttpServletRequest request, int personId) throws HibernateException{
         session.setAttribute("searchID", personId);
 
         try {
@@ -138,6 +146,32 @@ public class MemberSearchActionServlet extends HttpServlet {
             logger.info("Hibernate Exception " + he);
         }
         return memberList;
+
+
+    }
+
+    /**
+     * Return with error.
+     *
+     * @param resultMessage   the result message
+     * @param request         the request
+     * @param response        the response
+     * @param dispatcher      the dispatcher
+     * @param memberSearchUrl the member search url
+     */
+    public void returnWithError(String resultMessage, HttpServletRequest request, HttpServletResponse response, RequestDispatcher dispatcher, String memberSearchUrl) {
+        logger.info("no member found ");
+        //If person is not found, return to member search page with an error message
+        session.setAttribute("foundMembers", false);
+        session.setAttribute("resultMessage", resultMessage);
+        dispatcher = getServletContext().getRequestDispatcher(memberSearchUrl);
+        try {
+            dispatcher.forward(request, response);
+        } catch (IOException ex) {
+            logger.info("error calling member search page" + ex);
+        } catch (ServletException se) {
+            logger.info("error calling member search page" + se);
+        }
 
 
     }

@@ -46,7 +46,7 @@ public class PersonDao {
      * @param id the person's id
      * @return person
      */
-    public Person getPerson(int id) {
+    public Person getPerson(int id) throws HibernateException{
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         Person person = null;
 
