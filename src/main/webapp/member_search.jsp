@@ -76,5 +76,9 @@
         </table>
     </div>
 </c:if>
+<c:if test="${!foundMembers}">
+    <h2>${resultMessage}</h2>
+
+</c:if>
 </body>
 </html>

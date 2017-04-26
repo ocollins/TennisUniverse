@@ -57,14 +57,18 @@ public class MemberSearchActionServlet extends HttpServlet {
         //Remove old message
         session.removeAttribute("resultMessage");
 
-        String url = null;
-        String resultMessage = "Member not found";
+        String resultMessage = "Member not found. Plese contact Help Desk to register.";
 
         //Retrieve search parameters
         String lastName = null;
         int personId = 0;
         ServletContext context = getServletContext();
+        RequestDispatcher dispatcher = null;
+
+        //Access application properties file to get jsp names
         Properties properties = (Properties)context.getAttribute("applicationProperties");
+        String adminUrl = (String)session.getAttribute("adminPageUrl");
+        String memberSearchUrl = properties.getProperty("memberSearchJsp.name");
 
         if (request.getParameter("searchID")!= null && !request.getParameter("searchID").isEmpty() ) {
             //Get member's info for the ID
@@ -75,9 +79,11 @@ public class MemberSearchActionServlet extends HttpServlet {
                 session.setAttribute("aPerson", aPerson);
                 session.setAttribute("searchID", personId);
             } else {
+                //If person is not found, return to member search page with an error message
                 session.setAttribute("foundMembers", false);
                 session.setAttribute("resultMessage", resultMessage);
-
+                dispatcher = getServletContext().getRequestDispatcher(memberSearchUrl);
+                dispatcher.forward(request, response);
             }
         //Otherwise, try searching by last name
         } else if (!request.getParameter("searchLastName").isEmpty()){
@@ -90,13 +96,11 @@ public class MemberSearchActionServlet extends HttpServlet {
         //If searching by member ID redirect to another admin page
         //otherwise, bring back results to the member search page
         if (personId != 0) {
-            url = (String)session.getAttribute("adminPageUrl");
+            dispatcher = getServletContext().getRequestDispatcher(adminUrl);
         } else {
-            //url = "/member_search.jsp";
-            url = properties.getProperty("memberSearchJsp.name");
+            dispatcher = getServletContext().getRequestDispatcher(memberSearchUrl);
         }
 
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
     }
 
