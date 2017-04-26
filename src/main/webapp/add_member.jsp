@@ -83,7 +83,7 @@
             </c:if>
         </form>
         <c:if test="${not empty feedbackMessage}">
-            <p id="feedback_p">Member was added successfully</p>
+            <p id="feedback_p">${feedbackMessage}</p>
         </c:if>
     </div>
 <c:import url="footer.jsp"/>

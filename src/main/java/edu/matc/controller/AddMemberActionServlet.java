@@ -50,7 +50,6 @@ public class AddMemberActionServlet extends HttpServlet {
 
         //Remove the old session
         HttpSession session = request.getSession(true);
-        //session.invalidate();
 
         //logger.info("OVC displaying url " + url);
 
@@ -72,9 +71,10 @@ public class AddMemberActionServlet extends HttpServlet {
      * @param request the request
      * @return the int
      */
-    public int storeMemberInfo(HttpServletRequest request) {
+    public String storeMemberInfo(HttpServletRequest request) {
         dao = new PersonDao();
         int newPersonId = 0;
+        String feedbackMessage = null;
 
         LocalDateAttributeConverter dateConverter = new LocalDateAttributeConverter();
         LocalDate dob = LocalDate.parse(request.getParameter("birth_date"));
@@ -88,11 +88,13 @@ public class AddMemberActionServlet extends HttpServlet {
 
         try {
             newPersonId = dao.addPerson(newPerson);
+            feedbackMessage = "Person was added successfully";
             logger.info("In Add member servlet added a new person " + newPersonId);
         } catch (HibernateException he) {
+            feedbackMessage = "Error adding a new person";
             logger.info("Hibernate Exception " + he);
         }
-        return newPersonId;
+        return feedbackMessage;
 
 
     }
