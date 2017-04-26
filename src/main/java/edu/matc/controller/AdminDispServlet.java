@@ -7,6 +7,7 @@ package edu.matc.controller;
 
 import edu.matc.entity.AdminAction;
 import edu.matc.persistence.AdminActionDao;
+import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -29,6 +30,7 @@ import javax.servlet.annotation.*;
         urlPatterns = { "/adminDispServlet" }
 )
 public class AdminDispServlet extends HttpServlet {
+    private final Logger logger = Logger.getLogger(this.getClass());
     /**
      * Handles HTTP GET requests.
      *
@@ -40,6 +42,7 @@ public class AdminDispServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
+
         //Remove the old session
         HttpSession session = request.getSession(true);
         session.invalidate();
@@ -48,16 +51,26 @@ public class AdminDispServlet extends HttpServlet {
         session = request.getSession(true);
         //Create AdminActions instance
         AdminActionDao dao = new AdminActionDao();
-
-        List<AdminAction> actions = dao.getAllAdminActions();
-
-
-        //Get a list of admin actions and store it in the session
-        session.setAttribute("adminActionsList", actions);
-
+        List<AdminAction> actions = null;
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
-        String url = properties.getProperty("adminOptionsJsp.name");
+        String url = null;
+
+        //Get a list of pages
+        try {
+            actions = dao.getAllAdminActions();
+        } catch (Exception ex) {
+            //In case of an error redirect to error page
+            logger.info("Error getting list of admin actions" + ex);
+            url = properties.getProperty("processingErrorJsp.name");
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+            dispatcher.forward(request, response);
+        }
+
+        //Store list of admin actions it in the session
+        session.setAttribute("adminActionsList", actions);
+
+        url = properties.getProperty("adminOptionsJsp.name");
 
         //String url = "/adminoptions.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);

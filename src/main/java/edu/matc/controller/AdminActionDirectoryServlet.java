@@ -18,6 +18,7 @@ import java.util.Properties;
 
 /**
  * Admin action selection servlet
+ * Redirects to the page selected by they user
  * @author Olena Collins
  */
 @WebServlet(
