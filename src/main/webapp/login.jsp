@@ -56,6 +56,7 @@
             <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" ID="reg_new_user_button" VALUE="Register"></td></TR>
         </TABLE>
     </FORM>
+    <h4>${feedbackMessage}</h4>
 
     <div id="pswd_info">
         <h4>Password must meet the following requirements:</h4>

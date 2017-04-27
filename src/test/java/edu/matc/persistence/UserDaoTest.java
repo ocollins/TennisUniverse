@@ -23,7 +23,7 @@ public class UserDaoTest {
     public void init() {
         dao = new UserDao();
         userId = 01;
-        personId = 110;
+        personId = 101;
         userName = "coco";
         userPassword = "Cocosha1";
         user = new User(personId, userName, userPassword);
@@ -42,6 +42,13 @@ public class UserDaoTest {
         logger.info("Adding user with new id " + result);
         assertTrue("Failed to add a new user ", result > 0);
 
+    }
+
+    @Test
+    public void getUserByPersonIdTest() throws Exception {
+        user = dao.getUserByPersonId(personId);
+        logger.info("found a user by person id " + user.getUserName());
+        assertEquals("Error finding a user by person id ", "member", user.getUserName() );
     }
 
 }

@@ -62,19 +62,16 @@ public class VerifyPersonServlet extends HttpServlet {
         //If found person, registration form will be displayed
         if (dao.getPerson(personId) != null) {
             session.setAttribute("validPerson", true);
-            session.setAttribute("newUserId", personId);
-
+            session.setAttribute("personId", personId);
             //String url = "/login.jsp";
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-            dispatcher.forward(request, response);
             //If not a valid member ID, error message will be displayed
         } else {
             session.setAttribute("validPerson", false);
             //String url = "/login.jsp";
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-            dispatcher.forward(request, response);
 
         }
+        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+        dispatcher.forward(request, response);
 
     }
 }

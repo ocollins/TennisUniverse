@@ -84,7 +84,6 @@ public class MemberSearchActionServlet extends HttpServlet {
                 logger.info("found member");
                 session.setAttribute("aPerson", aPerson);
                 session.setAttribute("searchID", personId);
-//            } else {
         }
         //Otherwise, try searching by last name
         } else if (!request.getParameter("searchLastName").isEmpty()){

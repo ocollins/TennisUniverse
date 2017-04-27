@@ -23,9 +23,7 @@ public class User {
     @Column(name = "USER_ID")
     private int userId;
 
-
-
-    @Column(name = "PERSON_ID")
+    @Column(name = "PERSON_ID", unique = true)
     private int personId;
 
     @Column(name = "USER_NAME")

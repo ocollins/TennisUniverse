@@ -1,5 +1,6 @@
 package edu.matc.persistence;
 
+
 import edu.matc.entity.User;
 import org.apache.log4j.Logger;
 import org.hibernate.Criteria;
@@ -19,7 +20,7 @@ public class UserDao {
     private final Logger logger = Logger.getLogger(this.getClass());
 
     /**
-     * Gets User.
+     * Gets User by Id.
      *
      * @param UserId the User id
      * @return the User
@@ -38,6 +39,31 @@ public class UserDao {
 
         return User;
     }
+
+    /**
+     * Gets User by person ID.
+     *
+     * @param personId the Person id
+     * @return the User
+     */
+    public User getUserByPersonId(int personId) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        User user = null;
+        Criteria criteria = session.createCriteria(User.class);
+        criteria.add(Restrictions.eq("personId", personId));
+        criteria.setMaxResults(1);
+
+        try {
+            user = (User) criteria.list().get(0);
+        } catch (HibernateException he) {
+            logger.info("Hibernate Exception " + he);
+        } finally {
+            session.close();
+        }
+
+        return user;
+    }
+
 
     /**
      * add a user

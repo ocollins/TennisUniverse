@@ -42,21 +42,36 @@ public class RegisterNewUserServlet extends HttpServlet {
         //Create context container
         HttpSession session = request.getSession(true);
 
-        //Get new user info
-        String userName = request.getParameter("user_name");
-        String password = request.getParameter("password");
-        logger.info("user name from the form " + userName);
-        logger.info("password from the form " + password);
-        //Get userId that the user is registering for
-        String userIdString = String.valueOf(session.getAttribute("newUserId"));
-        int userId = Integer.parseInt(userIdString);
-
-        boolean successInsertUser = insertUser(userId, userName, password);
-        boolean successInsertUserRole = insertUserRole(userName, userId);
-
         ServletContext context = getServletContext();
         Properties properties = (Properties) context.getAttribute("applicationProperties");
         String responseUrl = null;
+        String feedbackMessage = null;
+
+        //Get new user info
+        String userName = request.getParameter("user_name");
+        String password = request.getParameter("password");
+
+        //Get personId that the user is registering for
+        String personIdString = String.valueOf(session.getAttribute("personId"));
+        int personId = Integer.parseInt(personIdString);
+        logger.info("@@@@@@@@@@@@@@@@@@@inserting member id " + personId);
+
+        //Check if the person had already registered and has user name and id
+        //if so, send error message back
+        boolean foundRegistration = checkForExistingRegistration(personId);
+        if(foundRegistration) {
+            feedbackMessage = "You already have user name and password";
+            session.removeAttribute("feedbackMessage");
+            session.setAttribute("feedbackMessage", feedbackMessage);
+            responseUrl = properties.getProperty("loginJsp.name");
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
+            dispatcher.forward(request, response);
+        }
+
+        boolean successInsertUser = insertUser(personId, userName, password);
+
+        logger.info("result of inserting a user " + successInsertUser);
+        boolean successInsertUserRole = insertUserRole(userName, personId);
 
         if (successInsertUser && successInsertUserRole) {
             responseUrl = properties.getProperty("tempAdminOptions.name");
@@ -66,6 +81,26 @@ public class RegisterNewUserServlet extends HttpServlet {
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
         dispatcher.forward(request, response);
 
+    }
+
+    /**
+     * Check for existing registration boolean.
+     *
+     * @param personId the person id
+     * @return the boolean
+     */
+    public boolean checkForExistingRegistration(int personId) {
+        UserDao userDao = new UserDao();
+        boolean foundRegistration = false;
+        try {
+            User user = userDao.getUserByPersonId(personId);
+            if (user.getUserId() > 0) {
+                foundRegistration = true;
+            }
+        } catch (Exception ex) {
+            logger.info("Hibernate error finding user by person id");
+        }
+        return foundRegistration;
     }
 
     /**
@@ -81,6 +116,7 @@ public class RegisterNewUserServlet extends HttpServlet {
 
         try {
             int result = userDao.addUser(user);
+            logger.info("new user id " + result);
             return true;
         } catch (Exception ex) {
             logger.info("Error adding new user into the USER table " + ex);
@@ -94,12 +130,12 @@ public class RegisterNewUserServlet extends HttpServlet {
      * @param userName the user name
      * @return the boolean
      */
-    public boolean insertUserRole(String userName, int userId) {
+    public boolean insertUserRole(String userName, int personId) {
         PersonDao personDao = new PersonDao();
         UserRoleDao userRoleDao = new UserRoleDao();
 
         //Get user role name from Person table
-        String roleName = personDao.getPerson(userId).getRoleName();
+        String roleName = personDao.getPerson(personId).getRoleName();
         logger.info("User role name from Person " + roleName);
 
         //Create new userRole object
