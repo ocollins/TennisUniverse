@@ -66,8 +66,18 @@ public class CalculateDurationActionServlet extends HttpServlet {
         //String url = "http://52.14.26.13:8080/CaloriesCalculator/duration/json/";
         url = url + activity + "/" + weight + "/" + calories +"/" + unit;
         logger.info(url);
-        WebTarget target = client.target(url);
-        String responseFromREST = target.request().get(String.class);
+
+        String responseFromREST = null;
+
+        try {
+            WebTarget target = client.target(url);
+            responseFromREST = target.request().get(String.class);
+        } catch (Exception ex) {
+            logger.info("Error connecting to the Calories Calculator service " + ex);
+            url = properties.getProperty("processingErrorJsp.name");
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+            dispatcher.forward(request, response);
+        }
 
         //Conver to Duration POJOs and get duration result for the
         //requested calories

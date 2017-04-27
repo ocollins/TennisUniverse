@@ -57,7 +57,7 @@ public class MemberSearchActionServlet extends HttpServlet {
         //Remove old message
         session.removeAttribute("resultMessage");
 
-        String resultMessage = "Member not found. Plese contact Help Desk to register.";
+        String resultMessage = "Member not found. Please contact Help Desk.";
 
         //Retrieve search parameters
         String lastName = null;

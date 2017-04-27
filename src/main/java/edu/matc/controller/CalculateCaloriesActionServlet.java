@@ -60,17 +60,30 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
         //String url = "http://localhost:8080/CaloriesCalculator/activities/json/";
         //String url = "http://52.14.26.13:8080/CaloriesCalculator/activities/json/";
 
+        //access application properties
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
+
+        //Build a path to the API
         String url = properties.getProperty("caloriesCalculatorActivities.path");
         url = url + activity + "/" + weight + "/" + duration +"/" + unit;
 
-        WebTarget target = client.target(url);
-        String responseFromREST = target.request().get(String.class);
+        String responseFromREST = null;
+        String responseUrl = null;
+
+        try {
+            WebTarget target = client.target(url);
+            responseFromREST = target.request().get(String.class);
+        } catch (Exception ex) {
+            logger.info("Error connecting to the Calories Calculator service " + ex);
+            responseUrl = properties.getProperty("processingErrorJsp.name");
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
+            dispatcher.forward(request, response);
+        }
 
         Calculations calculations = null;
 
-        //Conver to Calculations POJOs and get calories result for the
+        //Convert to Calculations POJOs and get calories result for the
         //requested duration and store in context container
         session.setAttribute("RequestedCaloriesResult",  getCalculation1(responseFromREST, calculations));
 
@@ -78,7 +91,7 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
         //and store in context container
         session.setAttribute("MoreCaloriesResult",  getCalculation2(responseFromREST, calculations));
 
-        String responseUrl = properties.getProperty("fitnessJsp.name");
+        responseUrl = properties.getProperty("fitnessJsp.name");
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
         dispatcher.forward(request, response);
 
