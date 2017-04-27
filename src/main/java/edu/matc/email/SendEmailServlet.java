@@ -44,13 +44,14 @@ public class SendEmailServlet extends HttpServlet {
         dao = new UserDao();
         HttpSession session = request.getSession(true);
         String sendEmailMessage = "Email was sent successfully";
+        String emailAddress = (String) session.getAttribute("personEmail");
 
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("loginJsp.name");
 
         session.removeAttribute("sendEmailMessage");
-        session.setAttribute("sendEmailMessage", sendEmailMessage);
+        session.setAttribute("sendEmailMessage", emailAddress);
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);

@@ -8346,3 +8346,38 @@
 2017-04-26 21:47:06,639 19069 [http-nio-8083-exec-5] INFO  edu.matc.controller.RegisterNewUserServlet  - new user id 4
 2017-04-26 21:47:06,640 19070 [http-nio-8083-exec-5] INFO  edu.matc.controller.RegisterNewUserServlet  - result of inserting a user true
 2017-04-26 21:47:06,646 19076 [http-nio-8083-exec-5] INFO  edu.matc.controller.RegisterNewUserServlet  - User role name from Person member
+2017-04-26 22:02:34,241 0    [http-nio-8083-exec-6] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-26 22:02:34,248 7    [http-nio-8083-exec-6] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-26 22:02:34,250 9    [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-26 22:02:34,252 11   [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-26 22:02:34,270 29   [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-26 22:02:34,270 29   [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-26 22:02:34,309 68   [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-26 22:02:34,391 150  [http-nio-8083-exec-6] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-26 22:02:34,394 153  [http-nio-8083-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-26 22:02:34,395 154  [http-nio-8083-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-26 22:02:34,395 154  [http-nio-8083-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-26 22:02:34,396 155  [http-nio-8083-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-26 22:02:34,696 455  [http-nio-8083-exec-6] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-26 22:02:34,949 708  [http-nio-8083-exec-6] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-26 22:02:34,955 714  [http-nio-8083-exec-6] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-26 22:02:49,757 15516 [http-nio-8083-exec-7] INFO  edu.matc.controller.RegisterNewUserServlet  - @@@@@@@@@@@@@@@@@@@inserting member id 101
+2017-04-26 22:02:49,839 15598 [http-nio-8083-exec-7] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-26 22:02:49,840 15599 [http-nio-8083-exec-7] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '0' for key 'PERSON_ID'
+2017-04-26 22:02:49,841 15600 [http-nio-8083-exec-7] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-04-26 22:02:49,842 15601 [http-nio-8083-exec-7] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-26 22:02:49,842 15601 [http-nio-8083-exec-7] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '0' for key 'PERSON_ID'
+2017-04-26 22:02:49,842 15601 [http-nio-8083-exec-7] INFO  edu.matc.persistence.UserDao  - Error adding a new user org.hibernate.exception.ConstraintViolationException: could not execute statement
+2017-04-26 22:02:49,842 15601 [http-nio-8083-exec-7] INFO  edu.matc.controller.RegisterNewUserServlet  - new user id 4
+2017-04-26 22:02:49,842 15601 [http-nio-8083-exec-7] INFO  edu.matc.controller.RegisterNewUserServlet  - result of inserting a user true
+2017-04-26 22:02:49,847 15606 [http-nio-8083-exec-7] INFO  edu.matc.controller.RegisterNewUserServlet  - User role name from Person member
+2017-04-26 22:02:56,819 22578 [http-nio-8083-exec-9] INFO  edu.matc.controller.RegisterNewUserServlet  - @@@@@@@@@@@@@@@@@@@inserting member id 101
+2017-04-26 22:02:56,832 22591 [http-nio-8083-exec-9] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-26 22:02:56,832 22591 [http-nio-8083-exec-9] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '0' for key 'PERSON_ID'
+2017-04-26 22:02:56,832 22591 [http-nio-8083-exec-9] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-04-26 22:02:56,833 22592 [http-nio-8083-exec-9] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-26 22:02:56,833 22592 [http-nio-8083-exec-9] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry '0' for key 'PERSON_ID'
+2017-04-26 22:02:56,834 22593 [http-nio-8083-exec-9] INFO  edu.matc.persistence.UserDao  - Error adding a new user org.hibernate.exception.ConstraintViolationException: could not execute statement
+2017-04-26 22:02:56,835 22594 [http-nio-8083-exec-9] INFO  edu.matc.controller.RegisterNewUserServlet  - new user id 5
+2017-04-26 22:02:56,835 22594 [http-nio-8083-exec-9] INFO  edu.matc.controller.RegisterNewUserServlet  - result of inserting a user true
+2017-04-26 22:02:56,852 22611 [http-nio-8083-exec-9] INFO  edu.matc.controller.RegisterNewUserServlet  - User role name from Person member
