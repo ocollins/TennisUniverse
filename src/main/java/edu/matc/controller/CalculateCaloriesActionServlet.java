@@ -66,7 +66,7 @@ public class CalculateCaloriesActionServlet extends HttpServlet {
 
         //Build a path to the API
         String url = properties.getProperty("caloriesCalculatorActivities.path");
-        url = url + activity + "/" + weight + "/" + duration +"/" + unit;
+        url = url + "json/" + activity + "/" + weight + "/" + duration +"/" + unit;
 
         String responseFromREST = null;
         String responseUrl = null;

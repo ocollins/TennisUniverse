@@ -52,21 +52,30 @@ public class FitnessDispServlet extends HttpServlet {
         //Call the service to get a list of all activities to populate the dropbox
         Client client = ClientBuilder.newClient();
         //String url = "http://localhost:8080/CaloriesCalculator/activities";
-        String url = "http://52.14.26.13:8080/CaloriesCalculator/activities";
+
+        ServletContext context = getServletContext();
+        Properties properties = (Properties)context.getAttribute("applicationProperties");
+        String url = properties.getProperty("caloriesCalculatorActivities.path");
+        //String url = "http://52.14.26.13:8080/CaloriesCalculator/activities";
         WebTarget target = client.target(url + "/list");
 
-        //Get responce
-        String restResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
-        logger.info("response from the call to REST " + restResponse);
+        //Get response
+        String restResponse = null;
+        try {
+            restResponse = target.request(MediaType.APPLICATION_JSON).get(String.class);
+        } catch (Exception ex) {
+            logger.info("Error connecting to the Calories Calculator service " + ex);
+            url = properties.getProperty("processingErrorJsp.name");
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+            dispatcher.forward(request, response);
+        }
 
         //Map to the Activities POJO
         ObjectMapper objectMapper = new ObjectMapper();
         Activities activities = null;
-        ActivitiesItem activity = null;
         try {
             activities = objectMapper.readValue(restResponse, Activities.class);
             List<ActivitiesItem> activityList = activities.getActivities();
-            //request.setAttribute("activities", activityList);
             session.setAttribute("activities", activityList);
 
         } catch (JsonGenerationException jge) {
@@ -78,8 +87,6 @@ public class FitnessDispServlet extends HttpServlet {
         }
 
         //String jspUrl = "/fitness.jsp";
-        ServletContext context = getServletContext();
-        Properties properties = (Properties)context.getAttribute("applicationProperties");
         String responseUrl = properties.getProperty("fitnessJsp.name");
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
         dispatcher.forward(request, response);

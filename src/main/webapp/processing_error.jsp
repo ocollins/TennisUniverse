@@ -21,7 +21,7 @@
 <body>
 
     <div id="main_container_div">
-        <h1 class="title_header">Processing Error was encountered.</h1>
+        <h1 class="title_header">Processing Error has encountered.</h1>
         <h2 class="title_header">Please contact Help Desk.</h2>
         <h2 class="title_header">We apologize for the inconvenience!</h2>
     </div>
