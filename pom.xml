@@ -90,6 +90,19 @@
       <version>2.1.4</version>
     </dependency>
 
+    <!-- Java Mail API -->
+    <dependency>
+      <groupId>javax.mail</groupId>
+      <artifactId>mail</artifactId>
+      <version>1.4.7</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/jaf/activation -->
+    <dependency>
+      <groupId>jaf</groupId>
+      <artifactId>activation</artifactId>
+      <version>1.1.1</version>
+    </dependency>
 
 
   </dependencies>
