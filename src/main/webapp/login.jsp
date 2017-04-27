@@ -56,7 +56,6 @@
             <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" ID="reg_new_user_button" VALUE="Register"></td></TR>
         </TABLE>
     </FORM>
-    <h4>${feedbackMessage}</h4>
 
     <div id="pswd_info">
         <h4>Password must meet the following requirements:</h4>
@@ -76,8 +75,12 @@
     <h4>${feedbackMessage}</h4>
     <form action="sendEmailServlet" method="get">
         <h4>Forgot user name or password?</h4>
-        <INPUT TYPE="SUBMIT" VALUE="Send Reminder Email">
+        <INPUT TYPE="SUBMIT" VALUE="Send Reminder Email" class="submit_button">
     </form>
+</c:if>
+
+<c:if test="${not empty sendEmailMessage}">
+    <h4>${sendEmailMessage}</h4>
 </c:if>
 </body>
 </html>
