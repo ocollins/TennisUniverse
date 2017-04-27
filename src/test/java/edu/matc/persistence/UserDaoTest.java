@@ -15,6 +15,7 @@ public class UserDaoTest {
     int userId;
     String userName;
     String userPassword;
+    int personId;
     User user;
     private final Logger logger = Logger.getLogger(this.getClass());
 
@@ -22,9 +23,10 @@ public class UserDaoTest {
     public void init() {
         dao = new UserDao();
         userId = 01;
+        personId = 110;
         userName = "coco";
-        userPassword = "coco";
-        user = new User(userName, userPassword);
+        userPassword = "Cocosha1";
+        user = new User(personId, userName, userPassword);
     }
 
     @Test
@@ -38,7 +40,7 @@ public class UserDaoTest {
         int result = dao.addUser(user);
 
         logger.info("Adding user with new id " + result);
-        //assertEquals("Unsuccessfule adding a new user ", 3, result);
+        assertTrue("Failed to add a new user ", result > 0);
 
     }
 

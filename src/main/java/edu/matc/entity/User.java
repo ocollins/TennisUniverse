@@ -23,6 +23,11 @@ public class User {
     @Column(name = "USER_ID")
     private int userId;
 
+
+
+    @Column(name = "PERSON_ID")
+    private int personId;
+
     @Column(name = "USER_NAME")
     private String userName ;
 
@@ -42,7 +47,7 @@ public class User {
      * @param userName  the USER name
      * @param userPass   the USER password
      */
-    public User(String userName, String userPass) {
+    public User(int personId, String userName, String userPass) {
         this.userName = userName;
         this.userPass = userPass;
     }
@@ -58,7 +63,6 @@ public class User {
 
     /**
      * Sets user id.
-     *
      * @param userId the USER id
      */
     public void setUserId(int userId) {
@@ -66,8 +70,23 @@ public class User {
     }
 
     /**
+     * Gets person id.
+     * @return the person id
+     */
+    public int getPersonId() {
+        return personId;
+    }
+
+    /**
+     * Sets person id.
+     * @param personId the person id
+     */
+    public void setPersonId(int personId) {
+        this.personId = personId;
+    }
+
+    /**
      * Gets USER name.
-     *
      * @return the USER name
      */
     public String getUserName() {
@@ -76,7 +95,6 @@ public class User {
 
     /**
      * Sets USER name.
-     *
      * @param userName the USER name
      */
     public void setUserName(String userName) {
@@ -85,7 +103,6 @@ public class User {
 
     /**
      * Gets USER password.
-     *
      * @return the USER password
      */
     public String getUserPass() {
@@ -94,7 +111,6 @@ public class User {
 
     /**
      * Sets USER desc.
-     *
      * @param userPass the USER desc
      */
     public void setUserPass(String userPass) {

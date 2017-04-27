@@ -51,13 +51,13 @@ public class RegisterNewUserServlet extends HttpServlet {
         String userIdString = String.valueOf(session.getAttribute("newUserId"));
         int userId = Integer.parseInt(userIdString);
 
-        boolean successInsertUser = insertUser(userName, password);
+        boolean successInsertUser = insertUser(userId, userName, password);
         boolean successInsertUserRole = insertUserRole(userName, userId);
 
         ServletContext context = getServletContext();
         Properties properties = (Properties) context.getAttribute("applicationProperties");
         String responseUrl = null;
-        //String responceurl = "/fitness.jsp";
+
         if (successInsertUser && successInsertUserRole) {
             responseUrl = properties.getProperty("tempAdminOptions.name");
         } else {
@@ -75,8 +75,8 @@ public class RegisterNewUserServlet extends HttpServlet {
      * @param password the password
      * @return the boolean
      */
-    public boolean insertUser(String userName, String password) {
-        User user = new User(userName, password);
+    public boolean insertUser(int personId, String userName, String password) {
+        User user = new User(personId, userName, password);
         UserDao userDao = new UserDao();
 
         try {
