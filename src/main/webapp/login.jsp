@@ -71,5 +71,13 @@
 <c:if test="${not validPerson  && !empty validPerson}">
     <p id="invalididmessage">Invalid member ID. Please contact Help Desk</p
 </c:if>
+
+<c:if test="${not empty feedbackMessage}">
+    <h4>${feedbackMessage}</h4>
+    <form action="sendEmailServlet" method="get">
+        <h4>Forgot user name or password?</h4>
+        <INPUT TYPE="SUBMIT" VALUE="Send Reminder Email">
+    </form>
+</c:if>
 </body>
 </html>

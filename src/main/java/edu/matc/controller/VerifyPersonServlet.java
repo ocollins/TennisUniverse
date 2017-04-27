@@ -47,7 +47,7 @@ public class VerifyPersonServlet extends HttpServlet {
             logger.info("person id from the form " + personId);
         }
 
-        //Remove the old session
+        //Remove the old attribute
         HttpSession session = request.getSession(true);
         session.removeAttribute("validPerson");
 
@@ -59,8 +59,12 @@ public class VerifyPersonServlet extends HttpServlet {
         String url = properties.getProperty("loginJsp.name");
 
         session.removeAttribute("validPerson");
+        //Person email address will be used if need to send an email reminder
+        String personEmail = null;
         //If found person, registration form will be displayed
         if (dao.getPerson(personId) != null) {
+            personEmail = dao.getPerson(personId).getEmailAddr();
+            session.setAttribute("personEmail", personEmail);
             session.setAttribute("validPerson", true);
             session.setAttribute("personId", personId);
             //String url = "/login.jsp";
