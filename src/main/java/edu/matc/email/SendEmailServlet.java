@@ -61,11 +61,12 @@ public class SendEmailServlet extends HttpServlet {
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("loginJsp.name");
 
+        HttpSession session = request.getSession(true);
+
         //Remove existing attributes
         session.removeAttribute("validPerson");
         session.removeAttribute("sendEmailMessage");
 
-        HttpSession session = request.getSession(true);
         //Get person id from the screen
         if (request.getParameter("person_id")!= null && !request.getParameter("person_id").isEmpty()) {
             personId = Integer.parseInt(request.getParameter("person_id"));
