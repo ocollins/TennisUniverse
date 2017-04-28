@@ -4,8 +4,6 @@ import org.apache.log4j.Logger;
 import java.util.*;
 import javax.mail.*;
 import javax.mail.internet.*;
-import javax.activation.*;
-import com.sun.mail.smtp.*;
 
 /**
  * Created by O Collins on 4/27/17.
@@ -15,9 +13,10 @@ import com.sun.mail.smtp.*;
 public class SendEmail {
     private Logger logger = Logger.getLogger(this.getClass());
 
-    public boolean sendEmail() throws MessagingException{
+    public void sendEmail(String userName, String password, String emailAddress)
+            throws MessagingException{
         // Recipient's email ID needs to be mentioned.
-        String to = "olenacollins1333@gmail.com";
+        String to = emailAddress;
         // Sender's email ID needs to be mentioned
         String from = "tennisuniverse@gmail.com";
         // Assuming you are sending email from localhost
@@ -44,10 +43,10 @@ public class SendEmail {
             message.addRecipient(Message.RecipientType.TO, new InternetAddress(to));
 
             // Set Subject: header field
-            message.setSubject("This is the Subject Line!");
+            message.setSubject("Reminder from Tennis Universe");
 
             // Now set the actual message
-            message.setText("Testing email");
+            message.setText("User Name: " + userName + " Password: " + password);
 
             // Send message
             Transport.send(message);
@@ -56,7 +55,7 @@ public class SendEmail {
         }catch (MessagingException mex) {
             logger.info("Error sending email " + mex);
         }
-        return true;
+
     }
 
 

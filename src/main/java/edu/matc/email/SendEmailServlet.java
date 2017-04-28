@@ -6,6 +6,7 @@ import edu.matc.persistence.PersonDao;
 import edu.matc.persistence.UserDao;
 import org.apache.log4j.Logger;
 
+import javax.mail.MessagingException;
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -48,6 +49,7 @@ public class SendEmailServlet extends HttpServlet {
 
         userDao = new UserDao();
         personDao = new PersonDao();
+        SendEmail sendEmail = new SendEmail();
         String personEmail = null;
         String userName = null;
         String password = null;
@@ -83,9 +85,21 @@ public class SendEmailServlet extends HttpServlet {
             logger.info("Invalid person id in Send email process");
         }
 
+        try {
+            password = getPassword(personId);
+        } catch (Exception ex) {
+            session.setAttribute("validPerson", false);
+            logger.info("Invalid person id in Send email process");
+        }
 
-        //If email was sent successfully, display message on the screen
-        session.setAttribute("sendEmailMessage", sendEmailMessage);
+        try {
+            sendEmail.sendEmail(userName, password, personEmail);
+            //If email was sent successfully, display message on the screen
+            session.setAttribute("sendEmailMessage", sendEmailMessage);
+        } catch (MessagingException mex) {
+            logger.info("Error sending email ");
+            url = properties.getProperty("processingErrorJsp.name");
+        }
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
