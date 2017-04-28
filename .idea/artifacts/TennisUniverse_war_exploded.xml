@@ -42,7 +42,6 @@
           <element id="library" level="project" name="Maven: org.webjars:jquery:2.1.4" />
           <element id="library" level="project" name="Maven: javax.mail:mail:1.4.7" />
           <element id="library" level="project" name="Maven: javax.activation:activation:1.1" />
-          <element id="library" level="project" name="Maven: jaf:activation:1.1.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">

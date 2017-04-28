@@ -5,6 +5,7 @@ import java.util.*;
 import javax.mail.*;
 import javax.mail.internet.*;
 import javax.activation.*;
+import com.sun.mail.smtp.*;
 
 /**
  * Created by O Collins on 4/27/17.
@@ -26,7 +27,8 @@ public class SendEmail {
         Properties properties = System.getProperties();
 
         // Setup mail server
-        properties.setProperty("mail.smtp.host", host);
+        //properties.setProperty("mail.smtp.host", host);
+        properties.setProperty("smtp.gmail.com", host);
 
         // Get the default Session object.
         Session session = Session.getDefaultInstance(properties);
@@ -45,13 +47,14 @@ public class SendEmail {
             message.setSubject("This is the Subject Line!");
 
             // Now set the actual message
-            message.setText("This is actual message");
+            message.setText("Testing email");
 
             // Send message
             Transport.send(message);
             logger.info("Sent message successfully....");
+
         }catch (MessagingException mex) {
-            mex.printStackTrace();
+            logger.info("Error sending email " + mex);
         }
         return true;
     }

@@ -15,8 +15,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Properties;
 
+/**
+ * The type Send email servlet.
+ */
 /* Member search action selection servlet
         *
         * @author Olena Collins
@@ -28,7 +32,8 @@ import java.util.Properties;
 public class SendEmailServlet extends HttpServlet {
     private final Logger logger = Logger.getLogger(this.getClass());
     HttpSession session;
-    UserDao dao;
+    UserDao userDao;
+    PersonDao personDao;
 
     /**
      * Handles HTTP GET requests.
@@ -41,19 +46,90 @@ public class SendEmailServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        dao = new UserDao();
-        HttpSession session = request.getSession(true);
+        userDao = new UserDao();
+        personDao = new PersonDao();
+        String personEmail = null;
+        String userName = null;
+        String password = null;
+        int personId = 0;
         String sendEmailMessage = "Email was sent successfully";
-        String emailAddress = (String) session.getAttribute("personEmail");
 
+        //Access application properties to get login jsp name
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("loginJsp.name");
 
+        //Remove existing attributes
+        session.removeAttribute("validPerson");
         session.removeAttribute("sendEmailMessage");
-        session.setAttribute("sendEmailMessage", emailAddress);
+
+        HttpSession session = request.getSession(true);
+        //Get person id from the screen
+        if (request.getParameter("person_id")!= null && !request.getParameter("person_id").isEmpty()) {
+            personId = Integer.parseInt(request.getParameter("person_id"));
+        }
+
+        try {
+            personEmail = getPersonEmail(personId);
+        } catch (Exception ex) {
+            session.setAttribute("validPerson", false);
+            logger.info("Invalid person id in Send email process");
+        }
+
+        try {
+            userName = getUserName(personId);
+        } catch (Exception ex) {
+            session.setAttribute("validPerson", false);
+            logger.info("Invalid person id in Send email process");
+        }
+
+
+        //If email was sent successfully, display message on the screen
+        session.setAttribute("sendEmailMessage", sendEmailMessage);
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
+    }
+
+    /**
+     * Gets person email.
+     *
+     * @param personId the person id
+     * @return the person email
+     * @throws Exception the exception
+     */
+    public String getPersonEmail(int personId) throws Exception{
+        String personEmail = null;
+        personEmail = personDao.getPerson(personId).getEmailAddr();
+        return personEmail;
+
+    }
+
+    /**
+     * Gets user name.
+     *
+     * @param personId the person id
+     * @return the user name
+     * @throws Exception the exception
+     */
+    public String getUserName(int personId) throws Exception{
+        String userName = null;
+        userName = userDao.getUserByPersonId(personId).getUserName();
+
+        return userName;
+    }
+
+    /**
+     * Gets password.
+     *
+     * @param personId the person id
+     * @return the password
+     * @throws Exception the exception
+     */
+    public String getPassword(int personId) throws Exception{
+        String password = null;
+        password = userDao.getUserByPersonId(personId).getUserPass();
+
+        return password;
     }
 }

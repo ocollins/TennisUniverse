@@ -32,14 +32,21 @@
     </FORM>
 
 
-    <h4>Or</h4>
-
     <h4>Register new user</h4>
     <form action="verifyPersonServlet" method="get">
         <TABLE>
             <p>Enter your member ID</p>
             <TR><td class="label">Member ID:</td><TD class="data"><INPUT TYPE="TEXT" NAME="account_id"></TD></TR>
             <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Check Member ID"></td></TR>
+        </TABLE>
+    </form>
+
+    <h4>Forgot User Name or Password</h4>
+    <form action="sendEmailServlet" method="get">
+        <TABLE>
+            <p>Enter your member ID and Click Email</p>
+            <TR><td class="label">Member ID:</td><TD class="data"><INPUT TYPE="TEXT" NAME="person_id"></TD></TR>
+            <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Email"></td></TR>
         </TABLE>
     </form>
 </c:if>
@@ -68,7 +75,7 @@
 </c:if>
 
 <c:if test="${not validPerson  && !empty validPerson}">
-    <p id="invalididmessage">Invalid member ID. Please contact Help Desk</p
+    <p id="invalididmessage">Invalid member ID!</p
 </c:if>
 
 <c:if test="${not empty feedbackMessage}">
