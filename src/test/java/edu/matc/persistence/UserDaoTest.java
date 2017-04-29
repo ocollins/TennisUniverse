@@ -51,4 +51,10 @@ public class UserDaoTest {
         assertEquals("Error finding a user by person id ", "member", user.getUserName() );
     }
 
+    @Test
+    public void getPersonIdTest() throws Exception {
+        logger.info("Person id " + dao.getPersonId("admin", "Admin1"));
+        assertEquals("Invalid person ID ", 111, dao.getPersonId("admin", "Admin1"));
+    }
+
 }

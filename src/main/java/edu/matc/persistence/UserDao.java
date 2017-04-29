@@ -10,6 +10,8 @@ import org.hibernate.Transaction;
 import org.hibernate.criterion.Projections;
 import org.hibernate.criterion.Restrictions;
 
+import javax.persistence.criteria.CriteriaBuilder;
+
 /**
  * The User dao.
  *
@@ -85,6 +87,31 @@ public class UserDao {
         }
 
         return id;
+    }
+
+    /**
+     * Gets person id.
+     * @param userName the user name
+     * @param password the password
+     * @return the person id
+     */
+    public int getPersonId(String userName, String password) {
+        Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        int personId = 0;
+        Criteria criteria = session.createCriteria(User.class);
+        criteria.add(Restrictions.eq("userName", userName));
+        criteria.add(Restrictions.eq("userPass", password));
+
+        try {
+            User user = (User)criteria.uniqueResult();
+            personId = user.getPersonId();
+        } catch (HibernateException he) {
+            logger.info("Hibernate Exception " + he);
+        } finally {
+            session.close();
+        }
+
+        return personId;
     }
 
 
