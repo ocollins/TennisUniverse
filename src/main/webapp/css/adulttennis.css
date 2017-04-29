@@ -1,9 +1,38 @@
 @import url('base.css');
 
 #container2 {
-    float: left;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+}
+
+.info_div {
     width: 50%;
 }
+
+.club_info {
+    width: 50%;
+}
+
+
+#club_info_p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 2rem 2rem 1.5rem;
+    padding-left: 1.5rem;
+}
+
+#people_image {
+    margin: 0.1rem 1.2rem 2rem 0.8rem;
+    border-radius: 10px;
+    box-shadow: 10px -10px 5px grey;
+    width: 80%;
+
+}
+
+
 
 aside {
     float: left;
@@ -30,10 +59,8 @@ p {
     margin-top: 10px;
 }
 
-#peopleimage {
-    border-radius: 10px;
-    box-shadow: 10px -10px 5px grey;
-    width: 60%;
+li {
+    text-align: left;
 }
 
 #lessons {

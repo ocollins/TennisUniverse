@@ -11,6 +11,7 @@
   <security-constraint>
     <web-resource-collection>
       <web-resource-name>adminoptions</web-resource-name>
+      <!--<url-pattern>adminDispServlet</url-pattern>-->
       <url-pattern>/adminoptions.jsp</url-pattern>
       <!--<web-resource-name>login</web-resource-name>-->
       <!--<url-pattern>/test.jsp</url-pattern>-->
