@@ -8569,3 +8569,18 @@
 2017-04-28 22:21:03,639 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 2017-04-28 22:21:03,969 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
 2017-04-28 22:21:03,972 INFO  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-28 22:25:37,669 INFO  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-28 22:25:37,693 INFO  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-28 22:25:37,696 INFO  - HHH000206: hibernate.properties not found
+2017-04-28 22:25:37,703 INFO  - HHH000021: Bytecode provider name : javassist
+2017-04-28 22:25:37,755 INFO  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-28 22:25:37,757 INFO  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-28 22:25:37,927 INFO  - HHH000041: Configured SessionFactory: null
+2017-04-28 22:25:38,241 WARN  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-28 22:25:38,250 INFO  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-28 22:25:38,251 INFO  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-28 22:25:38,252 INFO  - HHH000006: Autocommit mode: false
+2017-04-28 22:25:38,253 INFO  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-28 22:25:39,225 INFO  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-28 22:25:40,125 INFO  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-28 22:25:40,130 INFO  - HHH000397: Using ASTQueryTranslatorFactory

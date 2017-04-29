@@ -51,8 +51,6 @@ public class AdminDispServlet extends HttpServlet {
         //Create a new session
         session = request.getSession(true);
 
-        String actionType = getActionType(session);
-
         //Create AdminActions instance
         AdminActionDao dao = new AdminActionDao();
         List<AdminAction> adminActionList = null;
@@ -63,7 +61,7 @@ public class AdminDispServlet extends HttpServlet {
 
         //Get a list of admin pages
         try {
-            adminActionList = dao.getActionList("A");
+            adminActionList = dao.getActionList(getActionType(session));
         } catch (Exception ex) {
             //In case of an error redirect to error page
             logger.info("Error getting list of admin actions" + ex);
@@ -89,10 +87,10 @@ public class AdminDispServlet extends HttpServlet {
      * @param session the session
      * @return the action type
      */
-    public String getActionType(HttpSession session) {
-        String actionType = null;
+    public String getActionType(HttpSession session) throws Exception{
         String userName = String.valueOf(session.getAttribute("loginUserName"));
         String password = String.valueOf(session.getAttribute("loginPassword"));
+        String personRole = null;
 
         //Get person ID of the person that logged in
         UserDao dao = new UserDao();
@@ -100,11 +98,13 @@ public class AdminDispServlet extends HttpServlet {
 
         //Get person role so the appropriate options are displayed
         PersonDao personDao = new PersonDao();
-        String personRole = personDao.getPerson(personId).getRoleName();
-        logger.info("!!!!!!!!!!!!!in admin display servlet person role " + personRole);
+        try {
+            personRole = personDao.getPerson(personId).getRoleName();
+            logger.info("!!!!!!!!!!!!!in admin display servlet person role " + personRole);
+        } catch (Exception ex) {
+            logger.info("Problem getting person role");
+        }
 
-
-
-        return actionType;
+        return personRole;
     }
 }
