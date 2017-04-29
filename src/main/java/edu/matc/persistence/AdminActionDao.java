@@ -99,7 +99,7 @@ public class AdminActionDao {
 
         try {
             criteria = session.createCriteria(AdminAction.class);
-            criteria.add(Restrictions.eq("searchMemberSw", actionType));
+            criteria.add(Restrictions.eq("actionType", actionType));
             actionList = criteria.list();
         } catch (HibernateException he) {
             logger.info("Hibernate Exception " + he);

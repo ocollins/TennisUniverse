@@ -7,6 +7,7 @@ package edu.matc.controller;
 
 import edu.matc.entity.AdminAction;
 import edu.matc.persistence.AdminActionDao;
+import edu.matc.persistence.UserDao;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -49,6 +50,8 @@ public class AdminDispServlet extends HttpServlet {
         //Create a new session
         session = request.getSession(true);
 
+        String actionType = getActionType(session);
+
         //Create AdminActions instance
         AdminActionDao dao = new AdminActionDao();
         List<AdminAction> adminActionList = null;
@@ -77,5 +80,16 @@ public class AdminDispServlet extends HttpServlet {
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 
+    }
+
+    public String getActionType(HttpSession session) {
+        String actionType = null;
+        String userName = String.valueOf(session.getAttribute("loginUserName"));
+        String password = String.valueOf(session.getAttribute("loginPassword"));
+        UserDao dao = new UserDao();
+
+
+
+        return actionType;
     }
 }

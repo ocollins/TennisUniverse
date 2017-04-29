@@ -4,6 +4,7 @@ import edu.matc.entity.AdminAction;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 import org.apache.log4j.*;
@@ -18,9 +19,13 @@ public class AdminActionDaoTest {
 
     AdminActionDao dao;
     private final Logger logger= Logger.getLogger(String.valueOf(this.getClass()));
+    String memberActionType;
+    String adminActionType;
 
     @Before
     public void setup() {
+        memberActionType = "M";
+        adminActionType = "A";
         dao = new AdminActionDao();
     }
 
@@ -36,28 +41,20 @@ public class AdminActionDaoTest {
     }
 
     @Test
-    public void getAdminAction() throws Exception {
+    public void getActionListTest() throws Exception {
+        List<AdminAction> actionList = dao.getActionList(memberActionType);
+        assertEquals("Invalid number of member actions ", 1, actionList.size());
+        for (AdminAction action : actionList) {
+            logger.info("Member action " + action.getActionDesc());
+        }
 
-    }
+        assertEquals("Invalid member action", "BOOK SERVICES", actionList.get(0).getActionDesc());
 
-    @Test
-    public void addAdminAction() throws Exception {
-
-    }
-
-    @Test
-    public void deleteAdminAction() throws Exception {
-
-    }
-
-    @Test
-    public void updateAdminAction() throws Exception {
-
-    }
-
-    @Test
-    public void getMaxAdminActionId() throws Exception {
-
+        actionList = dao.getActionList(adminActionType);
+        assertEquals("Invalid number of admin actions ", 5, actionList.size());
+        for (AdminAction action : actionList) {
+            logger.info("Member action " + action.getActionDesc());
+        }
     }
 
 }
