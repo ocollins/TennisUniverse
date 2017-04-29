@@ -24,8 +24,8 @@ public class AdminActionDaoTest {
 
     @Before
     public void setup() {
-        memberActionType = "M";
-        adminActionType = "A";
+        memberActionType = "member";
+        adminActionType = "administrator";
         dao = new AdminActionDao();
     }
 

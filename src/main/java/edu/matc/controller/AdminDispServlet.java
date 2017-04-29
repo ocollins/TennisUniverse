@@ -7,6 +7,7 @@ package edu.matc.controller;
 
 import edu.matc.entity.AdminAction;
 import edu.matc.persistence.AdminActionDao;
+import edu.matc.persistence.PersonDao;
 import edu.matc.persistence.UserDao;
 import org.apache.log4j.Logger;
 
@@ -82,11 +83,25 @@ public class AdminDispServlet extends HttpServlet {
 
     }
 
+    /**
+     * Gets action type.
+     *
+     * @param session the session
+     * @return the action type
+     */
     public String getActionType(HttpSession session) {
         String actionType = null;
         String userName = String.valueOf(session.getAttribute("loginUserName"));
         String password = String.valueOf(session.getAttribute("loginPassword"));
+
+        //Get person ID of the person that logged in
         UserDao dao = new UserDao();
+        int personId = dao.getPersonId(userName, password);
+
+        //Get person role so the appropriate options are displayed
+        PersonDao personDao = new PersonDao();
+        String personRole = personDao.getPerson(personId).getRoleName();
+        logger.info("!!!!!!!!!!!!!in admin display servlet person role " + personRole);
 
 
 
