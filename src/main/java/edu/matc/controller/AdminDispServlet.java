@@ -42,23 +42,24 @@ public class AdminDispServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-
         //Remove the old session
         HttpSession session = request.getSession(true);
         session.invalidate();
 
         //Create a new session
         session = request.getSession(true);
+
         //Create AdminActions instance
         AdminActionDao dao = new AdminActionDao();
-        List<AdminAction> actions = null;
+        List<AdminAction> adminActionList = null;
+
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = null;
 
-        //Get a list of pages
+        //Get a list of admin pages
         try {
-            actions = dao.getAllAdminActions();
+            adminActionList = dao.getActionList("A");
         } catch (Exception ex) {
             //In case of an error redirect to error page
             logger.info("Error getting list of admin actions" + ex);
@@ -68,7 +69,7 @@ public class AdminDispServlet extends HttpServlet {
         }
 
         //Store list of admin actions it in the session
-        session.setAttribute("adminActionsList", actions);
+        session.setAttribute("adminActionsList", adminActionList);
 
         url = properties.getProperty("adminOptionsJsp.name");
 

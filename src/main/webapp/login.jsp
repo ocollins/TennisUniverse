@@ -23,11 +23,11 @@
 <c:if test="${empty validPerson}">
     <h1>Login or register new user</h1>
     <h4>Please enter your user name and password</h4>
-    <FORM ACTION="j_security_check" METHOD="POST">
+    <FORM ACTION="j_security_check" METHOD="POST" id="login_form">
         <TABLE id="logintable">
-            <TR><td class="label">User Name:</td><TD class="data"><INPUT TYPE="TEXT" NAME="j_username"></TD></TR>
-            <TR><td class="label">Password:</td><TD class="data"><INPUT TYPE="PASSWORD" NAME="j_password"></TD></TR>
-            <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Log In"></td></TR>
+            <TR><td class="label">User Name:</td><TD class="data"><INPUT TYPE="TEXT" NAME="j_username" id="login_user_name"/></TD></TR>
+            <TR><td class="label">Password:</td><TD class="data"><INPUT TYPE="PASSWORD" NAME="j_password" id="login_password"/></TD></TR>
+            <TR><td class="label"></td><td class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Log In" id="login_button"/></td></TR>
         </TABLE>
     </FORM>
 

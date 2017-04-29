@@ -1,5 +1,5 @@
 <%--
-  This is a page to add a new member information
+  This is a page for club member to book services
   Author: Olena Collins
 --%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -14,7 +14,7 @@
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/add_member_serv.css" rel="stylesheet" type="text/css"/>
-    <title>Request Service</title>
+    <title>Book Service</title>
 </head>
 
 
@@ -26,20 +26,10 @@
 
 <c:import url="menu.jsp"/>
 
-    <%--<div id="search_div">--%>
-        <%--<h2 id="title_header">Request Service</h2>--%>
-        <%--<form action="/addMemberServActionServlet" name="" id="member_search_form" method="get">--%>
-            <%--<c:import url="member_search.jsp"/>--%>
-
-        <%--</form>--%>
-    <%--</div>--%>
-
-    <%--<h2 id="meber_found_no">Member not found</h2>--%>
-
     <div>
         <form action="addMemberServActionServlet" name="" id="select_serv_form" method="get">
             <div id="selectoptions">
-                <p id="instruction">Please select service from the list below</p>
+                <h2 id="instruction">Please select service from the list below</h2>
 
                 <select name="service" form="display_form">
                     <c:forEach var="service" items="${serviceList}">

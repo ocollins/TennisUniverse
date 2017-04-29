@@ -32,6 +32,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
 //Trigger an event on keyup, focus, or blur on the password field
+//Creates a list of password requirements and marks them in red
     $('input[type=password]').keyup(function() {
         var pswd = $(this).val();
         //validate the length
@@ -64,5 +65,15 @@ $(document).ready(function() {
         $('#pswd_info').hide();
     });
 
+
+});
+
+//When user enters user name, password, and member id store member id in session container
+$(document).ready(function() {
+    $("#login_button").click(function (event) {
+        $.session.set("loginUserName", $("#login_user_name").val());
+        $.session.set("loginPassword", $("#login_password").val());
+
+    })
 
 });

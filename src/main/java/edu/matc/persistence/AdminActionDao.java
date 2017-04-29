@@ -86,22 +86,30 @@ public class AdminActionDao {
         return adminAction;
     }
 
-    public int addAdminAction(AdminAction adminAction) {
-        int id = 0;
+    /**
+     * Gets action list.
+     * @param actionType the action type
+     * @return the action list
+     */
+    public List<AdminAction> getActionList(String actionType) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
+        Criteria criteria = null;
+
+        List <AdminAction> actionList = null;
 
         try {
-            Transaction transaction = session.beginTransaction();
-            id = (int)session.save(adminAction);
-            transaction.commit();
-
+            criteria = session.createCriteria(AdminAction.class);
+            criteria.add(Restrictions.eq("searchMemberSw", actionType));
+            actionList = criteria.list();
         } catch (HibernateException he) {
             logger.info("Hibernate Exception " + he);
         } finally {
             session.close();
         }
-        return id;
+
+        return actionList;
     }
+
 
     /**
      * delete a adminAction by id

@@ -23,6 +23,9 @@ public class AdminAction {
     @Column(name = "ACTION_JSP_NAME")
     private String actionJSPName;
 
+    @Column(name = "ACTION_TYPE")
+    private String actionType;
+
     @Column(name = "SEARCH_MEMBER_SW")
     private String searchMemberSw;
 
@@ -88,6 +91,24 @@ public class AdminAction {
      */
     public void setActionJSPName(String actionJSPName) {
         this.actionJSPName = actionJSPName;
+    }
+
+    /**
+     * Gets action type.
+     *
+     * @return the action type
+     */
+    public String getActionType() {
+        return actionType;
+    }
+
+    /**
+     * Sets action type.
+     *
+     * @param actionType the action type
+     */
+    public void setActionType(String actionType) {
+        this.actionType = actionType;
     }
 
     /**
