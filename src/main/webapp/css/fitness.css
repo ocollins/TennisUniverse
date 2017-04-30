@@ -1,7 +1,7 @@
 @import url('base.css');
 
 /*fitness page*/
-#pictures_div_container, #calories_div {
+#pictures_div_container{
     margin: auto;
     display: flex;
     justify-content: center;
@@ -25,15 +25,20 @@
     width: 80%;
     padding: 1.2rem;
     font-size: 1.7rem;
-
 }
 
 li {
     text-align: left;
+    padding: 2rem;
+}
+
+#calories_div {
+    text-align: center;
 }
 
 #calories_button {
     font-weight: bold;
+    padding: .3rem;
 }
 
 /*Calories Calculator page*/

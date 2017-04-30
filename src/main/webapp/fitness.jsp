@@ -61,8 +61,9 @@
 </div>
 
 <div id="calories_div">
-    <h3>To help you achieve your fitness goals we included our <strong>Exercise Calories Calculator</strong>.</h3>
-    <div><button id="calories_button">Calories Calculator</button></div>
+    <h3>To help you achieve your fitness goals we have included our <strong>Exercise Calories Calculator</strong>.</h3>
+    <br/>
+    <button id="calories_button">Calories Calculator</button>
 </div>
 
 <div id="calories_calculator_page">
