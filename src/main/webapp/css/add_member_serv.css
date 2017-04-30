@@ -9,6 +9,13 @@ margin: auto;
 }
 
 .instruction {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
+h2 {
+    text-align: center;
+}
+
+#add_member_service_table {
+    margin: auto;
+}
