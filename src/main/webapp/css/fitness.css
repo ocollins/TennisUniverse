@@ -1,7 +1,7 @@
 @import url('base.css');
 
 /*fitness page*/
-#pictures_div_container {
+#pictures_div_container, #calories_div {
     margin: auto;
     display: flex;
     justify-content: center;
@@ -9,8 +9,13 @@
     padding: 1.2rem;
 }
 
-.tennis_fit_image {
-    width: 40%;
+#tennis_fit_image1 {
+    width: 44%;
+    margin: 1.2rem .5rem 1rem 2rem;
+}
+#tennis_fit_image2 {
+    width: 44%;
+    margin: 1.2rem 4rem 1rem .5rem;
 }
 
 #fitness_info {
@@ -21,6 +26,14 @@
     padding: 1.2rem;
     font-size: 1.7rem;
 
+}
+
+li {
+    text-align: left;
+}
+
+#calories_button {
+    font-weight: bold;
 }
 
 /*Calories Calculator page*/

@@ -7,7 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36d9aa19-5294-401c-9575-a120181925f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/calories_calculator.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/js/adminaction.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/fitness.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/fitness.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/fitness.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/fitness.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/fitness.jsp" />
@@ -104,8 +104,18 @@
       <file leaf-file-name="fitness.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/css/fitness.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+            <state relative-caret-position="133">
+              <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fitness.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/fitness.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="95">
+              <caret line="5" column="60" lean-forward="false" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -114,8 +124,8 @@
       <file leaf-file-name="fitness.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/fitness.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+            <state relative-caret-position="523">
+              <caret line="68" column="55" lean-forward="true" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
               <folding />
             </state>
           </provider>
@@ -124,7 +134,7 @@
       <file leaf-file-name="calories_calculator.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/calories_calculator.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
+            <state relative-caret-position="633">
               <caret line="99" column="74" lean-forward="false" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="89" />
               <folding />
             </state>
@@ -218,7 +228,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserRoleDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/adminoptions.jsp" />
         <option value="$PROJECT_DIR$/src/dba/createPerson.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
@@ -267,8 +276,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/css/index.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/adulttennis.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/calories_calculator.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/fitness.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/fitness.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/css/fitness.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/fitness.jsp" />
       </list>
     </option>
   </component>
@@ -1729,7 +1739,7 @@
       <workItem from="1493425199424" duration="7015000" />
       <workItem from="1493434580856" duration="1825000" />
       <workItem from="1493488500698" duration="11676000" />
-      <workItem from="1493514578477" duration="8802000" />
+      <workItem from="1493514578477" duration="11278000" />
     </task>
     <servers />
   </component>
@@ -1766,7 +1776,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="562126000" />
+    <option name="totallyTimeSpent" value="564602000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1790,7 +1800,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18206973" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32777777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.74333334" sideWeight="0.49363586" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.74333334" sideWeight="0.49363586" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32777777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.257886" sideWeight="0.43888888" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1876,14 +1886,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AddMemberActionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-261">
-          <caret line="25" column="12" lean-forward="true" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdateMemberActionServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="755">
@@ -1987,14 +1989,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
           <caret line="101" column="26" lean-forward="true" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" column="53" lean-forward="true" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-          <folding />
+          <folding>
+            <element signature="e#2298#2299#0" expanded="false" />
+            <element signature="e#2331#2332#0" expanded="false" />
+            <element signature="e#2472#2473#0" expanded="false" />
+            <element signature="e#2516#2517#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -2145,13 +2145,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login_script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="73" column="34" lean-forward="false" selection-start-line="73" selection-start-column="23" selection-end-line="73" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/add_member_serv.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="82">
@@ -2250,14 +2243,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/calories_calculator.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="99" column="74" lean-forward="false" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="89" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/adulttennis.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -2266,18 +2251,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="59" column="9" lean-forward="true" selection-start-line="59" selection-start-column="9" selection-end-line="59" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/calories_calculator.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="99" column="74" lean-forward="false" selection-start-line="99" selection-start-column="4" selection-end-line="99" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="157">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/fitness.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="60" lean-forward="false" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/fitness.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="47" column="40" lean-forward="false" selection-start-line="47" selection-start-column="40" selection-end-line="47" selection-end-column="40" />
+        <state relative-caret-position="523">
+          <caret line="68" column="55" lean-forward="true" selection-start-line="68" selection-start-column="55" selection-end-line="68" selection-end-column="55" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/css/fitness.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+        <state relative-caret-position="133">
+          <caret line="7" column="15" lean-forward="true" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
           <folding />
         </state>
       </provider>
