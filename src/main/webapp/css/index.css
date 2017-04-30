@@ -3,13 +3,22 @@
 #container {
     width: 80%;
     clear: left;
+    /*margin: auto;*/
+    /*padding-top: 30px;*/
     margin: auto;
-    padding-top: 30px;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
 }
 
-#left_box,  #right_box{
-    float: left;
+#left_box{
     width: 50%;
+    padding: 1.2rem .7rem 1.2rem 2.5rem;
+}
+
+#right_box{
+    width: 50%;
+    padding: 1.2rem 4.2rem 3rem .1rem;
 }
 
 h2 {
@@ -21,9 +30,14 @@ h2 {
     margin-left: 40px;
 }
 
+#court_time_h2 {
+    width:83%;
+
+}
+
 p {
     margin-left: 40px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 #intro li{

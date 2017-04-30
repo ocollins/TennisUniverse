@@ -32,12 +32,12 @@ Author: Olena Collins
         <h2>Year-Round Tennis for the Whole Family</h2>
 
         <ul id="intro">
-            <li>We offer an array of leagues and lessons for all levels of adult players,<br />
+            <li>We offer an array of leagues and lessons for all levels of adult players,
                 as well as social mixed doubles events and tournament opportunities.
             </li>
-            <li>Extensive junior program designed to <br />
-                develop a love for the game, from tots to competitive high school athletes. <br />
-                Kids can participate in group and private lessons, leagues, and tournaments. <br />
+            <li>Extensive junior program designed to
+                develop a love for the game, from tots to competitive high school athletes.
+                Kids can participate in group and private lessons, leagues, and tournaments.
                 They truly become part of the Tennis Universe family.
             </li>
             <li>8 Indoor Hard Courts & 4 Outdoor Courts.
@@ -47,23 +47,24 @@ Author: Olena Collins
             <li>Free Childcare.
             </li>
          </ul>
+        <h2>Tennis Shop</h2>
+        <p>
+            <em>Tennis Universe</em> offers the most recent
+            frames and accessories from the
+            top brands. We have highly trained
+            stringing experts who can service
+            any racquet needs.
+        </p>
     </div>
 
     <div id="right_box">
         <p><img src="images/building.jpg" alt="Building" id="buildingimage"></img></p>
-        <h2>Court Time</h2>
+        <h2 id="court_time_h2">Court Time</h2>
         <p>
             Monday to Friday 7am - 9:45pm <br/>
             Saturday & Sunday 9am - 6pm <br/>
         </p>
-        <h2>Tennis Shop</h2>
-        <p>
-            <em>Tennis Universe</em> offers the most recent <br/>
-            frames and accessories from the <br/>
-            top brands. We have highly trained <br/>
-            stringing experts who can service <br/>
-            any racquet needs.
-        </p>
+
     </div>
 </div>
 

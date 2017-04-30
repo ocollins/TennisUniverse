@@ -34,7 +34,6 @@
         <h2>Adult Programs</h2>
         <div id="lessons_div">
             <ul id="intro">
-                <br/>
                 <li><strong>Beginner Clinic</strong><br/>
                     This clinic is for the beginner or experienced beginner
                     who is looking for instruction in all facets of the game in a relaxed atmosphere.
