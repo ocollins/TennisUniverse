@@ -71,8 +71,12 @@ $(document).ready(function() {
 //When user enters user name, password store them in session container
 $(document).ready(function() {
     $("#login_button").click(function (event) {
-        Cookies.set('loginUserName', $("#login_user_name").val());
-        Cookies.set('loginPassword', $("#login_password").val());
+        var userName = $("#login_user_name").val();
+        var password = $("#login_password").val();
+        Cookies.set('loginUserName', userName);
+        Cookies.set('loginPassword', password);
+
+
 
     });
 

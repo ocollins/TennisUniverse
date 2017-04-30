@@ -58,9 +58,11 @@ public class AdminDispServlet extends HttpServlet {
         logger.info("&&&&&&&&&&&&&&&&&&7 Inside the admin display ");
 
         for(int i=0;i<cookies.length;i++) {
+            logger.info("all cookies " + cookies[i].getName() + " " + cookies[i].getValue());
             if (cookies[i].getName().equals("loginUserName")) {
                 logger.info("Found user name cookie");
                 userName = cookies[i].getValue();
+
             }
 
             if (cookies[i].getName().equals("loginPassword")) {
@@ -70,13 +72,13 @@ public class AdminDispServlet extends HttpServlet {
         }
 
         //If could not get user name or password redirect to the error page
-        if (userName.isEmpty() || password.isEmpty()) {
-            logger.info("User name or password is missing");
-            url = properties.getProperty("processingErrorJsp.name");
-            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-            dispatcher.forward(request, response);
-
-        }
+//        if (userName.isEmpty() || password.isEmpty()) {
+//            logger.info("User name or password is missing");
+//            url = properties.getProperty("processingErrorJsp.name");
+//            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+//            dispatcher.forward(request, response);
+//
+//        }
 
         logger.info("User name from login screen " + userName);
         logger.info("Password from login screen " + password);
@@ -90,10 +92,11 @@ public class AdminDispServlet extends HttpServlet {
         List<AdminAction> adminActionList = null;
 
 
-
-        //Get a list of admin pages
+        //Get a list of admin pages depending on if it is an admin or a member
         try {
             adminActionList = dao.getActionList(getActionType(session, userName, password));
+            //Store list of admin actions it in the session
+            session.setAttribute("adminActionsList", adminActionList);
         } catch (Exception ex) {
             //In case of an error redirect to error page
             logger.info("Error getting list of admin actions" + ex);
@@ -101,9 +104,6 @@ public class AdminDispServlet extends HttpServlet {
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
             dispatcher.forward(request, response);
         }
-
-        //Store list of admin actions it in the session
-        session.setAttribute("adminActionsList", adminActionList);
 
         url = properties.getProperty("adminOptionsJsp.name");
 
@@ -130,6 +130,8 @@ public class AdminDispServlet extends HttpServlet {
         try {
             int personId = dao.getPersonId(userName, password);
             personRole = personDao.getPerson(personId).getRoleName();
+            String firstName = personDao.getPerson(personId).getFirstName();
+            session.setAttribute("personFirstName", firstName);
         } catch (Exception ex) {
             logger.info("Problem getting person ID by user name and password");
         }

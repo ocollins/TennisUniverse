@@ -1,7 +1,13 @@
 package edu.matc.controller;
 
+import edu.matc.entity.Person;
+import edu.matc.entity.PersonService;
+import edu.matc.persistence.PersonDao;
+import edu.matc.persistence.PersonServiceDao;
 import edu.matc.persistence.ServiceDao;
+import edu.matc.util.LocalDateAttributeConverter;
 import org.apache.log4j.Logger;
+import org.hibernate.HibernateException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
@@ -10,7 +16,9 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.Properties;
 import java.util.Set;
 
@@ -35,12 +43,43 @@ public class AddMemberServActionServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         ServletContext context = getServletContext();
+        HttpSession session = request.getSession();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("addMemberServiceJsp.name");
+
+        PersonServiceDao dao = new PersonServiceDao();
+        Person person = (Person)session.getAttribute("aPerson");
 
         //String url = "/add_member_serv.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
+
+    }
+
+    public String storeMemberService(HttpServletRequest request, Person person, PersonServiceDao dao) {
+        int newPersonServiceId = 0;
+        String feedbackMessage = null;
+        PersonService personService = null;
+
+        LocalDateAttributeConverter dateConverter = new LocalDateAttributeConverter();
+        LocalDate serviceDate = LocalDate.parse(request.getParameter("service_date"));
+        dateConverter.convertToDatabaseColumn(serviceDate);
+
+        personService = new PersonService(person.getPersonId(),
+                Integer.parseInt(request.getParameter("service")),
+                serviceDate,
+                request.getParameter("notes"));
+
+        try {
+            newPersonServiceId = dao.a;
+            feedbackMessage = "Person was added successfully";
+            logger.info("In Add member servlet added a new person " + newPersonId);
+        } catch (HibernateException he) {
+            feedbackMessage = "Error adding a new person";
+            logger.info("Hibernate Exception " + he);
+        }
+        return feedbackMessage;
+
 
     }
 }

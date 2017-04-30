@@ -1,6 +1,6 @@
 @import url('base.css');
 
-#instruction {
+.instruction {
     font-size: 30px;
     font-weight: bold;
 }
@@ -10,9 +10,4 @@
 
 }
 
-#buildingimage {
-    border-radius: 10px;
-    box-shadow: 10px -10px 5px grey;
-    width: 90%;
-}
 

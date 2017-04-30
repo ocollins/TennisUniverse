@@ -7,15 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36d9aa19-5294-401c-9575-a120181925f9" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/js/js.cookie.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/bfd78dad-4e1e-4395-a998-5d0d4f32eae7.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/bfd78dad-4e1e-4395-a998-5d0d4f32eae7.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/logs/MyLog.log" afterPath="$PROJECT_DIR$/logs/MyLog.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dba/createAll.sql" afterPath="$PROJECT_DIR$/src/dba/createAll.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/dba/createUsersRoles.sql" afterPath="$PROJECT_DIR$/src/dba/createUsersRoles.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/AddMemberServActionServlet.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/AddMemberServActionServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/controller/AdminDispServlet.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/controller/AdminDispServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/entity/PersonService.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/entity/PersonService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/PersonServiceDao.java" afterPath="$PROJECT_DIR$/src/main/java/edu/matc/persistence/PersonServiceDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/add_member_serv.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/add_member_serv.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/adminoptions.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/adminoptions.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/add_member_serv.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/add_member_serv.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/css/adminoptions.css" afterPath="$PROJECT_DIR$/src/main/webapp/css/adminoptions.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/js/login_script.js" afterPath="$PROJECT_DIR$/src/main/webapp/js/login_script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/login.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -109,8 +111,8 @@
       <file leaf-file-name="AdminDispServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AdminDispServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="166">
+              <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -118,56 +120,91 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bfd78dad-4e1e-4395-a998-5d0d4f32eae7/console.sql">
+      <file leaf-file-name="add_member_serv.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/add_member_serv.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+            <state relative-caret-position="139">
+              <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TENNIS_UNIVERSE.PERSON" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/b35e3c04/bfd78dad-4e1e-4395-a998-5d0d4f32eae7/TENNIS_UNIVERSE.PERSON">
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+      <file leaf-file-name="add_member_serv.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/css/add_member_serv.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="361">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
-            </state>
-          </provider>
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="js.cookie.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/js.cookie.js">
+      <file leaf-file-name="AddMemberServActionServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AddMemberServActionServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="61" column="43" lean-forward="true" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonServiceDao.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/PersonServiceDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="72" column="7" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/PersonDao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="235">
-              <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
+              <caret line="90" column="20" lean-forward="true" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
+      <file leaf-file-name="MemberSearchActionServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/MemberSearchActionServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="353">
-              <caret line="31" column="120" lean-forward="false" selection-start-line="31" selection-start-column="110" selection-end-line="31" selection-end-column="124" />
+            <state relative-caret-position="235">
+              <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login_script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login_script.js">
+      <file leaf-file-name="PersonServiceDaoTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/PersonServiceDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+            <state relative-caret-position="140">
+              <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddMemberActionServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AddMemberActionServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="81" column="0" lean-forward="true" selection-start-line="73" selection-start-column="3" selection-end-line="99" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="update_member.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/update_member.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="52" />
               <folding />
             </state>
           </provider>
@@ -260,12 +297,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/webapp/member_search.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/PersonDao.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/AdminActionDirectoryServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/CalculateDurationActionServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/FitnessDispServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/processing_error.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/CalculateCaloriesActionServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/MemberSearchActionServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java" />
@@ -280,7 +311,6 @@
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/email/SendEmail.java" />
         <option value="$PROJECT_DIR$/src/test/java/edu/matc/email/CreateEmailTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/email/SendEmailServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/add_member_serv.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/book_service.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/AdminAction.java" />
         <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/AdminActionDao.java" />
@@ -308,9 +338,16 @@
         <option value="$PROJECT_DIR$/src/main/webapp/js/session.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/js/js.cookie.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/js/login_script.js" />
-        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/AdminDispServlet.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/bfd78dad-4e1e-4395-a998-5d0d4f32eae7/console.sql" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/AdminDispServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/js/login_script.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/adminoptions.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/adminoptions.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/css/add_member_serv.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/add_member_serv.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/entity/PersonService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/controller/AddMemberServActionServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/edu/matc/persistence/PersonServiceDao.java" />
       </list>
     </option>
   </component>
@@ -679,6 +716,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tennisuniverse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TennisUniverse" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1722,7 +1785,7 @@
       <workItem from="1493514578477" duration="12531000" />
       <workItem from="1493528029849" duration="154000" />
       <workItem from="1493562639513" duration="1482000" />
-      <workItem from="1493569247346" duration="7701000" />
+      <workItem from="1493569247346" duration="14154000" />
     </task>
     <servers />
   </component>
@@ -1759,7 +1822,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="575192000" />
+    <option name="totallyTimeSpent" value="581645000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1772,7 +1835,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="82" width="1853" height="998" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295063" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1787,10 +1850,10 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32777777" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.257886" sideWeight="0.43888888" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25345877" sideWeight="0.5611111" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25345877" sideWeight="0.5611111" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.03577325" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2429441" sideWeight="0.20555556" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.11123409" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14167129" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24956971" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1869,111 +1932,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/email/SendEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/dba/createService.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/book_service.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="20" lean-forward="false" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AdminActionDirectoryServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="48" column="59" lean-forward="true" selection-start-line="48" selection-start-column="59" selection-end-line="48" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AddMemberServActionServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="25" column="68" lean-forward="true" selection-start-line="25" selection-start-column="68" selection-end-line="25" selection-end-column="68" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/add_member_serv.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="22" lean-forward="false" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/PersonServiceDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/AdminAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="519">
-          <caret line="101" column="26" lean-forward="true" selection-start-line="101" selection-start-column="26" selection-end-line="101" selection-end-column="26" />
-          <folding>
-            <element signature="e#2298#2299#0" expanded="false" />
-            <element signature="e#2331#2332#0" expanded="false" />
-            <element signature="e#2472#2473#0" expanded="false" />
-            <element signature="e#2516#2517#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/PersonServiceDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/b35e3c04/bfd78dad-4e1e-4395-a998-5d0d4f32eae7/TENNIS_UNIVERSE.ADMIN_ACTION">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="32" column="28" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/UserDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="26" column="26" lean-forward="true" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/tomee/conf/server.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1977">
-          <caret line="9" column="48" lean-forward="true" selection-start-line="9" selection-start-column="48" selection-end-line="9" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/head.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2003,14 +1961,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/adminoptions.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="20" column="6" lean-forward="false" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/FitnessDispServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
@@ -2031,22 +1981,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="680">
           <caret line="75" column="41" lean-forward="false" selection-start-line="75" selection-start-column="8" selection-end-line="76" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/add_member_serv.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="82">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -2155,18 +2089,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/b35e3c04/bfd78dad-4e1e-4395-a998-5d0d4f32eae7/TENNIS_UNIVERSE.USER">
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dba/createUsersRoles.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -2221,14 +2143,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/js.cookie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="18" column="40" lean-forward="false" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -2237,21 +2151,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login_script.js">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bfd78dad-4e1e-4395-a998-5d0d4f32eae7/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="65" column="7" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="7" />
+        <state relative-caret-position="76">
+          <caret line="4" column="70" lean-forward="true" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AdminDispServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2268,10 +2172,179 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/bfd78dad-4e1e-4395-a998-5d0d4f32eae7/console.sql">
+    <entry file="dbDummy://dbtable:/b35e3c04/bfd78dad-4e1e-4395-a998-5d0d4f32eae7/TENNIS_UNIVERSE.USER">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b35e3c04/bfd78dad-4e1e-4395-a998-5d0d4f32eae7/TENNIS_UNIVERSE.USER_ROLE">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/js.cookie.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="38" lean-forward="true" selection-start-line="4" selection-start-column="38" selection-end-line="4" selection-end-column="38" />
+        <state relative-caret-position="418">
+          <caret line="136" column="46" lean-forward="true" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="163">
+          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/js/login_script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="54" column="33" lean-forward="false" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/adminoptions.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="228">
+          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/adminoptions.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AdminDispServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="53" column="0" lean-forward="true" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/b35e3c04/bfd78dad-4e1e-4395-a998-5d0d4f32eae7/TENNIS_UNIVERSE.ADMIN_ACTION">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/UpdateMemberActionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="30" column="68" lean-forward="true" selection-start-line="30" selection-start-column="68" selection-end-line="30" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/update_member.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="38" column="48" lean-forward="true" selection-start-line="38" selection-start-column="36" selection-end-line="38" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/css/add_member_serv.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/MemberSearchActionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="49" column="43" lean-forward="true" selection-start-line="49" selection-start-column="43" selection-end-line="49" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/edu/matc/persistence/PersonServiceDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="27" column="17" lean-forward="true" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AddMemberActionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="81" column="0" lean-forward="true" selection-start-line="73" selection-start-column="3" selection-end-line="99" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/add_member_serv.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="139">
+          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/entity/PersonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="69" column="47" lean-forward="true" selection-start-line="69" selection-start-column="47" selection-end-line="69" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/controller/AddMemberServActionServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="61" column="43" lean-forward="true" selection-start-line="61" selection-start-column="43" selection-end-line="61" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/PersonDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="90" column="20" lean-forward="true" selection-start-line="90" selection-start-column="20" selection-end-line="90" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/edu/matc/persistence/PersonServiceDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="72" column="7" lean-forward="true" selection-start-line="72" selection-start-column="7" selection-end-line="72" selection-end-column="7" />
           <folding />
         </state>
       </provider>

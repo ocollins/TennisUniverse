@@ -31,7 +31,7 @@
 
 <form action="adminActionDirectoryServlet" method="get" id="display_form">
     <div id="selectoptions">
-        <p id="instruction">Please select option from the list below</p>
+        <p class="instruction">Please select option from the list below</p>
 
         <select name="adm_option" form="display_form">
             <c:forEach var="adm_option" items="${adminActionsList}">

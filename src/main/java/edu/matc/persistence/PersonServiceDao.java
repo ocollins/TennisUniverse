@@ -70,5 +70,31 @@ public class PersonServiceDao {
         return personServiceList;
     }
 
+    /**
+     * Add person int.
+     *
+     * @param personService the person service
+     * @return the int
+     * @throws HibernateException the hibernate exception
+     */
+    public int addPerson(PersonService personService) throws HibernateException{
+        int id = 0;
+        Session session = null;
+
+        try {
+            session = SessionFactoryProvider.getSessionFactory().openSession();
+            Transaction transaction = session.beginTransaction();
+            id = (int) session.save(personService);
+            transaction.commit();
+        } catch (HibernateException ex) {
+            logger.info("Hibernate error adding a new person " + ex);
+        } finally {
+
+            session.close();
+        }
+
+        return id;
+    }
+
 
 }

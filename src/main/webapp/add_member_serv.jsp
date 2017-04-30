@@ -26,26 +26,19 @@
 
 <c:import url="menu.jsp"/>
 
-    <%--<div id="search_div">--%>
-        <%--<h2 id="title_header">Request Service</h2>--%>
-        <%--<form action="/addMemberServActionServlet" name="" id="member_search_form" method="get">--%>
-            <%--<c:import url="member_search.jsp"/>--%>
-
-        <%--</form>--%>
-    <%--</div>--%>
-
-    <%--<h2 id="meber_found_no">Member not found</h2>--%>
-
     <div>
         <form action="addMemberServActionServlet" name="" id="select_serv_form" method="get">
             <div id="selectoptions">
-                <p id="instruction">Please select service from the list below</p>
+                <h2 class="instruction">You are adding services for &nbsp;${aPerson.firstName}&nbsp;${aPerson.lastName}</h2>
+                <h2 class="instruction">Please select service from the list below</h2>
 
                 <select name="service" form="display_form">
                     <c:forEach var="service" items="${serviceList}">
                         <option value="${service.serviceId}">${service.serviceDesc}</option>
                     </c:forEach>
                 </select>
+                <input type="date" name="service_date" required>
+                <input type="text" name="notes">
 
                 <input type="submit" value="OK">
             </div>

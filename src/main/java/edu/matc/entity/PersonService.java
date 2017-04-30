@@ -2,6 +2,7 @@ package edu.matc.entity;
 
 import javax.persistence.*;
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -27,7 +28,7 @@ public class PersonService {
 //    private int serviceId;
 
     @Column(name = "SERVICE_DATE")
-    private Date serviceDate;
+    private LocalDate serviceDate;
 
     @Column(name = "NOTES")
     private String notes;
@@ -36,6 +37,14 @@ public class PersonService {
     private Service service;
 
     public PersonService () {
+    }
+
+    public PersonService (int personId, int personServiceId, LocalDate serviceDate, String notes) {
+        this.personId = personId;
+        this.personServiceId = personServiceId;
+        this.serviceDate = serviceDate;
+        this.notes = notes;
+
     }
 
     public int getPersonServiceId() {
@@ -62,11 +71,11 @@ public class PersonService {
 //        this.serviceId = serviceId;
 //    }
 
-    public Date getServiceDate() {
+    public LocalDate getServiceDate() {
         return serviceDate;
     }
 
-    public void setServiceDate(Date serviceDate) {
+    public void setServiceDate(LocalDate serviceDate) {
         this.serviceDate = serviceDate;
     }
 
