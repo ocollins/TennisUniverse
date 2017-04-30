@@ -8,15 +8,12 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
 
-<html xmlns="http://www.w3.org/1999/xhtml" ng-app="">
+<html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <%--Adding libraries for Bootstrap--%>
-    <%--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type=""></script>--%>
     <link href="css/fitness.css" rel="stylesheet" type="text/css"/>
     <title>Fitness</title>
 </head>
@@ -26,116 +23,54 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" type=""></script>
 
-<div id="container">
 <!--include head element, which is stored in jsp directory-->
-<c:import url="head.jsp"/>
+<c:import url="head.jsp"></c:import>
 
-<c:import url="menu.jsp"/>
+<c:import url="menu.jsp"></c:import>
 
-    <%--<jsp:include page="/fitnessDispServlet"/>--%>
-    <div id="main_container_div">
-        <h2 id="title_header">Calories Burned Calculator</h2>
-        <div class="content_div">
-            <div class="titlebox">What are calories?</div>
-            <p class="info_p">A calorie is a measure of energy, just as a pound is a measure of weight
-                and a mile is a measure of distance. So the amount of energy you exert in
-                doing an activity is measured by the calories burn rate.
-            </p>
-        </div>
-        <div class="content_div">
-            <div class="titlebox">How to burn calories?</div>
-            <p class="info_p"> That's easy, just be alive! Your body is constantly burning calories to keep
-                your body functioning. To burn more calories, do more activities, and the more
-                strenuous the activity the greater the calorie burn.
-            </p>
-        </div>
-        <div class="content_div">
-            <div class="titlebox">How many calories did you burn?</div>
-            <p class="info_p"> Count how many calories you burn doing your favorite activities or how
-                long you should do an activity to lose weight. Enter your weight in kilograms, gender, and number
-                of minutes for any of the exercise you do.
-            </p>
-        </div>
-    </div>
+<div id="pictures_div_container">
+        <img src="images/fitness1.jpg" alt="Fitness Picture" class="tennis_fit_image"></img>
+        <img src="images/fitness2.jpg" alt="Fitness Picture" class="tennis_fit_image"></img>
 
+</div>
+<div id="fitness_info">
+    <ul>
+        <li>Our Fitness Center sets a lofty standard in terms of equipment and services. The facility
+        includes, all the cardiovascular & strength training equipment needed to lead an active lifestyle.
+        </li>
+        <li>
+        INNOVATIVE SPORTS MEDICINE & PHYSICAL FITNESS TRAINING
+        In addition to these state-of-the-art amenities, what truly sets Tennis Universe Tennis Club’'s Fitness
+        Center apart from other facilities are cutting-edge fitness evaluations and physical training programs
+        designed specifically for each members’ needs.
+        </li>
+        Kelly Painter, who has 15 years of  experience as a
+        Certified Personal Trainer, is consulting with Tennis Universe Tennis Club to create programs that
+        address a variety of goals which include— losing weight, enhancing flexibility, gaining strength/muscle
+        tone and increasing physical performance (speed, power, recovery, endurance, agility, etc.) for your
+        tennis game. These customized programs are based on an in-depth, no-fee consultation.
+        <li>
+        Consultations
+        include a review of health and fitness history, creation of health and fitness goals and a customized
+        sample training session.
+        </li>
+        <li>
+        To learn more about a consultation and programs please call the front desk to schedule a
+        complimentary appointment.
+        </li>
 
-    <div id="user_info_div">
-        <form action="calculateCaloriesActionServlet" id="calories_form" method="get">
-            <%--enter weight --%>
-            <c:import url="weight.jsp"></c:import>
-            <%--select activity --%>
-            <c:import url="activity.jsp"></c:import>
+    </ul>
+</div>
 
-            <div class="content_div2">
-                <div class="titlebox">Select duration</div>
-                <p class="info_p">
-                    <select id="duration_select" name="duration_select">
-                        <option value="0.5">half hour</option>
-                        <option value="1">one hour</option>
-                        <option value="1.5">hour and half</option>
-                        <option value="2.0">two hours</option>
-                        <option value="2.5">two and half hours</option>
-                        <option value="3.0">three hours</option>
-                        <option value="3.5">three and half hours</option>
-                        <option value="4.0">four hours</option>
-                        <option value="4.5">four and half hours</option>
-                        <option value="5.0">five hours</option>
-                        <option value="6.5">five and half hours</option>
-                    </select>
-                </p>
-            </div>
-            <input type="submit" id="submit_button" value="Calculate Calories">
-        </form>
-    </div>
+<div id="calories_calculator_page">
+    <c:import url="calories_calculator.jsp"></c:import>
 </div>
 
 
-<div id="result_div">
-    <c:if test="${not empty RequestedCaloriesResult}">
-        <form id="calories_result_form" action="cleanupServlet">
-            <p class="result_p_mess">You burned</p>
-            <p class="result_p" id="result1">${RequestedCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
-            <p class="result_p_mess">If you exercise 20 more minutes you will burn</p>
-            <p class="result_p" id="result2">${MoreCaloriesResult.caloriesBurned} <span id="calories_span">calories</span></p>
-            <p class="reset_button_p"><input type="submit" class="reset_button" value="Reset"/></p>
 
-        </form>
-    </c:if>
-</div>
 
-<div id="user_info_div2">
-    <form action="calculateDurationActionServlet" id="duration_form" method="get">
-        <%--enter weight --%>
-        <c:import url="weight.jsp"></c:import>
-        <%--select activity --%>
-        <c:import url="activity.jsp"></c:import>
-        <div class="content_div2">
-            <div class="titlebox">Enter calories you wish to burn</div>
-            <p class="info_p">
-                <input type="text" name="calories_text" id="calories_text" value="" required>
-            </p>
-        </div>
-        <input type="submit" id="submit_button" value="Calculate Duration">
-    </form>
-</div>
-
-<div id="result_div2">
-    <c:if test="${not empty DurationResult}">
-        <form id="duration_result_form" action="cleanupServlet">
-            <p class="result_p" id="result3">${DurationResult}</p>
-            <p class="reset_button_p"><input type="submit" class="reset_button" value="Reset"/></p>
-        </form>
-    </c:if>
-</div>
-
-<div id="footer_div">
-    <img src="images/tennis_fit1.jpg" alt="Fitness Picture" id="tennis_fit1_image"></img>
-    <p id="dummy"></p>
-    <img src="images/tennis_fit2.jpg" alt="Fitness Picture" id="tennis_fit2_image"></img>
-</div>
 
 <c:import url="footer.jsp"/>
-</div>
 </body>
 
 </html>
