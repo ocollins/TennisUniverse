@@ -1,5 +1,5 @@
 <%--
-  This is a page with fitness info and calories burned calculator
+  This is a page with fitness info
   Author: Olena Collins
 --%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -36,22 +36,24 @@
 </div>
 <div id="fitness_info">
     <ul>
-        <li>Our Fitness Center sets a lofty standard in terms of equipment and services. The facility
+        <li class="fitness_li">Our Fitness Center sets a lofty standard in terms of equipment and services. The facility
         includes, all the cardiovascular and strength training equipment needed to lead an active lifestyle.
         </li>
-        <li>In addition to these state-of-the-art amenities, what truly sets Fitness Center at Tennis Universe Club
+        <li class="fitness_li">In addition to these state-of-the-art amenities, what truly sets Fitness Center at Tennis Universe Club
         apart from other facilities are cutting-edge fitness evaluations and physical training programs
         designed specifically for each members&#39; needs.
         </li>
+        <li class="fitness_li">
         Kelly Painter, who has 15 years of  experience as a
         Certified Personal Trainer, is consulting with Tennis Universe Tennis Club to create programs that
         address a variety of goals which include losing weight, enhancing flexibility, gaining strength/muscle
         tone and increasing physical performance. These customized programs are based on an in-depth, no-fee consultation.
-        <li>
+        </li>
+        <li class="fitness_li">
         Consultations include a review of health and fitness history, creation of health and fitness goals and a customized
         sample training session.
         </li>
-        <li>
+        <li class="fitness_li">
         To learn more about a consultation and programs please call the front desk to schedule a
         complimentary appointment.
         </li>
@@ -61,14 +63,16 @@
 </div>
 
 <div id="calories_div">
-    <h3>To help you achieve your fitness goals we have included our <strong>Exercise Calories Calculator</strong>.</h3>
-    <br/>
-    <button id="calories_button">Calories Calculator</button>
+    <form action="caloriesCalculatorDispServlet" method="get">
+        <h3>To help you achieve your fitness goals we have included our <strong>Exercise Calories Calculator</strong>.</h3>
+        <br/>
+        <button id="calories_button">Calories Calculator</button>
+    </form>
 </div>
 
-<div id="calories_calculator_page">
-    <c:import url="calories_calculator.jsp"></c:import>
-</div>
+<%--<div id="calories_calculator_page">--%>
+    <%--<c:import url="calories_calculator.jsp"></c:import>--%>
+<%--</div>--%>
 
 
 

@@ -27,9 +27,9 @@
     font-size: 1.7rem;
 }
 
-li {
+.fitness_li {
     text-align: left;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 #calories_div {
@@ -42,9 +42,9 @@ li {
 }
 
 /*Calories Calculator page*/
-#calories_calculator_page {
-    display:none;
-}
+/*#calories_calculator_page {*/
+    /*display:none;*/
+/*}*/
 
 #title_header {
     text-align: center;

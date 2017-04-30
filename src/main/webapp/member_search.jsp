@@ -14,13 +14,13 @@
     <title>Search for a Member</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <%--Script to submit search by member ID from the search by LastName result table--%>
-    <script>
-        $(document).ready(function(){
-            $(".member_id").on("click", function(){
-                $(this).style("background-color", "red");
-            });
-        });
-    </script>
+    <%--<script>--%>
+        <%--$(document).ready(function(){--%>
+            <%--$(".member_id").on("click", function(){--%>
+                <%--$(this).style("background-color", "red");--%>
+            <%--});--%>
+        <%--});--%>
+    <%--</script>--%>
 </head>
 
 

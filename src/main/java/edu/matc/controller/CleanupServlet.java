@@ -54,7 +54,7 @@ public class CleanupServlet extends HttpServlet {
         //String responceurl = "/fitness.jsp";
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
-        String responseUrl = properties.getProperty("fitnessJsp.name");
+        String responseUrl = properties.getProperty("caloriesCalculatorJsp.name");
 
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
         dispatcher.forward(request, response);

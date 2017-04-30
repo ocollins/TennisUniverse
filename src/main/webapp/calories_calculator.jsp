@@ -1,8 +1,34 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%--
   This is a page with calories burned calculator
   Author: Olena Collins
+
 --%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/fitness.js"></script>
+    <link href="css/fitness.css" rel="stylesheet" type="text/css"/>
+    <title>Calories Calculator</title>
+</head>
+
+
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js" type=""></script>
+
+<!--include head element, which is stored in jsp directory-->
+<c:import url="head.jsp"></c:import>
+
+<c:import url="menu.jsp"></c:import>
 <div id="main_container_div">
         <h2 id="title_header">Calories Burned Calculator</h2>
         <div class="content_div">
@@ -102,3 +128,5 @@
     <img src="images/tennis_fit2.jpg" alt="Fitness Picture" id="tennis_fit2_image"></img>
 </div>
 
+</body>
+</html>
