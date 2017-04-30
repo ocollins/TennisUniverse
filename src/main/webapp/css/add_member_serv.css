@@ -8,15 +8,7 @@ margin: auto;
     text-align: center;
 }
 
-/*#title_header, h4 {*/
-    /*text-align: center;*/
-/*}*/
-
-/*#member_search_table {*/
-    /*margin:auto;*/
-/*}*/
-
-/*td {*/
-    /*padding: 10px;*/
-/*}*/
+.instruction {
+    padding: 1.5rem;
+}
 

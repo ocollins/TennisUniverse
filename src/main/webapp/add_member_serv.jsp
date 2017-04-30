@@ -14,7 +14,7 @@
     <META http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="css/add_member_serv.css" rel="stylesheet" type="text/css"/>
-    <title>Request Service</title>
+    <title>Add Member Service</title>
 </head>
 
 
@@ -25,29 +25,32 @@
 <c:import url="head.jsp"/>
 
 <c:import url="menu.jsp"/>
+    <h2 class="instruction">You are adding services for &nbsp;${aPerson.firstName}&nbsp;${aPerson.lastName}</h2>
+    <h2 class="instruction">Please select service from the list below</h2>
 
-    <div id="entry_form_div">
-        <form action="addMemberServActionServlet" name="" id="select_serv_form" method="get">
-            <div id="selectoptions">
-                <h2 class="instruction">You are adding services for &nbsp;${aPerson.firstName}&nbsp;${aPerson.lastName}</h2>
-                <h2 class="instruction">Please select service from the list below</h2>
-                <p>
-                <select name="service" form="display_form">
-                    <c:forEach var="service" items="${serviceList}">
-                        <option value="${service.serviceId}">${service.serviceDesc}</option>
-                    </c:forEach>
-                </select>
-                </p>
+    <c:import url="select_service.jsp"/>
 
-                <p>Date of service<input type="date" name="service_date" required></p>
-                <p>Comments<input type="text" name="notes"></p>
+    <%--<div id="entry_form_div">--%>
+        <%--<form action="addMemberServActionServlet" name="" id="select_serv_form" method="get">--%>
+            <%--<div id="selectoptions">--%>
 
-                <input type="submit" value="OK">
-            </div>
+                <%--<p>--%>
+                <%--<select name="service" form="display_form">--%>
+                    <%--<c:forEach var="service" items="${serviceList}">--%>
+                        <%--<option value="${service.serviceId}">${service.serviceDesc}</option>--%>
+                    <%--</c:forEach>--%>
+                <%--</select>--%>
+                <%--</p>--%>
 
-        </form>
+                <%--<p>Date of service<input type="date" name="service_date" required></p>--%>
+                <%--<p>Comments<input type="text" name="notes"></p>--%>
 
-    </div>
+                <%--<input type="submit" value="OK">--%>
+            <%--</div>--%>
+
+        <%--</form>--%>
+
+    <%--</div>--%>
 
 <c:import url="footer.jsp"/>
 </div>

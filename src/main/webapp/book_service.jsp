@@ -26,23 +26,9 @@
 
 <c:import url="menu.jsp"/>
 
-    <div>
-        <form action="addMemberServActionServlet" name="" id="select_serv_form" method="get">
-            <div id="selectoptions">
-                <h2 id="instruction">Please select service from the list below</h2>
+    <h2 class="instruction">Please select service from the list below</h2>
 
-                <select name="service" form="display_form">
-                    <c:forEach var="service" items="${serviceList}">
-                        <option value="${service.serviceId}">${service.serviceDesc}</option>
-                    </c:forEach>
-                </select>
-
-                <input type="submit" value="OK">
-            </div>
-
-        </form>
-
-    </div>
+    <c:import url="select_service.jsp"/>
 
 <c:import url="footer.jsp"/>
 </div>
