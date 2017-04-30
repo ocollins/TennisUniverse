@@ -15,6 +15,9 @@
     <title></title>
     <link href="css/login.css" rel="stylesheet" type="text/css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+    <script type="text/javascript" src="js/session.js"></script>
+    <script type="text/javascript" src="js/js.cookie.js"></script>
     <script type="text/javascript" src="js/login_script.js"></script>
 </head>
 

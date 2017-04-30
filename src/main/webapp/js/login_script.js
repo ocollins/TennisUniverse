@@ -21,7 +21,7 @@ $(document).ready(function() {
                 $(".data").val(" ");
             }
         } else {
-            alert("Password does not meet required strength requirements");
+            alert("Password does not meet strength requirements");
             event.preventDefault();
             $(".data").val(" ");
         }
@@ -68,12 +68,12 @@ $(document).ready(function() {
 
 });
 
-//When user enters user name, password, and member id store member id in session container
+//When user enters user name, password store them in session container
 $(document).ready(function() {
     $("#login_button").click(function (event) {
-        $.session.set("loginUserName", $("#login_user_name").val());
-        $.session.set("loginPassword", $("#login_password").val());
+        Cookies.set('loginUserName', $("#login_user_name").val());
+        Cookies.set('loginPassword', $("#login_password").val());
 
-    })
+    });
 
 });

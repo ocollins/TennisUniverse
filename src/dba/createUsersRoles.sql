@@ -4,13 +4,13 @@ DROP TABLE TENNIS_UNIVERSE.USER_ROLE;
 create table TENNIS_UNIVERSE.USER (
   USER_ID         INT(02) NOT NULL PRIMARY KEY AUTO_INCREMENT,
   PERSON_ID       INT (11) NOT NULL UNIQUE,
-  USER_NAME       varchar(15) not null,
-  USER_PASS       varchar(15) not null
+  USER_NAME       varchar(15) NOT NULL UNIQUE,
+  USER_PASS       varchar(15) NOT NULL UNIQUE
 )ENGINE=InnoDB;
 
 create table TENNIS_UNIVERSE.USER_ROLE (
   USER_ROLE_ID INT (02) NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  USER_NAME         varchar(15) not null,
+  USER_NAME         varchar(15) NOT NULL UNIQUE,
   ROLE_NAME         varchar(15) not null
 )ENGINE=InnoDB;
 

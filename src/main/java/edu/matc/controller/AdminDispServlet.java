@@ -13,16 +13,17 @@ import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-/**import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;*/
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.*;
 import java.util.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
+import javax.servlet.http.Cookie;
 
 /**
  * The type Log in display servlet.
@@ -44,24 +45,55 @@ public class AdminDispServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        //Remove the old session
+        //Get session object
         HttpSession session = request.getSession(true);
-        session.invalidate();
-
-        //Create a new session
-        session = request.getSession(true);
-
-        //Create AdminActions instance
-        AdminActionDao dao = new AdminActionDao();
-        List<AdminAction> adminActionList = null;
 
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = null;
 
+        String userName = null;
+        String password = null;
+        Cookie[] cookies = request.getCookies();
+        logger.info("&&&&&&&&&&&&&&&&&&7 Inside the admin display ");
+
+        for(int i=0;i<cookies.length;i++) {
+            if (cookies[i].getName().equals("loginUserName")) {
+                logger.info("Found user name cookie");
+                userName = cookies[i].getValue();
+            }
+
+            if (cookies[i].getName().equals("loginPassword")) {
+                logger.info("Found password cookie");
+                password = cookies[i].getValue();
+            }
+        }
+
+        //If could not get user name or password redirect to the error page
+        if (userName.isEmpty() || password.isEmpty()) {
+            logger.info("User name or password is missing");
+            url = properties.getProperty("processingErrorJsp.name");
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
+            dispatcher.forward(request, response);
+
+        }
+
+        logger.info("User name from login screen " + userName);
+        logger.info("Password from login screen " + password);
+        //session.invalidate();
+
+        //Create a new session
+        //session = request.getSession(true);
+
+        //Create AdminActions instance
+        AdminActionDao dao = new AdminActionDao();
+        List<AdminAction> adminActionList = null;
+
+
+
         //Get a list of admin pages
         try {
-            adminActionList = dao.getActionList(getActionType(session));
+            adminActionList = dao.getActionList(getActionType(session, userName, password));
         } catch (Exception ex) {
             //In case of an error redirect to error page
             logger.info("Error getting list of admin actions" + ex);
@@ -87,22 +119,19 @@ public class AdminDispServlet extends HttpServlet {
      * @param session the session
      * @return the action type
      */
-    public String getActionType(HttpSession session) throws Exception{
-        String userName = String.valueOf(session.getAttribute("loginUserName"));
-        String password = String.valueOf(session.getAttribute("loginPassword"));
+    public String getActionType(HttpSession session, String userName, String password) throws Exception{
         String personRole = null;
 
-        //Get person ID of the person that logged in
         UserDao dao = new UserDao();
-        int personId = dao.getPersonId(userName, password);
 
+        //Get person ID of the person that logged in
         //Get person role so the appropriate options are displayed
         PersonDao personDao = new PersonDao();
         try {
+            int personId = dao.getPersonId(userName, password);
             personRole = personDao.getPerson(personId).getRoleName();
-            logger.info("!!!!!!!!!!!!!in admin display servlet person role " + personRole);
         } catch (Exception ex) {
-            logger.info("Problem getting person role");
+            logger.info("Problem getting person ID by user name and password");
         }
 
         return personRole;
