@@ -3,41 +3,47 @@
 #container2 {
     margin: auto;
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
     justify-content: center;
     width: 80%;
 }
 
-.info_div {
-    width: 50%;
+#info_div {
+    width: 55%;
+    padding: 1.5rem 1.2rem 1.5rem 1.2rem;
 }
 
-.club_info {
-    width: 50%;
+#info_div2 {
+    width: 45%;
 }
-
 
 #club_info_p {
     font-size: 1.5rem;
-    font-weight: bold;
-    margin: 1rem 2rem 2rem 1.5rem;
-    padding-left: 1.5rem;
+    margin: 1rem 2rem 2rem 3rem;
+    padding-left: 3.5rem;
 }
 
 #people_image {
-    margin: 0.1rem 1.2rem 2rem 0.8rem;
+    margin: 1rem 1.2rem 2rem 2.8rem;
     border-radius: 10px;
     box-shadow: 10px -10px 5px grey;
+    width: 70%;
+
+}
+
+#lessons_div{
+    padding-left: 3.5rem;
+}
+
+#lessons_p {
     width: 80%;
-
 }
 
-
-
-aside {
-    float: left;
-    width: 50%;
+#phones_div{
+    font-size: 1.2rem;
+    padding: 1rem;
 }
+
 
 h2 {
     background-color: rgb(112, 144, 126);
@@ -45,7 +51,7 @@ h2 {
     padding: 10px;
     border-radius: 10px;
     border: solid 4px rgba(232, 208, 148, 0.5);
-    margin-left: 40px;
+    margin-left: 4.8rem;
 }
 
 p {

@@ -17,9 +17,7 @@ Author: Olena Collins
 </head>
 
 <title>Home</title>
-<!--<link href="file:///home/student/EnterpriseRepos/TennisUniverse/src/main/resources/css/club.css" rel="stylesheet" type="text/css"/>-->
-<!--<link rel="stylesheet" href="<%=request.getContextPath()%>/resources/css/club.css" rel="stylesheet" type="text/css"/>-->
-<link href="css/club.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
 
 <body>
 <!--include head element, which is stored in jsp directory-->
@@ -27,7 +25,7 @@ Author: Olena Collins
 <c:import url="menu.jsp"/>
 
 <%--<p><a href="adminoptions.jsp">TESTING ADMIN OPTIONS</a></p>--%>
-<p><a href="adminDispServlet">TESTING ADMIN OPTIONS</a></p>
+<%--<p><a href="adminDispServlet">TESTING ADMIN OPTIONS</a></p>--%>
 
 <div id="container">
     <div id="left_box">
