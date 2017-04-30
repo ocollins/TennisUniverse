@@ -1,6 +1,7 @@
 package edu.matc.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.sql.Date;
 import java.time.LocalDate;
 import java.util.HashSet;
@@ -14,7 +15,7 @@ import org.hibernate.annotations.GenericGenerator;
  */
 @Entity
 @Table(name = "PERSON_SERVICE", schema = "TENNIS_UNIVERSE")
-public class PersonService {
+public class PersonService implements Serializable{
     @Id
     @Column(name = "PERSON_SERVICE_ID")
     @GeneratedValue(generator="increment")
@@ -28,7 +29,7 @@ public class PersonService {
 //    private int serviceId;
 
     @Column(name = "SERVICE_DATE")
-    private LocalDate serviceDate;
+    private Date serviceDate;
 
     @Column(name = "NOTES")
     private String notes;
@@ -39,13 +40,13 @@ public class PersonService {
     public PersonService () {
     }
 
-    public PersonService (int personId, int personServiceId, LocalDate serviceDate, String notes) {
-        this.personId = personId;
-        this.personServiceId = personServiceId;
-        this.serviceDate = serviceDate;
-        this.notes = notes;
-
-    }
+//    public PersonService (int personId, int personServiceId, LocalDate serviceDate, String notes) {
+//        this.personId = personId;
+//        this.personServiceId = personServiceId;
+//        this.serviceDate = serviceDate;
+//        this.notes = notes;
+//
+//    }
 
     public int getPersonServiceId() {
         return personServiceId;
@@ -71,11 +72,11 @@ public class PersonService {
 //        this.serviceId = serviceId;
 //    }
 
-    public LocalDate getServiceDate() {
+    public Date getServiceDate() {
         return serviceDate;
     }
 
-    public void setServiceDate(LocalDate serviceDate) {
+    public void setServiceDate(Date serviceDate) {
         this.serviceDate = serviceDate;
     }
 

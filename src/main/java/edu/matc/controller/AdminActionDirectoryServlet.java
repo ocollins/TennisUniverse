@@ -1,6 +1,8 @@
 package edu.matc.controller;
 
 import edu.matc.entity.AdminAction;
+import edu.matc.entity.Service;
+import edu.matc.persistence.ServiceDao;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
@@ -53,9 +55,19 @@ public class AdminActionDirectoryServlet extends HttpServlet {
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String memberSearchPageUrl = properties.getProperty("memberSearchJsp.name");
+        String errorUrl = properties.getProperty("processingErrorJsp.name");
 
         //Get a list of admin actions and find the action that was selected
         List<AdminAction> actionList = (ArrayList<AdminAction>)session.getAttribute("adminActionsList");
+
+        //Get a list of member services
+        try {
+            getListOfServices(session);
+        } catch (Exception ex) {
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(errorUrl);
+            dispatcher.forward(request, response);
+
+        }
 
         //Find if the display member search switch is 'Y' for that action
         for (AdminAction action : actionList) {
@@ -75,6 +87,25 @@ public class AdminActionDirectoryServlet extends HttpServlet {
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(adminPageUrl);
             dispatcher.forward(request, response);
         }
+
+    }
+
+    /**
+     * Gets list of services.
+     *
+     * @param session the session
+     * @throws Exception the exception
+     */
+    public void getListOfServices(HttpSession session) throws Exception{
+        ServiceDao serviceDao = new ServiceDao();
+        session.removeAttribute("serviceList");
+        try {
+            List<Service> services = serviceDao.getAllServices();
+            session.setAttribute("serviceList", services);
+        } catch (Exception ex) {
+            logger.info("Error getting list of all services " + ex);
+        }
+
 
     }
 }

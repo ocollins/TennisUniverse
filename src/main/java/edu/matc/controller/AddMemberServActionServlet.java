@@ -56,6 +56,14 @@ public class AddMemberServActionServlet extends HttpServlet {
 
     }
 
+    /**
+     * Store member service string.
+     *
+     * @param request the request
+     * @param person  the person
+     * @param dao     the dao
+     * @return the string
+     */
     public String storeMemberService(HttpServletRequest request, Person person, PersonServiceDao dao) {
         int newPersonServiceId = 0;
         String feedbackMessage = null;
@@ -65,15 +73,15 @@ public class AddMemberServActionServlet extends HttpServlet {
         LocalDate serviceDate = LocalDate.parse(request.getParameter("service_date"));
         dateConverter.convertToDatabaseColumn(serviceDate);
 
-        personService = new PersonService(person.getPersonId(),
-                Integer.parseInt(request.getParameter("service")),
-                serviceDate,
-                request.getParameter("notes"));
+//        personService = new PersonService(person.getPersonId(),
+//                Integer.parseInt(request.getParameter("service")),
+//                serviceDate,
+//                request.getParameter("notes"));
 
         try {
-            newPersonServiceId = dao.a;
+            newPersonServiceId = dao.addPersonService(personService);
             feedbackMessage = "Person was added successfully";
-            logger.info("In Add member servlet added a new person " + newPersonId);
+            logger.info("In Add member servlet added a new person " + newPersonServiceId);
         } catch (HibernateException he) {
             feedbackMessage = "Error adding a new person";
             logger.info("Hibernate Exception " + he);

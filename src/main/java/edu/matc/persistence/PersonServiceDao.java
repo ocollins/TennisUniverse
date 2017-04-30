@@ -77,7 +77,7 @@ public class PersonServiceDao {
      * @return the int
      * @throws HibernateException the hibernate exception
      */
-    public int addPerson(PersonService personService) throws HibernateException{
+    public int addPersonService(PersonService personService) throws HibernateException{
         int id = 0;
         Session session = null;
 

@@ -70,6 +70,7 @@ public class MemberSearchActionServlet extends HttpServlet {
         String adminUrl = (String)session.getAttribute("adminPageUrl");
         String memberSearchUrl = properties.getProperty("memberSearchJsp.name");
 
+
         if (request.getParameter("searchID")!= null && !request.getParameter("searchID").isEmpty() ) {
             //Get member's info for the ID
             personId = Integer.parseInt(request.getParameter("searchID"));

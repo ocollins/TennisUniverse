@@ -1,21 +1,22 @@
 @import url('base.css');
 
-#search_div {
+#selectoptions {
 margin: auto;
 }
 
-#title_header, h4 {
+#entry_form_div {
     text-align: center;
 }
 
-#member_search_table {
-    margin:auto;
-}
+/*#title_header, h4 {*/
+    /*text-align: center;*/
+/*}*/
 
-td {
-    padding: 10px;
-}
+/*#member_search_table {*/
+    /*margin:auto;*/
+/*}*/
 
-.instruction {
+/*td {*/
+    /*padding: 10px;*/
+/*}*/
 
-}

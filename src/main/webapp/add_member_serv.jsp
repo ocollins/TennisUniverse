@@ -26,19 +26,21 @@
 
 <c:import url="menu.jsp"/>
 
-    <div>
+    <div id="entry_form_div">
         <form action="addMemberServActionServlet" name="" id="select_serv_form" method="get">
             <div id="selectoptions">
                 <h2 class="instruction">You are adding services for &nbsp;${aPerson.firstName}&nbsp;${aPerson.lastName}</h2>
                 <h2 class="instruction">Please select service from the list below</h2>
-
+                <p>
                 <select name="service" form="display_form">
                     <c:forEach var="service" items="${serviceList}">
                         <option value="${service.serviceId}">${service.serviceDesc}</option>
                     </c:forEach>
                 </select>
-                <input type="date" name="service_date" required>
-                <input type="text" name="notes">
+                </p>
+
+                <p>Date of service<input type="date" name="service_date" required></p>
+                <p>Comments<input type="text" name="notes"></p>
 
                 <input type="submit" value="OK">
             </div>

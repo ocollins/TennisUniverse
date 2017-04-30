@@ -3,11 +3,13 @@ package edu.matc.persistence;
 import edu.matc.entity.PersonService;
 import edu.matc.entity.Service;
 import edu.matc.memberstatement.CalculateMonthlyStatement;
+import edu.matc.util.LocalDateAttributeConverter;
 import org.apache.log4j.Logger;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.sql.Date;
+import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -21,6 +23,7 @@ public class PersonServiceDaoTest {
     int id;
     Date startDate;
     Date endDate;
+    PersonService personService;
 
     @Before
     public void setup() {
@@ -28,6 +31,10 @@ public class PersonServiceDaoTest {
         id = 101;
         startDate = Date.valueOf("2017-04-01");
         endDate = Date.valueOf("2017-04-30");
+        LocalDateAttributeConverter dateConverter = new LocalDateAttributeConverter();
+        LocalDate dos = LocalDate.parse("2017-04-09");
+        dateConverter.convertToDatabaseColumn(dos);
+        personService = new PersonService();
     }
 
     @Test
@@ -52,6 +59,14 @@ public class PersonServiceDaoTest {
                         " " + personService.getService().getServiceCharge());
         }
         assertTrue(personServicesList.size() == 5);
+
+    }
+
+    @Test
+    public void addPersonServiceTest() throws Exception {
+        int personServiceId = dao.addPersonService(personService);
+        logger.info("New person service " + personServiceId);
+        assertTrue("Invalid add service for a member ", personServiceId > 0 );
 
     }
 
