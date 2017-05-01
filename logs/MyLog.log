@@ -277,3 +277,178 @@
 2017-04-30 21:20:05,784 10478 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - Password from login screen null
 2017-04-30 21:20:05,796 10490 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - Problem getting person ID by user name and password
 2017-04-30 21:20:12,132 16826 [http-nio-8083-exec-8] INFO  edu.matc.controller.RegisterNewUserServlet  - @@@@@@@@@@@@@@@@@@@inserting member id 110
+2017-04-30 21:27:14,142 0    [http-nio-8083-exec-3] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-30 21:27:14,150 8    [http-nio-8083-exec-3] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-30 21:27:14,152 10   [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-30 21:27:14,153 11   [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-30 21:27:14,173 31   [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-30 21:27:14,173 31   [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-30 21:27:14,257 115  [http-nio-8083-exec-3] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-30 21:27:14,433 291  [http-nio-8083-exec-3] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-30 21:27:14,439 297  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-30 21:27:14,440 298  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-30 21:27:14,440 298  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-30 21:27:14,443 301  [http-nio-8083-exec-3] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-30 21:27:14,830 688  [http-nio-8083-exec-3] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-30 21:27:15,085 943  [http-nio-8083-exec-3] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-30 21:27:15,093 951  [http-nio-8083-exec-3] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-30 21:27:25,418 11276 [http-nio-8083-exec-5] INFO  edu.matc.controller.RegisterNewUserServlet  - @@@@@@@@@@@@@@@@@@@inserting member id 110
+2017-04-30 21:27:25,453 11311 [http-nio-8083-exec-5] INFO  edu.matc.controller.RegisterNewUserServlet  - Hibernate error finding user by person id
+2017-04-30 21:27:25,531 11389 [http-nio-8083-exec-5] INFO  edu.matc.controller.RegisterNewUserServlet  - new user id 3
+2017-04-30 21:27:25,539 11397 [http-nio-8083-exec-5] INFO  edu.matc.controller.RegisterNewUserServlet  - User role name from Person member
+2017-04-30 21:27:25,560 11418 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - &&&&&&&&&&&&&&&&&&7 Inside the admin display 
+2017-04-30 21:27:25,561 11419 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - all cookies JSESSIONID D519F73F66A28AAD69D08CDB77101B37
+2017-04-30 21:27:25,561 11419 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - all cookies first_session %7B%22visits%22%3A92%2C%22start%22%3A1493570633263%2C%22last_visit%22%3A1493605635693%2C%22url%22%3A%22http%3A%2F%2Flocalhost%3A8083%2FTennisUniverse%2FadminDispServlet%22%2C%22path%22%3A%22%2FTennisUniverse%2FadminDispServlet%22%2C%22referrer%22%3A%22http%3A%2F%2Flocalhost%3A8083%2FTennisUniverse%2F%22%2C%22referrer_info%22%3A%7B%22host%22%3A%22localhost%3A8083%22%2C%22path%22%3A%22%2FTennisUniverse%2F%22%2C%22protocol%22%3A%22http%3A%22%2C%22port%22%3A%228083%22%2C%22search%22%3A%22%22%2C%22query%22%3A%7B%7D%7D%2C%22search%22%3A%7B%22engine%22%3Anull%2C%22query%22%3Anull%7D%2C%22prev_visit%22%3A1493605629893%2C%22time_since_last_visit%22%3A5800%2C%22version%22%3A0.4%7D
+2017-04-30 21:27:25,561 11419 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - all cookies location %7B%22latitude%22%3A43.073%2C%22longitude%22%3A-89.401%2C%22address%22%3A%7B%22city%22%3A%22Madison%22%2C%22region%22%3A%22WI%22%2C%22country%22%3A%22USA%22%2C%22country_code%22%3A%22US%22%7D%2C%22source%22%3A%22google%22%2C%22version%22%3A0.4%7D
+2017-04-30 21:27:25,561 11419 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - User name from login screen null
+2017-04-30 21:27:25,561 11419 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - Password from login screen null
+2017-04-30 21:27:25,572 11430 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - Problem getting person ID by user name and password
+2017-04-30 21:27:31,689 17547 [http-nio-8083-exec-6] INFO  edu.matc.controller.RegisterNewUserServlet  - @@@@@@@@@@@@@@@@@@@inserting member id 110
+2017-04-30 21:32:12,499 0    [http-nio-8083-exec-4] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-30 21:32:12,529 30   [http-nio-8083-exec-4] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-30 21:32:12,531 32   [http-nio-8083-exec-4] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-30 21:32:12,547 48   [http-nio-8083-exec-4] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-30 21:32:12,679 180  [http-nio-8083-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-30 21:32:12,679 180  [http-nio-8083-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-30 21:32:12,748 249  [http-nio-8083-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-30 21:32:12,940 441  [http-nio-8083-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-30 21:32:12,945 446  [http-nio-8083-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-30 21:32:12,946 447  [http-nio-8083-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-30 21:32:12,946 447  [http-nio-8083-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-30 21:32:12,949 450  [http-nio-8083-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-30 21:32:13,285 786  [http-nio-8083-exec-4] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-30 21:32:13,611 1112 [http-nio-8083-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-30 21:32:13,615 1116 [http-nio-8083-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-30 21:32:25,309 12810 [http-nio-8083-exec-7] INFO  edu.matc.controller.RegisterNewUserServlet  - @@@@@@@@@@@@@@@@@@@inserting member id 110
+2017-04-30 21:32:25,353 12854 [http-nio-8083-exec-7] INFO  edu.matc.controller.RegisterNewUserServlet  - Hibernate error finding user by person id
+2017-04-30 21:32:25,397 12898 [http-nio-8083-exec-7] INFO  edu.matc.controller.RegisterNewUserServlet  - new user id 3
+2017-04-30 21:32:25,402 12903 [http-nio-8083-exec-7] INFO  edu.matc.controller.RegisterNewUserServlet  - User role name from Person member
+2017-04-30 21:32:25,414 12915 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - &&&&&&&&&&&&&&&&&&7 Inside the admin display 
+2017-04-30 21:32:25,414 12915 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - all cookies JSESSIONID AC5929058DD5AD061EA03A178B643FF7
+2017-04-30 21:32:25,414 12915 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - all cookies first_session %7B%22visits%22%3A95%2C%22start%22%3A1493570633263%2C%22last_visit%22%3A1493605934351%2C%22url%22%3A%22http%3A%2F%2Flocalhost%3A8083%2FTennisUniverse%2FadminDispServlet%22%2C%22path%22%3A%22%2FTennisUniverse%2FadminDispServlet%22%2C%22referrer%22%3A%22http%3A%2F%2Flocalhost%3A8083%2FTennisUniverse%2F%22%2C%22referrer_info%22%3A%7B%22host%22%3A%22localhost%3A8083%22%2C%22path%22%3A%22%2FTennisUniverse%2F%22%2C%22protocol%22%3A%22http%3A%22%2C%22port%22%3A%228083%22%2C%22search%22%3A%22%22%2C%22query%22%3A%7B%7D%7D%2C%22search%22%3A%7B%22engine%22%3Anull%2C%22query%22%3Anull%7D%2C%22prev_visit%22%3A1493605928108%2C%22time_since_last_visit%22%3A6243%2C%22version%22%3A0.4%7D
+2017-04-30 21:32:25,414 12915 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - all cookies location %7B%22latitude%22%3A43.073%2C%22longitude%22%3A-89.401%2C%22address%22%3A%7B%22city%22%3A%22Madison%22%2C%22region%22%3A%22WI%22%2C%22country%22%3A%22USA%22%2C%22country_code%22%3A%22US%22%7D%2C%22source%22%3A%22google%22%2C%22version%22%3A0.4%7D
+2017-04-30 21:32:25,414 12915 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - all cookies loginUserName coco
+2017-04-30 21:32:25,414 12915 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - Found user name cookie
+2017-04-30 21:32:25,414 12915 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - all cookies loginPassword Lenochka1
+2017-04-30 21:32:25,414 12915 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - Found password cookie
+2017-04-30 21:32:25,414 12915 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - User name from login screen coco
+2017-04-30 21:32:25,414 12915 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - Password from login screen Lenochka1
+2017-04-30 21:33:44,146 0    [http-nio-8083-exec-6] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-30 21:33:44,153 7    [http-nio-8083-exec-6] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-30 21:33:44,155 9    [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-30 21:33:44,156 10   [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-30 21:33:44,176 30   [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-30 21:33:44,176 30   [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-30 21:33:44,232 86   [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-30 21:33:44,349 203  [http-nio-8083-exec-6] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-30 21:33:44,352 206  [http-nio-8083-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-30 21:33:44,353 207  [http-nio-8083-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-30 21:33:44,353 207  [http-nio-8083-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-30 21:33:44,354 208  [http-nio-8083-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-30 21:33:44,570 424  [http-nio-8083-exec-6] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-30 21:33:44,773 627  [http-nio-8083-exec-6] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-30 21:33:44,778 632  [http-nio-8083-exec-6] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-30 21:33:54,354 10208 [http-nio-8083-exec-8] INFO  edu.matc.controller.RegisterNewUserServlet  - @@@@@@@@@@@@@@@@@@@inserting member id 110
+2017-04-30 21:33:54,373 10227 [http-nio-8083-exec-8] INFO  edu.matc.controller.RegisterNewUserServlet  - Hibernate error finding user by person id
+2017-04-30 21:33:54,429 10283 [http-nio-8083-exec-8] INFO  edu.matc.controller.RegisterNewUserServlet  - new user id 3
+2017-04-30 21:33:54,439 10293 [http-nio-8083-exec-8] INFO  edu.matc.controller.RegisterNewUserServlet  - User role name from Person member
+2017-04-30 21:33:54,473 10327 [http-nio-8083-exec-8] INFO  edu.matc.controller.AdminDispServlet  - &&&&&&&&&&&&&&&&&&7 Inside the admin display 
+2017-04-30 21:33:54,474 10328 [http-nio-8083-exec-8] INFO  edu.matc.controller.AdminDispServlet  - all cookies JSESSIONID C81CEDB5AE804477C688AA8DF3175C2E
+2017-04-30 21:33:54,475 10329 [http-nio-8083-exec-8] INFO  edu.matc.controller.AdminDispServlet  - all cookies first_session %7B%22visits%22%3A97%2C%22start%22%3A1493570633263%2C%22last_visit%22%3A1493606025402%2C%22url%22%3A%22http%3A%2F%2Flocalhost%3A8083%2FTennisUniverse%2FadminDispServlet%22%2C%22path%22%3A%22%2FTennisUniverse%2FadminDispServlet%22%2C%22referrer%22%3A%22http%3A%2F%2Flocalhost%3A8083%2FTennisUniverse%2F%22%2C%22referrer_info%22%3A%7B%22host%22%3A%22localhost%3A8083%22%2C%22path%22%3A%22%2FTennisUniverse%2F%22%2C%22protocol%22%3A%22http%3A%22%2C%22port%22%3A%228083%22%2C%22search%22%3A%22%22%2C%22query%22%3A%7B%7D%7D%2C%22search%22%3A%7B%22engine%22%3Anull%2C%22query%22%3Anull%7D%2C%22prev_visit%22%3A1493605989647%2C%22time_since_last_visit%22%3A35755%2C%22version%22%3A0.4%7D
+2017-04-30 21:33:54,477 10331 [http-nio-8083-exec-8] INFO  edu.matc.controller.AdminDispServlet  - all cookies location %7B%22latitude%22%3A43.073%2C%22longitude%22%3A-89.401%2C%22address%22%3A%7B%22city%22%3A%22Madison%22%2C%22region%22%3A%22WI%22%2C%22country%22%3A%22USA%22%2C%22country_code%22%3A%22US%22%7D%2C%22source%22%3A%22google%22%2C%22version%22%3A0.4%7D
+2017-04-30 21:33:54,477 10331 [http-nio-8083-exec-8] INFO  edu.matc.controller.AdminDispServlet  - all cookies loginUserName coco
+2017-04-30 21:33:54,477 10331 [http-nio-8083-exec-8] INFO  edu.matc.controller.AdminDispServlet  - Found user name cookie
+2017-04-30 21:33:54,477 10331 [http-nio-8083-exec-8] INFO  edu.matc.controller.AdminDispServlet  - all cookies loginPassword Lenochka1
+2017-04-30 21:33:54,477 10331 [http-nio-8083-exec-8] INFO  edu.matc.controller.AdminDispServlet  - Found password cookie
+2017-04-30 21:33:54,477 10331 [http-nio-8083-exec-8] INFO  edu.matc.controller.AdminDispServlet  - User name from login screen coco
+2017-04-30 21:33:54,477 10331 [http-nio-8083-exec-8] INFO  edu.matc.controller.AdminDispServlet  - Password from login screen Lenochka1
+2017-04-30 21:34:00,607 16461 [http-nio-8083-exec-9] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /book_service.jsp N
+2017-04-30 21:35:33,794 0    [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - &&&&&&&&&&&&&&&&&&7 Inside the admin display 
+2017-04-30 21:35:33,805 11   [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - all cookies JSESSIONID 76138FC9702AF2DB2AE68368D268C2E6
+2017-04-30 21:35:33,805 11   [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - all cookies first_session %7B%22visits%22%3A99%2C%22start%22%3A1493570633263%2C%22last_visit%22%3A1493606078660%2C%22url%22%3A%22http%3A%2F%2Flocalhost%3A8083%2FTennisUniverse%2FadminDispServlet%22%2C%22path%22%3A%22%2FTennisUniverse%2FadminDispServlet%22%2C%22referrer%22%3A%22http%3A%2F%2Flocalhost%3A8083%2FTennisUniverse%2F%22%2C%22referrer_info%22%3A%7B%22host%22%3A%22localhost%3A8083%22%2C%22path%22%3A%22%2FTennisUniverse%2F%22%2C%22protocol%22%3A%22http%3A%22%2C%22port%22%3A%228083%22%2C%22search%22%3A%22%22%2C%22query%22%3A%7B%7D%7D%2C%22search%22%3A%7B%22engine%22%3Anull%2C%22query%22%3Anull%7D%2C%22prev_visit%22%3A1493606069607%2C%22time_since_last_visit%22%3A9053%2C%22version%22%3A0.4%7D
+2017-04-30 21:35:33,805 11   [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - all cookies location %7B%22latitude%22%3A43.073%2C%22longitude%22%3A-89.401%2C%22address%22%3A%7B%22city%22%3A%22Madison%22%2C%22region%22%3A%22WI%22%2C%22country%22%3A%22USA%22%2C%22country_code%22%3A%22US%22%7D%2C%22source%22%3A%22google%22%2C%22version%22%3A0.4%7D
+2017-04-30 21:35:33,805 11   [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - User name from login screen null
+2017-04-30 21:35:33,806 12   [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - Password from login screen null
+2017-04-30 21:35:33,965 171  [http-nio-8083-exec-6] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-30 21:35:33,972 178  [http-nio-8083-exec-6] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-30 21:35:33,974 180  [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-30 21:35:33,975 181  [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-30 21:35:34,001 207  [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-30 21:35:34,001 207  [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-30 21:35:34,049 255  [http-nio-8083-exec-6] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-30 21:35:34,139 345  [http-nio-8083-exec-6] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-30 21:35:34,143 349  [http-nio-8083-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-30 21:35:34,144 350  [http-nio-8083-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-30 21:35:34,144 350  [http-nio-8083-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-30 21:35:34,147 353  [http-nio-8083-exec-6] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-30 21:35:34,368 574  [http-nio-8083-exec-6] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-30 21:35:34,580 786  [http-nio-8083-exec-6] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-30 21:35:34,587 793  [http-nio-8083-exec-6] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-30 21:35:35,122 1328 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - Problem getting person ID by user name and password
+2017-04-30 21:35:38,022 4228 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - &&&&&&&&&&&&&&&&&&7 Inside the admin display 
+2017-04-30 21:35:38,024 4230 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - all cookies JSESSIONID 1DD67DBF534B9AF42A025EC2C3CF416C
+2017-04-30 21:35:38,024 4230 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - all cookies first_session %7B%22visits%22%3A100%2C%22start%22%3A1493570633263%2C%22last_visit%22%3A1493606123755%2C%22url%22%3A%22http%3A%2F%2Flocalhost%3A8083%2FTennisUniverse%2FadminDispServlet%22%2C%22path%22%3A%22%2FTennisUniverse%2FadminDispServlet%22%2C%22referrer%22%3A%22http%3A%2F%2Flocalhost%3A8083%2FTennisUniverse%2F%22%2C%22referrer_info%22%3A%7B%22host%22%3A%22localhost%3A8083%22%2C%22path%22%3A%22%2FTennisUniverse%2F%22%2C%22protocol%22%3A%22http%3A%22%2C%22port%22%3A%228083%22%2C%22search%22%3A%22%22%2C%22query%22%3A%7B%7D%7D%2C%22search%22%3A%7B%22engine%22%3Anull%2C%22query%22%3Anull%7D%2C%22prev_visit%22%3A1493606078660%2C%22time_since_last_visit%22%3A45095%2C%22version%22%3A0.4%7D
+2017-04-30 21:35:38,024 4230 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - all cookies location %7B%22latitude%22%3A43.073%2C%22longitude%22%3A-89.401%2C%22address%22%3A%7B%22city%22%3A%22Madison%22%2C%22region%22%3A%22WI%22%2C%22country%22%3A%22USA%22%2C%22country_code%22%3A%22US%22%7D%2C%22source%22%3A%22google%22%2C%22version%22%3A0.4%7D
+2017-04-30 21:35:38,024 4230 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - all cookies loginUserName admin
+2017-04-30 21:35:38,024 4230 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - Found user name cookie
+2017-04-30 21:35:38,024 4230 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - all cookies loginPassword Admin1
+2017-04-30 21:35:38,024 4230 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - Found password cookie
+2017-04-30 21:35:38,024 4230 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - User name from login screen admin
+2017-04-30 21:35:38,024 4230 [http-nio-8083-exec-7] INFO  edu.matc.controller.AdminDispServlet  - Password from login screen Admin1
+2017-04-30 21:35:40,251 6457 [http-nio-8083-exec-1] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /add_member.jsp N
+2017-04-30 21:35:40,252 6458 [http-nio-8083-exec-1] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /update_member.jsp Y
+2017-04-30 21:35:40,252 6458 [http-nio-8083-exec-1] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /delete_member.jsp Y
+2017-04-30 21:35:40,252 6458 [http-nio-8083-exec-1] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /add_member_serv.jsp Y
+2017-04-30 21:35:40,252 6458 [http-nio-8083-exec-1] INFO  edu.matc.controller.AdminActionDirectoryServlet  - /print_statement.jsp Y
+2017-04-30 21:37:03,783 89989 [http-nio-8083-exec-5] INFO  edu.matc.controller.AddMemberActionServlet  - In Add member servlet added a new person 113
+2017-04-30 21:37:21,617 107823 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - &&&&&&&&&&&&&&&&&&7 Inside the admin display 
+2017-04-30 21:37:21,617 107823 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - all cookies JSESSIONID 1DD67DBF534B9AF42A025EC2C3CF416C
+2017-04-30 21:37:21,617 107823 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - all cookies first_session %7B%22visits%22%3A100%2C%22start%22%3A1493570633263%2C%22last_visit%22%3A1493606123755%2C%22url%22%3A%22http%3A%2F%2Flocalhost%3A8083%2FTennisUniverse%2FadminDispServlet%22%2C%22path%22%3A%22%2FTennisUniverse%2FadminDispServlet%22%2C%22referrer%22%3A%22http%3A%2F%2Flocalhost%3A8083%2FTennisUniverse%2F%22%2C%22referrer_info%22%3A%7B%22host%22%3A%22localhost%3A8083%22%2C%22path%22%3A%22%2FTennisUniverse%2F%22%2C%22protocol%22%3A%22http%3A%22%2C%22port%22%3A%228083%22%2C%22search%22%3A%22%22%2C%22query%22%3A%7B%7D%7D%2C%22search%22%3A%7B%22engine%22%3Anull%2C%22query%22%3Anull%7D%2C%22prev_visit%22%3A1493606078660%2C%22time_since_last_visit%22%3A45095%2C%22version%22%3A0.4%7D
+2017-04-30 21:37:21,617 107823 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - all cookies location %7B%22latitude%22%3A43.073%2C%22longitude%22%3A-89.401%2C%22address%22%3A%7B%22city%22%3A%22Madison%22%2C%22region%22%3A%22WI%22%2C%22country%22%3A%22USA%22%2C%22country_code%22%3A%22US%22%7D%2C%22source%22%3A%22google%22%2C%22version%22%3A0.4%7D
+2017-04-30 21:37:21,617 107823 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - all cookies loginUserName admin
+2017-04-30 21:37:21,617 107823 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - Found user name cookie
+2017-04-30 21:37:21,617 107823 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - all cookies loginPassword Admin1
+2017-04-30 21:37:21,617 107823 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - Found password cookie
+2017-04-30 21:37:21,617 107823 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - User name from login screen admin
+2017-04-30 21:37:21,617 107823 [http-nio-8083-exec-6] INFO  edu.matc.controller.AdminDispServlet  - Password from login screen Admin1
+2017-04-30 21:38:21,357 0    [http-nio-8083-exec-4] INFO  org.hibernate.annotations.common.Version  - HCANN000001: Hibernate Commons Annotations {4.0.5.Final}
+2017-04-30 21:38:21,367 10   [http-nio-8083-exec-4] INFO  org.hibernate.Version  - HHH000412: Hibernate Core {4.3.11.Final}
+2017-04-30 21:38:21,369 12   [http-nio-8083-exec-4] INFO  org.hibernate.cfg.Environment  - HHH000206: hibernate.properties not found
+2017-04-30 21:38:21,370 13   [http-nio-8083-exec-4] INFO  org.hibernate.cfg.Environment  - HHH000021: Bytecode provider name : javassist
+2017-04-30 21:38:21,389 32   [http-nio-8083-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000043: Configuring from resource: /hibernate.cfg.xml
+2017-04-30 21:38:21,389 32   [http-nio-8083-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000040: Configuration resource: /hibernate.cfg.xml
+2017-04-30 21:38:21,441 84   [http-nio-8083-exec-4] INFO  org.hibernate.cfg.Configuration  - HHH000041: Configured SessionFactory: null
+2017-04-30 21:38:21,603 246  [http-nio-8083-exec-4] WARN  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000402: Using Hibernate built-in connection pool (not for production use!)
+2017-04-30 21:38:21,607 250  [http-nio-8083-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/TENNIS_UNIVERSE]
+2017-04-30 21:38:21,608 251  [http-nio-8083-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000046: Connection properties: {user=root, password=****}
+2017-04-30 21:38:21,608 251  [http-nio-8083-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000006: Autocommit mode: false
+2017-04-30 21:38:21,614 257  [http-nio-8083-exec-4] INFO  org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl  - HHH000115: Hibernate connection pool size: 20 (min=1)
+2017-04-30 21:38:22,030 673  [http-nio-8083-exec-4] INFO  org.hibernate.dialect.Dialect  - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2017-04-30 21:38:22,309 952  [http-nio-8083-exec-4] INFO  org.hibernate.engine.transaction.internal.TransactionFactoryInitiator  - HHH000399: Using default transaction strategy (direct JDBC transactions)
+2017-04-30 21:38:22,315 958  [http-nio-8083-exec-4] INFO  org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory  - HHH000397: Using ASTQueryTranslatorFactory
+2017-04-30 21:38:37,884 16527 [http-nio-8083-exec-5] INFO  edu.matc.controller.RegisterNewUserServlet  - @@@@@@@@@@@@@@@@@@@inserting member id 113
+2017-04-30 21:38:37,901 16544 [http-nio-8083-exec-5] INFO  edu.matc.controller.RegisterNewUserServlet  - Hibernate error finding user by person id
+2017-04-30 21:38:37,940 16583 [http-nio-8083-exec-5] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-30 21:38:37,940 16583 [http-nio-8083-exec-5] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry 'coco' for key 'USER_NAME'
+2017-04-30 21:38:37,941 16584 [http-nio-8083-exec-5] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-04-30 21:38:37,941 16584 [http-nio-8083-exec-5] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-30 21:38:37,941 16584 [http-nio-8083-exec-5] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry 'coco' for key 'USER_NAME'
+2017-04-30 21:38:37,942 16585 [http-nio-8083-exec-5] INFO  edu.matc.persistence.UserDao  - Error adding a new user org.hibernate.exception.ConstraintViolationException: could not execute statement
+2017-04-30 21:38:37,942 16585 [http-nio-8083-exec-5] INFO  edu.matc.controller.RegisterNewUserServlet  - new user id 4
+2017-04-30 21:38:37,948 16591 [http-nio-8083-exec-5] INFO  edu.matc.controller.RegisterNewUserServlet  - User role name from Person admin
+2017-04-30 21:38:37,957 16600 [http-nio-8083-exec-5] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Error: 1062, SQLState: 23000
+2017-04-30 21:38:37,957 16600 [http-nio-8083-exec-5] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry 'coco' for key 'USER_NAME'
+2017-04-30 21:38:37,957 16600 [http-nio-8083-exec-5] INFO  org.hibernate.engine.jdbc.batch.internal.AbstractBatchImpl  - HHH000010: On release of batch it still contained JDBC statements
+2017-04-30 21:38:37,959 16602 [http-nio-8083-exec-5] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - SQL Warning Code: 1062, SQLState: 23000
+2017-04-30 21:38:37,959 16602 [http-nio-8083-exec-5] WARN  org.hibernate.engine.jdbc.spi.SqlExceptionHelper  - Duplicate entry 'coco' for key 'USER_NAME'
+2017-04-30 21:38:37,959 16602 [http-nio-8083-exec-5] INFO  edu.matc.persistence.UserRoleDao  - Error adding a new user role org.hibernate.exception.ConstraintViolationException: could not execute statement
+2017-04-30 21:38:37,961 16604 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - &&&&&&&&&&&&&&&&&&7 Inside the admin display 
+2017-04-30 21:38:37,961 16604 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - all cookies JSESSIONID 22FE61F6323861007B4B2AE9F3E7E9D4
+2017-04-30 21:38:37,964 16607 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - all cookies first_session %7B%22visits%22%3A102%2C%22start%22%3A1493570633263%2C%22last_visit%22%3A1493606302984%2C%22url%22%3A%22http%3A%2F%2Flocalhost%3A8083%2FTennisUniverse%2FadminDispServlet%22%2C%22path%22%3A%22%2FTennisUniverse%2FadminDispServlet%22%2C%22referrer%22%3A%22http%3A%2F%2Flocalhost%3A8083%2FTennisUniverse%2F%22%2C%22referrer_info%22%3A%7B%22host%22%3A%22localhost%3A8083%22%2C%22path%22%3A%22%2FTennisUniverse%2F%22%2C%22protocol%22%3A%22http%3A%22%2C%22port%22%3A%228083%22%2C%22search%22%3A%22%22%2C%22query%22%3A%7B%7D%7D%2C%22search%22%3A%7B%22engine%22%3Anull%2C%22query%22%3Anull%7D%2C%22prev_visit%22%3A1493606295277%2C%22time_since_last_visit%22%3A7707%2C%22version%22%3A0.4%7D
+2017-04-30 21:38:37,964 16607 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - all cookies location %7B%22latitude%22%3A43.073%2C%22longitude%22%3A-89.401%2C%22address%22%3A%7B%22city%22%3A%22Madison%22%2C%22region%22%3A%22WI%22%2C%22country%22%3A%22USA%22%2C%22country_code%22%3A%22US%22%7D%2C%22source%22%3A%22google%22%2C%22version%22%3A0.4%7D
+2017-04-30 21:38:37,964 16607 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - all cookies loginUserName coco
+2017-04-30 21:38:37,964 16607 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - Found user name cookie
+2017-04-30 21:38:37,964 16607 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - all cookies loginPassword lENOCHKA1
+2017-04-30 21:38:37,964 16607 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - Found password cookie
+2017-04-30 21:38:37,964 16607 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - User name from login screen coco
+2017-04-30 21:38:37,964 16607 [http-nio-8083-exec-5] INFO  edu.matc.controller.AdminDispServlet  - Password from login screen lENOCHKA1

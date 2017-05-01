@@ -51,7 +51,7 @@
                         <td>
                             <select name="role_name">
                                 <option value="member">Member</option>
-                                <option value="admin">Administrator</option>
+                                <option value="administrator">Administrator</option>
                             </select>
                         </td>
                     </tr>
