@@ -29,7 +29,7 @@
 
 <h2>Member Search</h2>
 
-<%--<c:if test="${empty foundMembers}">--%>
+<c:if test="${empty foundMembers}">
 <div id="search_container">
     <form action="memberSearchActionServlet" name="" id="mem_search_form" method="GET">
         <table class="searchtable">
@@ -45,13 +45,14 @@
         </table>
     </form>
 </div>
-<%--</c:if>--%>
+</c:if>
 
 
 <c:if test="${foundMembers}">
-    <%--<p><strong>Click member ID below to select</strong></p>--%>
+    <p><strong>Click member ID below to select</strong></p>
     <div id="members_list_div">
 
+        <form action="memberSearchActionServlet" name="" id="search_by_lastname_form" method="GET">
         <table class="members_list_table" >
             <tr>
                 <th>Member ID</th>
@@ -64,7 +65,10 @@
             </tr>
             <c:forEach var="member" items="${memberList}">
                 <tr>
-                    <td class="member_id"><a href="">${member.personId}</a></td>
+                    <td><a href="#">
+                        <input type="submit" name="searchID"
+                               class="member_id_td"
+                               value="${member.personId}"></a></td>
                     <td>${member.firstName}</td>
                     <td>${member.lastName}</td>
                     <td>${member.birthDt}</td>
@@ -74,6 +78,7 @@
                 </tr>
             </c:forEach>
         </table>
+        </form>
     </div>
 </c:if>
 <c:if test="${!foundMembers}">

@@ -25,6 +25,15 @@ h2 {
     padding: 2rem;
 }
 
+.member_id_td {
+    background-color: rgb(232, 208, 148);
+    font-weight: bold;
+    border: 0;
+    box-shadow:none;
+    border-radius: 0px;
+    font-size: 1rem;
+}
+
 .instruction_td {
     padding: 1.5rem;
     text-align: center;

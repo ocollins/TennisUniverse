@@ -19,3 +19,15 @@ h2 {
 #add_member_service_table {
     margin: auto;
 }
+
+td {
+    text-align: left;
+}
+
+select {
+    width: 100%;
+}
+
+#submit_button {
+    text-align: center;
+}
