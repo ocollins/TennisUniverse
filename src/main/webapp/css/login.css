@@ -91,11 +91,18 @@ ul, li {
 
 .invalid {
     padding-left:22px;
-    line-height:24px;
+    line-height:0.9rem;
     color:#ec3f41;
+    font-size: 1.5rem;
 }
 .valid {
     padding-left:22px;
-    line-height:24px;
+    line-height:0.9rem;
     color:#3a7d34;
+    font-size: 1.5rem;
+}
+
+.red_cross_image {
+    width: 8%;
+    vertical-align: text-top;
 }
