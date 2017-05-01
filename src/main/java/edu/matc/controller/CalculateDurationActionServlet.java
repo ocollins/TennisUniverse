@@ -90,7 +90,8 @@ public class CalculateDurationActionServlet extends HttpServlet {
         //Store duration string in context container
         session.setAttribute("DurationResult",  durationString);
 
-        String responceurl = "/fitness.jsp";
+        String responceurl = properties.getProperty("caloriesCalculatorJsp.name");
+
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responceurl);
         dispatcher.forward(request, response);
 

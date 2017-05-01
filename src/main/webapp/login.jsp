@@ -85,6 +85,7 @@
     <h4>${feedbackMessage}</h4>
     <form action="sendEmailServlet" method="get">
         <h4>Forgot user name or password?</h4>
+        <input type="hidden" value="${personId}" NAME="person_id"> <br/>
         <p class="submit_button"><INPUT TYPE="SUBMIT" VALUE="Send Reminder Email" ></p>
     </form>
 </c:if>

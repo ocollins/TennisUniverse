@@ -34,7 +34,7 @@ public class CaloriesCalculatorDispServlet extends HttpServlet {
 
         //Remove the old session
         HttpSession session = request.getSession(true);
-        session.invalidate();
+        //session.invalidate();
 
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
