@@ -44,7 +44,32 @@ public class AdminDispServlet extends HttpServlet {
      */
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        processActions(request, response);
 
+    }
+
+    /**
+     * Handles HTTP post requests.
+     *
+     * @param request  the HttpServletRequest object
+     * @param response the HttpServletResponse object
+     * @throws ServletException if there is a Servlet failure
+     * @throws IOException      if there is an IO failure
+     */
+    public void doPost(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
+        processActions(request, response);
+
+    }
+
+    /**
+     * Process actions.
+     *
+     * @param request  the request
+     * @param response the response
+     */
+    public void processActions(HttpServletRequest request, HttpServletResponse response)
+            throws ServletException, IOException {
         //Get session object
         HttpSession session = request.getSession(true);
 

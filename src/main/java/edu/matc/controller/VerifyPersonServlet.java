@@ -50,6 +50,7 @@ public class VerifyPersonServlet extends HttpServlet {
         //Remove the old attribute
         HttpSession session = request.getSession(true);
         session.removeAttribute("validPerson");
+        session.removeAttribute("personId");
 
         //Create Person DAO instance
         PersonDao dao = new PersonDao();

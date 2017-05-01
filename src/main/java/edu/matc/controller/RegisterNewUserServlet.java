@@ -92,15 +92,16 @@ public class RegisterNewUserServlet extends HttpServlet {
 
         }
 
-
-
         if (successInsertUser && successInsertUserRole) {
-            responseUrl = properties.getProperty("adminOptionsJsp.name");
+            responseUrl = properties.getProperty("adminDisplayServlet.name");
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
+            dispatcher.forward(request, response);
         } else {
             responseUrl = properties.getProperty("processingErrorJsp.name");
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
+            dispatcher.forward(request, response);
         }
-        RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
-        dispatcher.forward(request, response);
+
 
     }
 

@@ -76,7 +76,13 @@ $(document).ready(function() {
         Cookies.set('loginUserName', userName);
         Cookies.set('loginPassword', password);
 
+    });
 
+    $("#reg_new_user_button").click(function (event) {
+        var userName = $("#new_user_name").val();
+        var password = $("#pass_input1").val();
+        Cookies.set('loginUserName', userName);
+        Cookies.set('loginPassword', password);
 
     });
 
