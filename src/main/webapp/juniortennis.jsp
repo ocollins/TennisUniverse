@@ -25,7 +25,7 @@
 
 <div id="container2">
 
-    <div class="info_div">
+    <div id="info_div">
         <p id="club_info_p">Our objective is to help juniors develop their skills and begin
             competing as early as possible. <strong>Tennis Universe</strong> has earned a reputation
             for helping develop some of the best players in the state. We also put great effort into
@@ -39,15 +39,14 @@
                     Group lessons for junior members of all levels and ages are available after school
                     and on weekends.  We maintain a student to instructor ratio of no more than 6:1,
                     which allows our staff to give plenty of attention to each player on his or her
-                    court.​​
+                    court.
                 </li>
                 <br/>
                 <li><strong>Junior Leagues</strong><br/>
                     Junior league play is offered for those junior members who wish to augment their
                     group lessons with singles and doubles match play. Competitive play is the best
                     way for players to improve their game. Leagues are available all year long.
-                    Winners and runner-ups of each league receive trophies.​​​
-                </li>
+                    Winners and runner-ups of each league receive trophies.​​​</li>
                 <br/>
                 <li><strong>Junior Interclubs</strong><br/>
                     A great way to create more matches for our juniors,
@@ -57,14 +56,13 @@
                     and if we can't find an opponent, then we'll schedule
                     an intra-club where we break our own kids into two
                     groups and play against each other. Either way,
-                    it's always good competition and a fun time!​
-                </li>
+                    it's always good competition and a fun time!​</li>
             </ul>
         </div>
 
     </div>
 
-    <div class="info_div2">
+    <div id="info_div2">
         <img src="images/kidstennis2.jpg" alt="Kids Tennis" id="people_image" class="info_div"></img>
         <p id="lessons_p">Please call front desk to book!</p>
         <%--<div id="phones_div">--%>
