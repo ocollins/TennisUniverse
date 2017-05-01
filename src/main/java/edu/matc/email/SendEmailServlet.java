@@ -54,18 +54,24 @@ public class SendEmailServlet extends HttpServlet {
         String userName = null;
         String password = null;
         int personId = 0;
-        String sendEmailMessage = "Email was sent successfully";
+        String sendEmailMessage = "Email was sent successfully. You can try to log in again.";
+
+        //logger.info("!!!!!!!!!!!!!!!! jsp name in send email servlet " + session.getAttribute("adminPageUrl"));
+
+
 
         //Access application properties to get login jsp name
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("loginJsp.name");
+        String errorUrl = properties.getProperty("processingErrorJsp.name");
 
         HttpSession session = request.getSession(true);
 
         //Remove existing attributes
         session.removeAttribute("validPerson");
         session.removeAttribute("sendEmailMessage");
+        logger.info("$$$$$$$$$$$$$$$$ in Send email servlet " + request.getParameter("person_id"));
 
         //Get person id from the screen
         if (request.getParameter("person_id")!= null && !request.getParameter("person_id").isEmpty()) {

@@ -46,8 +46,12 @@ public class RegisterNewUserServlet extends HttpServlet {
         Properties properties = (Properties) context.getAttribute("applicationProperties");
         String responseUrl = null;
         String feedbackMessage = null;
+        boolean successInsertUser = false;
+        boolean successInsertUserRole = false;
+        boolean foundRegistration = false;
 
-        //Get new user info
+
+                //Get new user info
         String userName = request.getParameter("user_name");
         String password = request.getParameter("password");
 
@@ -58,7 +62,16 @@ public class RegisterNewUserServlet extends HttpServlet {
 
         //Check if the person had already registered and has user name and id
         //if so, send error message back
-        boolean foundRegistration = checkForExistingRegistration(personId);
+        try {
+            foundRegistration = checkForExistingRegistration(personId);
+        } catch (Exception ex) {
+            responseUrl = properties.getProperty("processingErrorJsp.name");
+            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
+            dispatcher.forward(request, response);
+            logger.info("Error finding existing user");
+
+        }
+
         if(foundRegistration) {
             feedbackMessage = "You already have user name and password";
             session.removeAttribute("feedbackMessage");
@@ -66,15 +79,23 @@ public class RegisterNewUserServlet extends HttpServlet {
             responseUrl = properties.getProperty("loginJsp.name");
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
             dispatcher.forward(request, response);
+        } else {
+            try {
+                successInsertUser = insertUser(personId, userName, password);
+                successInsertUserRole = insertUserRole(userName, personId);
+            } catch (Exception ex) {
+                logger.info("Error inserting into USER or USER_ROLE table");
+                responseUrl = properties.getProperty("processingErrorJsp.name");
+                RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
+                dispatcher.forward(request, response);
+            }
+
         }
 
-        boolean successInsertUser = insertUser(personId, userName, password);
 
-        logger.info("result of inserting a user " + successInsertUser);
-        boolean successInsertUserRole = insertUserRole(userName, personId);
 
         if (successInsertUser && successInsertUserRole) {
-            responseUrl = properties.getProperty("tempAdminOptions.name");
+            responseUrl = properties.getProperty("adminOptionsJsp.name");
         } else {
             responseUrl = properties.getProperty("processingErrorJsp.name");
         }
@@ -89,7 +110,7 @@ public class RegisterNewUserServlet extends HttpServlet {
      * @param personId the person id
      * @return the boolean
      */
-    public boolean checkForExistingRegistration(int personId) {
+    public boolean checkForExistingRegistration(int personId) throws Exception{
         UserDao userDao = new UserDao();
         boolean foundRegistration = false;
         try {
@@ -110,7 +131,7 @@ public class RegisterNewUserServlet extends HttpServlet {
      * @param password the password
      * @return the boolean
      */
-    public boolean insertUser(int personId, String userName, String password) {
+    public boolean insertUser(int personId, String userName, String password) throws Exception{
         User user = new User(personId, userName, password);
         UserDao userDao = new UserDao();
 
@@ -130,7 +151,7 @@ public class RegisterNewUserServlet extends HttpServlet {
      * @param userName the user name
      * @return the boolean
      */
-    public boolean insertUserRole(String userName, int personId) {
+    public boolean insertUserRole(String userName, int personId) throws Exception{
         PersonDao personDao = new PersonDao();
         UserRoleDao userRoleDao = new UserRoleDao();
 

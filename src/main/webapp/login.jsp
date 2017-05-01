@@ -23,6 +23,10 @@
 
 <body>
 
+<c:if test="${not empty sendEmailMessage}">
+    <h4>${sendEmailMessage}</h4>
+</c:if>
+
 <c:if test="${empty validPerson}">
     <h1>Login or register new user</h1>
     <h4>Please enter your user name and password</h4>
@@ -90,8 +94,6 @@
     </form>
 </c:if>
 
-<c:if test="${not empty sendEmailMessage}">
-    <h4>${sendEmailMessage}</h4>
-</c:if>
+
 </body>
 </html>

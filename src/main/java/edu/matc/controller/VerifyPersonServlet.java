@@ -57,6 +57,9 @@ public class VerifyPersonServlet extends HttpServlet {
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("loginJsp.name");
+        String errorUrl = properties.getProperty("processingErrorJsp.name");
+
+        logger.info("!!!!!!!!!!!!!!!! in Verify Person servlet " + session.getAttribute("adminPageUrl"));
 
         //Person email address will be used if need to send an email reminder
         String personEmail = null;

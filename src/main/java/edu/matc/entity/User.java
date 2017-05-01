@@ -46,6 +46,7 @@ public class User {
      * @param userPass   the USER password
      */
     public User(int personId, String userName, String userPass) {
+        this.personId = personId;
         this.userName = userName;
         this.userPass = userPass;
     }
