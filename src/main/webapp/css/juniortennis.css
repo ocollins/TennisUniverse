@@ -1,0 +1,75 @@
+@import url('base.css');
+
+#container2 {
+    margin: auto;
+    display: flex;
+    /*align-items: center;*/
+    justify-content: center;
+    width: 80%;
+}
+
+#info_div {
+    width: 55%;
+    padding: 1.5rem 1.2rem 1.5rem 1.2rem;
+}
+
+#info_div2 {
+    width: 45%;
+}
+
+#club_info_p {
+    font-size: 1.5rem;
+    margin: 1rem 2rem 2rem 3rem;
+    padding-left: 3.5rem;
+}
+
+#people_image {
+    margin: 1rem 1.2rem 2rem 2.8rem;
+    border-radius: 10px;
+    box-shadow: 10px -10px 5px grey;
+    width: 70%;
+
+}
+
+#lessons_div{
+    padding-left: 3.5rem;
+}
+
+#lessons_p {
+    width: 80%;
+}
+
+#phones_div{
+    font-size: 1.2rem;
+    padding: 1rem;
+}
+
+
+h2 {
+    background-color: rgb(112, 144, 126);
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    border: solid 4px rgba(232, 208, 148, 0.5);
+    margin-left: 4.8rem;
+}
+
+p {
+    margin-left: 40px;
+    font-size: 20px;
+}
+
+#intro li{
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+li {
+    text-align: left;
+}
+
+#lessons {
+    clear: left;
+}
+

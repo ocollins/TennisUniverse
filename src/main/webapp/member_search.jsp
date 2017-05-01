@@ -29,7 +29,7 @@
 
 <h2>Member Search</h2>
 
-<c:if test="${empty foundMembers}">
+<%--<c:if test="${empty foundMembers}">--%>
 <div id="search_container">
     <form action="memberSearchActionServlet" name="" id="mem_search_form" method="GET">
         <table class="searchtable">
@@ -45,11 +45,11 @@
         </table>
     </form>
 </div>
-</c:if>
+<%--</c:if>--%>
 
 
 <c:if test="${foundMembers}">
-    <p><strong>Click member ID below to select</strong></p>
+    <%--<p><strong>Click member ID below to select</strong></p>--%>
     <div id="members_list_div">
 
         <table class="members_list_table" >

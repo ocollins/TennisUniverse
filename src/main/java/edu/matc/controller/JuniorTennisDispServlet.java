@@ -1,20 +1,25 @@
 package edu.matc.controller;
 
-import java.io.*;
-import java.util.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
-import javax.servlet.annotation.*;
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+import java.io.IOException;
+import java.util.Properties;
 
 /**
- * Adult Tennis page Servlet
+ * junior Tennis page Servlet
  * @author Olena Collins
  */
 @WebServlet(
-        name = "adultTennisDispServlet",
-        urlPatterns = { "/adultTennisDispServlet" }
+        name = "juniorTennisDispServlet",
+        urlPatterns = { "/juniorTennisDispServlet" }
 )
-public class AdultTennisDispServlet extends HttpServlet {
+public class JuniorTennisDispServlet extends HttpServlet {
     /**
      * Handles HTTP GET requests.
      *
@@ -33,9 +38,9 @@ public class AdultTennisDispServlet extends HttpServlet {
 
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
-        String url = properties.getProperty("adultTennisJsp.name");
+        String url = properties.getProperty("juniorTennisJsp.name");
 
-        //String url = "/adulttennis.jsp";
+        //String url = "/juniortennis.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 
