@@ -65,7 +65,8 @@
                         <td><input type="text" name="city" id="city" value="" required></td>
                     </tr>
                     <tr><td>State</td>
-                        <td><input type="text" name="state" id="state" value="" required></td>
+                        <%--<td><input type="text" name="state" id="state" value="" required></td>--%>
+                        <td><c:import url="select_states.jsp"/></td>
                     </tr>
                     <tr><td>Zip Code</td>
                         <td><input type="text" name="zip" id="zip" value="" required></td>
