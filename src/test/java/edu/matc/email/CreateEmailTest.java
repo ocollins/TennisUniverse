@@ -25,15 +25,15 @@ public class CreateEmailTest {
     public void startup() {
         dao = new UserDao();
         sendEmail = new SendEmail();
-        emailAddress="playtennisinportage@gmail.com";
+        emailAddress="olenacollins1333@gmail.com";
         userName = "Coco";
         password = "Buddy1";
     }
 
 
     @Test
-    public void createPDFTest() throws Exception {
-        sendEmail.sendEmail(userName, emailAddress, password);
+    public void createEmailTest() throws Exception {
+        sendEmail.sendEmail(userName, password, emailAddress);
 
     }
 

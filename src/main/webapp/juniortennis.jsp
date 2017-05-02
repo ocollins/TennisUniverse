@@ -46,7 +46,7 @@
                     Junior league play is offered for those junior members who wish to augment their
                     group lessons with singles and doubles match play. Competitive play is the best
                     way for players to improve their game. Leagues are available all year long.
-                    Winners and runner-ups of each league receive trophies.​​​&</li>*
+                    Winners and runner-ups of each league receive trophies.</li>
                 <br/>
                 <li><strong>Junior Interclubs</strong><br/>
                     A great way to create more matches for our juniors,
@@ -56,7 +56,7 @@
                     and if we can't find an opponent, then we'll schedule
                     an intra-club where we break our own kids into two
                     groups and play against each other. Either way,
-                    it's always good competition and a fun time!​</li>
+                    it's always good competition and a fun time!</li>
             </ul>
         </div>
 

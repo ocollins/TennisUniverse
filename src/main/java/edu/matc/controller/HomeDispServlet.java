@@ -44,6 +44,13 @@ public class HomeDispServlet extends HttpServlet {
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("indexJsp.name");
 
+        // session object
+        HttpSession session = request.getSession(true);
+
+        session.removeAttribute("sendEmailMessage");
+        session.removeAttribute("validPerson");
+        session.removeAttribute("alreadyRegisteredMessage");
+
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 

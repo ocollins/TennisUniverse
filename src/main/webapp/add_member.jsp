@@ -2,8 +2,10 @@
   This is a page to add a new member information
   Author: Olena Collins
 --%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<%--<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"--%>
+<%--"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">--%>
+
+<!DOCTYPE html>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 

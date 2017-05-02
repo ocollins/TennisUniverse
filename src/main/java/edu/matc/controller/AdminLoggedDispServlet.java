@@ -72,6 +72,9 @@ public class AdminLoggedDispServlet extends HttpServlet {
         session.removeAttribute("feedbackMessage");
         session.removeAttribute("aPerson");
         session.removeAttribute("resultMessage");
+        session.removeAttribute("sendEmailMessage");
+        session.removeAttribute("validPerson");
+        session.removeAttribute("alreadyRegisteredMessage");
 
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
