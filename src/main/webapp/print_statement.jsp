@@ -54,7 +54,8 @@
             </c:if>
         </form>
         <c:if test="${not empty feedbackMessage}">
-            <p id="feedback_p">${feedbackMessage}</p>
+            <p class="feedback_p">${feedbackMessage}</p>
+            <h3 class="feedback_p"><a href="adminDispServlet">Back to Admin Page</a></h3>
         </c:if>
     </div>
 <c:import url="footer.jsp"/>

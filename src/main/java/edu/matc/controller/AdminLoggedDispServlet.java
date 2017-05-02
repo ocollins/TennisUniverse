@@ -12,27 +12,22 @@ import edu.matc.persistence.UserDao;
 import org.apache.log4j.Logger;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-import java.io.IOException;
-import java.io.*;
-import java.util.*;
-import javax.servlet.*;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
-import javax.servlet.annotation.*;
-import javax.servlet.http.Cookie;
+import java.io.IOException;
+import java.util.List;
+import java.util.Properties;
 
 /**
  * The type Log in display servlet.
  */
 @WebServlet(
-        name = "adminDispServlet",
-        urlPatterns = { "/adminDispServlet" }
+        name = "adminLoggedDispServlet",
+        urlPatterns = { "/adminLoggedDispServlet" }
 )
-public class AdminDispServlet extends HttpServlet {
+public class AdminLoggedDispServlet extends HttpServlet {
     private final Logger logger = Logger.getLogger(this.getClass());
     /**
      * Handles HTTP GET requests.

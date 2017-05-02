@@ -11,7 +11,7 @@ margin: auto;
     text-align: center;
 }
 
-#feedback_p {
+.feedback_p {
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;

@@ -45,6 +45,7 @@ public class AdminActionDirectoryServlet extends HttpServlet {
 
         //Get the adminPageUrl for the page, requested by the user
         String adminPageUrl = request.getParameter("adm_option");
+        logger.info("!!!!!!!!! in the admin directory " + adminPageUrl);
 
         session.removeAttribute("serviceList");
 

@@ -92,7 +92,7 @@ ul, li {
 
 .invalid {
     /*padding-left:22px;*/
-    padding: 1rem 1rem 1rem 0.1rem;
+    padding: 1rem 1rem 1rem 1.8rem;
     line-height: 0.9rem;
     color:#ec3f41;
     font-size: 1.3rem;
@@ -101,7 +101,7 @@ ul, li {
 }
 .valid {
     /*padding-left:0.9rem;*/
-    padding: 1rem 1rem 1rem 0.1rem;
+    padding: 1rem 1rem 1rem 1.8rem;
     line-height:0.9rem;
     color:#3a7d34;
     font-size: 1.3rem;
