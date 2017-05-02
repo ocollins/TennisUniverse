@@ -20,9 +20,8 @@ import java.io.InterruptedIOException;
 import java.util.Properties;
 import java.util.logging.Logger;
 
-
 /**
- * The type Log in display servlet.
+ * Verify person is on the system before registering.
  */
 @WebServlet(
         name = "verifyPersonServlet",
@@ -51,6 +50,8 @@ public class VerifyPersonServlet extends HttpServlet {
         HttpSession session = request.getSession(true);
         session.removeAttribute("validPerson");
         session.removeAttribute("personId");
+        //In case email function was done first, remove the message so it is not displayed
+        session.removeAttribute("sendEmailMessage");
 
         //Create Person DAO instance
         PersonDao dao = new PersonDao();

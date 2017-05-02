@@ -31,7 +31,7 @@ public class LogInDispServlet extends HttpServlet {
 
         //Remove the old session
         HttpSession session = request.getSession(true);
-        session.invalidate();
+        //session.invalidate();
 
         //String url = "/login.jsp";
         ServletContext context = getServletContext();

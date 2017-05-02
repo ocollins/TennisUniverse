@@ -38,17 +38,15 @@ $(document).ready(function() {
         //validate the length
         if ( pswd.length < 6 ) {
             $('#length').removeClass('valid').addClass('invalid');
-            $( ".valid" ).prepend( "<img src=\"images/green_checkmark.png\" alt=\"X\" class=\"red_cross_image\"/>" );
+
             validLength = true;
         } else {
             $('#length').removeClass('invalid').addClass('valid');
-            $( ".valid" ).prepend( "<img src=\"images/green_checkmark.png\" alt=\"X\" class=\"red_cross_image\"/>" )
         }
 
         //validate capital letter
         if ( pswd.match(/[A-Z]/) ) {
             $('#capital').removeClass('invalid').addClass('valid');
-            $( ".valid" ).prepend( "<img src=\"images/green_checkmark.png\" alt=\"X\" class=\"red_cross_image\"/>" )
             validCap = true;
         } else {
             $('#capital').removeClass('valid').addClass('invalid');
@@ -57,7 +55,6 @@ $(document).ready(function() {
         //validate number
         if ( pswd.match(/\d/) ) {
             $('#number').removeClass('invalid').addClass('valid');
-            $( ".valid" ).prepend( "<img src=\"images/green_checkmark.png\" alt=\"X\" class=\"red_cross_image\"/>" )
             validNumber = true;
         } else {
             $('#number').removeClass('valid').addClass('invalid');

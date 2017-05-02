@@ -120,7 +120,7 @@ public class MemberSearchActionServlet extends HttpServlet {
      * @throws HibernateException the hibernate exception
      */
     public Person getMemberInfo(HttpServletRequest request, int personId) throws HibernateException{
-        session.setAttribute("searchID", personId);
+//        session.setAttribute("searchID", personId);
 
         try {
             aPerson = dao.getPerson(personId);

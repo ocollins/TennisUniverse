@@ -45,15 +45,19 @@ public class RegisterNewUserServlet extends HttpServlet {
         ServletContext context = getServletContext();
         Properties properties = (Properties) context.getAttribute("applicationProperties");
         String responseUrl = null;
-        String feedbackMessage = null;
+        String alreadyRegisteredMessage = "You already have user name and password";;
         boolean successInsertUser = false;
         boolean successInsertUserRole = false;
         boolean foundRegistration = false;
 
 
-                //Get new user info
+        //Get new user info
         String userName = request.getParameter("user_name");
         String password = request.getParameter("password");
+
+        session.removeAttribute("alreadyRegisteredMessage");
+        //In case email function was done first, remove the message so it is not displayed
+        session.removeAttribute("sendEmailMessage");
 
         //Get personId that the user is registering for
         String personIdString = String.valueOf(session.getAttribute("personId"));
@@ -73,9 +77,7 @@ public class RegisterNewUserServlet extends HttpServlet {
         }
 
         if(foundRegistration) {
-            feedbackMessage = "You already have user name and password";
-            session.removeAttribute("feedbackMessage");
-            session.setAttribute("feedbackMessage", feedbackMessage);
+            session.setAttribute("alreadyRegisteredMessage", alreadyRegisteredMessage);
             responseUrl = properties.getProperty("loginJsp.name");
             RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
             dispatcher.forward(request, response);

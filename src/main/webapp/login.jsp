@@ -75,13 +75,10 @@
         <h4>Password must meet the following requirements:</h4>
         <ul>
             <li id="capital" class="invalid">
-                <img src="images/red_cross.png" alt="X" class="red_cross_image"/>
                 At least <strong>one capital letter</strong></li>
             <li id="number" class="invalid">
-                <img src="images/red_cross.png" alt="X" class="red_cross_image"/>
                 At least <strong>one number</strong></li>
             <li id="length" class="invalid">
-                <img src="images/red_cross.png" alt="X" class="red_cross_image"/>
                 Be at least <strong>6 characters</strong></li>
         </ul>
     </div>
@@ -91,8 +88,8 @@
     <p id="invalididmessage">Invalid member ID!</p
 </c:if>
 
-<c:if test="${not empty feedbackMessage}">
-    <h4>${feedbackMessage}</h4>
+<c:if test="${not empty alreadyRegisteredMessage}">
+    <h4>${alreadyRegisteredMessage}</h4>
     <form action="sendEmailServlet" method="get">
         <h4>Forgot user name or password?</h4>
         <input type="hidden" value="${personId}" NAME="person_id"> <br/>

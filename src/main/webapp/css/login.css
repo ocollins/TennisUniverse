@@ -41,10 +41,11 @@ td.data {
 }
 
 h4 {
-    width: 40%;
+    width: 90%;
     margin: auto;
     padding: 25px;
     text-align: center;
+    font-size: 1.6rem;
 }
 
 p{
@@ -90,19 +91,30 @@ ul, li {
 }
 
 .invalid {
-    padding-left:22px;
-    line-height:0.9rem;
+    /*padding-left:22px;*/
+    padding: 1rem 1rem 1rem 0.1rem;
+    line-height: 0.9rem;
     color:#ec3f41;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    background:url(../images/cancel.png) no-repeat 0 50%;
+    text-align: left;
 }
 .valid {
-    padding-left:22px;
+    /*padding-left:0.9rem;*/
+    padding: 1rem 1rem 1rem 0.1rem;
     line-height:0.9rem;
     color:#3a7d34;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    background:url(../images/accept.png) no-repeat 0 50%;
+    text-align: left;
 }
 
-.red_cross_image {
-    width: 8%;
-    vertical-align: text-top;
-}
+/*.red_cross_image {*/
+    /*width: 8%;*/
+    /*vertical-align: text-top;*/
+/*}*/
+
+/*.green_check_image {*/
+    /*width: 8%;*/
+    /*vertical-align: text-top;*/
+/*}*/

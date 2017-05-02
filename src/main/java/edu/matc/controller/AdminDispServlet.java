@@ -73,6 +73,9 @@ public class AdminDispServlet extends HttpServlet {
         //Get session object
         HttpSession session = request.getSession(true);
 
+        //Remove attributes created in various admin pages
+        session.removeAttribute("feedbackMessage");
+
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = null;

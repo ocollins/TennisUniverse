@@ -46,6 +46,8 @@ public class AdminActionDirectoryServlet extends HttpServlet {
         //Get the adminPageUrl for the page, requested by the user
         String adminPageUrl = request.getParameter("adm_option");
 
+        session.removeAttribute("serviceList");
+
         //Store the url in the session container, so it will be called by the
         //member search page
         session.setAttribute("adminPageUrl", adminPageUrl);
@@ -98,7 +100,7 @@ public class AdminActionDirectoryServlet extends HttpServlet {
      */
     public void getListOfServices(HttpSession session) throws Exception{
         ServiceDao serviceDao = new ServiceDao();
-        session.removeAttribute("serviceList");
+
         try {
             List<Service> services = serviceDao.getAllServices();
             session.setAttribute("serviceList", services);
