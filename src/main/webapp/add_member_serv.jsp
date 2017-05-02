@@ -29,6 +29,7 @@
     <h2 class="instruction">Please select service from the list below</h2>
 
     <c:import url="select_service.jsp"/>
+    <h3 class="feedback_p"><a href="adminDispServlet">Back to Admin Page</a></h3>
 
 
 <c:import url="footer.jsp"/>

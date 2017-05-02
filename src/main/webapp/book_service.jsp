@@ -30,6 +30,8 @@
 
     <c:import url="select_service.jsp"/>
 
+    <h3 class="feedback_p"><a href="adminDispServlet">Back to Admin Page</a></h3>
+
 <c:import url="footer.jsp"/>
 </div>
 </body>

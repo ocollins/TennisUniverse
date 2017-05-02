@@ -41,7 +41,7 @@ td.data {
 }
 
 h4 {
-    width: 90%;
+    width: 80%;
     margin: auto;
     padding: 25px;
     text-align: center;
@@ -92,21 +92,21 @@ ul, li {
 
 .invalid {
     /*padding-left:22px;*/
-    padding: 1rem 1rem 1rem 1.8rem;
+    padding: 1rem 1rem 1rem 1rem;
     line-height: 0.9rem;
     color:#ec3f41;
     font-size: 1.3rem;
     background:url(../images/cancel.png) no-repeat 0 50%;
-    text-align: left;
+    text-align: center;
 }
 .valid {
     /*padding-left:0.9rem;*/
-    padding: 1rem 1rem 1rem 1.8rem;
+    padding: 1rem 1rem 1rem 1rem;
     line-height:0.9rem;
     color:#3a7d34;
     font-size: 1.3rem;
     background:url(../images/accept.png) no-repeat 0 50%;
-    text-align: left;
+    text-align: center;
 }
 
 /*.red_cross_image {*/
