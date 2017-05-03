@@ -99,3 +99,7 @@
 |4/20/2017|Add logic to email member statement to the member|4|||
 |4/21/2017|Add junior tennis page|4|||
 |4/23/2017|Add fitness page|4|||
+|Week 14||20|||
+||Fine tunning all||||
+|Week 15||3|||
+|5/2/2017|Presentation1||||
