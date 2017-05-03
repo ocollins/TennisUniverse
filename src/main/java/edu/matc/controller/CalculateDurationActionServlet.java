@@ -57,13 +57,11 @@ public class CalculateDurationActionServlet extends HttpServlet {
 
         //Call REST service to get duration result
         Client client = ClientBuilder.newClient();
-        //String url = "http://localhost:8080/CaloriesCalculator/duration/json/";
 
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("durationCalculator.path");
 
-        //String url = "http://52.14.26.13:8080/CaloriesCalculator/duration/json/";
         url = url + activity + "/" + weight + "/" + calories +"/" + unit;
         logger.info(url);
 
@@ -122,6 +120,12 @@ public class CalculateDurationActionServlet extends HttpServlet {
 
     }
 
+    /**
+     * Convert duration to string string.
+     *
+     * @param durationDouble the duration double
+     * @return the string
+     */
     public String convertDurationToString(Double durationDouble) {
         int durationHours= durationDouble.intValue();
         Double durationDecimal = durationDouble - durationHours;

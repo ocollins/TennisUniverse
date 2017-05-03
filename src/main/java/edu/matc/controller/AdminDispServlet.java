@@ -104,14 +104,6 @@ public class AdminDispServlet extends HttpServlet {
             }
         }
 
-        //If could not get user name or password redirect to the error page
-//        if (userName.isEmpty() || password.isEmpty()) {
-//            logger.info("User name or password is missing");
-//            url = properties.getProperty("processingErrorJsp.name");
-//            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-//            dispatcher.forward(request, response);
-//
-//        }
 
         logger.info("User name from login screen " + userName);
         logger.info("Password from login screen " + password);

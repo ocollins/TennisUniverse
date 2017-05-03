@@ -13,6 +13,14 @@ import javax.mail.internet.*;
 public class SendEmail {
     private Logger logger = Logger.getLogger(this.getClass());
 
+    /**
+     * Send email.
+     *
+     * @param userName     the user name
+     * @param password     the password
+     * @param emailAddress the email address
+     * @throws MessagingException the messaging exception
+     */
     public void sendEmail(String userName, String password, String emailAddress)
             throws MessagingException{
         // Recipient's email ID needs to be mentioned.

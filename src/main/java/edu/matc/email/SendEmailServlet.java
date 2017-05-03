@@ -20,12 +20,9 @@ import java.util.ArrayList;
 import java.util.Properties;
 
 /**
- * The type Send email servlet.
+ * Send email to a member action servlet
  */
-/* Member search action selection servlet
-        *
-        * @author Olena Collins
-        */
+
 @WebServlet(
         name = "sendEmailServlet",
         urlPatterns = { "/sendEmailServlet" }
@@ -56,10 +53,6 @@ public class SendEmailServlet extends HttpServlet {
         int personId = 0;
         String sendEmailMessage = "Email was sent successfully. You can try to log in again.";
 
-        //logger.info("!!!!!!!!!!!!!!!! jsp name in send email servlet " + session.getAttribute("adminPageUrl"));
-
-
-
         //Access application properties to get login jsp name
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
@@ -71,7 +64,7 @@ public class SendEmailServlet extends HttpServlet {
         //Remove existing attributes
         session.removeAttribute("validPerson");
         session.removeAttribute("sendEmailMessage");
-        logger.info("$$$$$$$$$$$$$$$$ in Send email servlet " + request.getParameter("person_id"));
+        //logger.info("$$$$$$$$$$$$$$$$ in Send email servlet " + request.getParameter("person_id"));
 
         //Get person id from the screen
         if (request.getParameter("person_id")!= null && !request.getParameter("person_id").isEmpty()) {

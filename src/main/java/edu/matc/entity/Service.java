@@ -11,11 +11,6 @@ import org.hibernate.annotations.Parameter;
 import javax.persistence.*;
 import java.util.*;
 
-/**
- * A class to represent a person.
- *
- * @author OCollins
- */
 @Entity
 @Table(name = "SERVICE")
 public class Service {
@@ -141,18 +136,6 @@ public class Service {
     public void setServiceCharge(double serviceCharge) {
         this.serviceCharge = serviceCharge;
     }
-
-//    @Access(AccessType.PROPERTY)
-//    //@OneToMany(fetch = FetchType.LAZY, mappedBy = "service")
-//    @OneToMany
-//    public Set<PersonSer> getPersons() {
-//        return this.persons;
-//    }
-//
-//    public void setPersons(Set<Person> persons) {
-//
-//        this.persons = persons;
-//    }
 
     @Override
     public String toString() {

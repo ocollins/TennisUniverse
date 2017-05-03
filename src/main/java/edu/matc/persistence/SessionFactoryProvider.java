@@ -9,6 +9,7 @@ import org.apache.log4j.*;
 
 /**
  * This file provides a SessionFactory for use with DAOS using Hibernate
+ *
  * @author O Collins
  * @version 1.0 02/04/17.
  */
@@ -17,6 +18,9 @@ public class SessionFactoryProvider {
 
     private static SessionFactory sessionFactory;
 
+    /**
+     * Call method creating SessionFactory.
+     */
     public static void createSessionFactory() {
     SessionFactoryProvider provider = new SessionFactoryProvider();
 
@@ -32,6 +36,9 @@ public class SessionFactoryProvider {
         }
     }
 
+    /**
+     * Create session factory.
+     */
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             createSessionFactory();

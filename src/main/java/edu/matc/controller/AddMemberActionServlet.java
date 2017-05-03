@@ -29,14 +29,9 @@ import java.util.Properties;
 )
 public class AddMemberActionServlet extends HttpServlet {
     private final Logger logger = Logger.getLogger(this.getClass());
-    /**
-     * The Dao.
-     */
     PersonDao dao;
-    /**
-     * The New person.
-     */
     Person newPerson;
+
     /**
      * Handles HTTP GET requests.
      *
@@ -48,15 +43,10 @@ public class AddMemberActionServlet extends HttpServlet {
     public void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        //Remove the old session
         HttpSession session = request.getSession(true);
 
-        //logger.info("OVC displaying url " + url);
-
-        session.removeAttribute("feedbackMessage");
         session.setAttribute("feedbackMessage", storeMemberInfo(request));
 
-        //String url = "/add_member.jsp";
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("addMemberJsp.name");

@@ -1,16 +1,11 @@
 package edu.matc.entity;
 
-/**
- * A class to a list of USERs.
- * @author O Collins
- */
-
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;
 
 /**
- * A class to represent a person.
+ * A class to represent a user.
  *
  * @author OCollins
  */

@@ -23,7 +23,9 @@ import java.util.Properties;
 import java.util.Set;
 
 /**
- * Admin action selection servlet
+ * Add member service action servlet
+ * Driver to add services for members
+ * !! Still under construction
  * @author Olena Collins
  */
 @WebServlet(
@@ -45,12 +47,12 @@ public class AddMemberServActionServlet extends HttpServlet {
         ServletContext context = getServletContext();
         HttpSession session = request.getSession();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
+        //Add member service jsp path
         String url = properties.getProperty("addMemberServiceJsp.name");
 
         PersonServiceDao dao = new PersonServiceDao();
         Person person = (Person)session.getAttribute("aPerson");
 
-        //String url = "/add_member_serv.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 
@@ -72,11 +74,6 @@ public class AddMemberServActionServlet extends HttpServlet {
         LocalDateAttributeConverter dateConverter = new LocalDateAttributeConverter();
         LocalDate serviceDate = LocalDate.parse(request.getParameter("service_date"));
         dateConverter.convertToDatabaseColumn(serviceDate);
-
-//        personService = new PersonService(person.getPersonId(),
-//                Integer.parseInt(request.getParameter("service")),
-//                serviceDate,
-//                request.getParameter("notes"));
 
         try {
             newPersonServiceId = dao.addPersonService(personService);

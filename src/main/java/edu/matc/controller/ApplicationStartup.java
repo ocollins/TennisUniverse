@@ -9,7 +9,7 @@ import javax.servlet.http.*;
 import javax.servlet.annotation.*;
 
 /**
- *  Tennis Univerese Management Application Startup Servlet for Project 4
+ *  Tennis Universe Application Startup Servlet
  *  @author Olena Collins
  */
 

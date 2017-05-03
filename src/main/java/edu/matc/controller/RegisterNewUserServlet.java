@@ -20,7 +20,7 @@ import java.util.Properties;
 
 
 /**
- * Servlet to cleanup form data from the screen
+ * Register new user servlet
  * @author Olena Collins
  */
 @WebServlet(
@@ -62,7 +62,6 @@ public class RegisterNewUserServlet extends HttpServlet {
         //Get personId that the user is registering for
         String personIdString = String.valueOf(session.getAttribute("personId"));
         int personId = Integer.parseInt(personIdString);
-        logger.info("@@@@@@@@@@@@@@@@@@@inserting member id " + personId);
 
         //Check if the person had already registered and has user name and id
         //if so, send error message back
@@ -165,7 +164,7 @@ public class RegisterNewUserServlet extends HttpServlet {
         //Create new userRole object
         UserRole userRole = new UserRole(userName, roleName);
 
-        //Insert new User Role into the thable
+        //Insert new User Role into the table
         try {
             int result = userRoleDao.addUserRole(userRole);
             return true;

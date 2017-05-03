@@ -29,11 +29,6 @@ public class LogInDispServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-        //Remove the old session
-        HttpSession session = request.getSession(true);
-        //session.invalidate();
-
-        //String url = "/login.jsp";
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("loginJsp.name");

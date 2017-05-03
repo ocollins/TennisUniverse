@@ -60,7 +60,6 @@ public class UpdateMemberActionServlet extends HttpServlet {
         session.setAttribute("resultMessage", message);
         session.removeAttribute("aPerson");
 
-        //String url = "/update_member.jsp";
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("updateMemberJsp.name");
@@ -93,8 +92,6 @@ public class UpdateMemberActionServlet extends HttpServlet {
         try {
             dao.updatePerson(updatePerson);
             updateSuccess = true;
-            logger.info("##############In update member servlet ###############" + updateSuccess);
-            logger.info("updated first name " + request.getParameter("fname"));
         } catch (HibernateException he) {
             logger.info("Hibernate Exception " + he);
         }

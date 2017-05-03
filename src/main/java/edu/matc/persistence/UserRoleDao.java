@@ -37,6 +37,11 @@ public class UserRoleDao {
         return id;
     }
 
+    /**
+     * add a userRole role
+     * @param id user id
+     * @return user role
+     */
     public UserRole getUserRole(int id) {
         Session session = SessionFactoryProvider.getSessionFactory().openSession();
         UserRole UserRole = null;

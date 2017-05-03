@@ -29,13 +29,11 @@ public class AdultTennisDispServlet extends HttpServlet {
 
         //Remove the old session
         HttpSession session = request.getSession(true);
-        //session.invalidate();
 
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("adultTennisJsp.name");
 
-        //String url = "/adulttennis.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 

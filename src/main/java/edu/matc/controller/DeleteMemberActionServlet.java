@@ -60,7 +60,6 @@ public class DeleteMemberActionServlet extends HttpServlet {
         session.setAttribute("resultMessage", message);
         session.removeAttribute("aPerson");
 
-        //String url = "/delete_member.jsp";
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("deleteMemberJsp.name");

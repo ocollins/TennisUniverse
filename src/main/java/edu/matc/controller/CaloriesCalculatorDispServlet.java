@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 /**
- * Adult Tennis page Servlet Java113
+ * Servlet to display calories calculator jsp
  * @author Olena Collins
  */
 @WebServlet(
@@ -32,9 +32,7 @@ public class CaloriesCalculatorDispServlet extends HttpServlet {
             throws ServletException, IOException {
         response.setContentType("text/html");
 
-        //Remove the old session
         HttpSession session = request.getSession(true);
-        //session.invalidate();
 
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");

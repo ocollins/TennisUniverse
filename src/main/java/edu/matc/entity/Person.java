@@ -1,10 +1,5 @@
 package edu.matc.entity;
 
-/**
- * A class to represent a person.
- * @author O Collins
- */
-
 import edu.matc.util.LocalDateAttributeConverter;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -74,14 +69,7 @@ public class Person {
     @Column(name = "LAST_UPDATED")
     private Timestamp lastUpdated;
 
-//    @Column
-//    @ElementCollection(targetClass = Service.class)
     private Set<Service> services = new HashSet<Service>(0);
-//    private Set<PersonService> personServiceSet;
-//
-//    @OneToMany(cascade = CascadeType.ALL)
-//    private Set<PersonAccount> personAccountSet;
-
 
     /**
      * Instantiates a new Person.
@@ -123,7 +111,6 @@ public class Person {
         this.phone = phone;
         setLastUpdated();
         this.lastUpdated = getLastUpdated();
-        //this.lastUpdated = lastUpdated;
     }
 
     /**

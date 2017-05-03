@@ -25,9 +25,6 @@ public class PersonService implements Serializable{
     @Column(name = "PERSON_ID")
     private int personId;
 
-//    @Column(name = "SERVICE_ID")
-//    private int serviceId;
-
     @Column(name = "SERVICE_DATE")
     private Date serviceDate;
 
@@ -40,13 +37,6 @@ public class PersonService implements Serializable{
     public PersonService () {
     }
 
-//    public PersonService (int personId, int personServiceId, LocalDate serviceDate, String notes) {
-//        this.personId = personId;
-//        this.personServiceId = personServiceId;
-//        this.serviceDate = serviceDate;
-//        this.notes = notes;
-//
-//    }
 
     public int getPersonServiceId() {
         return personServiceId;
@@ -63,14 +53,6 @@ public class PersonService implements Serializable{
     public void setPersonId(int personId) {
         this.personId = personId;
     }
-
-//    public int getServiceId() {
-//        return serviceId;
-//    }
-//
-//    public void setServiceId(int serviceId) {
-//        this.serviceId = serviceId;
-//    }
 
     public Date getServiceDate() {
         return serviceDate;

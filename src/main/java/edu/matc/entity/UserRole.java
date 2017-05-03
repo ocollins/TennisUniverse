@@ -1,10 +1,5 @@
 package edu.matc.entity;
 
-/**
- * A class to a list of USER_ROLE Roles.
- * @author O Collins
- */
-
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;

@@ -22,8 +22,8 @@ import java.util.Properties;
 
 
 /**
- * Servlet to cleanup form data from the screen
- * @author Olena Collins
+ * Servlet to cleanup form data from the calories calculator results
+ *  @author Olena Collins
  */
 @WebServlet(
         name = "cleanupServlet",
@@ -51,7 +51,6 @@ public class CleanupServlet extends HttpServlet {
         session.removeAttribute("DurationResult");
 
 
-        //String responceurl = "/fitness.jsp";
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String responseUrl = properties.getProperty("caloriesCalculatorJsp.name");

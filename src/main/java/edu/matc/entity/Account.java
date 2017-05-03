@@ -1,10 +1,5 @@
 package edu.matc.entity;
 
-/**
- * A class to represent accounts
- * @author O Collins
- */
-
 import org.hibernate.annotations.GenericGenerator;
 
 import javax.persistence.*;

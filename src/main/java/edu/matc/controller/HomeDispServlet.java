@@ -21,7 +21,7 @@ import java.util.logging.Logger;
 
 
 /**
- * The type Log in display servlet.
+ * Index page display servlet so controll can be transferred from anothe page
  */
 @WebServlet(
         name = "homeDispServlet",

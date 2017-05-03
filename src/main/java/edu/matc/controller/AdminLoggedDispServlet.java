@@ -21,7 +21,7 @@ import java.util.List;
 import java.util.Properties;
 
 /**
- * The type Log in display servlet.
+ * Admin display servlet used for when the user is logged in so it is not redirected to the login page again
  */
 @WebServlet(
         name = "adminLoggedDispServlet",
@@ -99,22 +99,6 @@ public class AdminLoggedDispServlet extends HttpServlet {
             }
         }
 
-        //If could not get user name or password redirect to the error page
-//        if (userName.isEmpty() || password.isEmpty()) {
-//            logger.info("User name or password is missing");
-//            url = properties.getProperty("processingErrorJsp.name");
-//            RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
-//            dispatcher.forward(request, response);
-//
-//        }
-
-        logger.info("User name from login screen " + userName);
-        logger.info("Password from login screen " + password);
-        //session.invalidate();
-
-        //Create a new session
-        //session = request.getSession(true);
-
         //Create AdminActions instance
         AdminActionDao dao = new AdminActionDao();
         List<AdminAction> adminActionList = null;
@@ -135,7 +119,6 @@ public class AdminLoggedDispServlet extends HttpServlet {
 
         url = properties.getProperty("adminOptionsJsp.name");
 
-        //String url = "/adminoptions.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 

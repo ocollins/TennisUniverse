@@ -40,7 +40,6 @@ public class JuniorTennisDispServlet extends HttpServlet {
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("juniorTennisJsp.name");
 
-        //String url = "/juniortennis.jsp";
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(url);
         dispatcher.forward(request, response);
 

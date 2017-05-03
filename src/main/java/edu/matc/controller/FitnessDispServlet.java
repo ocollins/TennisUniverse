@@ -24,7 +24,7 @@ import java.util.List;
 import java.util.Properties;
 
 /**
- * Adult Tennis page Servlet Java113
+ * Display fitness page servlet
  * @author Olena Collins
  */
 @WebServlet(
@@ -44,19 +44,14 @@ public class FitnessDispServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
 
-
-        //Remove the old session
         HttpSession session = request.getSession(true);
-        //session.invalidate();
 
         //Call the service to get a list of all activities to populate the dropbox
         Client client = ClientBuilder.newClient();
-        //String url = "http://localhost:8080/CaloriesCalculator/activities";
 
         ServletContext context = getServletContext();
         Properties properties = (Properties)context.getAttribute("applicationProperties");
         String url = properties.getProperty("caloriesCalculatorActivities.path");
-        //String url = "http://52.14.26.13:8080/CaloriesCalculator/activities";
         WebTarget target = client.target(url + "/list");
 
         //Get response
@@ -86,7 +81,6 @@ public class FitnessDispServlet extends HttpServlet {
             logger.info(ioe);
         }
 
-        //String jspUrl = "/fitness.jsp";
         String responseUrl = properties.getProperty("fitnessJsp.name");
         RequestDispatcher dispatcher = getServletContext().getRequestDispatcher(responseUrl);
         dispatcher.forward(request, response);
