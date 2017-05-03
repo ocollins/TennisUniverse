@@ -78,23 +78,23 @@
 ### Week 13
 - [X] Time log entries
 - [X] Utilize commercial PDF creator library to produce a member statement in PDF format
-- [ ] Add send email functionality to email member statement
-- [ ] Add encript SSN logic
-- [ ] Create good DB
-- [ ] Cleanup and align JSPs
-- [ ] Create databse on AWS
+- [X] Add send email functionality to email member statement
+- [X] Add encript SSN logic
+- [X] Create good DB
+- [X] Cleanup and align JSPs
+- [X] Create databse on AWS
 
 ### Week 14
-- [ ] Time log entries
-- [ ] Clean up/allign all parts of all JSPs
-- [ ] Create final presentation
+- [X] Time log entries
+- [X] Clean up/allign all parts of all JSPs
+- [X] Create final presentation
 
 ### Week 15
-- [ ] Final Presentation
-- [ ] Time log entries
+- [X] Final Presentation
+- [X] Time log entries
 
 ### Week 16
-- [ ] Time log entries
+- [X] Time log entries
 
 
 
