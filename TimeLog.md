@@ -95,5 +95,7 @@
 |4/15/2017|Add memeber search JSP and servlet|2||
 |Week 13|||||
 |4/17/2017|Add Hibernate/business logic to create member statement|3|||
-|4/19/2017|Create member statement in PDF format||||
-|4/20/2017|Add logic to email member statement to the member||||
+|4/19/2017|Create member statement in PDF format|5|||
+|4/20/2017|Add logic to email member statement to the member|4|||
+|4/21/2017|Add junior tennis page|4|||
+|4/23/2017|Add fitness page|4|||
